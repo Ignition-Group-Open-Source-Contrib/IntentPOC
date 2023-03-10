@@ -1,0 +1,68 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Solution Items", "0 - Solution Items", "{5EA65A40-D5C2-423F-97F5-53327BE2821C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{E66A2CE1-BD2F-4415-B7C6-71D6C0396F5C}"
+	ProjectSection(SolutionItems) = preProject
+		..\dapr\config.yaml = ..\dapr\config.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{1BE9BC9F-A04A-4397-AA9A-03F61AC1D71A}"
+	ProjectSection(SolutionItems) = preProject
+		..\dapr\components\pubsub.yaml = ..\dapr\components\pubsub.yaml
+		..\dapr\components\statestore.yaml = ..\dapr\components\statestore.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{B1FF9E40-425E-4B30-AF2D-8591C9ABC2E7}"
+EndProject
+Project("{FFD54A85-9362-48AC-B646-C93AB9AC63D2}") = "IDeliverService.Api", "IDeliverService.Api\IDeliverService.Api.csproj", "{3FBC6933-5C94-4FA5-8230-A64DBF9787D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{389D299D-005F-4461-957F-0C0E3971D185}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "IDeliverService.Application", "IDeliverService.Application\IDeliverService.Application.csproj", "{5BD873C2-6AC2-4E80-8BF6-9932ACA48181}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{5EFAFB53-9F84-4A7D-B506-B8EBB4838513}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "IDeliverService.Domain", "IDeliverService.Domain\IDeliverService.Domain.csproj", "{74CD72B8-1674-4303-807C-8A3E49F00327}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{E15A5109-9E65-41DA-9FE1-51FC23498D88}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "IDeliverService.Infrastructure", "IDeliverService.Infrastructure\IDeliverService.Infrastructure.csproj", "{BC00755D-CDAA-4245-B285-9A0587144763}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FBC6933-5C94-4FA5-8230-A64DBF9787D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBC6933-5C94-4FA5-8230-A64DBF9787D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBC6933-5C94-4FA5-8230-A64DBF9787D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBC6933-5C94-4FA5-8230-A64DBF9787D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BD873C2-6AC2-4E80-8BF6-9932ACA48181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BD873C2-6AC2-4E80-8BF6-9932ACA48181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BD873C2-6AC2-4E80-8BF6-9932ACA48181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BD873C2-6AC2-4E80-8BF6-9932ACA48181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CD72B8-1674-4303-807C-8A3E49F00327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CD72B8-1674-4303-807C-8A3E49F00327}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CD72B8-1674-4303-807C-8A3E49F00327}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CD72B8-1674-4303-807C-8A3E49F00327}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC00755D-CDAA-4245-B285-9A0587144763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC00755D-CDAA-4245-B285-9A0587144763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC00755D-CDAA-4245-B285-9A0587144763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC00755D-CDAA-4245-B285-9A0587144763}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E66A2CE1-BD2F-4415-B7C6-71D6C0396F5C} = {5EA65A40-D5C2-423F-97F5-53327BE2821C}
+		{1BE9BC9F-A04A-4397-AA9A-03F61AC1D71A} = {E66A2CE1-BD2F-4415-B7C6-71D6C0396F5C}
+		{3FBC6933-5C94-4FA5-8230-A64DBF9787D3} = {B1FF9E40-425E-4B30-AF2D-8591C9ABC2E7}
+		{5BD873C2-6AC2-4E80-8BF6-9932ACA48181} = {389D299D-005F-4461-957F-0C0E3971D185}
+		{74CD72B8-1674-4303-807C-8A3E49F00327} = {5EFAFB53-9F84-4A7D-B506-B8EBB4838513}
+		{BC00755D-CDAA-4245-B285-9A0587144763} = {E15A5109-9E65-41DA-9FE1-51FC23498D88}
+	EndGlobalSection
+EndGlobal

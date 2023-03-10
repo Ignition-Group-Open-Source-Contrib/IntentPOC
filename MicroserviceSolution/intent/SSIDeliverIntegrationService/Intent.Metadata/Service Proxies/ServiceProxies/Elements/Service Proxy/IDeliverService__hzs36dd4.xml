@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="070967e7-ec19-4ff5-94c6-7fedc96c5c91" type="Service Proxy" typeId="07d8d1a9-6b9f-4676-b7d3-8db06299e35c">
+  <name>IDeliverService</name>
+  <display>IDeliverService</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>true</isMapped>
+  <mappedClass>
+    <applicationId>3da8ac76-2cf8-463f-98f6-ab2496874aae</applicationId>
+    <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+    <mappingSettingsId>df491bea-8a85-4bc9-a93d-41b7abb80ffb</mappingSettingsId>
+    <autoSyncTypeReference>true</autoSyncTypeReference>
+    <mappedPath>
+      <target id="fc0da870-9969-4e4c-bf43-e46597faa313" name="IDeliver" type="element" specialization="Service" />
+    </mappedPath>
+  </mappedClass>
+  <parentFolderId>0d9111ad-c57b-48fa-95ce-ae439230cda2</parentFolderId>
+  <packageId>0d9111ad-c57b-48fa-95ce-ae439230cda2</packageId>
+  <packageName>ServiceProxies</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

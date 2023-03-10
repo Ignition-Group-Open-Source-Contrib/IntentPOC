@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="00f34735-0bc2-4e58-9ad8-bfc55a398878">
+  <sourceEnd id="10e6b05f-7812-4b97-983e-4271e1b6c2cc" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Cities</name>
+    <display>Cities: City[*]</display>
+    <order>0</order>
+    <typeReference id="cd9a5f99-cb5c-4510-98b9-adcf363ee172">
+      <typeId>fca411cc-0dc8-4eb7-a3a5-1e0c5c815c58</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="00f34735-0bc2-4e58-9ad8-bfc55a398878" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Province</name>
+    <display>Province: Province</display>
+    <order>11</order>
+    <typeReference id="4c3c74c9-e111-4b53-b4ba-cfff7f1940c7">
+      <typeId>05708d27-dd92-4805-86d2-7c9be3a30a1d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>1060914851</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>1060914851</externalReference>
+  <stereotypes />
+</association>

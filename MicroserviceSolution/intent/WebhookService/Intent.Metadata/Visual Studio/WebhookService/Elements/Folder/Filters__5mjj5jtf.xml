@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="81717651-dea7-4925-a4cf-8b2c94d9b303" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Filters</name>
+  <display>Filters</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>16aeacfa-8542-42c2-bbf6-a27f666f5885</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="49c9725c-ea0b-46be-b89b-9e057cc7d335" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.AspNetCore.Swashbuckle.AuthorizeCheckOperationFilter</name>
+      <display>Intent.AspNetCore.Swashbuckle.AuthorizeCheckOperationFilter</display>
+      <externalReference>Intent.AspNetCore.Swashbuckle</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>81717651-dea7-4925-a4cf-8b2c94d9b303</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

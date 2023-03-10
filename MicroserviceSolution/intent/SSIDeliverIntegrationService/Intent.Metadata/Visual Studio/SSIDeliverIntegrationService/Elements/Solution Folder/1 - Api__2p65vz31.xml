@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d249d526-8b88-43a8-a1b6-866c9cbe20d1" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>1 - Api</name>
+  <display>1 - Api</display>
+  <externalReference>a307c07a-f7b8-41d5-82dd-f9ce10e89a82</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</parentFolderId>
+  <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+  <packageName>SSIDeliverIntegrationService</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

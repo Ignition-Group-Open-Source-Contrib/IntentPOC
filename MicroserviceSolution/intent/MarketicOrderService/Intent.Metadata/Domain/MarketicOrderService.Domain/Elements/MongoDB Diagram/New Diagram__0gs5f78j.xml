@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="bff73800-f695-4193-9e40-a3ddd4dd730c" type="MongoDB Diagram" typeId="67f81f34-af38-4245-9c8e-1816e3012cce">
+  <name>New Diagram</name>
+  <display>New Diagram</display>
+  <externalReference>0b8f70f8-9712-419e-aa38-3089f8633839</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2f0568f4-e11e-4516-b9f0-a0e9f1239be7</parentFolderId>
+  <packageId>2f0568f4-e11e-4516-b9f0-a0e9f1239be7</packageId>
+  <packageName>MarketicOrderService.Domain</packageName>
+  <diagram />
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

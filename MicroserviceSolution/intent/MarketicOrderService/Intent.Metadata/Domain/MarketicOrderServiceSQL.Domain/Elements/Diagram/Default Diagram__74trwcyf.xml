@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="82fc8967-a7cf-4b90-99e3-89769fe73165" type="Diagram" typeId="4d66fecd-e9b8-436f-aa50-c59040ad0879">
+  <name>Default Diagram</name>
+  <display>Default Diagram</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>3c9ae9a3-bb60-4252-ae83-63aa2188d4a3</parentFolderId>
+  <packageId>3c9ae9a3-bb60-4252-ae83-63aa2188d4a3</packageId>
+  <packageName>MarketicOrderServiceSQL.Domain</packageName>
+  <diagram>
+    <targetPackageId>3c9ae9a3-bb60-4252-ae83-63aa2188d4a3</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

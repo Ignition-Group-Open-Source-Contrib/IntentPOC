@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="8480f0d4-5fa6-4112-9595-355f8ef3405a" type="Diagram" typeId="4d66fecd-e9b8-436f-aa50-c59040ad0879">
+  <name>Stock Diagram</name>
+  <display>Stock Diagram</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>b7fc10a8-54e4-4b96-9de3-1a2b81b36055</parentFolderId>
+  <packageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</packageId>
+  <packageName>IgnitionGroup</packageName>
+  <diagram>
+    <targetPackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="3a8536e9-2ad3-459b-ae68-fc3b06e104d7" type="Diagram" typeId="4d66fecd-e9b8-436f-aa50-c59040ad0879">
+  <name>Admin Diagram</name>
+  <display>Admin Diagram</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>9a860fda-c411-4bc1-b782-1de977546f51</parentFolderId>
+  <packageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</packageId>
+  <packageName>IgnitionGroup</packageName>
+  <diagram>
+    <targetPackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

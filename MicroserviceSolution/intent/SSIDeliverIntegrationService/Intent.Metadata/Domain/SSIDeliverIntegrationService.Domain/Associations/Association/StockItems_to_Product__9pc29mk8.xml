@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5bd3308c-1f1f-404d-a4b4-c7f68ae28f13">
+  <sourceEnd id="cb398901-8685-408b-bf59-81f3561b4ef2" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>StockItems</name>
+    <display>StockItems: StockItem[*]</display>
+    <order>0</order>
+    <typeReference id="0dfd9bee-0ee7-4f89-bbee-f44ef4bd004a">
+      <typeId>45f0b33f-1642-4470-9c50-4f8d1baeae66</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="5bd3308c-1f1f-404d-a4b4-c7f68ae28f13" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Product</name>
+    <display>Product: Product</display>
+    <order>15</order>
+    <typeReference id="5372accc-6a3a-4e95-a316-7bb2af4c4258">
+      <typeId>82c26fda-46ec-453b-a902-9a202ca53da0</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>343008303</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>343008303</externalReference>
+  <stereotypes />
+</association>

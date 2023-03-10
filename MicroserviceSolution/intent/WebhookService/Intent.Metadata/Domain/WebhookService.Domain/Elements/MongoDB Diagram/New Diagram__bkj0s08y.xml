@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2d0fde98-a6d0-4fca-a542-6603ce4cb1f5" type="MongoDB Diagram" typeId="67f81f34-af38-4245-9c8e-1816e3012cce">
+  <name>New Diagram</name>
+  <display>New Diagram</display>
+  <externalReference>0b8f70f8-9712-419e-aa38-3089f8633839</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>93df6cd8-4c31-4e1d-b2d8-941429767753</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

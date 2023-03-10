@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="aa78522b-04c1-4800-b222-ca805d43bedf">
+  <sourceEnd id="9eb3824b-b9e6-4123-a141-3b61c5d27c05" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Product</name>
+    <display>Product: Product?</display>
+    <order>0</order>
+    <typeReference id="178d30f5-a521-41de-b39b-96a54e6527dc">
+      <typeId>6a376c58-9d30-4fde-98ff-5c1ceb124e76</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="aa78522b-04c1-4800-b222-ca805d43bedf" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>StockItems</name>
+    <display>StockItems: StockItem[*]</display>
+    <order>13</order>
+    <typeReference id="e89880fe-3fcb-4355-be7c-155b6db8f4c8">
+      <typeId>dfce2eba-89c8-4562-a476-5b5c038f2004</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

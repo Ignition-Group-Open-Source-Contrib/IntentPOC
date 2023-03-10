@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="7e60aa7c-76d2-411a-ab93-91503d7686f3" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>IDeliverSale</name>
+  <display>IDeliverSale</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</parentFolderId>
+  <packageId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</packageId>
+  <packageName>SSIDeliverIntegrationService.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="c29224ec-d473-4b95-ad4a-ec55c676c4fd" name="Http Service Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+      <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+      <properties>
+        <property name="1e223bd0-7a72-435a-8741-a612d88e4a12" display="Route" value="" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="ce9bfa0c-9614-49d1-9158-307f06f68edd" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetSaleChannels</name>
+      <display>GetSaleChannels(): SaleChannelsResponseModel[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="8518cd11-4c03-461f-9134-f200a66b40d7">
+        <typeId>1cd2b83d-9483-4371-8eb2-cb565185cbdb</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>SSIDeliverIntegrationService.Services</typePackageName>
+        <typePackageId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>29987ef8-e3b1-4f88-bc8f-783e008a6523</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>f15fa935-434e-4983-b283-25cde2cb440e</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="1996fa86-b0eb-4a77-b1f1-eadb837cb1e4" name="GetSaleChannels" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7e60aa7c-76d2-411a-ab93-91503d7686f3</parentFolderId>
+      <packageId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</packageId>
+      <packageName>SSIDeliverIntegrationService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="[action]" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

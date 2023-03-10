@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="1996fa86-b0eb-4a77-b1f1-eadb837cb1e4" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetSaleChannels</name>
+  <display>GetSaleChannels: SaleChannelsResponseModel[*]</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="ba40204e-8d7c-4235-8756-34e1888115ef">
+    <typeId>1cd2b83d-9483-4371-8eb2-cb565185cbdb</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>SSIDeliverIntegrationService.Services</typePackageName>
+    <typePackageId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</parentFolderId>
+  <packageId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</packageId>
+  <packageName>SSIDeliverIntegrationService.Services</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

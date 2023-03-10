@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="a804ca3e-f8e7-48d9-9883-4945e97dcedc">
+  <sourceEnd id="f6411dfe-5aa6-477e-a020-56b3de7c7647" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Deals</name>
+    <display>Deals: Deal[*]</display>
+    <order>0</order>
+    <typeReference id="e4e0ca3b-eb16-4d08-956c-1a6f685c2b48">
+      <typeId>dc3eaa1f-b0a3-4b58-9627-11262f04bc3e</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="a804ca3e-f8e7-48d9-9883-4945e97dcedc" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Tariff</name>
+    <display>Tariff: Tariff?</display>
+    <order>36</order>
+    <typeReference id="03ca8ce5-b46a-4d6d-b1d1-8e621b497ff1">
+      <typeId>6e80974c-ec02-497c-bd57-c32c9e3283f2</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>2113442603</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>2113442603</externalReference>
+  <stereotypes />
+</association>

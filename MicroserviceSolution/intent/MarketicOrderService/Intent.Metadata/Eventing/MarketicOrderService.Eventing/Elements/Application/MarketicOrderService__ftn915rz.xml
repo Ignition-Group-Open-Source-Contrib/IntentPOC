@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="6fb412c8-b53a-4a70-bf89-92a2fa7c6852" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>MarketicOrderService</name>
+  <display>MarketicOrderService</display>
+  <externalReference>627bab41-be2f-4891-a765-f396dd3552d7</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>0deba123-515c-4156-9677-6df1d43adbed</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

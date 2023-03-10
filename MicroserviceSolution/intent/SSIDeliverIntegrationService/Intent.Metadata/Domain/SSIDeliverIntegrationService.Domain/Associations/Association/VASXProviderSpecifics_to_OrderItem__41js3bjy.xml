@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="4c8f983a-9dc7-4434-9281-610d2f91b863">
+  <sourceEnd id="d0836350-7022-4c84-a12e-979e31490ef4" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>VASXProviderSpecifics</name>
+    <display>VASXProviderSpecifics: VASXProviderSpecific[*]</display>
+    <order>0</order>
+    <typeReference id="ea5e7dca-51cc-44da-8701-b57c4fdf0409">
+      <typeId>300cd7c0-2aa3-4914-94a1-0cfcf947ddc6</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="4c8f983a-9dc7-4434-9281-610d2f91b863" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderItem</name>
+    <display>OrderItem: OrderItem</display>
+    <order>5</order>
+    <typeReference id="64be9587-2302-4015-bdec-0a2d3cfe2e3b">
+      <typeId>1f4837f4-648e-43cd-834b-dc5efc666fc9</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnitionGroup</typePackageName>
+      <typePackageId>2b15036d-9dda-475d-ab8e-ebd8d962217d</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>1386488018</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>1386488018</externalReference>
+  <stereotypes />
+</association>

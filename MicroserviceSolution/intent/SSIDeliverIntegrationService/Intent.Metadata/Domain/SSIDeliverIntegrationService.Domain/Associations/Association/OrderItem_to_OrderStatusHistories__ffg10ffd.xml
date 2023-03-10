@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="27bc60c2-b0f4-449c-8131-f31c147949e4">
+  <sourceEnd id="e4066166-061f-4f46-88f8-824b8ca62965" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>OrderItem</name>
+    <display>OrderItem: OrderItem</display>
+    <order>0</order>
+    <typeReference id="ae603b6c-75c7-4dff-b237-0e9e10192077">
+      <typeId>d9c79204-749b-40cd-b45d-99e0755b149f</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="27bc60c2-b0f4-449c-8131-f31c147949e4" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderStatusHistories</name>
+    <display>OrderStatusHistories: OrderStatusHistory[*]</display>
+    <order>37</order>
+    <typeReference id="90d9f986-ec59-4363-8b34-74b5774858b8">
+      <typeId>9f717252-07f4-44a1-9266-5b1dfbe2192d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

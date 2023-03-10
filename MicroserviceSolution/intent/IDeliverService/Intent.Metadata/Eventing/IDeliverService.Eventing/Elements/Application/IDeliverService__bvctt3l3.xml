@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="bb8e1005-0eee-4dc1-b82f-7e54fb241e4c" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>IDeliverService</name>
+  <display>IDeliverService</display>
+  <externalReference>627bab41-be2f-4891-a765-f396dd3552d7</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>19db808c-3cf9-43e7-a0ad-4c1e63ccd53e</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>
