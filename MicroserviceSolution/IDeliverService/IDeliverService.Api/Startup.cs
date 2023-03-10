@@ -35,7 +35,7 @@ namespace IDeliverService.Api
             services.AddControllers().AddDapr();
             services.AddDaprSidekick(Configuration);
             services.ConfigureJWTSecurity(Configuration);
-            services.AddApplication(Configuration);
+            services.AddApplication();
             services.AddInfrastructure(Configuration);
             services.ConfigureSwagger(Configuration);
         }

@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Serilog.Events;
 
-[assembly: DefaultIntentManaged(Mode.Fully)]
+[assembly: DefaultIntentManaged(Mode.Ignore)]
 [assembly: IntentTemplate("Intent.AspNetCore.Program", Version = "1.0")]
 
 namespace IDeliverService.Api
@@ -38,7 +38,17 @@ namespace IDeliverService.Api
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
+            Host.CreateDefaultBuilder(args).ConfigureAppConfiguration((context, config) =>
+            {
+                var settings = config.AddEnvironmentVariables().Build();
+                config.AddAzureAppConfiguration(options =>
+                {
+                    options.Connect(settings["ConnectionStrings:AppConfig"])
+                           .Select("marketic*", LabelFilter.Null)
+                           .Select("marketic*", settings["ASPNETCORE_ENVIRONMENT"])
+                          .Select("SilverSurfer*", settings["ASPNETCORE_ENVIRONMENT"]);
+                });
+            })
                 .UseSerilog((context, services, configuration) => configuration
                     .ReadFrom.Configuration(context.Configuration)
                     .ReadFrom.Services(services)

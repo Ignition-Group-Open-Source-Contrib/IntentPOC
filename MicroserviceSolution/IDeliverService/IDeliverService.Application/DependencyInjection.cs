@@ -6,7 +6,6 @@ using IDeliverService.Application.Common.Eventing;
 using IDeliverService.Application.ThirdPartyServices;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 [assembly: DefaultIntentManaged(Mode.Ignore)]
@@ -16,7 +15,7 @@ namespace IDeliverService.Application
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApplication(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
@@ -27,8 +26,8 @@ namespace IDeliverService.Application
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(EventBusPublishBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(StateRepositoryUnitOfWorkBehaviour<,>));
-            services.AddScoped<IEventBus, EventBusImplementation>();           
-           // services.AddTransient<IIDeliverApi, IDeliverApi>();
+            services.AddScoped<IEventBus, EventBusImplementation>();
+            services.AddScoped<IIDeliverApi, IDeliverApi>();
             return services;
         }
     }

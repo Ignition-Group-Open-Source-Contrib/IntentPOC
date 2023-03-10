@@ -20,7 +20,7 @@ namespace IDeliverService.Application.ThirdPartyServices
      
         [Get("/sale-orders/{id}/tracking-events")]
         Task<string> GetTrackingEvents(string token, int id);
-        [Patch("/sale-orders/{id}/status")]
+        
         [Get("/channels")]
         Task<string> SaleChannels(string token);
         [Get("/sale-orders/{id}/tracking-pod")]
@@ -126,6 +126,7 @@ namespace IDeliverService.Application.ThirdPartyServices
         /// <returns>string</returns>
         public Task<string> SaleChannels(string token)
         {
+            
             client = RestService.For<IIDeliverApi>(new HttpClient
             {
                 BaseAddress = new Uri(configuration.GetValue<string>("marketic:ideliver:baseurl")),

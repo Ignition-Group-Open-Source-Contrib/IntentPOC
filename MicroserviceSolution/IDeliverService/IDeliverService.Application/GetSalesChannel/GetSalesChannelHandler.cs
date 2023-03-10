@@ -15,19 +15,28 @@ namespace IDeliverService.Application.GetSalesChannel
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
     public class GetSalesChannelHandler : IRequestHandler<GetSalesChannel, List<SaleChannelsResponseModel>>
     {
-        private readonly IDeliverApi deliverApi;
+        private readonly IIDeliverApi _iDeliverApi;
 
         [IntentManaged(Mode.Ignore)]
-        public GetSalesChannelHandler(IDeliverApi deliverApi)
+        public GetSalesChannelHandler(IIDeliverApi iDeliverApi)
         {
-            this.deliverApi = deliverApi;
+            _iDeliverApi = iDeliverApi;
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
         public async Task<List<SaleChannelsResponseModel>> Handle(GetSalesChannel request, CancellationToken cancellationToken)
         {
-            var response = await deliverApi.SaleChannels(request.Token);
-            return JsonConvert.DeserializeObject<List<SaleChannelsResponseModel>>(response);
+            try
+            {
+                var response = await _iDeliverApi.SaleChannels(request.Token);
+                return JsonConvert.DeserializeObject<List<SaleChannelsResponseModel>>(response);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }
