@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="c44e60bf-4fb6-44d7-935d-b9b466ecfc9b">
+  <sourceEnd id="26136dc9-7618-4538-a028-1f0f8bb12257" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>DealProductMappings</name>
+    <display>DealProductMappings: DealProductMapping[*]</display>
+    <order>0</order>
+    <typeReference id="6b90d490-b3cd-423d-b341-d1ce66ee2443">
+      <typeId>cf3d9a78-1260-4dd7-8232-2569b45374f7</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="c44e60bf-4fb6-44d7-935d-b9b466ecfc9b" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Deal</name>
+    <display>Deal: Deal?</display>
+    <order>14</order>
+    <typeReference id="9df31695-77f2-4e1e-b4f4-c3855d366e0a">
+      <typeId>08aa350a-577e-4f60-acd9-e290a31595c6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>29959183</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>29959183</externalReference>
+  <stereotypes />
+</association>

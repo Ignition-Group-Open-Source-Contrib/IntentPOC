@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="0d819821-17d8-4163-a253-7d32aa896ac1">
+  <sourceEnd id="ac3cb4b8-6ada-4b92-99cf-de85a18febb5" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>OrderItems</name>
+    <display>OrderItems: OrderItem[*]</display>
+    <order>0</order>
+    <typeReference id="7677dec4-1b45-4d2c-a722-b35a86eb3897">
+      <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="0d819821-17d8-4163-a253-7d32aa896ac1" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>FreemiumOrderItem</name>
+    <display>FreemiumOrderItem: OrderItem?</display>
+    <order>31</order>
+    <typeReference id="4a5ccc44-3e79-4de1-87b8-484bc57d9788">
+      <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>250483971</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>250483971</externalReference>
+  <stereotypes />
+</association>
