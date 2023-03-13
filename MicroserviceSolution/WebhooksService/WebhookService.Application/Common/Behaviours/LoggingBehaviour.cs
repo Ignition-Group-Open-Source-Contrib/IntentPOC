@@ -27,7 +27,7 @@ namespace WebhookService.Application.Common.Behaviours
             var userId = _currentUserService.UserId ?? string.Empty;
             var userName = _currentUserService.UserName ?? string.Empty;
 
-            _logger.LogInformation("WebhookService Request: {Name} {@UserId} {@UserName} {@Request}",
+            _logger.LogInformation("WebhooksService Request: {Name} {@UserId} {@UserName} {@Request}",
                 requestName, userId, userName, request);
         }
     }

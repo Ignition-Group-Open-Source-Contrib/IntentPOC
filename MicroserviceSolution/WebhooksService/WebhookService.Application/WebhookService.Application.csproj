@@ -16,8 +16,10 @@
     <PackageReference Include="FluentValidation" Version="9.3.0" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.3.0" />
     <PackageReference Include="Intent.RoslynWeaver.Attributes" Version="2.0.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
 </Project>

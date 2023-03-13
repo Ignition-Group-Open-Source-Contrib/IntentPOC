@@ -4,10 +4,14 @@
   <display>WebhookService</display>
   <externalReference>627bab41-be2f-4891-a765-f396dd3552d7</externalReference>
   <isAbstract>false</isAbstract>
-  <order>1</order>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>dd4ddab6-d10f-423e-9162-462ef44e6394</parentFolderId>
+  <packageId>dd4ddab6-d10f-423e-9162-462ef44e6394</packageId>
+  <packageName>WebhookService.Eventing</packageName>
+  <diagram>
+    <targetPackageId>dd4ddab6-d10f-423e-9162-462ef44e6394</targetPackageId>
+  </diagram>
   <stereotypes />
   <metadata />
   <childElements />

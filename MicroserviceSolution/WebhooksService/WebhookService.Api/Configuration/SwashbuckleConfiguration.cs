@@ -25,7 +25,7 @@ namespace WebhookService.Api.Configuration
                         new OpenApiInfo
                         {
                             Version = "v1",
-                            Title = "WebhookService API",
+                            Title = "WebhooksService API",
                         });
                     options.OperationFilter<AuthorizeCheckOperationFilter>();
                     options.AddSecurityDefinition("ApiToken", new OpenApiSecurityScheme()
@@ -50,8 +50,8 @@ namespace WebhookService.Api.Configuration
                 options =>
                 {
                     options.RoutePrefix = "swagger";
-                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "WebhookService API V1");
-                    options.OAuthAppName("WebhookService API");
+                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "WebhooksService API V1");
+                    options.OAuthAppName("WebhooksService API");
                     options.EnableDeepLinking();
                     options.DisplayOperationId();
                     options.DefaultModelsExpandDepth(-1);

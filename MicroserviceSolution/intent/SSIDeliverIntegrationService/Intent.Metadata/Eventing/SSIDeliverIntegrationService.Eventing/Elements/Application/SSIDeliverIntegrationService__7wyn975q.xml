@@ -4,10 +4,14 @@
   <display>SSIDeliverIntegrationService</display>
   <externalReference>627bab41-be2f-4891-a765-f396dd3552d7</externalReference>
   <isAbstract>false</isAbstract>
-  <order>1</order>
   <genericTypes />
   <isMapped>false</isMapped>
   <parentFolderId>df8bdcf2-4f2d-4843-bab6-d531280914ee</parentFolderId>
+  <packageId>df8bdcf2-4f2d-4843-bab6-d531280914ee</packageId>
+  <packageName>SSIDeliverIntegrationService.Eventing</packageName>
+  <diagram>
+    <targetPackageId>df8bdcf2-4f2d-4843-bab6-d531280914ee</targetPackageId>
+  </diagram>
   <stereotypes />
   <metadata />
   <childElements />

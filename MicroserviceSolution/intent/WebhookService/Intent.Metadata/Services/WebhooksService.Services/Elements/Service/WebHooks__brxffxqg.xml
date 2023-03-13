@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="a4cfda9b-6445-45f4-9642-88e0693921ab" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>WebHooks</name>
+  <display>WebHooks</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c7cc243e-eef0-46d3-b771-30ebf7ea4a77</parentFolderId>
+  <packageId>c7cc243e-eef0-46d3-b771-30ebf7ea4a77</packageId>
+  <packageName>WebhooksService.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="c29224ec-d473-4b95-ad4a-ec55c676c4fd" name="Http Service Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+      <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+      <properties>
+        <property name="1e223bd0-7a72-435a-8741-a612d88e4a12" display="Route" value="" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="565cd958-2d26-4a18-bb3e-36ac4e2e29fe" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>WebHookCallBack</name>
+      <display>WebHookCallBack(command: WebHookCallBack): string</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="b75558b0-9168-4ea3-b75e-bea9043a8279">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>92b8e1a6-8f0e-480c-80fa-cbda7a79c90c</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="5d5ea639-6e1a-4a2d-934b-f28022c99e9f" name="WebHookCallBack" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>a4cfda9b-6445-45f4-9642-88e0693921ab</parentFolderId>
+      <packageId>c7cc243e-eef0-46d3-b771-30ebf7ea4a77</packageId>
+      <packageName>WebhooksService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="[action]" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="63b3a8c4-189c-4c3d-a53e-e656775d3ef9" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: WebHookCallBack</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="f574e9c2-0809-4a13-a79c-0406e946ce5f">
+            <typeId>5d5ea639-6e1a-4a2d-934b-f28022c99e9f</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>WebhooksService.Services</typePackageName>
+            <typePackageId>c7cc243e-eef0-46d3-b771-30ebf7ea4a77</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>565cd958-2d26-4a18-bb3e-36ac4e2e29fe</parentFolderId>
+          <packageId>c7cc243e-eef0-46d3-b771-30ebf7ea4a77</packageId>
+          <packageName>WebhooksService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>
