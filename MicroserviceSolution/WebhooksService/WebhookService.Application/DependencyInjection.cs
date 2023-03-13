@@ -5,9 +5,10 @@ using Intent.RoslynWeaver.Attributes;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using WebhookService.Application.Common.Behaviours;
+using WebhookService.Application.Common.BusinessLogic;
 using WebhookService.Application.Common.Eventing;
 
-[assembly: DefaultIntentManaged(Mode.Fully)]
+[assembly: DefaultIntentManaged(Mode.Ignore)]
 [assembly: IntentTemplate("Intent.Application.DependencyInjection.DependencyInjection", Version = "1.0")]
 
 namespace WebhookService.Application
@@ -26,6 +27,7 @@ namespace WebhookService.Application
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(EventBusPublishBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(StateRepositoryUnitOfWorkBehaviour<,>));
             services.AddScoped<IEventBus, EventBusImplementation>();
+            services.AddScoped<IWebHookFacade, WebHookFacade>();
             return services;
         }
     }
