@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="08aa350a-577e-4f60-acd9-e290a31595c6" type="Class" typeId="04e12b51-ed12-42a3-9667-a6aa81bb6d10">
+  <name>Deal</name>
+  <display>Deal</display>
+  <externalReference>645577338</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>81b5e75a-4cd5-46aa-be75-f6ffa44103f7</parentFolderId>
+  <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+  <packageName>SSIDeliverIntegrationService.Domain</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="dd205b32-b48b-4c77-98f5-faefb2c047ce" name="Table">
+      <addedByDefault>false</addedByDefault>
+      <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+      <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+      <properties>
+        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" isActive="true" />
+        <property name="13e6101f-0e37-4eda-a6ae-ec48cd9f8f4b" display="Schema" value="Deal" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="48d26147-f973-48f8-9b3f-1eb1843344de" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>DealID</name>
+      <display>DealID: int</display>
+      <externalReference>1</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="b5209e0e-d5c4-4d1c-b183-0055f9019454">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b99aac21-9ca4-467f-a3a6-046255a9eed6" name="Primary Key">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="4c1e3f7e-61d4-460d-bd20-c2edbc0c0e2e" display="Identity" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="eff8ff89-76dc-44b4-96cc-a3dad8e8eba0" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Title</name>
+      <display>Title: string</display>
+      <externalReference>2</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f584ebbb-fe44-46e8-85af-8dbcf64fc88e">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="VARCHAR" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" value="255" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="31ab11b9-9dae-4a98-aade-eeaf57cfce2b" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Code</name>
+      <display>Code: string?</display>
+      <externalReference>3</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="214441c5-b9ca-45df-97a1-58223db9296e">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="VARCHAR" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" value="255" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="969e38a1-bd44-466e-bcda-e66bba0c29c9" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Description</name>
+      <display>Description: string?</display>
+      <externalReference>4</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="e9e2c426-e853-46d6-abf5-4a07301b2c70">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="6416f2f2-0516-448d-a454-d9084f9c6bed" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Hot</name>
+      <display>Hot: int</display>
+      <externalReference>5</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="78550222-ce77-4b70-8d85-385e30da7dd6">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="50a99f53-ea8b-40da-bad3-445eac881c86" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Available</name>
+      <display>Available: int</display>
+      <externalReference>6</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="50f21898-dc95-413e-90ac-2b4d31f2ebab">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((1))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c8f0914b-5db2-4daf-8c64-d15ad5ac003e" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>TariffTariffID</name>
+      <display>TariffTariffID: int?</display>
+      <externalReference>8</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="3c93a892-05bf-498c-9a31-664b2f7381ef">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="793a5128-57a1-440b-a206-af5722b752a6" name="Foreign Key">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="42e4f9b5-f834-4e5f-86aa-d3a35c505076" display="Association" value="f479c0ce-aa94-49ff-a5aa-f8c027349ded" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata>
+        <entry key="fk-original-name" value="TariffTariffID" />
+        <entry key="association" value="f479c0ce-aa94-49ff-a5aa-f8c027349ded" />
+        <entry key="is-managed-key" value="true" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="f428623b-387e-4285-b725-4beb5e573c24" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>MsId</name>
+      <display>MsId: int?</display>
+      <externalReference>9</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="04025fa7-930f-4767-9792-c0d8893efd0f">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="4bf4b6da-955d-4c6e-90a2-fad6f2324a30" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EMId</name>
+      <display>EMId: int?</display>
+      <externalReference>10</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="94e03b59-4a65-4762-82b6-513f4b651c6e">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="1e350148-cc15-4cde-9bf9-2ac8d81cbbd1" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>GP</name>
+      <display>GP: decimal</display>
+      <externalReference>11</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="41446e1a-aab0-4433-b492-a2f46c109305">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="8775f4d0-7ffd-4678-a6a8-fd7e0c6fbc87" name="Decimal Constraints">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="849d8f6f-573f-428a-bc46-8db2614c47c9" display="Precision" value="10" isActive="true" />
+            <property name="ff13f032-826f-4ca3-9806-ea4f10b8d600" display="Scale" value="2" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="77fbf423-b4ec-4625-a2ad-e3eb92f2d273" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Cost</name>
+      <display>Cost: decimal</display>
+      <externalReference>12</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="98f0968e-2922-41b1-95bd-d3b1b92ce00a">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="8775f4d0-7ffd-4678-a6a8-fd7e0c6fbc87" name="Decimal Constraints">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="849d8f6f-573f-428a-bc46-8db2614c47c9" display="Precision" value="10" isActive="true" />
+            <property name="ff13f032-826f-4ca3-9806-ea4f10b8d600" display="Scale" value="2" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="e3f92c90-5a88-4441-896a-2621fd7bf1d7" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>ExternalReference</name>
+      <display>ExternalReference: string?</display>
+      <externalReference>14</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="5db56d84-5734-4bf9-9a6c-c6cc1cd921ea">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="VARCHAR" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" value="250" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="adcf9d8e-8f64-46b9-bf98-49b162f93c09" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CreatedByUserId</name>
+      <display>CreatedByUserId: int?</display>
+      <externalReference>15</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="d6581d0a-b076-420b-b26b-b51fc4336b1c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="4aacd210-5788-4ee5-bbc3-2041e361e293" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CreatedOnDate</name>
+      <display>CreatedOnDate: datetime?</display>
+      <externalReference>16</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="7dba48a0-49f6-4eaa-8174-cd2763b90973">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;(getdate())&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="28529339-daa7-4151-a03e-6b1bae8b836a" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>UpdatedByUserId</name>
+      <display>UpdatedByUserId: int?</display>
+      <externalReference>17</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9a05b5d4-81b9-4daf-be19-972a145ae87f">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="a77ebd5f-47c7-4860-ab7c-99f14c1d7018" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>UpdatedOnDate</name>
+      <display>UpdatedOnDate: datetime?</display>
+      <externalReference>18</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="94c55d0c-fa5b-4541-88dc-9a69a4f1147c">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="762be5d9-f425-43f8-98cd-a5c8d65737d1" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>IsPublished</name>
+      <display>IsPublished: bool</display>
+      <externalReference>19</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="bc0c0344-e702-4aee-b1a3-e3ee9990307f">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="6f01d840-5162-4d34-8112-4bd4f7993f61" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>IsDeleted</name>
+      <display>IsDeleted: bool</display>
+      <externalReference>20</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="af4302da-88cb-422a-9bb0-4a605e0adb35">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="7153b4c5-c324-4214-bc5d-7201c1956579" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Multiple</name>
+      <display>Multiple: int</display>
+      <externalReference>21</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="c1815275-227c-4da7-88b2-29fdef0fda38">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="92229a4b-2092-489a-bd1b-fce6cb7c5500" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>RatePlan</name>
+      <display>RatePlan: string?</display>
+      <externalReference>22</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9298647d-b59f-4dbf-a5f8-fbc60c612a09">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="VARCHAR" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" value="100" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="808cd368-904f-4705-80a6-a33249217bf9" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>MSDealID</name>
+      <display>MSDealID: int?</display>
+      <externalReference>23</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="981615f4-ce0d-465a-a7f4-cc43685733da">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="67a992c1-ef15-4b6c-b359-f3217cb90c3d" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EMDealID</name>
+      <display>EMDealID: int?</display>
+      <externalReference>24</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="176d8fa0-fe05-45bc-9cee-6f759690dbeb">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="33ce1951-4bc4-4ad6-b5a3-8fc1689763f7" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>ExpiryDate</name>
+      <display>ExpiryDate: datetime?</display>
+      <externalReference>26</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9fbef68d-785f-4450-9023-e6ac73ced429">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="d5a3785a-5a26-4f8a-a16b-574bf14af3f6" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>IsInsurable</name>
+      <display>IsInsurable: bool?</display>
+      <externalReference>27</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="b94555d6-3bc6-4b9b-a92f-78358d822931">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="09bf3cb3-3dd4-4681-8bcc-ccc55d13b626" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>JBillingDealId</name>
+      <display>JBillingDealId: int?</display>
+      <externalReference>28</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a7c7634d-d403-448c-b934-6091e3fcd9b4">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="08b61156-f2ab-425c-8f31-5fc7e65dbe1f" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>HandsetUID</name>
+      <display>HandsetUID: int?</display>
+      <externalReference>29</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="b09a72dd-ba99-4da5-91f9-3a5004ddf3dd">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="a6361e6a-4040-424a-ae13-412f8a5cb2e7" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CreditTabUID</name>
+      <display>CreditTabUID: int?</display>
+      <externalReference>30</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="0d125f42-90fa-4e96-9148-2daaef1551af">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="ee528526-0ef0-46a4-b957-097b8e42b68e" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>IsBundle</name>
+      <display>IsBundle: bool</display>
+      <externalReference>31</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="41c8b2e7-ac04-4f89-94ee-454b5d2e10f4">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="d20b58d5-1d08-46fa-bf64-96153488c2f9" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>ThirdPartyCampaignId</name>
+      <display>ThirdPartyCampaignId: int?</display>
+      <externalReference>32</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="74f414ac-7627-4c84-9699-ff0d659e71b8">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="4c19bd85-c0ea-4b4f-afe8-d81cf9f978dc" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>IsFreemium</name>
+      <display>IsFreemium: bool?</display>
+      <externalReference>33</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="2ba84825-0d33-451c-884e-3d9d62e49e6e">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="cc46c349-ab13-43b1-b8d9-7b7a3cd0a98c" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>TrialPeriod</name>
+      <display>TrialPeriod: int?</display>
+      <externalReference>34</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="005b031a-1397-4f44-8969-0c94aa906fc9">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="75ece448-af40-47c0-bdec-02578b4b5e1d" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>SysStartTime</name>
+      <display>SysStartTime: datetime</display>
+      <externalReference>35</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="bb582735-f72d-4442-97c0-42fef0cf4e65">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;(getutcdate())&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="9d64220f-0744-4518-8cd8-b52b2d338d6a" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>SysEndTime</name>
+      <display>SysEndTime: datetime</display>
+      <externalReference>36</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="744e4e4e-3f54-48c4-b191-fd1ef4536015">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;(CONVERT([datetime2],'9999-12-31 23:59:59.9999999'))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="10c8ce87-09a7-4e25-9dfa-4f81d5c91d6b" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CancelIndividualOrder</name>
+      <display>CancelIndividualOrder: bool?</display>
+      <externalReference>37</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="b6a41dec-a826-47be-a188-3c3c492d346f">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="d354f0a2-af8c-4310-940c-fb110b4be31c" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>RequiresUpfrontPayment</name>
+      <display>RequiresUpfrontPayment: bool?</display>
+      <externalReference>38</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="829a26d3-532c-4dfc-a650-5432f8927dc3">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="7bc0784f-153d-42e7-9cad-a08eccbaabf8" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>SimOnly</name>
+      <display>SimOnly: bool?</display>
+      <externalReference>39</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="166fd914-538d-4171-8554-701748a68819">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>08aa350a-577e-4f60-acd9-e290a31595c6</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="f21339bf-9ce6-4584-828f-de82089e3b72" name="Default Constraint">
+          <addedByDefault>false</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="0b03f735-394c-4c12-8f10-bd14f9ab2dd0" display="Value" value="&quot;((0))&quot;" isActive="true" />
+            <property name="c213fe57-1d8c-4e3b-9714-21237e526e24" display="Treat as SQL Expression" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

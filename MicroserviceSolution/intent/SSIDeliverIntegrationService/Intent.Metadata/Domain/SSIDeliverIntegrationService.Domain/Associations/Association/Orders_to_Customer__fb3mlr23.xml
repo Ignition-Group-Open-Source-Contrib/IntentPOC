@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="b92fd2c0-bd66-4bcf-a668-1fb3e0470cdc">
+  <sourceEnd id="5cd3c111-9c4e-472e-8474-dfae351da048" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Orders</name>
+    <display>Orders: Order[*]</display>
+    <order>0</order>
+    <typeReference id="40c2e983-e564-491a-bc12-b1545633d36c">
+      <typeId>0a7d60c3-2116-4bf8-a2bd-f94712e8f166</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="b92fd2c0-bd66-4bcf-a668-1fb3e0470cdc" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Customer</name>
+    <display>Customer: Customer</display>
+    <order>18</order>
+    <typeReference id="2be2714c-de62-4fcb-8ef4-823c0c491f38">
+      <typeId>16b07194-6e9c-4850-9a20-c52e948c1895</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>1821965567</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>1821965567</externalReference>
+  <stereotypes />
+</association>

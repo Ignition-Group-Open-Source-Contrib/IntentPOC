@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ce086496-acd2-4121-b9a1-0568f95a9d3c">
+  <sourceEnd id="d261c3ab-2fba-4cdd-b1a6-19350207dfbd" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>VASXProviderSpecifics</name>
+    <display>VASXProviderSpecifics: VASXProviderSpecific[*]</display>
+    <order>0</order>
+    <typeReference id="6463445a-dba5-4b4f-913d-1273d5d35ad8">
+      <typeId>fb5235bf-b013-48af-9588-0e062d136fcc</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ce086496-acd2-4121-b9a1-0568f95a9d3c" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderItem</name>
+    <display>OrderItem: OrderItem</display>
+    <order>5</order>
+    <typeReference id="e7ac948d-6ffa-4da3-86c0-11b8499b1964">
+      <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>1386488018</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>1386488018</externalReference>
+  <stereotypes />
+</association>

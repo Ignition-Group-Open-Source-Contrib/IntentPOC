@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ecb8d512-bf3b-4dab-b872-8f6b134d347b">
+  <sourceEnd id="87f4f545-acb6-48a4-8acf-9095a8af6fd4" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>IDeliverOrderInfos</name>
+    <display>IDeliverOrderInfos: IDeliverOrderInfo[*]</display>
+    <order>0</order>
+    <typeReference id="280a091a-fcc6-4c76-8534-f406f804236c">
+      <typeId>c8d1df00-fc88-4a10-8083-d87b73f0cb10</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ecb8d512-bf3b-4dab-b872-8f6b134d347b" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>9</order>
+    <typeReference id="ea707d7e-fbe7-47d3-a346-f971c89422a6">
+      <typeId>0a7d60c3-2116-4bf8-a2bd-f94712e8f166</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>1757965339</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>1757965339</externalReference>
+  <stereotypes />
+</association>

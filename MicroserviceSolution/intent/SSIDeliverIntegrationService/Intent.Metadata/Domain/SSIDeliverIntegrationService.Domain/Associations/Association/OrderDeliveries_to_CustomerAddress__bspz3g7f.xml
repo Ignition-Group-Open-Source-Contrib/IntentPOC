@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="9563399c-438e-4b7d-bc67-3d15d4783365">
+  <sourceEnd id="3985760a-1df3-4d80-a9d9-dde4e5556894" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>OrderDeliveries</name>
+    <display>OrderDeliveries: OrderDelivery[*]</display>
+    <order>0</order>
+    <typeReference id="8add9bdf-df88-4809-9ab4-fb88dd70cc7e">
+      <typeId>97c02647-7b1f-4a1a-bbd9-98f659029791</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="9563399c-438e-4b7d-bc67-3d15d4783365" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>CustomerAddress</name>
+    <display>CustomerAddress: CustomerAddress</display>
+    <order>22</order>
+    <typeReference id="83338436-a57a-408b-833e-9b4c4b89f00d">
+      <typeId>a74b9f6c-e25d-4325-a50c-9e9947c1051e</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>26483173</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>26483173</externalReference>
+  <stereotypes />
+</association>

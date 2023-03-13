@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="44ac36b5-fbd3-45c1-a74a-e15c110a7e74">
+  <sourceEnd id="771f146f-ddb6-4553-b92a-8cbc109c5720" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>OrderAnnotations</name>
+    <display>OrderAnnotations: OrderAnnotation[*]</display>
+    <order>0</order>
+    <typeReference id="aba520b0-9f65-44b0-8201-523fb6e307fb">
+      <typeId>6a8d2a4a-33d0-4e82-b223-91369281105d</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="44ac36b5-fbd3-45c1-a74a-e15c110a7e74" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderItem</name>
+    <display>OrderItem: OrderItem</display>
+    <order>7</order>
+    <typeReference id="ce8df65b-68d8-41d2-8a4f-02607985556f">
+      <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>1933965966</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>1933965966</externalReference>
+  <stereotypes />
+</association>

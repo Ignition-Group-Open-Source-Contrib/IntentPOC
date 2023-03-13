@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="c0543553-cba7-4076-9590-b9542cbf2f62">
+  <sourceEnd id="0356e9d2-ecdb-4f8a-8744-23295c384110" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>IDeliverProductChannelMappings</name>
+    <display>IDeliverProductChannelMappings: IDeliverProductChannelMapping[*]</display>
+    <order>0</order>
+    <typeReference id="d71423e1-1a22-4bbf-8587-4e19cea123a0">
+      <typeId>bc9160ab-2833-40e5-8fcf-8c7faba2e4f8</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="c0543553-cba7-4076-9590-b9542cbf2f62" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Product</name>
+    <display>Product: Product</display>
+    <order>9</order>
+    <typeReference id="d44c6457-0eca-4b0d-94ab-9a461dc9e64c">
+      <typeId>f5a32b2a-58c3-4021-88f7-4de7eca2ecc7</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>199007790</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>199007790</externalReference>
+  <stereotypes />
+</association>
