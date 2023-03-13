@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="f479c0ce-aa94-49ff-a5aa-f8c027349ded">
+  <sourceEnd id="cb583f86-1dd0-495b-9846-46a13eadee89" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Deals</name>
+    <display>Deals: Deal[*]</display>
+    <order>0</order>
+    <typeReference id="0544024e-307a-4dbc-a2be-3254083437bb">
+      <typeId>08aa350a-577e-4f60-acd9-e290a31595c6</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="f479c0ce-aa94-49ff-a5aa-f8c027349ded" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Tariff</name>
+    <display>Tariff: Tariff?</display>
+    <order>36</order>
+    <typeReference id="8af06422-9022-4147-81c5-417d9761d29b">
+      <typeId>eddee6c7-7e9a-446d-8580-1f4afd2f99b1</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>true</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>2113442603</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>2113442603</externalReference>
+  <stereotypes />
+</association>

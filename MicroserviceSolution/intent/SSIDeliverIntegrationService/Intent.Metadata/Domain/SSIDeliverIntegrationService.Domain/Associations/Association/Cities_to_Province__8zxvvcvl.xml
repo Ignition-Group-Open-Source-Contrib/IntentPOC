@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="66af3082-9eba-4e38-b7fa-e4d8114f8532">
+  <sourceEnd id="fdf8a3cd-9281-4a50-89aa-2c33a88b2e55" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Cities</name>
+    <display>Cities: City[*]</display>
+    <order>0</order>
+    <typeReference id="5675657f-3397-4230-99cc-66695d7ae965">
+      <typeId>491707dd-d1c1-4e3f-8702-dd6ddc92bfe2</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="66af3082-9eba-4e38-b7fa-e4d8114f8532" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Province</name>
+    <display>Province: Province</display>
+    <order>11</order>
+    <typeReference id="fd8cb1d6-934c-4d4a-b486-1a84bdf6f6d3">
+      <typeId>cab692e0-1ad5-430c-99ca-def4ba8d7aa6</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Domain</typePackageName>
+      <typePackageId>5d251db1-0199-4984-a6ff-cfe667abec2a</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <externalReference>1060914851</externalReference>
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <externalReference>1060914851</externalReference>
+  <stereotypes />
+</association>
