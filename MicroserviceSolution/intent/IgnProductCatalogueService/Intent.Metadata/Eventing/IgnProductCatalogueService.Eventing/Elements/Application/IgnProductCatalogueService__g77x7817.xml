@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="1851f4cd-3d84-4611-873b-0cdef49bcb27" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>IgnProductCatalogueService</name>
+  <display>IgnProductCatalogueService</display>
+  <externalReference>627bab41-be2f-4891-a765-f396dd3552d7</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>7a6e875a-79bc-47ca-81a5-bffa8ea255f3</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

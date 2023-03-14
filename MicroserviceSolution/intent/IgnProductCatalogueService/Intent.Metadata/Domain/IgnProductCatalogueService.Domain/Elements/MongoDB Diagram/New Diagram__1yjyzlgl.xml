@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="8ea0421c-cb79-439d-9af3-24cecbb61020" type="MongoDB Diagram" typeId="67f81f34-af38-4245-9c8e-1816e3012cce">
+  <name>New Diagram</name>
+  <display>New Diagram</display>
+  <externalReference>0b8f70f8-9712-419e-aa38-3089f8633839</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>d104184c-f294-4c39-b0fd-daf7d0d0e902</parentFolderId>
+  <packageId>d104184c-f294-4c39-b0fd-daf7d0d0e902</packageId>
+  <packageName>IgnProductCatalogueService.Domain</packageName>
+  <diagram>
+    <targetPackageId>d104184c-f294-4c39-b0fd-daf7d0d0e902</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

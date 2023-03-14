@@ -6,11 +6,12 @@
   <iconType>UrlImagePath</iconType>
   <metadataRelativePath>Intent.Metadata</metadataRelativePath>
   <modulesCacheRelativePath>.intent/modules</modulesCacheRelativePath>
-  <lastUsedApplicationTemplate id="Intent.ApplicationTemplate.AspNetCore.CleanArchitecture.Dapr" version="1.0.0-pre.1" />
+  <lastUsedApplicationTemplate id="Intent.ApplicationTemplate.AspNetCore.CleanArchitecture.Dapr" version="1.0.1" />
   <applications>
     <application id="29987ef8-e3b1-4f88-bc8f-783e008a6523" name="SSIDeliverIntegrationService" relativePath="SSIDeliverIntegrationService/SSIDeliverIntegrationService.application.config" />
     <application id="3da8ac76-2cf8-463f-98f6-ab2496874aae" name="IDeliverService" relativePath="IDeliverService/IDeliverService.application.config" />
     <application id="92b8e1a6-8f0e-480c-80fa-cbda7a79c90c" name="WebhookService" relativePath="WebhookService/WebhookService.application.config" />
     <application id="827b5f9b-5754-44cd-b580-c9924c49fc4e" name="MarketicOrderService" relativePath="MarketicOrderService/MarketicOrderService.application.config" />
+    <application id="c5cdd3f0-dc87-45fe-9f95-33547a5aa712" name="IgnProductCatalogueService" relativePath="IgnProductCatalogueService/IgnProductCatalogueService.application.config" />
   </applications>
 </solution>
