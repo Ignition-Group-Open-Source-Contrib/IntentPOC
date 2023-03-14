@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="73b8c3ce-d61b-4139-b9db-e41cac0905d1" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Behaviours</name>
+  <display>Behaviours</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>1c547d1e-634c-49e0-a07e-51bcbaf320fa</parentFolderId>
+  <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+  <packageName>MicroserviceSolution</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="529cbb23-c22d-425d-8891-50a5ce229e2b" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.Behaviours.AuthorizationBehaviour</name>
+      <display>Intent.Application.MediatR.Behaviours.AuthorizationBehaviour</display>
+      <externalReference>Intent.Application.MediatR.Behaviours</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="1c59c6f4-f3ae-4465-8c3c-6938911b7ca3" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.Behaviours.LoggingBehaviour</name>
+      <display>Intent.Application.MediatR.Behaviours.LoggingBehaviour</display>
+      <externalReference>Intent.Application.MediatR.Behaviours</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="7ed1c99e-adfd-41e2-8c94-fd39c238044b" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.Behaviours.PerformanceBehaviour</name>
+      <display>Intent.Application.MediatR.Behaviours.PerformanceBehaviour</display>
+      <externalReference>Intent.Application.MediatR.Behaviours</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="e96b2b92-e00e-4321-9e3c-4295666ec16d" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.Behaviours.UnhandledExceptionBehaviour</name>
+      <display>Intent.Application.MediatR.Behaviours.UnhandledExceptionBehaviour</display>
+      <externalReference>Intent.Application.MediatR.Behaviours</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="a613274a-8ad6-4b91-ad0d-88bffe2a6aec" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.Behaviours.UnitOfWorkBehaviour</name>
+      <display>Intent.Application.MediatR.Behaviours.UnitOfWorkBehaviour</display>
+      <externalReference>Intent.Application.MediatR.Behaviours</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="5c5b8196-6b2f-4feb-8c20-3cdb38372435" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.FluentValidation.ValidationBehaviour</name>
+      <display>Intent.Application.MediatR.FluentValidation.ValidationBehaviour</display>
+      <externalReference>Intent.Application.MediatR.FluentValidation</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="3e582a62-5dff-46d9-aedc-385feebe9f2e" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</name>
+      <display>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</display>
+      <externalReference>Intent.Dapr.AspNetCore.Pubsub</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="c2da7d1a-8abf-475a-9c21-32468443cdf2" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryUnitOfWorkBehaviour</name>
+      <display>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryUnitOfWorkBehaviour</display>
+      <externalReference>Intent.Dapr.AspNetCore.StateManagement</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</parentFolderId>
+      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

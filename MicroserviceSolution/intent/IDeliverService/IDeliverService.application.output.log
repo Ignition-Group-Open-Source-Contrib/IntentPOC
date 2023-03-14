@@ -6,7 +6,7 @@
       <ProjectId>1be9bc9f-a04a-4397-aa9a-03f61ac1d71a</ProjectId>
       <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#../dapr/components/pubsub.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../dapr/components/pubsub.yaml</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../../dapr/components/pubsub.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>../dapr/components/pubsub.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -14,7 +14,7 @@
       <ProjectId>1be9bc9f-a04a-4397-aa9a-03f61ac1d71a</ProjectId>
       <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#../dapr/components/statestore.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../dapr/components/statestore.yaml</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../../dapr/components/statestore.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>../dapr/components/statestore.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -22,7 +22,7 @@
       <ProjectId>e66a2ce1-bd2f-4415-b7c6-71d6c0396f5c</ProjectId>
       <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprFilesStaticContentTemplateRegistration#../dapr/config.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../dapr/config.yaml</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../../dapr/config.yaml</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>../dapr/config.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -30,7 +30,7 @@
       <ProjectId>3fbc6933-5c94-4fa5-8230-a64dbf9787d3</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Default#3fbc6933-5c94-4fa5-8230-a64dbf9787d3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/appsettings.json</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/appsettings.json</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>appsettings.json</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -38,7 +38,7 @@
       <ProjectId>9a739362-e7c4-4c11-84cb-1121e15665a8</ProjectId>
       <CorrelationId>Intent.Security.JWT.ConfigurationJWTAuthentication</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Configuration/JWTAuthenticationConfiguration.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Configuration/JWTAuthenticationConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>JWTAuthenticationConfiguration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -46,7 +46,7 @@
       <ProjectId>9a739362-e7c4-4c11-84cb-1121e15665a8</ProjectId>
       <CorrelationId>Intent.AspNetCore.Swashbuckle.SwashbuckleConfiguration</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Configuration/SwashbuckleConfiguration.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Configuration/SwashbuckleConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>SwashbuckleConfiguration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -54,7 +54,7 @@
       <ProjectId>9e96c254-1903-4ee1-818d-c7681b162ca1</ProjectId>
       <CorrelationId>Intent.AspNetCore.Controllers.Controller#fc0da870-9969-4e4c-bf43-e46597faa313</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Controllers/IDeliverController.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Controllers/IDeliverController.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverController.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -62,7 +62,7 @@
       <ProjectId>5fa11ebf-6271-45da-8af3-4c015c240040</ProjectId>
       <CorrelationId>Intent.AspNetCore.Swashbuckle.AuthorizeCheckOperationFilter</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Filters/AuthorizeCheckOperationFilter.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Filters/AuthorizeCheckOperationFilter.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>AuthorizeCheckOperationFilter.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -70,7 +70,7 @@
       <ProjectId>3fbc6933-5c94-4fa5-8230-a64dbf9787d3</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#3fbc6933-5c94-4fa5-8230-a64dbf9787d3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/IDeliverService.Api.csproj</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/IDeliverService.Api.csproj</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverService.Api.csproj</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -78,7 +78,7 @@
       <ProjectId>3fbc6933-5c94-4fa5-8230-a64dbf9787d3</ProjectId>
       <CorrelationId>Intent.AspNetCore.Program</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Program.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Program.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Program.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -86,7 +86,7 @@
       <ProjectId>3fbc6933-5c94-4fa5-8230-a64dbf9787d3</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.LaunchSettings#3fbc6933-5c94-4fa5-8230-a64dbf9787d3</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Properties/launchsettings.json</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Properties/launchsettings.json</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Properties/launchsettings.json</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -94,7 +94,7 @@
       <ProjectId>0b78f6f9-503e-4ad8-a301-b3e089614f0b</ProjectId>
       <CorrelationId>Intent.Security.JWT.CurrentUserService</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Services/CurrentUserService.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Services/CurrentUserService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>CurrentUserService.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -102,7 +102,7 @@
       <ProjectId>3fbc6933-5c94-4fa5-8230-a64dbf9787d3</ProjectId>
       <CorrelationId>Intent.AspNetCore.Startup</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Api/Startup.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Startup.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Startup.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -110,7 +110,7 @@
       <ProjectId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</ProjectId>
       <CorrelationId>Intent.Application.MediatR.Behaviours.AuthorizationBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Behaviours/AuthorizationBehaviour.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Behaviours/AuthorizationBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>AuthorizationBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -118,7 +118,7 @@
       <ProjectId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Behaviours/EventBusPublishBehaviour.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Behaviours/EventBusPublishBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>EventBusPublishBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -126,7 +126,7 @@
       <ProjectId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</ProjectId>
       <CorrelationId>Intent.Application.MediatR.Behaviours.LoggingBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Behaviours/LoggingBehaviour.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Behaviours/LoggingBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>LoggingBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -134,7 +134,7 @@
       <ProjectId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</ProjectId>
       <CorrelationId>Intent.Application.MediatR.Behaviours.PerformanceBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Behaviours/PerformanceBehaviour.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Behaviours/PerformanceBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PerformanceBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -142,7 +142,7 @@
       <ProjectId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryUnitOfWorkBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Behaviours/StateRepositoryUnitOfWorkBehaviour.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Behaviours/StateRepositoryUnitOfWorkBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>StateRepositoryUnitOfWorkBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -150,7 +150,7 @@
       <ProjectId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</ProjectId>
       <CorrelationId>Intent.Application.MediatR.Behaviours.UnhandledExceptionBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Behaviours/UnhandledExceptionBehaviour.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Behaviours/UnhandledExceptionBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>UnhandledExceptionBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -158,7 +158,7 @@
       <ProjectId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</ProjectId>
       <CorrelationId>Intent.Application.MediatR.FluentValidation.ValidationBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Behaviours/ValidationBehaviour.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Behaviours/ValidationBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ValidationBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -166,7 +166,7 @@
       <ProjectId>2f02eab6-6356-43bc-8102-e1523108b561</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusImplementation</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Eventing/EventBusImplementation.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Eventing/EventBusImplementation.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>EventBusImplementation.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -174,7 +174,7 @@
       <ProjectId>2f02eab6-6356-43bc-8102-e1523108b561</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Eventing/IEvent.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Eventing/IEvent.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IEvent.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -182,7 +182,7 @@
       <ProjectId>2f02eab6-6356-43bc-8102-e1523108b561</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Eventing/IEventBus.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Eventing/IEventBus.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IEventBus.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -190,7 +190,7 @@
       <ProjectId>e69a23a6-6279-4acc-8580-29c07cf7fe59</ProjectId>
       <CorrelationId>Intent.Application.Identity.ForbiddenAccessException</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Exceptions/ForbiddenAccessException.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Exceptions/ForbiddenAccessException.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ForbiddenAccessException.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -198,7 +198,7 @@
       <ProjectId>e69a23a6-6279-4acc-8580-29c07cf7fe59</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.ServiceInvocation.HttpClientRequestException</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Exceptions/HttpClientRequestException.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Exceptions/HttpClientRequestException.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>HttpClientRequestException.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -206,7 +206,7 @@
       <ProjectId>9ef122f7-549e-4516-8ccf-6a9486bd3ba4</ProjectId>
       <CorrelationId>Intent.Application.MediatR.CommandInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Interfaces/ICommand.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Interfaces/ICommand.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ICommand.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -214,7 +214,7 @@
       <ProjectId>9ef122f7-549e-4516-8ccf-6a9486bd3ba4</ProjectId>
       <CorrelationId>Intent.Application.Identity.CurrentUserServiceInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Interfaces/ICurrentUserService.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Interfaces/ICurrentUserService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ICurrentUserService.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -222,7 +222,7 @@
       <ProjectId>9ef122f7-549e-4516-8ccf-6a9486bd3ba4</ProjectId>
       <CorrelationId>Intent.DomainEvents.DomainEventServiceInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Interfaces/IDomainEventService.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Interfaces/IDomainEventService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDomainEventService.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -230,7 +230,7 @@
       <ProjectId>9ef122f7-549e-4516-8ccf-6a9486bd3ba4</ProjectId>
       <CorrelationId>Intent.Application.MediatR.QueryInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Interfaces/IQuery.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Interfaces/IQuery.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IQuery.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -238,7 +238,7 @@
       <ProjectId>89928c65-ab12-4d76-822f-311bb4b4e721</ProjectId>
       <CorrelationId>Intent.Application.AutoMapper.MapFromInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Mappings/IMapFrom.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Mappings/IMapFrom.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IMapFrom.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -246,7 +246,7 @@
       <ProjectId>89928c65-ab12-4d76-822f-311bb4b4e721</ProjectId>
       <CorrelationId>Intent.Application.AutoMapper.MappingProfile</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Mappings/MappingProfile.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Mappings/MappingProfile.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>MappingProfile.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -254,7 +254,7 @@
       <ProjectId>b32ad10c-1664-40ba-b8b3-0a63abb54c3e</ProjectId>
       <CorrelationId>Intent.MediatR.DomainEvents.DomainEventNotification</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Models/DomainEventNotification.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Models/DomainEventNotification.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DomainEventNotification.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -262,7 +262,7 @@
       <ProjectId>b32ad10c-1664-40ba-b8b3-0a63abb54c3e</ProjectId>
       <CorrelationId>Intent.Application.Identity.ResultModel</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Models/Result.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Models/Result.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Result.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -270,7 +270,7 @@
       <ProjectId>55545569-bd39-4940-9e06-8c06183db9db</ProjectId>
       <CorrelationId>Intent.Application.Dtos.Pagination.PagedResult</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Pagination/PagedResult.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Pagination/PagedResult.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PagedResult.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -278,7 +278,7 @@
       <ProjectId>55545569-bd39-4940-9e06-8c06183db9db</ProjectId>
       <CorrelationId>Intent.Application.Dtos.Pagination.PagedResultMappingExtensions</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Pagination/PagedResultMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Pagination/PagedResultMappingExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>PagedResultMappingExtensions.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -286,7 +286,7 @@
       <ProjectId>800383c2-362e-419f-b41c-228a0e0c2f6f</ProjectId>
       <CorrelationId>Intent.Application.Identity.AuthorizeAttribute</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/Common/Security/AuthorizeAttribute.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/Common/Security/AuthorizeAttribute.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>AuthorizeAttribute.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -294,7 +294,7 @@
       <ProjectId>5bd873c2-6ac2-4e80-8bf6-9932aca48181</ProjectId>
       <CorrelationId>Intent.Application.DependencyInjection.DependencyInjection</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/DependencyInjection.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/DependencyInjection.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DependencyInjection.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -302,7 +302,7 @@
       <ProjectId>5bd873c2-6ac2-4e80-8bf6-9932aca48181</ProjectId>
       <CorrelationId>Intent.Application.MediatR.QueryModels#51d8abc2-182d-4e6f-9001-d19cf1d985e2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/GetSalesChannel/GetSalesChannel.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/GetSalesChannel/GetSalesChannel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>GetSalesChannel/GetSalesChannel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -310,7 +310,7 @@
       <ProjectId>5bd873c2-6ac2-4e80-8bf6-9932aca48181</ProjectId>
       <CorrelationId>Intent.Application.MediatR.QueryHandler#51d8abc2-182d-4e6f-9001-d19cf1d985e2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/GetSalesChannel/GetSalesChannelHandler.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/GetSalesChannel/GetSalesChannelHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>GetSalesChannel/GetSalesChannelHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -318,7 +318,7 @@
       <ProjectId>5bd873c2-6ac2-4e80-8bf6-9932aca48181</ProjectId>
       <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#51d8abc2-182d-4e6f-9001-d19cf1d985e2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/GetSalesChannel/GetSalesChannelValidator.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/GetSalesChannel/GetSalesChannelValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>GetSalesChannel/GetSalesChannelValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -326,7 +326,7 @@
       <ProjectId>5bd873c2-6ac2-4e80-8bf6-9932aca48181</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#5bd873c2-6ac2-4e80-8bf6-9932aca48181</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/IDeliverService.Application.csproj</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/IDeliverService.Application.csproj</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverService.Application.csproj</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -334,7 +334,7 @@
       <ProjectId>5bd873c2-6ac2-4e80-8bf6-9932aca48181</ProjectId>
       <CorrelationId>Intent.Application.Dtos.DtoModel#59029ab9-f7cd-415f-b1f2-a87cf9dfc32d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Application/SaleChannelsResponseModel.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Application/SaleChannelsResponseModel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>SaleChannelsResponseModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -342,7 +342,7 @@
       <ProjectId>f5f756dd-3314-4379-ade3-2dad660db939</ProjectId>
       <CorrelationId>Intent.Entities.CollectionExtensions</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Common/CollectionExtensions.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Common/CollectionExtensions.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>CollectionExtensions.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -350,7 +350,7 @@
       <ProjectId>f5f756dd-3314-4379-ade3-2dad660db939</ProjectId>
       <CorrelationId>Intent.DomainEvents.DomainEventBase</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Common/DomainEvent.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Common/DomainEvent.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DomainEvent.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -358,7 +358,7 @@
       <ProjectId>f5f756dd-3314-4379-ade3-2dad660db939</ProjectId>
       <CorrelationId>Intent.DomainEvents.HasDomainEventInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Common/IHasDomainEvent.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Common/IHasDomainEvent.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IHasDomainEvent.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -366,7 +366,7 @@
       <ProjectId>4f67cc10-1130-4b16-95aa-e9c6420e6589</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.UnitOfWorkInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Common/Interfaces/IUnitOfWork.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Common/Interfaces/IUnitOfWork.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IUnitOfWork.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -374,7 +374,7 @@
       <ProjectId>f5f756dd-3314-4379-ade3-2dad660db939</ProjectId>
       <CorrelationId>Intent.Entities.UpdateHelper</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Common/UpdateHelper.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Common/UpdateHelper.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>UpdateHelper.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -382,7 +382,7 @@
       <ProjectId>74cd72b8-1674-4303-807c-8a3e49f00327</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#74cd72b8-1674-4303-807c-8a3e49f00327</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/IDeliverService.Domain.csproj</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/IDeliverService.Domain.csproj</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverService.Domain.csproj</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -390,7 +390,7 @@
       <ProjectId>8266d76c-6c60-40de-bc91-c48ad0aa099e</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.PagedResultInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Repositories/IPagedResult.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Repositories/IPagedResult.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IPagedResult.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -398,7 +398,7 @@
       <ProjectId>8266d76c-6c60-40de-bc91-c48ad0aa099e</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.RepositoryInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Repositories/IRepository.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Repositories/IRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -406,7 +406,7 @@
       <ProjectId>8266d76c-6c60-40de-bc91-c48ad0aa099e</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Domain/Repositories/IStateRepository.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Domain/Repositories/IStateRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IStateRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -414,7 +414,7 @@
       <ProjectId>bc00755d-cdaa-4245-b285-9a0587144763</ProjectId>
       <CorrelationId>Intent.Infrastructure.DependencyInjection.DependencyInjection</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Infrastructure/DependencyInjection.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Infrastructure/DependencyInjection.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DependencyInjection.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -422,7 +422,7 @@
       <ProjectId>bc00755d-cdaa-4245-b285-9a0587144763</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#bc00755d-cdaa-4245-b285-9a0587144763</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Infrastructure/IDeliverService.Infrastructure.csproj</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Infrastructure/IDeliverService.Infrastructure.csproj</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverService.Infrastructure.csproj</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -430,7 +430,7 @@
       <ProjectId>b7a5cc67-17b0-4b11-9cd8-4bf61468b20a</ProjectId>
       <CorrelationId>Intent.Dapr.AspNetCore.StateManagement.StateRepository</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Infrastructure/Repositories/StateRepository.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Infrastructure/Repositories/StateRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>StateRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
@@ -438,14 +438,14 @@
       <ProjectId>66f3d724-b0e5-466c-9cef-bfbd21070cc2</ProjectId>
       <CorrelationId>Intent.MediatR.DomainEvents.DomainEventService</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.Infrastructure/Services/DomainEventService.cs</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Infrastructure/Services/DomainEventService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DomainEventService.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <CorrelationId>Intent.VisualStudio.Projects.VisualStudio2015Solution#ac8bd38b-cb8f-4a9e-9d58-7b96d6e35328</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService/IDeliverService.sln</ApplicationRelativeFilePath>
+      <ApplicationRelativeFilePath>../../MicroserviceSolution.sln</ApplicationRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
   </FileLogs>

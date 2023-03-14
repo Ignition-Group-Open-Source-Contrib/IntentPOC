@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5b016859-59dd-4397-9f3d-a0dbe8deedbe">
+  <sourceEnd id="b30e5066-cb98-4149-bc78-878092b7ae73" type="Message Publish Assocation Source End" typeId="282eea12-2b98-4f0f-a28c-50c05b953c8e">
+    <name>WebhookService</name>
+    <display>publisher: WebhookService</display>
+    <order>0</order>
+    <typeReference id="1f72a736-d020-49ac-8ec5-1e7f6dcf257a">
+      <typeId>eb928f03-5506-444b-8521-2a3f22b30eb3</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>WebhookService.Eventing</typePackageName>
+      <typePackageId>dd4ddab6-d10f-423e-9162-462ef44e6394</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="5b016859-59dd-4397-9f3d-a0dbe8deedbe" type="Message Publish Assocation Target End" typeId="6be8d569-70b9-4451-bd1b-7b654499503e">
+    <name>IDeliverCallBack</name>
+    <display>publish: IDeliverCallBack</display>
+    <order>0</order>
+    <typeReference id="0bd4209a-f875-4b58-9fa9-4b3b35f14ab4">
+      <typeId>e3e714a3-eda7-43cc-967f-8573774d031f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>WebhookService.Eventing</typePackageName>
+      <typePackageId>dd4ddab6-d10f-423e-9162-462ef44e6394</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Publish Assocation</associationType>
+  <associationTypeId>022d4c90-e1b6-4747-a15f-640c19503a8f</associationTypeId>
+  <stereotypes />
+</association>

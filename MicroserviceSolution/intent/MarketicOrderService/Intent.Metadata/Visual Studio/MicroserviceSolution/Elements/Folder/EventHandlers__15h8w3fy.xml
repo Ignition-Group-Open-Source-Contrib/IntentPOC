@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="df740811-79e5-4e4b-a452-f6f72377030f" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>EventHandlers</name>
+  <display>EventHandlers</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>55365fbf-5410-4f31-93b0-2d77c2abe244</parentFolderId>
+  <packageId>a75c2ef5-5804-48fc-9aa7-cf1af4064b35</packageId>
+  <packageName>MicroserviceSolution</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="43f12b3f-c2f9-4a4f-b0fa-8887d35b6547" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.MediatR.DomainEvents.AggregateManager</name>
+      <display>Intent.MediatR.DomainEvents.AggregateManager</display>
+      <externalReference>Intent.MediatR.DomainEvents</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>df740811-79e5-4e4b-a452-f6f72377030f</parentFolderId>
+      <packageId>a75c2ef5-5804-48fc-9aa7-cf1af4064b35</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="18588b43-fc43-4966-8017-83c33e91043e" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.MediatR.DomainEvents.DefaultDomainEventHandler</name>
+      <display>Intent.MediatR.DomainEvents.DefaultDomainEventHandler</display>
+      <externalReference>Intent.MediatR.DomainEvents</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>df740811-79e5-4e4b-a452-f6f72377030f</parentFolderId>
+      <packageId>a75c2ef5-5804-48fc-9aa7-cf1af4064b35</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

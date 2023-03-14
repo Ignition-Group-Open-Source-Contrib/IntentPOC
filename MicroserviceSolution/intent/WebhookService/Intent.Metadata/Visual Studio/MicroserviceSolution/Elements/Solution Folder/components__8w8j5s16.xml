@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2ccf7b80-a9da-404d-9871-5c98d87ebf94" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>components</name>
+  <display>components</display>
+  <externalReference>f91d5992-658e-4048-be27-012e5d2d1779</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>89cb3181-5be3-411e-8456-e885f102a659</parentFolderId>
+  <packageId>7e8d8b3d-d8b0-4989-b88e-cf02e0d92673</packageId>
+  <packageName>MicroserviceSolution</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="e8cf8481-1307-4f3b-a1b4-6b5cdc295b5a" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Dapr.Components</name>
+      <display>Dapr.Components</display>
+      <externalReference>a2c39c39-e44d-40dd-8ad4-e89743f37fbb</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2ccf7b80-a9da-404d-9871-5c98d87ebf94</parentFolderId>
+      <packageId>7e8d8b3d-d8b0-4989-b88e-cf02e0d92673</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="e7ea2203-ed2e-4b48-8707-a1ef972c59f0" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration</name>
+      <display>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration</display>
+      <externalReference>Intent.Dapr.AspNetCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2ccf7b80-a9da-404d-9871-5c98d87ebf94</parentFolderId>
+      <packageId>7e8d8b3d-d8b0-4989-b88e-cf02e0d92673</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+  </childElements>
+</class>
