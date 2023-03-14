@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="dcba1b80-b2b5-48dc-b2f9-ff8e1efbfc5d" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>ClientApp</name>
+  <display>ClientApp</display>
+  <externalReference>22656c59-a1cd-4841-959f-a47d0bc7c1fb</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>89a50758-609c-4ac5-9dbb-8289310c4da0</parentFolderId>
+  <packageId>a75c2ef5-5804-48fc-9aa7-cf1af4064b35</packageId>
+  <packageName>MicroserviceSolution</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="82b8b8f9-75be-41b8-9f7b-0ebc47237521" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Front End</name>
+      <display>Front End</display>
+      <externalReference>a229adcb-1853-4ba3-84b9-fca8c51beb51</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>dcba1b80-b2b5-48dc-b2f9-ff8e1efbfc5d</parentFolderId>
+      <packageId>a75c2ef5-5804-48fc-9aa7-cf1af4064b35</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

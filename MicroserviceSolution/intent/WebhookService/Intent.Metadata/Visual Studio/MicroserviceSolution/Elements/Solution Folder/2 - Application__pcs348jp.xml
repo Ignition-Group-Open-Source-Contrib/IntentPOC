@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="05a0fa09-d7f3-4a0d-8cb7-2a4e1e328d45" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>2 - Application</name>
+  <display>2 - Application</display>
+  <externalReference>e8ae06c2-78fb-4fd2-808a-c711b9cac7ad</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>dfcdb6d8-53ee-4b79-b341-f58aa6832d3a</parentFolderId>
+  <packageId>7e8d8b3d-d8b0-4989-b88e-cf02e0d92673</packageId>
+  <packageName>MicroserviceSolution</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

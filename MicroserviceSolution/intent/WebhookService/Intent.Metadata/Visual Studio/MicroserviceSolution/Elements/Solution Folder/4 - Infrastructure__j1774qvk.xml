@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="99f914e8-31e8-42b2-977f-2333fc502db8" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>4 - Infrastructure</name>
+  <display>4 - Infrastructure</display>
+  <externalReference>87a63e86-5551-4e7e-b643-9d248e2fc3b5</externalReference>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>dfcdb6d8-53ee-4b79-b341-f58aa6832d3a</parentFolderId>
+  <packageId>7e8d8b3d-d8b0-4989-b88e-cf02e0d92673</packageId>
+  <packageName>MicroserviceSolution</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>
