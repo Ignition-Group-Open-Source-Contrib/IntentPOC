@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Tariff> builder)
         {
-            builder.ToTable("Tariffs", "Deal");
+            builder.ToTable("Tariff", "Deal");
 
             builder.HasKey(x => x.TariffID);
 

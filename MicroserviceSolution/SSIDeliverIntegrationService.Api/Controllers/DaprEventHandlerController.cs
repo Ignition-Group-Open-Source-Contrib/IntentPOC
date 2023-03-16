@@ -4,6 +4,7 @@ using Dapr;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using SSIDeliverIntegrationService.Eventing;
 using WebhookService.Eventing;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
@@ -27,6 +28,20 @@ namespace SSIDeliverIntegrationService.Api.Controllers
         [HttpPost]
         [Topic(IDeliverCallBackEvent.PubsubName, IDeliverCallBackEvent.TopicName)]
         public async Task HandleIDeliverCallBackEvent(IDeliverCallBackEvent @event, CancellationToken cancellationToken)
+        {
+            await _mediatr.Send(@event, cancellationToken);
+        }
+
+        [HttpPost]
+        [Topic(UploadPdfFileEvent.PubsubName, UploadPdfFileEvent.TopicName)]
+        public async Task HandleUploadPdfFileEvent(UploadPdfFileEvent @event, CancellationToken cancellationToken)
+        {
+            await _mediatr.Send(@event, cancellationToken);
+        }
+
+        [HttpPost]
+        [Topic(PlaceSaleOnIDeliverEvent.PubsubName, PlaceSaleOnIDeliverEvent.TopicName)]
+        public async Task HandlePlaceSaleOnIDeliverEvent(PlaceSaleOnIDeliverEvent @event, CancellationToken cancellationToken)
         {
             await _mediatr.Send(@event, cancellationToken);
         }

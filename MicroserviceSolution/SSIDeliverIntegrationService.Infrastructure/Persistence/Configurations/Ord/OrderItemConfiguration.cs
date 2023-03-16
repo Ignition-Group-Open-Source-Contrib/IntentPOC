@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<OrderItem> builder)
         {
-            builder.ToTable("OrderItems", "Ord");
+            builder.ToTable("OrderItem", "Ord",tb=>tb.HasTrigger("trigger"));
 
             builder.HasKey(x => x.OrderItemId);
 
@@ -91,8 +91,6 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.TinyUrl)
                 .HasColumnType("varchar(255)");
-
-            builder.Property(x => x.OrderItemOdooId);
 
             builder.Property(x => x.IsMarketic)
                 .HasDefaultValueSql("((0))");

@@ -2,7 +2,10 @@
 using IgnitionGroup.AzureStorageQueueHelper;
 using MediatR;
 using Microsoft.Extensions.Configuration;
+using Microsoft.WindowsAzure.Storage.Blob;
+using Microsoft.WindowsAzure.Storage;
 using SSIDeliverIntegrationService.Application.Common.Configuration;
+using SSIDeliverIntegrationService.Application.Common.Eventing;
 using SSIDeliverIntegrationService.Application.Common.Helper;
 using SSIDeliverIntegrationService.Application.ViewModels;
 using SSIDeliverIntegrationService.Domain.Common;
@@ -12,8 +15,10 @@ using SSIDeliverIntegrationService.Domain.Repositories.Admin;
 using SSIDeliverIntegrationService.Domain.Repositories.Cust;
 using SSIDeliverIntegrationService.Domain.Repositories.Ord;
 using SSIDeliverIntegrationService.Domain.Repositories.Stock;
+using SSIDeliverIntegrationService.Eventing;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -37,6 +42,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
         private readonly IVASXProviderSpecificRepository _vASXProviderSpecificRepository;
         private readonly IOrderStatusHistoryRepository _orderStatusHistoryRepository;
         private readonly IOrderAnnotationRepository _orderAnnotationRepository;
+        private readonly IEventBus _eventBus;
 
         public SSIDeliverIntegrationFacade(IOrderDeliveryRepository orderDeliveryRepository,
             IIDeliverOrderInfoRepository iDeliverOrderInfoRepository, IOrderItemRepository orderItemRepository,
@@ -44,7 +50,8 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             IDeliveryTypeRepository deliveryTypeRepository,ICustomerAddressRepository customerAddressRepository,
             IIDeliverProductChannelMappingRepository iDeliverProductChannelMappingRepository,
             IStockItemRepository stockItemRepository,IVASXProviderSpecificRepository vASXProviderSpecificRepository,
-            IOrderStatusHistoryRepository orderStatusHistoryRepository,IOrderAnnotationRepository orderAnnotationRepository)
+            IOrderStatusHistoryRepository orderStatusHistoryRepository,IOrderAnnotationRepository orderAnnotationRepository,
+            IEventBus eventBus)
         {
            _orderDeliveryRepository = orderDeliveryRepository;
             _iDeliverOrderInfoRepository = iDeliverOrderInfoRepository;
@@ -58,23 +65,25 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             _vASXProviderSpecificRepository = vASXProviderSpecificRepository;
             _orderStatusHistoryRepository = orderStatusHistoryRepository;
             _orderAnnotationRepository = orderAnnotationRepository;
+            _eventBus = eventBus;
         }
         public async Task<(bool, string)> ProcessStockOrder(IDeliverOrderCallBackAPIRequest request,CancellationToken cancellationToken)
         {
             try
             {
                 // Fetch IDeliver Order info by IDeliverOrderId from SS
-                var iDeliverorder = await _iDeliverOrderInfoRepository.FindByIdAsync(request.IDeliverOrderId);
+                var iDeliverorder = await _iDeliverOrderInfoRepository.FindAsync(x=>x.IDeliverOrderId == request.IDeliverOrderId);
                 if (iDeliverorder == null)
                 {
-                    return (false, "Process Stock Order no ideliver order details found");
+                    throw new Exception("Process Stock Order no ideliver order details found");
                 }
 
                 //Fetch order items by order id from ss
                 var orderitems = await _orderItemRepository.FindAllAsync(x=>x.OrderId == iDeliverorder.OrderId);
                 if (orderitems == null || !orderitems.Any())
                 {
-                    return (false, "Process Stock Order no order items detail found");
+                    throw new Exception("Process Stock Order no order items detail found");
+
                 }
 
                 bool isSuccess = false;
@@ -102,7 +111,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
                     {
                         // Update order status in order item
                         orderStatusToUpdate = (int)OrderStatusDetail.DispatchOrdered;                       
-                        isSuccess = await UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
+                         UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
                     }
                     else
                     {
@@ -116,7 +125,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
                         StatusDetailId = (int)OrderStatusDetail.DispatchOrdered,
                         StatusMessage = "Order status has been updated from IDeliver"
                     };
-                    isSuccess = await SetOrderStatusHistory(updateStatusHistory);
+                     SetOrderStatusHistory(updateStatusHistory);
 
 
 
@@ -154,7 +163,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
                         {
                             // Update order status in order item
                             orderStatusToUpdate = (int)OrderStatusDetail.OutforDelivery;
-                            isSuccess = await UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
+                            UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
                         }
                         else
                         {
@@ -169,27 +178,27 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
                             StatusMessage = request.WayBillNumber
                         };
 
-                        isSuccess = await SetOrderStatusHistory(updateOutForDeliveryStatusHistory);
+                        SetOrderStatusHistory(updateOutForDeliveryStatusHistory);
 
                     }
 
                     // If order is not in marketic then it will be processed from Silver Surfer otherwise from Marketic
-                    if (!orderItem.IsMarketic.GetValueOrDefault(false))
-                    {
-                        //Add into Comms queue
-                        await ProcessComms(orderItem.OrderItemId);
-                    }
-                    else
-                    {
-                        // Resume workflow
-                        ResumeOrderRequestModel resumeOrderRequestModel = new ResumeOrderRequestModel()
-                        {
-                            OrderItemId = orderItem.OrderItemId,
-                            OrderStatusDetailId = orderStatusToUpdate
-                        };
+                    //if (!orderItem.IsMarketic.GetValueOrDefault(false))
+                    //{
+                    //    //Add into Comms queue
+                    //    await ProcessComms(orderItem.OrderItemId);
+                    //}
+                    //else
+                    //{
+                    //    // Resume workflow
+                    //    ResumeOrderRequestModel resumeOrderRequestModel = new ResumeOrderRequestModel()
+                    //    {
+                    //        OrderItemId = orderItem.OrderItemId,
+                    //        OrderStatusDetailId = orderStatusToUpdate
+                    //    };
 
-                        await ResumeOrder(resumeOrderRequestModel);
-                    }
+                    //    await ResumeOrder(resumeOrderRequestModel);
+                    //}
                 }
 
 
@@ -205,7 +214,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
                         FileType = Constants.PdfType
                     };
 
-
+                    _eventBus.Publish(new UploadPdfFileEvent { SaleAgreementDetails = saleAgreementModel });
                     //_ = daprApi.ProcessUploadPdfFile(saleAgreementModel);
                 }
                 if (isSuccess)
@@ -237,10 +246,12 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             }
         }
 
-        private async Task<bool> UpdateOrderItemStatus(OrderItem orderItem, int orderStatusToUpdate)
+        private void UpdateOrderItemStatus(OrderItem orderItem, int orderStatusToUpdate)
         {
-            orderItem.OrderStatusDetailId = orderStatusToUpdate;
-            return await _orderItemRepository.UnitOfWork.SaveChangesAsync() > 0;
+            
+                orderItem.OrderStatusDetailId = orderStatusToUpdate;
+           
+           
         }
 
         private async Task ProcessComms(int orderItemId)
@@ -435,10 +446,9 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             }
         }
 
-        private async Task<bool> SetOrderStatusHistory(UpdateStatusHistoryRequest updateStatusHistory)
+        private async Task SetOrderStatusHistory(UpdateStatusHistoryRequest updateStatusHistory)
         {
-            try
-            {
+          
                 OrderStatusHistory lastStatusHistory;
                 lastStatusHistory = await _orderStatusHistoryRepository.FindAsync(i => i.OrderItemId == updateStatusHistory.OrderItemId && i.OrderStatusDetailId == updateStatusHistory.StatusDetailId,i=>i.OrderByDescending(x=>x.Occured));
                 if (lastStatusHistory != null && lastStatusHistory.Annotation == updateStatusHistory.StatusMessage)
@@ -470,18 +480,85 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
                  
                 }
 
-                var isSuccess = await _orderStatusHistoryRepository.UnitOfWork.SaveChangesAsync() > 0;
-                if (isSuccess)
-                {
-                    return (await _orderAnnotationRepository.UnitOfWork.SaveChangesAsync()) > 0;
+             
+             
+        }
 
-                }
-                return isSuccess;
+        public async Task UploadPdfFile(UploadPdfViewModel uploadPdfViewModel)
+        {
+            try
+            {
+
+
+                string filename = $"{uploadPdfViewModel.FileName}_{uploadPdfViewModel.IDeliverOrderId}_{DateTime.Now.Ticks}";
+
+                // Retrieve storage account from connection string.
+                CloudStorageAccount storageAccount = CloudStorageAccount.Parse(_configurationSettings.AzureStorageConnection);
+
+                // Create the blob client.
+                var blobClient = storageAccount.CreateCloudBlobClient();
+
+                // Retrieve a reference to a container.
+                var container = blobClient.GetContainerReference(uploadPdfViewModel.BlobContainerName);
+
+                // Create the container if it doesn't already exist.
+                await container.CreateIfNotExistsAsync();
+
+                //Provide public access to blob container
+                var permission = new BlobContainerPermissions();
+                permission.PublicAccess = BlobContainerPublicAccessType.Blob;
+                await container.SetPermissionsAsync(permission);
+
+                // Retrieve reference to a blob named "myblob".
+                var blockBlob = container.GetBlockBlobReference(filename);
+
+                //Set the content type as pdf
+                byte[] byteArray = Convert.FromBase64String(uploadPdfViewModel.Base64Encoded);
+                MemoryStream stream = new MemoryStream(byteArray);
+
+                var contentType = uploadPdfViewModel.FileType == Constants.TiffType ? Constants.ImageContentType : Constants.PDFContentType;
+                blockBlob.Properties.ContentType = $"{contentType}/{uploadPdfViewModel.FileType}";
+
+                // Upload the file
+                await blockBlob.UploadFromStreamAsync(stream);
+                var uri = blockBlob.StorageUri.PrimaryUri.AbsoluteUri;
+
+
+                //Call CEP external source event
+                //var externalSourceEvent = new ExternalSourceEventViewModel
+                //{
+                //    IDeliverOrderId = uploadPdfViewModel.IDeliverOrderId,
+                //    TriggerFor = uploadPdfViewModel.FileName,
+                //    Uri = uri
+                //};
+                //await ExternalSourceEventTrigger(externalSourceEvent);
             }
             catch (Exception ex)
             {
+
                 throw;
             }
+
+        }
+
+        public Task<bool> VerifyInValidOrder(int orderId, List<int> iDeliverProviders)
+        {
+          return _orderItemRepository.AnyAsync(x=>x.OrderId== orderId && !iDeliverProviders.Contains(x.OrderTypeId));
+        }
+
+        public Task<List<int>> GetIDeliverOrderItems(int orderId, List<int> iDeliverProviders, List<int> skipOrderStatus)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> VerifyIDeliverOrder(int orderId, List<int> iDeliverProviders)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> VerifyInValidOrderStatus(int orderId, List<int> iDeliverProviders, List<int> skipOrderStatus)
+        {
+            throw new NotImplementedException();
         }
     }
 }

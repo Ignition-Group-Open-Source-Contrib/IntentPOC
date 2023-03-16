@@ -22,7 +22,7 @@
   <targetEnd id="dbb29100-8ab7-432d-baca-885d40259114" type="Message Subscribe Assocation Target End" typeId="21c3df1c-5140-4f65-9814-a68e1a577768">
     <name>IDeliverCallBack</name>
     <display>subscribe: IDeliverCallBack</display>
-    <order>0</order>
+    <order>2</order>
     <typeReference id="8068aa4e-c587-4dea-89aa-0d02126967b3">
       <typeId>e3e714a3-eda7-43cc-967f-8573774d031f</typeId>
       <isNavigable>true</isNavigable>

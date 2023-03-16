@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<StockItem> builder)
         {
-            builder.ToTable("StockItems", "Stock");
+            builder.ToTable("StockItem", "Stock");
 
             builder.HasKey(x => x.StockItemId);
 

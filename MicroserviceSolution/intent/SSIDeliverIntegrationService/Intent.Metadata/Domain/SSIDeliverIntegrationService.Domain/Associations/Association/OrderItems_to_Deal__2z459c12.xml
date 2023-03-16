@@ -22,7 +22,7 @@
   <targetEnd id="9fe4002b-0695-4d73-93c7-82303d55ae9f" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
     <name>Deal</name>
     <display>Deal: Deal</display>
-    <order>34</order>
+    <order>33</order>
     <typeReference id="bde5fd24-cb4a-40e2-b5e8-cd7ea649784f">
       <typeId>08aa350a-577e-4f60-acd9-e290a31595c6</typeId>
       <isNavigable>true</isNavigable>

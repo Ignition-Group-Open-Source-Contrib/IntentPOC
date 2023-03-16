@@ -3,7 +3,7 @@
   <sourceEnd id="bf4361d6-27b3-4bda-b9d0-2122caef03eb" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
     <name>OrderDeliveries</name>
     <display>OrderDeliveries: OrderDelivery[*]</display>
-    <order>35</order>
+    <order>34</order>
     <typeReference id="3ca2bdf6-e2ed-4d34-b28f-352342dc46a4">
       <typeId>97c02647-7b1f-4a1a-bbd9-98f659029791</typeId>
       <isNavigable>true</isNavigable>

@@ -22,7 +22,7 @@
   <targetEnd id="0d819821-17d8-4163-a253-7d32aa896ac1" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
     <name>FreemiumOrderItem</name>
     <display>FreemiumOrderItem: OrderItem?</display>
-    <order>32</order>
+    <order>31</order>
     <typeReference id="4a5ccc44-3e79-4de1-87b8-484bc57d9788">
       <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
       <isNavigable>true</isNavigable>

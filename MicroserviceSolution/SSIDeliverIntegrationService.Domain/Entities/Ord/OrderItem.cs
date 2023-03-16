@@ -70,8 +70,6 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
 
         public string? TinyUrl { get; set; }
 
-        public int? OrderItemOdooId { get; set; }
-
         public bool? IsMarketic { get; set; }
 
         public int? FreemiumOrderItemId { get; set; }

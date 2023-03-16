@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<DealProductMapping> builder)
         {
-            builder.ToTable("DealProductMappings", "Deal");
+            builder.ToTable("DealProductMapping", "Deal");
 
             builder.HasKey(x => x.DealProductMappingId);
 

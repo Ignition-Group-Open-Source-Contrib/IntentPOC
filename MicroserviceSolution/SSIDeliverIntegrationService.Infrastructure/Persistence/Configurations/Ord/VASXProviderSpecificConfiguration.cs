@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<VASXProviderSpecific> builder)
         {
-            builder.ToTable("VASXProviderSpecifics", "Ord");
+            builder.ToTable("VASXProviderSpecific", "Ord");
 
             builder.HasKey(x => x.VASXProviderSpecificId);
 

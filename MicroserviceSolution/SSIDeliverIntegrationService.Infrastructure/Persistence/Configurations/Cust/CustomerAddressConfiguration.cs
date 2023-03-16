@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<CustomerAddress> builder)
         {
-            builder.ToTable("CustomerAddresses", "Cust");
+            builder.ToTable("CustomerAddress", "Cust");
 
             builder.HasKey(x => x.CustomerAddressId);
 

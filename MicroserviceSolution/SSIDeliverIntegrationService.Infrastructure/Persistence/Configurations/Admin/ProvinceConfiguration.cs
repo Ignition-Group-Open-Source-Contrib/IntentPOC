@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Province> builder)
         {
-            builder.ToTable("Provinces", "Admin");
+            builder.ToTable("Province", "Admin");
 
             builder.HasKey(x => x.ProvinceID);
 

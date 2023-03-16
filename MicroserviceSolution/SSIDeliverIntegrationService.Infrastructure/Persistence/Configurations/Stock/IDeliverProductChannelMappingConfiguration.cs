@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<IDeliverProductChannelMapping> builder)
         {
-            builder.ToTable("IDeliverProductChannelMappings", "Stock");
+            builder.ToTable("IDeliverProductChannelMapping", "Stock");
 
             builder.HasKey(x => x.IDeliverProductChannelMappingId);
 

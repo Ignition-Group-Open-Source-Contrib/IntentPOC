@@ -16,7 +16,7 @@
       <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
       <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
       <properties>
-        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" isActive="true" />
+        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" value="OrderItem" isActive="true" />
         <property name="13e6101f-0e37-4eda-a6ae-ec48cd9f8f4b" display="Schema" value="Ord" isActive="true" />
       </properties>
     </stereotype>
@@ -869,31 +869,6 @@
           </properties>
         </stereotype>
       </stereotypes>
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="488fec96-f861-40f2-a49c-dd29c882a971" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>OrderItemOdooId</name>
-      <display>OrderItemOdooId: int?</display>
-      <externalReference>37</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="dfddc8a4-c7a7-4bad-9532-63fe03aa1130">
-        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
-        <isNavigable>true</isNavigable>
-        <isNullable>true</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
-        <typePackageName>Intent.Common.Types</typePackageName>
-        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>false</isMapped>
-      <parentFolderId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</parentFolderId>
-      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
-      <packageName>SSIDeliverIntegrationService.Domain</packageName>
-      <stereotypes />
       <metadata />
       <childElements />
     </childElement>

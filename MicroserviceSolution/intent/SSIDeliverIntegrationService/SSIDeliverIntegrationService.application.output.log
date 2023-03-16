@@ -393,11 +393,51 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>d1f1a6ee-d897-4208-929d-a1970f81e8d7</ProjectId>
+      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventHandler#1c362f7f-d109-4ffa-9a0d-c7fec4499440</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEventHandlers/PlaceSaleOnIDeliverEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PlaceSaleOnIDeliverEventHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d1f1a6ee-d897-4208-929d-a1970f81e8d7</ProjectId>
+      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventHandler#8948f0d2-f419-4a87-8645-60951042fa94</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEventHandlers/UploadPdfFileEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UploadPdfFileEventHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
       <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#e3e714a3-eda7-43cc-967f-8573774d031f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/IDeliverCallBackEvent.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverCallBackEvent.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#1c362f7f-d109-4ffa-9a0d-c7fec4499440</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/PlaceSaleOnIDeliverEvent.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PlaceSaleOnIDeliverEvent.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#8948f0d2-f419-4a87-8645-60951042fa94</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/UploadPdfFileEvent.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UploadPdfFileEvent.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventDto#a29490e0-32f1-451a-920b-51720003d0ab</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/UploadPdfViewModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UploadPdfViewModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -454,14 +494,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/UpdateStatusHistoryRequest.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ViewModels/UpdateStatusHistoryRequest.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.DtoModel#23c56de4-59ad-4b6d-b01a-2617890edec0</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/UploadPdfViewModel.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ViewModels/UploadPdfViewModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
