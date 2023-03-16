@@ -67,168 +67,152 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             _orderAnnotationRepository = orderAnnotationRepository;
             _eventBus = eventBus;
         }
-        public async Task<(bool, string)> ProcessStockOrder(IDeliverOrderCallBackAPIRequest request,CancellationToken cancellationToken)
+        public async Task ProcessStockOrder(IDeliverOrderCallBackAPIRequest request,CancellationToken cancellationToken)
         {
-            try
+            // Fetch IDeliver Order info by IDeliverOrderId from SS
+            var iDeliverorder =
+                await _iDeliverOrderInfoRepository.FindAsync(x => x.IDeliverOrderId == request.IDeliverOrderId);
+            if (iDeliverorder == null)
             {
-                // Fetch IDeliver Order info by IDeliverOrderId from SS
-                var iDeliverorder = await _iDeliverOrderInfoRepository.FindAsync(x=>x.IDeliverOrderId == request.IDeliverOrderId);
-                if (iDeliverorder == null)
+                throw new Exception("Process Stock Order no ideliver order details found");
+            }
+
+            //Fetch order items by order id from ss
+            var orderitems = await _orderItemRepository.FindAllAsync(x => x.OrderId == iDeliverorder.OrderId);
+            if (orderitems == null || !orderitems.Any())
+            {
+                throw new Exception("Process Stock Order no order items detail found");
+
+            }
+
+            foreach (var item in request.OrderDetails)
+            {
+                // Check OrderReference exists or not in SS provided by IDeliver                 
+                if (!orderitems.Any(i => i.OrderReference == item.OrderRef?.Trim()))
                 {
-                    throw new Exception("Process Stock Order no ideliver order details found");
+                    continue;
                 }
 
-                //Fetch order items by order id from ss
-                var orderitems = await _orderItemRepository.FindAllAsync(x=>x.OrderId == iDeliverorder.OrderId);
-                if (orderitems == null || !orderitems.Any())
+                // Get Order Item from SS by OrderRef given by IDeliver
+                var orderItem = orderitems.Where(i => i.OrderReference == item.OrderRef).FirstOrDefault();
+                if (orderItem == null)
                 {
-                    throw new Exception("Process Stock Order no order items detail found");
-
+                    continue;
                 }
 
-                bool isSuccess = false;
-                foreach (var item in request.OrderDetails)
+                item.OrderItemId = orderItem.OrderItemId;
+                int orderStatusToUpdate;
+
+                // Insert/Update order status into OrderItem and OrderStatusHistory
+
+                if (orderItem.OrderItemId == item.OrderItemId &&
+                    orderItem.OrderStatusDetailId != (int)OrderStatusDetail.DispatchOrdered)
                 {
-                    // Check OrderReference exists or not in SS provided by IDeliver                 
-                    if (!orderitems.Any(i => i.OrderReference == item.OrderRef?.Trim()))
-                    {
-                        continue;
-                    }
+                    // Update order status in order item
+                    orderStatusToUpdate = (int)OrderStatusDetail.DispatchOrdered;
+                    UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
+                }
 
-                    // Get Order Item from SS by OrderRef given by IDeliver
-                    var orderItem = orderitems.Where(i => i.OrderReference == item.OrderRef).FirstOrDefault();
-                    if (orderItem == null)
-                    {
-                        continue;
-                    }
+                // Update order status in order status history
+                var updateStatusHistory = new UpdateStatusHistoryRequest
+                {
+                    OrderItemId = item.OrderItemId,
+                    StatusDetailId = (int)OrderStatusDetail.DispatchOrdered,
+                    StatusMessage = "Order status has been updated from IDeliver"
+                };
+                await SetOrderStatusHistory(updateStatusHistory);
 
-                    item.OrderItemId = orderItem.OrderItemId;
-                    int orderStatusToUpdate = orderItem.OrderStatusDetailId;
 
-                    // Insert/Update order status into OrderItem and OrderStatusHistory
+                // Check WayBillNumber is not null or empty given by IDeliver
+                if (!string.IsNullOrEmpty(request.WayBillNumber?.Trim()))
+                {
+                    // Insert/Update into OrderDelivery                        
+                    await InsertUpdateDeliveryOrder(iDeliverorder.OrderId, request.WayBillNumber, item,
+                        cancellationToken);
+                }
 
-                    if (orderItem.OrderItemId == item.OrderItemId && orderItem.OrderStatusDetailId != (int)OrderStatusDetail.DispatchOrdered)
+                // Check SerialNumber is not null or empty given by IDeliver
+                item.SerialNumber = item.SerialNumber?.Trim();
+
+                if (!string.IsNullOrEmpty(item.SerialNumber))
+                {
+                    // Insert/Update into StockItem                      
+                    await InsertUpdateStockItem(item);
+                }
+
+                // Check serial number length is greater than 16
+                if (item.SerialNumber.Length > 16)
+                {
+                    // Insert/Update into VASXProviderSpecific                       
+                    await InsertUpdateVasXProviderSpecific(item);
+                }
+
+                await UpdateIDeliverOrderInfo(iDeliverorder.IDeliverOrderId.Value,
+                    (int)IDeliverOrderStatus.Dispached);
+
+                var skipDODProviders = _configurationSettings.SkipOutForDeliveryProviders.Any()
+                    ? _configurationSettings.SkipOutForDeliveryProviders.Split(',').Select(int.Parse).ToList()
+                    : new List<int>();
+
+                //Skip the providers to resume the workflow directly to delivery out for delivery status
+                if (!skipDODProviders.Contains(orderItem.OrderTypeId))
+                {
+                    //Update to Delivery Out For Delivery Status
+
+                    if (orderItem.OrderItemId == item.OrderItemId &&
+                        orderItem.OrderStatusDetailId != (int)OrderStatusDetail.OutforDelivery)
                     {
                         // Update order status in order item
-                        orderStatusToUpdate = (int)OrderStatusDetail.DispatchOrdered;                       
-                         UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
-                    }
-                    else
-                    {
-                        isSuccess = true;
+                        orderStatusToUpdate = (int)OrderStatusDetail.OutforDelivery;
+                        UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
                     }
 
-                    // Update order status in order status history
-                    var updateStatusHistory = new UpdateStatusHistoryRequest
+                    // Update order status to delivery out for delivey in order status history
+                    var updateOutForDeliveryStatusHistory = new UpdateStatusHistoryRequest
                     {
                         OrderItemId = item.OrderItemId,
-                        StatusDetailId = (int)OrderStatusDetail.DispatchOrdered,
-                        StatusMessage = "Order status has been updated from IDeliver"
-                    };
-                     SetOrderStatusHistory(updateStatusHistory);
-
-
-
-                    // Check WayBillNumber is not null or empty given by IDeliver
-                    if (!string.IsNullOrEmpty(request.WayBillNumber?.Trim()))
-                    {
-                        // Insert/Update into OrderDelivery                        
-                        isSuccess = await InsertUpdateDeliveryOrder(iDeliverorder.OrderId, request.WayBillNumber, item, cancellationToken);
-                    }
-                    // Check SerialNumber is not null or empty given by IDeliver
-                    item.SerialNumber = item.SerialNumber?.Trim();
-
-                    if (!string.IsNullOrEmpty(item.SerialNumber))
-                    {
-                        // Insert/Update into StockItem                      
-                        isSuccess = await InsertUpdateStockItem(item);
-                    }
-                    // Check serial number length is greater than 16
-                    if (item.SerialNumber.Length > 16)
-                    {
-                        // Insert/Update into VASXProviderSpecific                       
-                        isSuccess = await InsertUpdateVasXProviderSpecific(item);
-                    }
-
-                    isSuccess = await UpdateIDeliverOrderInfo(iDeliverorder.IDeliverOrderId.Value, (int)IDeliverOrderStatus.Dispached);
-
-                    var skipDODProviders = _configurationSettings.SkipOutForDeliveryProviders.Any() ? _configurationSettings.SkipOutForDeliveryProviders.Split(',').Select(int.Parse).ToList() : new List<int>();
-
-                    //Skip the providers to resume the workflow directly to delivery out for delivery status
-                    if (!skipDODProviders.Contains(orderItem.OrderTypeId))
-                    {
-                        //Update to Delivery Out For Delivery Status
-
-                        if (orderItem.OrderItemId == item.OrderItemId && orderItem.OrderStatusDetailId != (int)OrderStatusDetail.OutforDelivery)
-                        {
-                            // Update order status in order item
-                            orderStatusToUpdate = (int)OrderStatusDetail.OutforDelivery;
-                            UpdateOrderItemStatus(orderItem, orderStatusToUpdate);
-                        }
-                        else
-                        {
-                            isSuccess = true;
-                        }
-
-                        // Update order status to delivery out for delivey in order status history
-                        var updateOutForDeliveryStatusHistory = new UpdateStatusHistoryRequest
-                        {
-                            OrderItemId = item.OrderItemId,
-                            StatusDetailId = (int)OrderStatusDetail.OutforDelivery,
-                            StatusMessage = request.WayBillNumber
-                        };
-
-                        SetOrderStatusHistory(updateOutForDeliveryStatusHistory);
-
-                    }
-
-                    // If order is not in marketic then it will be processed from Silver Surfer otherwise from Marketic
-                    //if (!orderItem.IsMarketic.GetValueOrDefault(false))
-                    //{
-                    //    //Add into Comms queue
-                    //    await ProcessComms(orderItem.OrderItemId);
-                    //}
-                    //else
-                    //{
-                    //    // Resume workflow
-                    //    ResumeOrderRequestModel resumeOrderRequestModel = new ResumeOrderRequestModel()
-                    //    {
-                    //        OrderItemId = orderItem.OrderItemId,
-                    //        OrderStatusDetailId = orderStatusToUpdate
-                    //    };
-
-                    //    await ResumeOrder(resumeOrderRequestModel);
-                    //}
-                }
-
-
-                if (!string.IsNullOrEmpty(request.SaleAgreement))
-                {
-                    //Upload the Sale Agreement
-                    var saleAgreementModel = new UploadPdfViewModel
-                    {
-                        IDeliverOrderId = iDeliverorder.IDeliverOrderId.Value,
-                        Base64Encoded = request.SaleAgreement,
-                        BlobContainerName = _configurationSettings.SaleAgreementUploadBlobName,
-                        FileName = Constants.SaleAgreement,
-                        FileType = Constants.PdfType
+                        StatusDetailId = (int)OrderStatusDetail.OutforDelivery,
+                        StatusMessage = request.WayBillNumber
                     };
 
-                    _eventBus.Publish(new UploadPdfFileEvent { SaleAgreementDetails = saleAgreementModel });
-                    //_ = daprApi.ProcessUploadPdfFile(saleAgreementModel);
+                    SetOrderStatusHistory(updateOutForDeliveryStatusHistory);
+
                 }
-                if (isSuccess)
-                {
-                    return (true, null);
-                }
-                else
-                {
-                    return (false, "Order has not been processed");
-                }
+
+                // If order is not in marketic then it will be processed from Silver Surfer otherwise from Marketic
+                //if (!orderItem.IsMarketic.GetValueOrDefault(false))
+                //{
+                //    //Add into Comms queue
+                //    await ProcessComms(orderItem.OrderItemId);
+                //}
+                //else
+                //{
+                //    // Resume workflow
+                //    ResumeOrderRequestModel resumeOrderRequestModel = new ResumeOrderRequestModel()
+                //    {
+                //        OrderItemId = orderItem.OrderItemId,
+                //        OrderStatusDetailId = orderStatusToUpdate
+                //    };
+
+                //    await ResumeOrder(resumeOrderRequestModel);
+                //}
             }
-            catch (Exception ex)
+
+
+            if (!string.IsNullOrEmpty(request.SaleAgreement))
             {
-                return (false, ex.GetBaseException().Message);
+                //Upload the Sale Agreement
+                var saleAgreementModel = new UploadPdfViewModel
+                {
+                    IDeliverOrderId = iDeliverorder.IDeliverOrderId.Value,
+                    Base64Encoded = request.SaleAgreement,
+                    BlobContainerName = _configurationSettings.SaleAgreementUploadBlobName,
+                    FileName = Constants.SaleAgreement,
+                    FileType = Constants.PdfType
+                };
+
+                _eventBus.Publish(new UploadPdfFileEvent { SaleAgreementDetails = saleAgreementModel });
+                //_ = daprApi.ProcessUploadPdfFile(saleAgreementModel);
             }
         }
 
@@ -273,176 +257,147 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             }
         }
 
-        private async Task<bool> UpdateIDeliverOrderInfo(int id, int iDeliverOrderStatus)
+        private async Task UpdateIDeliverOrderInfo(int id, int iDeliverOrderStatus)
         {
-            try
+            var iDeliverOrderInfo = await _iDeliverOrderInfoRepository.FindByIdAsync(id);
+            if (iDeliverOrderInfo?.IDeliverOrderInfoId > 0)
             {
-                var iDeliverOrderInfo = await _iDeliverOrderInfoRepository.FindByIdAsync(id);
-                if (iDeliverOrderInfo?.IDeliverOrderInfoId > 0)
-                {
-                    iDeliverOrderInfo.IDeliverOrderStatusId = iDeliverOrderStatus;
-                    iDeliverOrderInfo.UpdatedByUserId = 1;
-                    iDeliverOrderInfo.UpdatedOnDate = DateTime.Now;
-                    return await _iDeliverOrderInfoRepository.UnitOfWork.SaveChangesAsync() > 0;
-                }
-                else
-                {
-                    return false;
-                }
+                iDeliverOrderInfo.IDeliverOrderStatusId = iDeliverOrderStatus;
+                iDeliverOrderInfo.UpdatedByUserId = 1;
+                iDeliverOrderInfo.UpdatedOnDate = DateTime.Now;
             }
-            catch (Exception ex)
+
+            throw new Exception();
+        }
+
+        private async Task InsertUpdateVasXProviderSpecific(OrderDetail item)
+        {
+            var vasxProviderSpecific =
+                await _vASXProviderSpecificRepository.FindAsync(x => x.OrderItemId == item.OrderItemId);
+            if (vasxProviderSpecific == null)
             {
-                throw;
+                // Insert VasX Provider Specific
+                vasxProviderSpecific = new VASXProviderSpecific
+                {
+                    OrderItemId = item.OrderItemId,
+                    SubscriberUid = string.Empty,
+                    Iccid = item.SerialNumber
+                };
+                _vASXProviderSpecificRepository.Add(vasxProviderSpecific);
+            }
+            else
+            {
+                // Update VasX Provider Specific (Note: Keep current values if IDeliver request data is null or empty)
+                vasxProviderSpecific.SubscriberUid = vasxProviderSpecific.SubscriberUid;
+                vasxProviderSpecific.Iccid = item.SerialNumber;
             }
         }
 
-        private async Task<bool> InsertUpdateVasXProviderSpecific(OrderDetail item)
+        private async Task InsertUpdateStockItem(OrderDetail item)
         {
-            try
+            // Get product id and price both, if IDeliver sending the price as 0 set the price from SS
+            var ideliverProductChannelMapping =
+                await _iDeliverProductChannelMappingRepository.FindAsync(x =>
+                    x.IDeliverProductId == item.IDeliverProductId);
+            var productId = ideliverProductChannelMapping?.ProductId ?? 0;
+            if (productId <= 0)
             {
-                var vasxProviderSpecific = await _vASXProviderSpecificRepository.FindAsync(x=>x.OrderItemId == item.OrderItemId);
-                if (vasxProviderSpecific == null)
+                throw new Exception();
+            }
+
+            var product = ideliverProductChannelMapping?.Product;
+
+            // Check if not getting product by IDeliverProductId from SS
+            if (product == null)
+            {
+                throw new Exception();
+            }
+
+            // Get Stock Item from SS by Serial Number and OrderItemId given by IDeliver
+            var stockItem = await _stockItemRepository.FindAsync(x =>
+                x.SerialNumber == item.SerialNumber && x.OrderItemId == item.OrderItemId);
+
+            // If Stock Item can be found by SerialNumber and OrderItemId in SS then update otherwise insert
+            if (stockItem != null)
+            {
+                //Update Stock Item
+
+                stockItem.SerialNumber = item.SerialNumber;
+                stockItem.Price = item.ProductPrice ?? product.Price;
+                stockItem.ProductId = product.ProductId;
+                stockItem.ReturnStatus = 0;
+                stockItem.Sim = string.Empty;
+                stockItem.Received = 0;
+                stockItem.StockStatusId = 1;
+                stockItem.OrderItemId = item.OrderItemId;
+
+            }
+            else
+            {
+                //Insert Stock Item
+                var newStockItem = new StockItem
                 {
-                    // Insert VasX Provider Specific
-                    vasxProviderSpecific = new VASXProviderSpecific
+                    SerialNumber = item.SerialNumber,
+                    Price = item.ProductPrice ?? product.Price,
+                    ProductId = product.ProductId,
+                    ReturnStatus = 0,
+                    Sim = string.Empty,
+                    Received = 0,
+                    StockStatusId = 1,
+                    OrderItemId = item.OrderItemId
+                };
+
+                _stockItemRepository.Add(newStockItem);
+            }
+        }
+
+        private async Task InsertUpdateDeliveryOrder(int orderId, string wayBillNumber, OrderDetail item, CancellationToken cancellationToken)
+        {
+            var orderDetails = await _orderItemRepository.FindAsync(x => x.Order.OrderId == orderId);
+            if (orderDetails.Order.CustomerId > 0)
+            {
+                var customerAddress = await _customerAddressRepository.FindAsync(i =>
+                    i.CustomerId == orderDetails.Order.CustomerId && i.AddressTypeId == (int)AddressType.Delivery);
+                if (customerAddress.CustomerAddressId == 0)
+                {
+                    throw new Exception();
+                }
+
+                var orderDelivery = await _orderDeliveryRepository.FindAsync(x => x.OrderItemId == orderDetails.OrderItemId, cancellationToken);
+                var deliveryType = await _deliveryTypeRepository.FindAllAsync(cancellationToken);
+                var deliveryTypeId = deliveryType?.FirstOrDefault()?.DeliveryTypeId ?? 0;
+                if (deliveryTypeId == 0)
+                {
+                    throw new Exception();
+                }
+
+                // Update Order delivery
+                if (orderDelivery != null)
+                {
+                    orderDelivery.CustomerAddressId = customerAddress.CustomerAddressId;
+                    orderDelivery.DeliveryTypeId = deliveryTypeId;
+                    orderDelivery.WayBillNumber = wayBillNumber;
+                    orderDelivery.ConsignmentId = wayBillNumber;
+                    orderDelivery.DispatchDate = DateTime.Now;
+                    orderDelivery.OrderStatusDetailId = (int)OrderStatusDetail.DispatchOrdered;
+
+                }
+                //Insert Order deliver
+                else
+                {
+                    var orderDeliveryRequest = new OrderDelivery()
                     {
                         OrderItemId = item.OrderItemId,
-                        SubscriberUid = string.Empty,
-                        Iccid = item.SerialNumber
-                    };
-                    _vASXProviderSpecificRepository.Add(vasxProviderSpecific);
-                }
-                else
-                {
-                    // Update VasX Provider Specific (Note: Keep current values if IDeliver request data is null or empty)
-                    vasxProviderSpecific.SubscriberUid = vasxProviderSpecific.SubscriberUid;
-                    vasxProviderSpecific.Iccid = item.SerialNumber;                    
-                }
-               return await _vASXProviderSpecificRepository.UnitOfWork.SaveChangesAsync() > 0;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-
-        private async Task<bool> InsertUpdateStockItem(OrderDetail item)
-        {
-            try
-            {
-                // Get product id and price both, if IDeliver sending the price as 0 set the price from SS
-                var ideliverProductChannelMapping = await _iDeliverProductChannelMappingRepository.FindAsync(x=>x.IDeliverProductId == item.IDeliverProductId);
-                var productId = ideliverProductChannelMapping?.ProductId ?? 0;
-                if (productId <= 0)
-                {
-                    return false;
-                }
-
-                var product = ideliverProductChannelMapping?.Product;
-
-                // Check if not getting product by IDeliverProductId from SS
-                if (product == null)
-                {
-                    return false;
-                }
-
-                // Get Stock Item from SS by Serial Number and OrderItemId given by IDeliver
-                var stockItem = await _stockItemRepository.FindAsync(x=>x.SerialNumber == item.SerialNumber && x.OrderItemId == item.OrderItemId);
-
-                // If Stock Item can be found by SerialNumber and OrderItemId in SS then update otherwise insert
-                if (stockItem != null)
-                {
-                    //Update Stock Item
-
-                    stockItem.SerialNumber = item.SerialNumber;
-                    stockItem.Price = item.ProductPrice ?? product.Price;
-                    stockItem.ProductId = product.ProductId;
-                    stockItem.ReturnStatus = 0;
-                    stockItem.Sim = string.Empty;
-                    stockItem.Received = 0;
-                    stockItem.StockStatusId = 1;
-                    stockItem.OrderItemId = item.OrderItemId;
-
-                }
-                else
-                {
-                    //Insert Stock Item
-                    var newStockItem = new StockItem
-                    {
-                        SerialNumber = item.SerialNumber,
-                        Price = item.ProductPrice ?? product.Price,
-                        ProductId = product.ProductId,
-                        ReturnStatus = 0,
-                        Sim = string.Empty,
-                        Received = 0,
-                        StockStatusId = 1,
-                        OrderItemId = item.OrderItemId
+                        CustomerAddressId = customerAddress.CustomerAddressId,
+                        DeliveryTypeId = deliveryTypeId,
+                        WayBillNumber = wayBillNumber,
+                        ConsignmentId = wayBillNumber,
+                        OrderStatusDetailId = (int)OrderStatusDetail.DispatchOrdered,
+                        DispatchDate = DateTime.Now
                     };
 
-                    _stockItemRepository.Add(newStockItem);
+                    _orderDeliveryRepository.Add(orderDeliveryRequest);
                 }
-                return await _stockItemRepository.UnitOfWork.SaveChangesAsync() > 0;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-
-        private async Task<bool> InsertUpdateDeliveryOrder(int orderId, string wayBillNumber, OrderDetail item, CancellationToken cancellationToken)
-        {
-            try
-            {
-                var orderDetails = await _orderItemRepository.FindAsync(x=>x.Order.OrderId == orderId);
-                if (orderDetails.Order.CustomerId > 0)
-                {
-                    var customerAddress = await _customerAddressRepository.FindAsync(i=>i.CustomerId == orderDetails.Order.CustomerId && i.AddressTypeId == (int)AddressType.Delivery);
-                    if (customerAddress.CustomerAddressId == 0)
-                    {
-                        return false;
-                    }
-                    var orderDelivery = await _orderDeliveryRepository.FindAsync(x=>x.OrderItemId == orderDetails.OrderItemId);
-                    var deliveryType = await _deliveryTypeRepository.FindAllAsync(cancellationToken);
-                    var deliveryTypeId = deliveryType?.FirstOrDefault()?.DeliveryTypeId ?? 0;
-                    if (deliveryTypeId == 0)
-                    {
-                        return false;
-                    }
-
-                    // Update Order delivery
-                    if (orderDelivery != null)
-                    {
-                        orderDelivery.CustomerAddressId = customerAddress.CustomerAddressId;
-                        orderDelivery.DeliveryTypeId = deliveryTypeId;
-                        orderDelivery.WayBillNumber = wayBillNumber;
-                        orderDelivery.ConsignmentId = wayBillNumber;
-                        orderDelivery.DispatchDate = DateTime.Now;
-                        orderDelivery.OrderStatusDetailId = (int)OrderStatusDetail.DispatchOrdered;
-                       
-                    }
-                    //Insert Order deliver
-                    else
-                    {
-                        var orderDeliveryRequest = new OrderDelivery()
-                        {
-                            OrderItemId = item.OrderItemId,
-                            CustomerAddressId = customerAddress.CustomerAddressId,
-                            DeliveryTypeId = deliveryTypeId,
-                            WayBillNumber = wayBillNumber,
-                            ConsignmentId = wayBillNumber,
-                            OrderStatusDetailId = (int)OrderStatusDetail.DispatchOrdered,
-                            DispatchDate = DateTime.Now
-                        };
-                         _orderDeliveryRepository.Add(orderDeliveryRequest);
-                      
-                    }
-                    return await _orderDeliveryRepository.UnitOfWork.SaveChangesAsync() > 0;
-                }
-                return false;
-            }
-            catch (Exception ex)
-            {
-                return false;
             }
         }
 
