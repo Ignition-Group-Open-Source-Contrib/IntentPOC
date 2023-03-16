@@ -15,7 +15,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Cust
     {
         public int CustomerContactId { get; set; }
 
-        public int CustomerCustomerID { get; set; }
+        public int CustomerID { get; set; }
 
         public string? Contact { get; set; }
 

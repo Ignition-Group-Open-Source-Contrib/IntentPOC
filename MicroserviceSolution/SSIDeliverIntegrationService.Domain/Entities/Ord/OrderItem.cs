@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Intent.RoslynWeaver.Attributes;
 using SSIDeliverIntegrationService.Domain.Common;
-using SSIDeliverIntegrationService.Domain.Entities.Deal;
+using SSIDeliverIntegrationService.Domain.Entities.Deals;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Entities.DomainEntity", Version = "1.0")]
@@ -14,11 +14,11 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
     [DefaultIntentManaged(Mode.Fully, Targets = Targets.Methods, Body = Mode.Ignore, AccessModifiers = AccessModifiers.Public)]
     public class OrderItem : IHasDomainEvent
     {
-        public int OrderItemID { get; set; }
+        public int OrderItemId { get; set; }
 
-        public int OrderOrderID { get; set; }
+        public int OrderId { get; set; }
 
-        public int DealDealID { get; set; }
+        public int DealId { get; set; }
 
         public int SMSSent { get; set; }
 
@@ -70,17 +70,23 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
 
         public string? TinyUrl { get; set; }
 
-        public int? FreemiumOrderItemOrderItemID { get; set; }
-
         public int? OrderItemOdooId { get; set; }
 
         public bool? IsMarketic { get; set; }
+
+        public int? FreemiumOrderItemId { get; set; }
+
+        public int OrderStatusDetailId { get; set; }
 
         public virtual OrderItem? FreemiumOrderItem { get; set; }
 
         public virtual Order Order { get; set; }
 
-        public virtual SSIDeliverIntegrationService.Domain.Entities.Deal.Deal Deal { get; set; }
+        public virtual Deal Deal { get; set; }
+
+        public virtual ICollection<OrderDelivery> OrderDeliveries { get; set; } = new List<OrderDelivery>();
+
+        public virtual ICollection<OrderStatusHistory> OrderStatusHistories { get; set; } = new List<OrderStatusHistory>();
 
         public List<DomainEvent> DomainEvents { get; set; } = new List<DomainEvent>();
     }

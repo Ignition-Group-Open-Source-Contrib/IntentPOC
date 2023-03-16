@@ -13,7 +13,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Cust
     [DefaultIntentManaged(Mode.Fully, Targets = Targets.Methods, Body = Mode.Ignore, AccessModifiers = AccessModifiers.Public)]
     public class CustomerAddress : IHasDomainEvent
     {
-        public int CustomerAddressID { get; set; }
+        public int CustomerAddressId { get; set; }
 
         public int CustomerId { get; set; }
 
@@ -72,6 +72,8 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Cust
         public int? DeliveredTo { get; set; }
 
         public string? LatLong { get; set; }
+
+        public virtual Customer Customer { get; set; }
 
         public List<DomainEvent> DomainEvents { get; set; } = new List<DomainEvent>();
     }

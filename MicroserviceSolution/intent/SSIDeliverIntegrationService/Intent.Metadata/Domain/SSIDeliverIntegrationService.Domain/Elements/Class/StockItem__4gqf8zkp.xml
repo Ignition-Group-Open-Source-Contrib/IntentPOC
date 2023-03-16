@@ -190,8 +190,8 @@
       <childElements />
     </childElement>
     <childElement id="93d6483b-c5f6-45dc-b511-31aea138f652" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>ProductProductID</name>
-      <display>ProductProductID: int</display>
+      <name>ProductId</name>
+      <display>ProductId: int</display>
       <externalReference>7</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -263,8 +263,8 @@
       <childElements />
     </childElement>
     <childElement id="3ed61ef8-1fda-4e1e-bd87-7c1357883470" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>SIM</name>
-      <display>SIM: string?</display>
+      <name>Sim</name>
+      <display>Sim: string?</display>
       <externalReference>10</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -359,8 +359,8 @@
       <childElements />
     </childElement>
     <childElement id="9240d300-15aa-43bf-a0f6-591f751678a4" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>OrderItemOrderItemID</name>
-      <display>OrderItemOrderItemID: int?</display>
+      <name>OrderItemId</name>
+      <display>OrderItemId: int?</display>
       <externalReference>13</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

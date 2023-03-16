@@ -22,7 +22,7 @@
   <targetEnd id="cdf55d90-556f-40cf-b4b9-1b4d6e3a4a58" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
     <name>DeliveryType</name>
     <display>DeliveryType: DeliveryType?</display>
-    <order>24</order>
+    <order>25</order>
     <typeReference id="2cb0c9be-092d-4a65-b572-1e6d2e554148">
       <typeId>52ae282c-f68a-448a-9ec9-f21d8d1d9996</typeId>
       <isNavigable>true</isNavigable>

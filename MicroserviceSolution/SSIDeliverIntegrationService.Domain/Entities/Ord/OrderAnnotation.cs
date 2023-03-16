@@ -15,7 +15,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
     {
         public int OrderAnnotationId { get; set; }
 
-        public int OrderItemOrderItemID { get; set; }
+        public int OrderItemId { get; set; }
 
         public DateTime AnnotationDate { get; set; }
 
@@ -26,6 +26,8 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
         public int? MSlogId { get; set; }
 
         public int? EMlogId { get; set; }
+
+        public int UserId { get; set; }
 
         public virtual OrderItem OrderItem { get; set; }
 

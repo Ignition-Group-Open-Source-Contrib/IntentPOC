@@ -16,13 +16,13 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasKey(x => x.VASXProviderSpecificId);
 
-            builder.Property(x => x.OrderItemOrderItemID)
+            builder.Property(x => x.OrderItemId)
                 .IsRequired();
 
-            builder.Property(x => x.ICCID)
+            builder.Property(x => x.Iccid)
                 .HasColumnType("varchar(30)");
 
-            builder.Property(x => x.SubscriberUID)
+            builder.Property(x => x.SubscriberUid)
                 .HasColumnType("varchar(30)");
 
             builder.Property(x => x.IMSI)
@@ -30,7 +30,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasOne(x => x.OrderItem)
                 .WithMany()
-                .HasForeignKey(x => x.OrderItemOrderItemID)
+                .HasForeignKey(x => x.OrderItemId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasIndex(x => x.VASXProviderSpecificId)

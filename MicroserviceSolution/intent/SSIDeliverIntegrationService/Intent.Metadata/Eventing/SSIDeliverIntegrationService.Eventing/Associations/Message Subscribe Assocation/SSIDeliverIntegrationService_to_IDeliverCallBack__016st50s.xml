@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="dbb29100-8ab7-432d-baca-885d40259114">
+  <sourceEnd id="278a3077-e1a3-4e28-a26a-64243f912c54" type="Message Subscribe Assocation Source End" typeId="18780798-1ea8-462b-b4f9-b8605ad11636">
+    <name>SSIDeliverIntegrationService</name>
+    <display>subscriber: SSIDeliverIntegrationService</display>
+    <order>0</order>
+    <typeReference id="ac36dc86-26ff-439f-9879-8f3f1432c5e8">
+      <typeId>8b295572-ef7f-49ef-bca8-154de4d93f43</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Eventing</typePackageName>
+      <typePackageId>df8bdcf2-4f2d-4843-bab6-d531280914ee</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="dbb29100-8ab7-432d-baca-885d40259114" type="Message Subscribe Assocation Target End" typeId="21c3df1c-5140-4f65-9814-a68e1a577768">
+    <name>IDeliverCallBack</name>
+    <display>subscribe: IDeliverCallBack</display>
+    <order>0</order>
+    <typeReference id="8068aa4e-c587-4dea-89aa-0d02126967b3">
+      <typeId>e3e714a3-eda7-43cc-967f-8573774d031f</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>WebhookService.Eventing</typePackageName>
+      <typePackageId>dd4ddab6-d10f-423e-9162-462ef44e6394</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Subscribe Assocation</associationType>
+  <associationTypeId>50e0bed1-1387-4d67-8f66-1194763296b1</associationTypeId>
+  <stereotypes />
+</association>

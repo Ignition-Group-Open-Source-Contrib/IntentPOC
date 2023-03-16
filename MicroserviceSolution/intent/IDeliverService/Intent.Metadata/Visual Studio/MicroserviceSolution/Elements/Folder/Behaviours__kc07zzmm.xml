@@ -117,10 +117,10 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="d262a9da-af92-4a36-82d4-1e787714d6ca" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
-      <name>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</name>
-      <display>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</display>
-      <externalReference>Intent.Dapr.AspNetCore.Pubsub</externalReference>
+    <childElement id="8dabf35a-5edb-4a8b-853e-280bcbb8dc75" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryUnitOfWorkBehaviour</name>
+      <display>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryUnitOfWorkBehaviour</display>
+      <externalReference>Intent.Dapr.AspNetCore.StateManagement</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
@@ -133,16 +133,28 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="8dabf35a-5edb-4a8b-853e-280bcbb8dc75" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
-      <name>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryUnitOfWorkBehaviour</name>
-      <display>Intent.Dapr.AspNetCore.StateManagement.StateRepositoryUnitOfWorkBehaviour</display>
-      <externalReference>Intent.Dapr.AspNetCore.StateManagement</externalReference>
+    <childElement id="7332da0a-b3f4-4c87-8adb-afbd5965d733" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.Behaviours.EventBusPublishBehaviour</name>
+      <display>Intent.Application.MediatR.Behaviours.EventBusPublishBehaviour</display>
+      <externalReference>Intent.Application.MediatR.Behaviours</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</parentFolderId>
-      <packageId>ac8bd38b-cb8f-4a9e-9d58-7b96d6e35328</packageId>
-      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="2926d151-ce82-4d2e-bc08-df6dda541a03" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.MediatR.Behaviours.MongoDbUnitOfWorkBehaviour</name>
+      <display>Intent.Application.MediatR.Behaviours.MongoDbUnitOfWorkBehaviour</display>
+      <externalReference>Intent.Application.MediatR.Behaviours</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>5d121dfb-edf4-4c19-ae3d-0ebaad6322f2</parentFolderId>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

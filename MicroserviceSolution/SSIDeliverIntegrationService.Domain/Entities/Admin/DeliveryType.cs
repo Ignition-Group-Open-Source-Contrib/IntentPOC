@@ -13,7 +13,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Admin
     [DefaultIntentManaged(Mode.Fully, Targets = Targets.Methods, Body = Mode.Ignore, AccessModifiers = AccessModifiers.Public)]
     public class DeliveryType : IHasDomainEvent
     {
-        public int DeliveryTypeID { get; set; }
+        public int DeliveryTypeId { get; set; }
 
         public string DeliveryTypeValue { get; set; }
 

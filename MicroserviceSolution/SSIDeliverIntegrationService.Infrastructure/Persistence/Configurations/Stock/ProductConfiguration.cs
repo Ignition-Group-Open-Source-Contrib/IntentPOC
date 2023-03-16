@@ -14,7 +14,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
         {
             builder.ToTable("Products", "Stock");
 
-            builder.HasKey(x => x.ProductID);
+            builder.HasKey(x => x.ProductId);
 
             builder.Property(x => x.Title)
                 .IsRequired()

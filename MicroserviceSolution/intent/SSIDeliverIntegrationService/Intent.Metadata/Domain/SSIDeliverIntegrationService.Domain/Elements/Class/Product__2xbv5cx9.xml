@@ -24,8 +24,8 @@
   <metadata />
   <childElements>
     <childElement id="eab127df-4533-4048-bc70-d0d1eff34594" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>ProductID</name>
-      <display>ProductID: int</display>
+      <name>ProductId</name>
+      <display>ProductId: int</display>
       <externalReference>1</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

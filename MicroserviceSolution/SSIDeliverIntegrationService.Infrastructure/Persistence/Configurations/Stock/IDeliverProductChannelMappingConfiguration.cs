@@ -16,7 +16,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasKey(x => x.IDeliverProductChannelMappingId);
 
-            builder.Property(x => x.ProductProductID)
+            builder.Property(x => x.ProductId)
                 .IsRequired();
 
             builder.Property(x => x.ChannelId)
@@ -37,8 +37,8 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
             builder.Property(x => x.UpdatedOnDate);
 
             builder.HasOne(x => x.Product)
-                .WithMany()
-                .HasForeignKey(x => x.ProductProductID)
+                .WithMany(x => x.IDeliverProductChannelMappings)
+                .HasForeignKey(x => x.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);

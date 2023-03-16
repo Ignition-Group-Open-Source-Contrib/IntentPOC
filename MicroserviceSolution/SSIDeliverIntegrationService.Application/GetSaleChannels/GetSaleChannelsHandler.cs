@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using SSIDeliverIntegrationService.Application.IDeliverService;
+using SSIDeliverIntegrationService.Application.ViewModels;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.MediatR.QueryHandler", Version = "1.0")]
@@ -15,7 +16,7 @@ using SSIDeliverIntegrationService.Application.IDeliverService;
 namespace SSIDeliverIntegrationService.Application.GetSaleChannels
 {
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
-    public class GetSaleChannelsHandler : IRequestHandler<GetSaleChannels, List<SaleChannelsResponseModel>>
+    public class GetSaleChannelsHandler : IRequestHandler<GetSaleChannels, List<ViewModels.SaleChannelsResponseModel>>
     {
         private readonly IIDeliverClient iDeliverClient;
         private readonly IConfiguration configuration;
@@ -28,10 +29,10 @@ namespace SSIDeliverIntegrationService.Application.GetSaleChannels
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
-        public async Task<List<SaleChannelsResponseModel>> Handle(GetSaleChannels request, CancellationToken cancellationToken)
+        public async Task<List<ViewModels.SaleChannelsResponseModel>> Handle(GetSaleChannels request, CancellationToken cancellationToken)
         {
             var response = await iDeliverClient.GetSalesChannelAsync(configuration.GetValue<string>("marketic:ideliver:accesstoken"), cancellationToken);
-            var result = JsonConvert.DeserializeObject<List<SaleChannelsResponseModel>>(response.ToString());
+            var result = JsonConvert.DeserializeObject<List<ViewModels.SaleChannelsResponseModel>>(response.ToString());
             return result;
         }
     }

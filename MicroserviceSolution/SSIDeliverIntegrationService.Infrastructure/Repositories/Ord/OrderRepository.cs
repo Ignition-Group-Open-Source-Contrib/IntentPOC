@@ -21,14 +21,14 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Ord
         {
         }
 
-        public async Task<Order> FindByIdAsync(int orderID, CancellationToken cancellationToken = default)
+        public async Task<Order> FindByIdAsync(int orderId, CancellationToken cancellationToken = default)
         {
-            return await FindAsync(x => x.OrderID == orderID, cancellationToken);
+            return await FindAsync(x => x.OrderId == orderId, cancellationToken);
         }
 
-        public async Task<List<Order>> FindByIdsAsync(int[] orderIDs, CancellationToken cancellationToken = default)
+        public async Task<List<Order>> FindByIdsAsync(int[] orderIds, CancellationToken cancellationToken = default)
         {
-            return await FindAllAsync(x => orderIDs.Contains(x.OrderID), cancellationToken);
+            return await FindAllAsync(x => orderIds.Contains(x.OrderId), cancellationToken);
         }
     }
 }

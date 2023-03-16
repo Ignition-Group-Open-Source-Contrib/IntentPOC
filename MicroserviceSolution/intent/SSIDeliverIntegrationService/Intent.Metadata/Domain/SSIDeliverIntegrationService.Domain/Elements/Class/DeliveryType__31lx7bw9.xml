@@ -24,8 +24,8 @@
   <metadata />
   <childElements>
     <childElement id="4c625c64-d0a5-4325-b424-e11dc871b166" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>DeliveryTypeID</name>
-      <display>DeliveryTypeID: int</display>
+      <name>DeliveryTypeId</name>
+      <display>DeliveryTypeId: int</display>
       <externalReference>1</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

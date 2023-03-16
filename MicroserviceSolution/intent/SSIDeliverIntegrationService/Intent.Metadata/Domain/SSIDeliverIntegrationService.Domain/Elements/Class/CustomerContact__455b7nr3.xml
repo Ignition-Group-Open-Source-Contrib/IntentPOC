@@ -58,8 +58,8 @@
       <childElements />
     </childElement>
     <childElement id="44fbd676-bcea-4f24-8e97-9ee345704b18" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>CustomerCustomerID</name>
-      <display>CustomerCustomerID: int</display>
+      <name>CustomerID</name>
+      <display>CustomerID: int</display>
       <externalReference>2</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

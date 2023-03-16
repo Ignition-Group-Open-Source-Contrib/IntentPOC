@@ -7,6 +7,7 @@ using MediatR;
 using WebhookService.Application.Common.BusinessLogic;
 using WebhookService.Application.Common.Eventing;
 using WebhookService.Application.Common.Helper;
+using WebhookService.Eventing;
 using static Google.Rpc.Context.AttributeContext.Types;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
@@ -48,7 +49,7 @@ namespace WebhookService.Application.WebHookCallBack
                         {
                             return $"IDeliver call back api request is invalid {request}";
                         }
-                        _eventBus.Publish(new IDeliverCallBack { Request = callBackRequest });
+                        _eventBus.Publish(new IDeliverCallBackEvent { Request = callBackRequest });
                         // _ = daprClient.ProcessStockOrder(callBackRequest);
                         return "Stock order is in process!";
 

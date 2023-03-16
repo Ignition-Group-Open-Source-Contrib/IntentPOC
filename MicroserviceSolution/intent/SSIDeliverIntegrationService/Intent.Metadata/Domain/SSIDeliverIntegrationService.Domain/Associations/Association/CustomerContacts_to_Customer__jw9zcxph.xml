@@ -3,10 +3,10 @@
   <sourceEnd id="2dea7211-4ffa-46f8-85f0-087f1baaffa1" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
     <name>CustomerContacts</name>
     <display>CustomerContacts: CustomerContact[*]</display>
-    <order>0</order>
+    <order>21</order>
     <typeReference id="4837f581-8369-4292-aaf7-380170a7b9bb">
       <typeId>e3624a3c-40df-4e0c-b726-a34ac088c7ea</typeId>
-      <isNavigable>false</isNavigable>
+      <isNavigable>true</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>true</isCollection>
       <isRequired>true</isRequired>

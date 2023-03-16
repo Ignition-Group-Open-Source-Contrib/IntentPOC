@@ -24,8 +24,8 @@
   <metadata />
   <childElements>
     <childElement id="8b823467-82d6-419c-89bb-afd8aa279c3f" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>OrderID</name>
-      <display>OrderID: int</display>
+      <name>OrderId</name>
+      <display>OrderId: int</display>
       <externalReference>1</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -311,8 +311,8 @@
       <childElements />
     </childElement>
     <childElement id="0b075fa2-16d5-4492-99fb-1a0ae9fe03d1" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>CustomerCustomerID</name>
-      <display>CustomerCustomerID: int</display>
+      <name>CustomerId</name>
+      <display>CustomerId: int</display>
       <externalReference>13</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

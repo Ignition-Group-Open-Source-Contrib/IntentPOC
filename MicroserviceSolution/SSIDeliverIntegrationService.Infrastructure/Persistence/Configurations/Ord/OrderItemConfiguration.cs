@@ -14,12 +14,12 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
         {
             builder.ToTable("OrderItems", "Ord");
 
-            builder.HasKey(x => x.OrderItemID);
+            builder.HasKey(x => x.OrderItemId);
 
-            builder.Property(x => x.OrderOrderID)
+            builder.Property(x => x.OrderId)
                 .IsRequired();
 
-            builder.Property(x => x.DealDealID)
+            builder.Property(x => x.DealId)
                 .IsRequired();
 
             builder.Property(x => x.SMSSent)
@@ -92,31 +92,29 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
             builder.Property(x => x.TinyUrl)
                 .HasColumnType("varchar(255)");
 
-            builder.Property(x => x.FreemiumOrderItemOrderItemID);
-
             builder.Property(x => x.OrderItemOdooId);
 
             builder.Property(x => x.IsMarketic)
                 .HasDefaultValueSql("((0))");
 
-            builder.HasOne(x => x.FreemiumOrderItem)
-                .WithMany()
-                .HasForeignKey(x => x.FreemiumOrderItemOrderItemID)
-                .OnDelete(DeleteBehavior.Restrict);
+            builder.Property(x => x.FreemiumOrderItemId);
+
+            builder.Property(x => x.OrderStatusDetailId)
+                .IsRequired();
 
             builder.HasOne(x => x.FreemiumOrderItem)
                 .WithMany()
-                .HasForeignKey(x => x.FreemiumOrderItemOrderItemID)
+                .HasForeignKey(x => x.FreemiumOrderItemId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(x => x.Order)
-                .WithMany()
-                .HasForeignKey(x => x.OrderOrderID)
+                .WithMany(x => x.OrderItems)
+                .HasForeignKey(x => x.OrderId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(x => x.Deal)
                 .WithMany()
-                .HasForeignKey(x => x.DealDealID)
+                .HasForeignKey(x => x.DealId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);

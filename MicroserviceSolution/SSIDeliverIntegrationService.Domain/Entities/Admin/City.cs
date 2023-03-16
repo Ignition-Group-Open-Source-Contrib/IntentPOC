@@ -17,7 +17,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Admin
 
         public string Name { get; set; }
 
-        public int ProvinceProvinceID { get; set; }
+        public int ProvinceID { get; set; }
 
         public string? Latitude { get; set; }
 

@@ -17,11 +17,11 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
     {
         public int OrderDeliveryId { get; set; }
 
-        public int OrderItemOrderItemID { get; set; }
+        public int OrderItemId { get; set; }
 
-        public int CustomerAddressCustomerAddressID { get; set; }
+        public int CustomerAddressId { get; set; }
 
-        public int? DeliveryTypeDeliveryTypeID { get; set; }
+        public int? DeliveryTypeId { get; set; }
 
         public int? DispatchWayBillNumber { get; set; }
 
@@ -57,7 +57,9 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
 
         public string? RTSNote { get; set; }
 
-        public string? ConsignmentID { get; set; }
+        public string? ConsignmentId { get; set; }
+
+        public int OrderStatusDetailId { get; set; }
 
         public virtual CustomerAddress CustomerAddress { get; set; }
 

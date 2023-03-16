@@ -21,14 +21,14 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Cust
         {
         }
 
-        public async Task<CustomerAddress> FindByIdAsync(int customerAddressID, CancellationToken cancellationToken = default)
+        public async Task<CustomerAddress> FindByIdAsync(int customerAddressId, CancellationToken cancellationToken = default)
         {
-            return await FindAsync(x => x.CustomerAddressID == customerAddressID, cancellationToken);
+            return await FindAsync(x => x.CustomerAddressId == customerAddressId, cancellationToken);
         }
 
-        public async Task<List<CustomerAddress>> FindByIdsAsync(int[] customerAddressIDs, CancellationToken cancellationToken = default)
+        public async Task<List<CustomerAddress>> FindByIdsAsync(int[] customerAddressIds, CancellationToken cancellationToken = default)
         {
-            return await FindAllAsync(x => customerAddressIDs.Contains(x.CustomerAddressID), cancellationToken);
+            return await FindAllAsync(x => customerAddressIds.Contains(x.CustomerAddressId), cancellationToken);
         }
     }
 }

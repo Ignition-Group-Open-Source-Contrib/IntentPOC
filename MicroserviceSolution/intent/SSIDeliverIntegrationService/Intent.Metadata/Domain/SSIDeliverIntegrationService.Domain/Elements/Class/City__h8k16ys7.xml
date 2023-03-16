@@ -104,8 +104,8 @@
       <childElements />
     </childElement>
     <childElement id="ad61db28-7776-48bf-85ba-ee6772950346" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>ProvinceProvinceID</name>
-      <display>ProvinceProvinceID: int</display>
+      <name>ProvinceID</name>
+      <display>ProvinceID: int</display>
       <externalReference>3</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

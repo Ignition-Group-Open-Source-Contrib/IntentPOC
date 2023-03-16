@@ -37,9 +37,9 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="a855ba33-3c48-4b7d-8216-a312521d2c03" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
-      <name>Intent.Dapr.AspNetCore.Pubsub.EventBusInterface</name>
-      <display>Intent.Dapr.AspNetCore.Pubsub.EventBusInterface</display>
+    <childElement id="425a5afb-0610-4900-8b07-adbd9976c8aa" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Dapr.AspNetCore.Pubsub.EventInterface</name>
+      <display>Intent.Dapr.AspNetCore.Pubsub.EventInterface</display>
       <externalReference>Intent.Dapr.AspNetCore.Pubsub</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -53,16 +53,28 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="425a5afb-0610-4900-8b07-adbd9976c8aa" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
-      <name>Intent.Dapr.AspNetCore.Pubsub.EventInterface</name>
-      <display>Intent.Dapr.AspNetCore.Pubsub.EventInterface</display>
-      <externalReference>Intent.Dapr.AspNetCore.Pubsub</externalReference>
+    <childElement id="3bf5a9d8-b067-4cc2-8adb-964dce6716b3" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Eventing.Contracts.EventBusInterface</name>
+      <display>Intent.Eventing.Contracts.EventBusInterface</display>
+      <externalReference>Intent.Eventing.Contracts</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>b3f15ef2-4214-4ec2-ad21-48fa80f206ae</parentFolderId>
-      <packageId>7e8d8b3d-d8b0-4989-b88e-cf02e0d92673</packageId>
-      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="13e5d2f4-1618-422e-b9fe-7232c7471905" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Eventing.Contracts.IntegrationEventHandlerInterface</name>
+      <display>Intent.Eventing.Contracts.IntegrationEventHandlerInterface</display>
+      <externalReference>Intent.Eventing.Contracts</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>b3f15ef2-4214-4ec2-ad21-48fa80f206ae</parentFolderId>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

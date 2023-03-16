@@ -16,8 +16,8 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Ord
     {
 
         [IntentManaged(Mode.Fully)]
-        Task<Order> FindByIdAsync(int orderID, CancellationToken cancellationToken = default);
+        Task<Order> FindByIdAsync(int orderId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
-        Task<List<Order>> FindByIdsAsync(int[] orderIDs, CancellationToken cancellationToken = default);
+        Task<List<Order>> FindByIdsAsync(int[] orderIds, CancellationToken cancellationToken = default);
     }
 }

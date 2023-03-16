@@ -58,8 +58,8 @@
       <childElements />
     </childElement>
     <childElement id="b705e132-a15c-43bd-bfae-c492bd460bdc" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>ProductProductID</name>
-      <display>ProductProductID: int</display>
+      <name>ProductId</name>
+      <display>ProductId: int</display>
       <externalReference>2</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

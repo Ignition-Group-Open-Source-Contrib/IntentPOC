@@ -21,7 +21,7 @@ namespace WebhookService.Application.Common.Eventing
         }
 
         public void Publish<T>(T @event)
-            where T : IEvent
+            where T : class, IEvent
         {
             _events.Enqueue(@event);
         }

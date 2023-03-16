@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using SSIDeliverIntegrationService.Domain.Entities.Ord;
 using SSIDeliverIntegrationService.Domain.Repositories.Ord;
 using SSIDeliverIntegrationService.Infrastructure.Persistence;
+using static SSIDeliverIntegrationService.Application.Common.Enum.Enumerator;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.EntityFrameworkCore.Repositories.Repository", Version = "1.0")]
@@ -21,14 +22,16 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Ord
         {
         }
 
-        public async Task<OrderItem> FindByIdAsync(int orderItemID, CancellationToken cancellationToken = default)
+        public async Task<OrderItem> FindByIdAsync(int orderItemId, CancellationToken cancellationToken = default)
         {
-            return await FindAsync(x => x.OrderItemID == orderItemID, cancellationToken);
+            return await FindAsync(x => x.OrderItemId == orderItemId, cancellationToken);
         }
 
-        public async Task<List<OrderItem>> FindByIdsAsync(int[] orderItemIDs, CancellationToken cancellationToken = default)
+        public async Task<List<OrderItem>> FindByIdsAsync(int[] orderItemIds, CancellationToken cancellationToken = default)
         {
-            return await FindAllAsync(x => orderItemIDs.Contains(x.OrderItemID), cancellationToken);
+            return await FindAllAsync(x => orderItemIds.Contains(x.OrderItemId), cancellationToken);
         }
+
+
     }
 }

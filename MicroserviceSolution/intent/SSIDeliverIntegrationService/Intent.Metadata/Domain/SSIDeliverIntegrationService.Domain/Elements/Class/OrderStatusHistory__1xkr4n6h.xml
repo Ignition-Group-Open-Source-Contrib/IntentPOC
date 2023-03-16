@@ -58,8 +58,8 @@
       <childElements />
     </childElement>
     <childElement id="35229918-f507-4e77-bbbf-88c82eecd945" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>OrderItemOrderItemID</name>
-      <display>OrderItemOrderItemID: int</display>
+      <name>OrderItemId</name>
+      <display>OrderItemId: int</display>
       <externalReference>2</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -215,6 +215,78 @@
         <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>f624ce1b-e8ce-4bba-8f5b-659c5a439955</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="b6f53b47-acc8-417a-9c2f-f2e348d7d437" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>OrderStatusDetailId</name>
+      <display>OrderStatusDetailId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a15b7ef5-cdea-481b-8ceb-aad3d7cce09d">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>f624ce1b-e8ce-4bba-8f5b-659c5a439955</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="85e8eb27-37d9-42cd-8008-f3f2ff4bd33f" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EmailCommSentStatusId</name>
+      <display>EmailCommSentStatusId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="d8fffa8e-0152-4cb9-b18a-824344b84f64">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>f624ce1b-e8ce-4bba-8f5b-659c5a439955</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="bc8d90ce-e775-4823-8882-434198eff135" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>SmscommSentStatusId</name>
+      <display>SmscommSentStatusId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="b7b7248c-a64c-44d9-ad37-ddce5da51c49">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
         <isCollection>false</isCollection>
         <isRequired>true</isRequired>
         <typePackageName>Intent.Common.Types</typePackageName>
