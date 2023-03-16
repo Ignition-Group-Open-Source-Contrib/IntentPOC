@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
+using Google.Api;
 using IgnProductCatalogueService.Domain.Common.Interfaces;
 using IgnProductCatalogueService.Domain.Repositories;
 using IgnProductCatalogueService.Infrastructure.Persistence;
@@ -109,6 +110,13 @@ namespace IgnProductCatalogueService.Infrastructure.Repositories
                 pageNo,
                 pageSize,
                 cancellationToken);
+        }
+
+        private IMongoCollection<TDomain> _Collection => Context.GetCollection<TDomain>();
+
+        public IMongoCollection<TDomain> Collection
+        {
+            get { return _Collection; }
         }
     }
 }

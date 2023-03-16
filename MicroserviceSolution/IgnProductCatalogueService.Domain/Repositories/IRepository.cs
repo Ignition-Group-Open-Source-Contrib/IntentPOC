@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using IgnProductCatalogueService.Domain.Common.Interfaces;
 using Intent.RoslynWeaver.Attributes;
+using MongoDB.Driver;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Entities.Repositories.Api.RepositoryInterface", Version = "1.0")]
@@ -18,6 +19,7 @@ namespace IgnProductCatalogueService.Domain.Repositories
 
         IUnitOfWork UnitOfWork { get; }
         void Add(TDomain entity);
+        IMongoCollection<TDomain> Collection { get; }
         void Remove(TDomain entity);
         Task<TDomain> FindAsync(Expression<Func<TPersistence, bool>> filterExpression, CancellationToken cancellationToken = default);
         Task<TDomain> FindAsync(Expression<Func<TPersistence, bool>> filterExpression, Func<IQueryable<TPersistence>, IQueryable<TPersistence>> linq, CancellationToken cancellationToken = default);

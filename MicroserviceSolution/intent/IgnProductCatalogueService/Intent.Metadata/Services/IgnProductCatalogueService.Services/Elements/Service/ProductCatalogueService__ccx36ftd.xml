@@ -555,5 +555,92 @@
         </childElement>
       </childElements>
     </childElement>
+    <childElement id="04df2595-d53f-4f8d-b024-b750fec2dbe6" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetProductCatalogByFilterData</name>
+      <display>GetProductCatalogByFilterData(request: SearchQuery): ProductCatalogueDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="249d39c8-fbe0-4262-a2b9-2b6eaa4e7386">
+        <typeId>20a4bf2a-f432-449e-b3d3-c0fda4fede1c</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="e77bf2bf-f2d2-4982-83ce-b084798454c7" name="GetProductCatalogByFilterDataCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>12cbb7a4-3a12-4d20-a4b8-531be2850049</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="[action]" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="5535797d-ddd7-4840-ab58-c7312df2beae" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>request</name>
+          <display>in : request: SearchQuery</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="30db9bcc-9662-43c4-9b22-5236006201e1">
+            <typeId>9d6cc0e5-32b0-4775-8f0f-8135375a9b16</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="1a1edfdb-b9bf-465a-b555-4f4953270373" name="request" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>04df2595-d53f-4f8d-b024-b750fec2dbe6</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
   </childElements>
 </class>

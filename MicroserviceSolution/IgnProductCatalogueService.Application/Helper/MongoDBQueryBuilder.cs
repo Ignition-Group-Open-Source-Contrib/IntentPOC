@@ -4,16 +4,16 @@ using System.Collections.Generic;
 
 namespace IgnProductCatalogueService.Application.Helper
 {
-    public class MongoDBQueryBuilder<TDocument>
+    public class MongoDBQueryBuilder<TDomain>
     {
         bool firstClauseAdded = false;
-        public FilterDefinition<TDocument> CreateFilter(List<QueryFilter> filters)
+        public FilterDefinition<TDomain> CreateFilter(List<QueryFilter> filters)
         {
-            var builder = Builders<TDocument>.Filter;
-            FilterDefinition<TDocument> completeFilter = builder.Empty;
+            var builder = Builders<TDomain>.Filter;
+            FilterDefinition<TDomain> completeFilter = builder.Empty;
             foreach (var filter in filters)
             {
-                FilterDefinition<TDocument> fl = builder.Empty;
+                FilterDefinition<TDomain> fl = builder.Empty;
                 switch (filter.Operator)
                 {
                     case "in":

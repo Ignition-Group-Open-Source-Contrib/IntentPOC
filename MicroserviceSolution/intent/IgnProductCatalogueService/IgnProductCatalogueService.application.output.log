@@ -148,7 +148,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>7741bb07-770d-407a-915b-4d95f37b9ef8</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.EventBusPublishBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Common/Behaviours/EventBusPublishBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>EventBusPublishBehaviour.cs</ProjectRelativeFilePath>
@@ -160,6 +160,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Common/Behaviours/LoggingBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>LoggingBehaviour.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>7741bb07-770d-407a-915b-4d95f37b9ef8</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.MongoDbUnitOfWorkBehaviour</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Common/Behaviours/MongoDbUnitOfWorkBehaviour.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>MongoDbUnitOfWorkBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -220,10 +228,18 @@
     </FileLog>
     <FileLog>
       <ProjectId>97c8c38c-8177-42f9-99de-14a7bb5f6476</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusInterface</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.EventBusInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Common/Eventing/IEventBus.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IEventBus.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>97c8c38c-8177-42f9-99de-14a7bb5f6476</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandlerInterface</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Common/Eventing/IIntegrationEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IIntegrationEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -440,6 +456,30 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommandValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#e77bf2bf-f2d2-4982-83ce-b084798454c7</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#e77bf2bf-f2d2-4982-83ce-b084798454c7</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#e77bf2bf-f2d2-4982-83ce-b084798454c7</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

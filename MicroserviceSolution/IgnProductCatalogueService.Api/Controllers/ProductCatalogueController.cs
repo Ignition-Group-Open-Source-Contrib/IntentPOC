@@ -1,23 +1,21 @@
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using DaprSwagger.Extensions;
 using IgnProductCatalogueService.Api.Controllers.ResponseTypes;
 using IgnProductCatalogueService.Application;
 using IgnProductCatalogueService.Application.GetProductCatalogByFilter;
 using IgnProductCatalogueService.Application.ProductCatalogues;
 using IgnProductCatalogueService.Application.ProductCatalogues.CreateProductCatalogue;
 using IgnProductCatalogueService.Application.ProductCatalogues.DeleteProductCatalogue;
+using IgnProductCatalogueService.Application.ProductCatalogues.GetProductCatalogByFilterData;
 using IgnProductCatalogueService.Application.ProductCatalogues.GetProductCatalogueById;
 using IgnProductCatalogueService.Application.ProductCatalogues.GetProductCatalogues;
 using IgnProductCatalogueService.Application.ProductCatalogues.UpdateProductCatalogue;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.AspNetCore.Controllers.Controller", Version = "1.0")]
@@ -127,6 +125,20 @@ namespace IgnProductCatalogueService.Api.Controllers
         {
             var result = await _mediator.Send(new GetProductCatalogByFilterQuery { Request = request }, cancellationToken);
             return Ok(result);
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <response code="201">Successfully created.</response>
+        /// <response code="400">One or more validation errors have occurred.</response>
+        [HttpPost("[action]")]
+        [ProducesResponseType(typeof(List<ProductCatalogueDto>), StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<List<ProductCatalogueDto>>> GetProductCatalogByFilterData([FromBody] SearchQuery request, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(new GetProductCatalogByFilterDataCommand { Request = request }, cancellationToken);
+            return Created(string.Empty, result);
         }
     }
 }

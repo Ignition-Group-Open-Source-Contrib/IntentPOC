@@ -7,6 +7,7 @@ using IgnProductCatalogueService.Domain.Entities;
 using IgnProductCatalogueService.Domain.Repositories;
 using IgnProductCatalogueService.Infrastructure.Persistence;
 using Intent.RoslynWeaver.Attributes;
+using MongoDB.Driver;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.MongoDb.Repositories.Repository", Version = "1.0")]
