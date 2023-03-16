@@ -25,15 +25,23 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues.UpdateProduct
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
         public async Task<Unit> Handle(UpdateProductCatalogueCommand request, CancellationToken cancellationToken)
         {
-            var existingProductCatalogue = await _productCatalogueRepository.FindByIdAsync(request.Id, cancellationToken);
-            existingProductCatalogue.Sku = request.Sku;
-            existingProductCatalogue.Label = request.Label;
-            existingProductCatalogue.Status = request.Status;
-            existingProductCatalogue.ParentId = request.ParentId;
-            existingProductCatalogue.Attributes = request.Attributes;
-            existingProductCatalogue.ModifiedDate = DateTime.Now;
-            _productCatalogueRepository.Update(p => p.Id == request.Id, existingProductCatalogue);
-            return Unit.Value;
+            try
+            {
+                var existingProductCatalogue = await _productCatalogueRepository.FindByIdAsync(request.Id, cancellationToken);
+                existingProductCatalogue.Sku = request.Sku;
+                existingProductCatalogue.Label = request.Label;
+                existingProductCatalogue.Status = request.Status;
+                existingProductCatalogue.ParentId = request.ParentId;
+                existingProductCatalogue.Attributes = request.Attributes;
+                existingProductCatalogue.ModifiedDate = DateTime.Now;
+                existingProductCatalogue.Relationships = request.Relationships;
+                _productCatalogueRepository.Update(p => p.Id == request.Id, existingProductCatalogue);
+                return Unit.Value;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

@@ -5,13 +5,13 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.MediatR.FluentValidation.CommandValidator", Version = "1.0")]
 
-namespace IgnProductCatalogueService.Application.ProductCatalogues.CreateProductCatalogue
+namespace IgnProductCatalogueService.Application.Order.CreateOrder
 {
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
-    public class CreateProductCatalogueCommandValidator : AbstractValidator<CreateProductCatalogueCommand>
+    public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
     {
         [IntentManaged(Mode.Fully, Body = Mode.Ignore, Signature = Mode.Merge)]
-        public CreateProductCatalogueCommandValidator()
+        public CreateOrderCommandValidator()
         {
             ConfigureValidationRules();
         }
@@ -19,12 +19,6 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues.CreateProduct
         [IntentManaged(Mode.Fully)]
         private void ConfigureValidationRules()
         {
-            RuleFor(v => v.Sku)
-                .NotNull();
-
-            RuleFor(v => v.Status)
-                .NotNull();
-
         }
     }
 }

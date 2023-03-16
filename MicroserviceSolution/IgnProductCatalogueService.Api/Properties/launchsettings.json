@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:59005/",
+      "applicationUrl": "http://localhost:59605/",
       "sslPort": 44389
     }
   },
@@ -11,8 +11,8 @@
     "IgnProductCatalogueService.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:59005/;https://localhost:44389/",
-      "launchUrl": "http://localhost:59005/swagger",
+      "applicationUrl": "http://localhost:59605/;https://localhost:44389/",
+      "launchUrl": "http://localhost:59605/swagger",
       "publishAllPorts": false,
       "useSSL": false,
       "environmentVariables": {
@@ -22,7 +22,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:59005/swagger",
+      "launchUrl": "http://localhost:59605/swagger",
       "publishAllPorts": false,
       "useSSL": false,
       "environmentVariables": {

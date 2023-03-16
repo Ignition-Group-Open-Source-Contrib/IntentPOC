@@ -20,12 +20,13 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues
         public static ProductCatalogueDto Create(
             string id,
             string sku,
-            string label,
+            string? label,
             string status,
-            string parentId,
-            Dictionary<string, object> attributes,
+            string? parentId,
+            Dictionary<string, string>? attributes,
             DateTime createdDate,
-            DateTime modifiedDate)
+            DateTime modifiedDate,
+            Dictionary<string, string>? relationships)
         {
             return new ProductCatalogueDto
             {
@@ -37,6 +38,7 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues
                 Attributes = attributes,
                 CreatedDate = createdDate,
                 ModifiedDate = modifiedDate,
+                Relationships = relationships,
             };
         }
 
@@ -44,17 +46,19 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues
 
         public string Sku { get; set; }
 
-        public string Label { get; set; }
+        public string? Label { get; set; }
 
         public string Status { get; set; }
 
-        public string ParentId { get; set; }
+        public string? ParentId { get; set; }
 
-        public Dictionary<string, object> Attributes { get; set; }
+        public Dictionary<string, string>? Attributes { get; set; }
 
         public DateTime CreatedDate { get; set; }
 
         public DateTime ModifiedDate { get; set; }
+
+        public Dictionary<string, string>? Relationships { get; set; }
 
         public void Mapping(Profile profile)
         {

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="bce2e260-945d-4280-a59f-5b9c4554f4d5" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+<class id="b6f7e4c2-d8c2-4a86-bc12-a14cf8b35f6b" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
   <name>GetProductCataloguesQuery</name>
   <display>GetProductCataloguesQuery: ProductCatalogueDto[*]</display>
   <isAbstract>false</isAbstract>
   <genericTypes />
-  <typeReference id="5e15b8d5-e570-4ada-be32-dc41fc7ece29">
-    <typeId>60345467-cbfe-40da-b32f-298829d0a813</typeId>
+  <typeReference id="2fbe12fc-65a5-4ce1-b321-0c49eb179529">
+    <typeId>20a4bf2a-f432-449e-b3d3-c0fda4fede1c</typeId>
     <isNavigable>true</isNavigable>
     <isNullable>false</isNullable>
     <isCollection>true</isCollection>
@@ -16,7 +16,7 @@
     <genericTypeParameters />
   </typeReference>
   <isMapped>false</isMapped>
-  <parentFolderId>19515afa-8b06-4365-9cbd-a72908e30d73</parentFolderId>
+  <parentFolderId>5d0875d7-9f6c-48de-a884-02d0d49e3ddd</parentFolderId>
   <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
   <packageName>IgnProductCatalogueService.Services</packageName>
   <stereotypes />

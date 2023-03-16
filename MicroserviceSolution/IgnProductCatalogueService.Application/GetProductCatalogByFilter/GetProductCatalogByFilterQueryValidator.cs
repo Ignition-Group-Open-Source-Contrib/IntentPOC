@@ -3,15 +3,15 @@ using FluentValidation;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
-[assembly: IntentTemplate("Intent.Application.MediatR.FluentValidation.CommandValidator", Version = "1.0")]
+[assembly: IntentTemplate("Intent.Application.MediatR.FluentValidation.QueryValidator", Version = "1.0")]
 
-namespace IgnProductCatalogueService.Application.ProductCatalogues.CreateProductCatalogue
+namespace IgnProductCatalogueService.Application.GetProductCatalogByFilter
 {
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
-    public class CreateProductCatalogueCommandValidator : AbstractValidator<CreateProductCatalogueCommand>
+    public class GetProductCatalogByFilterQueryValidator : AbstractValidator<GetProductCatalogByFilterQuery>
     {
         [IntentManaged(Mode.Fully, Body = Mode.Ignore, Signature = Mode.Merge)]
-        public CreateProductCatalogueCommandValidator()
+        public GetProductCatalogByFilterQueryValidator()
         {
             ConfigureValidationRules();
         }
@@ -19,10 +19,7 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues.CreateProduct
         [IntentManaged(Mode.Fully)]
         private void ConfigureValidationRules()
         {
-            RuleFor(v => v.Sku)
-                .NotNull();
-
-            RuleFor(v => v.Status)
+            RuleFor(v => v.Request)
                 .NotNull();
 
         }

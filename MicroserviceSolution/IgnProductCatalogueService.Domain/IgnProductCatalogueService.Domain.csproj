@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="IgnitionGroup.Marketic.MongoDB" Version="2023.2.23.1" />
     <PackageReference Include="Intent.RoslynWeaver.Attributes" Version="2.0.1" />
   </ItemGroup>
 

@@ -35,6 +35,7 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues.CreateProduct
                 Attributes = request.Attributes,
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
+                Relationships = request.Relationships,
             };
 
             _productCatalogueRepository.Add(newProductCatalogue);

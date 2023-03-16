@@ -15,17 +15,19 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues.UpdateProduct
 
         public string Sku { get; set; }
 
-        public string Label { get; set; }
+        public string? Label { get; set; }
 
         public string Status { get; set; }
 
-        public string ParentId { get; set; }
+        public string? ParentId { get; set; }
 
-        public Dictionary<string, object> Attributes { get; set; }
+        public Dictionary<string, string>? Attributes { get; set; }
 
         public DateTime CreatedDate { get; set; }
 
         public DateTime ModifiedDate { get; set; }
+
+        public Dictionary<string, string>? Relationships { get; set; }
 
     }
 }

@@ -95,13 +95,13 @@
     </childElement>
     <childElement id="5b3bc65f-7cf9-4a6b-a688-c5b320834711" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
       <name>Label</name>
-      <display>Label: string</display>
+      <display>Label: string?</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <typeReference id="122cb8dd-8c55-412a-99f7-d28e2a73c047">
         <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
         <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
+        <isNullable>true</isNullable>
         <isCollection>false</isCollection>
         <isRequired>true</isRequired>
         <typePackageName>Intent.Common.Types</typePackageName>
@@ -165,13 +165,13 @@
     </childElement>
     <childElement id="63bd2c1c-8707-41ff-bdc3-a6b8eed2b55b" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
       <name>ParentId</name>
-      <display>ParentId: string</display>
+      <display>ParentId: string?</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <typeReference id="9a55641d-519f-488f-b14d-ec82b83228d2">
         <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
         <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
+        <isNullable>true</isNullable>
         <isCollection>false</isCollection>
         <isRequired>true</isRequired>
         <typePackageName>Intent.Common.Types</typePackageName>
@@ -200,13 +200,13 @@
     </childElement>
     <childElement id="4fb8aff2-40c1-4d30-838b-90fbf7dc4164" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
       <name>Attributes</name>
-      <display>Attributes: Dictionary&lt;object, string&gt;</display>
+      <display>Attributes: Dictionary&lt;string, string&gt;?</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <typeReference id="eb18f92c-def6-4a36-b631-34f384d9ebdf">
         <typeId>ac2b65c3-6a8f-454a-b520-b583350c43ef</typeId>
         <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
+        <isNullable>true</isNullable>
         <isCollection>false</isCollection>
         <isRequired>true</isRequired>
         <typePackageName>Intent.Common.CSharp</typePackageName>
@@ -214,7 +214,7 @@
         <stereotypes />
         <genericTypeParameters>
           <genericTypeParameter id="bf9db222-ec71-47a1-84f5-8558f1af1393">
-            <typeId>341DD965-D06C-4A40-9437-9516ADA77FF5</typeId>
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>
@@ -286,6 +286,55 @@
         <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
         <stereotypes />
         <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>83345e02-ab78-4502-a6d2-3e56ab2b8c27</parentFolderId>
+      <packageId>d104184c-f294-4c39-b0fd-daf7d0d0e902</packageId>
+      <packageName>IgnProductCatalogueService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c371f779-1720-4fd4-8008-62012c6e67c2" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Relationships</name>
+      <display>Relationships: Dictionary&lt;string, string&gt;?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a5ae755a-2c10-411a-ac87-5daeba6ed17e">
+        <typeId>ac2b65c3-6a8f-454a-b520-b583350c43ef</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.CSharp</typePackageName>
+        <typePackageId>730e1275-0c32-44f7-991a-9619d07ca68d</typePackageId>
+        <stereotypes />
+        <genericTypeParameters>
+          <genericTypeParameter id="a269aacc-cd1c-474b-a824-da180b97b021">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <genericTypeId>c1f297bc-68a6-4bd4-8c1b-ffbcb576aa1a</genericTypeId>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </genericTypeParameter>
+          <genericTypeParameter id="3747ad5d-ab80-40ee-97c1-9dbcb7ef2ae2">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <genericTypeId>b1b9176a-c13c-4475-b4bf-fcc01703eaf2</genericTypeId>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </genericTypeParameter>
+        </genericTypeParameters>
       </typeReference>
       <isMapped>false</isMapped>
       <parentFolderId>83345e02-ab78-4502-a6d2-3e56ab2b8c27</parentFolderId>

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoWrapper;
+using IgnitionGroup.Marketic.MongoDB;
 using IgnProductCatalogueService.Api.Configuration;
 using IgnProductCatalogueService.Application;
 using IgnProductCatalogueService.Infrastructure;
@@ -38,6 +40,9 @@ namespace IgnProductCatalogueService.Api
             services.AddApplication();
             services.AddInfrastructure(Configuration);
             services.ConfigureSwagger(Configuration);
+            services.AddScoped<IMongoContext>(x =>
+               new MongoDbContext("mongodb://localhost/EmployeeDB", "EmployeeDB"));
+            services.AddScoped(typeof(IMongoRepository<>), typeof(MongoGenericRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +53,7 @@ namespace IgnProductCatalogueService.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseApiResponseAndExceptionWrapper();
             app.UseCloudEvents();
             app.UseSerilogRequestLogging();
             app.UseRouting();

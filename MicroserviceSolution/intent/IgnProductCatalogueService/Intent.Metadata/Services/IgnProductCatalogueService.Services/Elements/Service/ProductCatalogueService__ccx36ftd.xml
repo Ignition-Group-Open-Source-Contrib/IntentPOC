@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="9b27b0c8-692c-45c3-9526-1535db5556f0" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+<class id="12cbb7a4-3a12-4d20-a4b8-531be2850049" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
   <name>ProductCatalogueService</name>
   <display>ProductCatalogueService</display>
   <isAbstract>false</isAbstract>
@@ -21,13 +21,13 @@
   </stereotypes>
   <metadata />
   <childElements>
-    <childElement id="5826dfc3-da86-4b0c-92c2-ddea0cfe8131" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+    <childElement id="66292ec8-f5bb-456c-8223-9eccf43aa067" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>Post</name>
       <display>Post(command: CreateProductCatalogueCommand): string</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
-      <typeReference id="e4a27bf3-51a9-40eb-b7b4-abcfe32aaed2">
+      <typeReference id="ccaf1e04-0fb9-49fb-871a-4f35f1689d28">
         <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
@@ -45,10 +45,10 @@
         <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="5575fa61-fc8f-4172-b18c-e476a7c0d542" name="CreateProductCatalogueCommand" type="element" specialization="Command" />
+          <target id="d724cd02-6dc1-4fcb-9549-1b3330b5116f" name="CreateProductCatalogueCommand" type="element" specialization="Command" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>9b27b0c8-692c-45c3-9526-1535db5556f0</parentFolderId>
+      <parentFolderId>12cbb7a4-3a12-4d20-a4b8-531be2850049</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>
@@ -65,13 +65,13 @@
       </stereotypes>
       <metadata />
       <childElements>
-        <childElement id="a9c30181-80cd-4067-b916-1392e3209f29" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+        <childElement id="4844d476-dcfd-498e-8f6a-a4a00beb726f" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
           <name>command</name>
           <display>in : command: CreateProductCatalogueCommand</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="98767253-5edb-403a-85df-33cfae0d6dd8">
-            <typeId>5575fa61-fc8f-4172-b18c-e476a7c0d542</typeId>
+          <typeReference id="f2713832-c8ac-4d2a-9b8d-2b63665e7fc4">
+            <typeId>d724cd02-6dc1-4fcb-9549-1b3330b5116f</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>
@@ -82,7 +82,7 @@
             <genericTypeParameters />
           </typeReference>
           <isMapped>false</isMapped>
-          <parentFolderId>5826dfc3-da86-4b0c-92c2-ddea0cfe8131</parentFolderId>
+          <parentFolderId>66292ec8-f5bb-456c-8223-9eccf43aa067</parentFolderId>
           <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
           <packageName>IgnProductCatalogueService.Services</packageName>
           <stereotypes>
@@ -101,14 +101,14 @@
         </childElement>
       </childElements>
     </childElement>
-    <childElement id="166075ae-be30-4149-b593-3bf4c011fa78" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+    <childElement id="55ceb7de-925b-44a1-a86d-11b79ff4aec3" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>Get</name>
       <display>Get(id: string): ProductCatalogueDto</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
-      <typeReference id="1eebc0e5-6d6c-4e71-8b59-b8a02f887672">
-        <typeId>60345467-cbfe-40da-b32f-298829d0a813</typeId>
+      <typeReference id="fda77c17-6b1c-4f13-a763-db195a4ef978">
+        <typeId>20a4bf2a-f432-449e-b3d3-c0fda4fede1c</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>
@@ -125,10 +125,10 @@
         <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="0d9e4a68-e022-4910-9606-ac3741fbbb10" name="GetProductCatalogueByIdQuery" type="element" specialization="Query" />
+          <target id="1ffca874-9a61-4b92-8897-c56ee4e8e40a" name="GetProductCatalogueByIdQuery" type="element" specialization="Query" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>9b27b0c8-692c-45c3-9526-1535db5556f0</parentFolderId>
+      <parentFolderId>12cbb7a4-3a12-4d20-a4b8-531be2850049</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>
@@ -145,12 +145,12 @@
       </stereotypes>
       <metadata />
       <childElements>
-        <childElement id="3d23c6af-d43d-48e5-b699-812b44cf9ac7" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+        <childElement id="0e3f965b-d75d-4573-b7b7-79f7596d4ff7" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
           <name>id</name>
           <display>in : id: string</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="1c1680c9-14fd-4b38-8d64-7b991987ee89">
+          <typeReference id="787f3341-96c8-40a5-9f2d-207ae61ab825">
             <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
@@ -166,10 +166,10 @@
             <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
             <autoSyncTypeReference>true</autoSyncTypeReference>
             <mappedPath>
-              <target id="3c4365dd-7651-4d79-b565-ad9b4dd7ff35" name="Id" type="element" specialization="DTO-Field" />
+              <target id="d33d6d82-3ea1-4889-ad0d-24217cbf1ee6" name="Id" type="element" specialization="DTO-Field" />
             </mappedPath>
           </mappedClass>
-          <parentFolderId>166075ae-be30-4149-b593-3bf4c011fa78</parentFolderId>
+          <parentFolderId>55ceb7de-925b-44a1-a86d-11b79ff4aec3</parentFolderId>
           <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
           <packageName>IgnProductCatalogueService.Services</packageName>
           <stereotypes>
@@ -188,13 +188,13 @@
         </childElement>
       </childElements>
     </childElement>
-    <childElement id="7bc24c4e-785f-41a6-89c3-460d74ae930f" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+    <childElement id="f2ec19dc-1a84-459b-b47d-cd3c72e2328f" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>GetAll</name>
       <display>GetAll(): ProductCatalogueDto[*]</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
-      <typeReference id="28fb21db-fca5-44e9-92b8-0912092137b5">
-        <typeId>60345467-cbfe-40da-b32f-298829d0a813</typeId>
+      <typeReference id="1d27169a-a91c-4da9-82fa-7afbcfc153f1">
+        <typeId>20a4bf2a-f432-449e-b3d3-c0fda4fede1c</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>true</isCollection>
@@ -211,10 +211,10 @@
         <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="bce2e260-945d-4280-a59f-5b9c4554f4d5" name="GetProductCataloguesQuery" type="element" specialization="Query" />
+          <target id="b6f7e4c2-d8c2-4a86-bc12-a14cf8b35f6b" name="GetProductCataloguesQuery" type="element" specialization="Query" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>9b27b0c8-692c-45c3-9526-1535db5556f0</parentFolderId>
+      <parentFolderId>12cbb7a4-3a12-4d20-a4b8-531be2850049</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>
@@ -232,13 +232,13 @@
       <metadata />
       <childElements />
     </childElement>
-    <childElement id="2f574fc0-ab05-495e-bb63-55a3764ac5b6" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+    <childElement id="81c3c16c-5c11-46b8-ac7c-758fcf272475" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>Put</name>
       <display>Put(id: string, command: UpdateProductCatalogueCommand): void</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
-      <typeReference id="81b7a7b5-35b1-417d-96c1-9f39aadb68e2">
+      <typeReference id="35652e35-745b-4078-8071-8cd883d74558">
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>
@@ -253,10 +253,10 @@
         <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="7f22b65f-5b42-4914-a909-8926a5fe0d57" name="UpdateProductCatalogueCommand" type="element" specialization="Command" />
+          <target id="bfb20618-04c1-409f-a08e-95359702fa8c" name="UpdateProductCatalogueCommand" type="element" specialization="Command" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>9b27b0c8-692c-45c3-9526-1535db5556f0</parentFolderId>
+      <parentFolderId>12cbb7a4-3a12-4d20-a4b8-531be2850049</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>
@@ -273,12 +273,12 @@
       </stereotypes>
       <metadata />
       <childElements>
-        <childElement id="8fa6c863-77f8-4f8c-b4e5-0ec4efcf2bfa" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+        <childElement id="71d19ff6-eb81-4a6c-b526-176e53527057" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
           <name>id</name>
           <display>in : id: string</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="b176822f-2d8e-4094-9667-f2e955052eaf">
+          <typeReference id="a3d908ce-8cc8-43f0-be6a-b77901324461">
             <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
@@ -294,10 +294,10 @@
             <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
             <autoSyncTypeReference>true</autoSyncTypeReference>
             <mappedPath>
-              <target id="388ba88b-a022-4586-82df-1c71454af3d9" name="Id" type="element" specialization="DTO-Field" />
+              <target id="d5cf0872-6ee3-4dec-8bdb-eabdc150b2c8" name="Id" type="element" specialization="DTO-Field" />
             </mappedPath>
           </mappedClass>
-          <parentFolderId>2f574fc0-ab05-495e-bb63-55a3764ac5b6</parentFolderId>
+          <parentFolderId>81c3c16c-5c11-46b8-ac7c-758fcf272475</parentFolderId>
           <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
           <packageName>IgnProductCatalogueService.Services</packageName>
           <stereotypes>
@@ -314,13 +314,13 @@
           <metadata />
           <childElements />
         </childElement>
-        <childElement id="f306e0b9-efe1-46ea-bb93-9455a97ba3bd" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+        <childElement id="8b2dfd54-1783-4431-a566-b7fb3fdc6e94" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
           <name>command</name>
           <display>in : command: UpdateProductCatalogueCommand</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="68e4d6b1-f889-4589-a747-c4df78694112">
-            <typeId>7f22b65f-5b42-4914-a909-8926a5fe0d57</typeId>
+          <typeReference id="ebfd8adc-a3ba-41a0-a10e-c5fa659c129f">
+            <typeId>bfb20618-04c1-409f-a08e-95359702fa8c</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>
@@ -331,7 +331,7 @@
             <genericTypeParameters />
           </typeReference>
           <isMapped>false</isMapped>
-          <parentFolderId>2f574fc0-ab05-495e-bb63-55a3764ac5b6</parentFolderId>
+          <parentFolderId>81c3c16c-5c11-46b8-ac7c-758fcf272475</parentFolderId>
           <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
           <packageName>IgnProductCatalogueService.Services</packageName>
           <stereotypes>
@@ -350,13 +350,13 @@
         </childElement>
       </childElements>
     </childElement>
-    <childElement id="d4dcc2e2-cd93-424b-a986-e99d4917549d" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+    <childElement id="be22c75f-f464-4e85-8b6b-fb69bd10e6e9" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>Delete</name>
       <display>Delete(id: string, command: DeleteProductCatalogueCommand): void</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
-      <typeReference id="5d5878bf-63d5-4785-ad61-3eea07159816">
+      <typeReference id="85284db3-c9bf-4ba1-8766-cdc24ac2447a">
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>
@@ -371,10 +371,10 @@
         <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="f3bb9b68-1fea-4c8c-b75d-20bf3ae9c690" name="DeleteProductCatalogueCommand" type="element" specialization="Command" />
+          <target id="8b459d20-662a-4a6d-aee0-3d3001e89274" name="DeleteProductCatalogueCommand" type="element" specialization="Command" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>9b27b0c8-692c-45c3-9526-1535db5556f0</parentFolderId>
+      <parentFolderId>12cbb7a4-3a12-4d20-a4b8-531be2850049</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>
@@ -391,12 +391,12 @@
       </stereotypes>
       <metadata />
       <childElements>
-        <childElement id="e489554f-7969-412b-8370-cef5332d559a" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+        <childElement id="dd3556e5-00d7-407e-aa62-fc2570c62f5e" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
           <name>id</name>
           <display>in : id: string</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="4e93c4d1-28cf-4ed0-8e75-bea41d5d94d7">
+          <typeReference id="fa71ed7f-3576-4ca8-8822-bca01265297a">
             <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
@@ -412,10 +412,10 @@
             <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
             <autoSyncTypeReference>true</autoSyncTypeReference>
             <mappedPath>
-              <target id="b03ff559-1918-47b5-a79f-fb4267546549" name="Id" type="element" specialization="DTO-Field" />
+              <target id="cd8f4a3d-7f22-4c70-bcee-fde2753f9122" name="Id" type="element" specialization="DTO-Field" />
             </mappedPath>
           </mappedClass>
-          <parentFolderId>d4dcc2e2-cd93-424b-a986-e99d4917549d</parentFolderId>
+          <parentFolderId>be22c75f-f464-4e85-8b6b-fb69bd10e6e9</parentFolderId>
           <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
           <packageName>IgnProductCatalogueService.Services</packageName>
           <stereotypes>
@@ -432,13 +432,13 @@
           <metadata />
           <childElements />
         </childElement>
-        <childElement id="9cf19768-cd3a-4ec2-8df2-9771896d8a89" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+        <childElement id="fad09f9b-3e59-4734-9ec0-d10c8ed24ab1" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
           <name>command</name>
           <display>in : command: DeleteProductCatalogueCommand</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
-          <typeReference id="7461e706-f34f-4774-9bbd-97f2e602cd48">
-            <typeId>f3bb9b68-1fea-4c8c-b75d-20bf3ae9c690</typeId>
+          <typeReference id="87c6b645-be63-4c11-b777-48beb4c3dd29">
+            <typeId>8b459d20-662a-4a6d-aee0-3d3001e89274</typeId>
             <isNavigable>true</isNavigable>
             <isNullable>false</isNullable>
             <isCollection>false</isCollection>
@@ -449,7 +449,94 @@
             <genericTypeParameters />
           </typeReference>
           <isMapped>false</isMapped>
-          <parentFolderId>d4dcc2e2-cd93-424b-a986-e99d4917549d</parentFolderId>
+          <parentFolderId>be22c75f-f464-4e85-8b6b-fb69bd10e6e9</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="f68780e4-628b-4fb2-aaac-16bee31f41ae" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetProductCatalogByFilter</name>
+      <display>GetProductCatalogByFilter(request: SearchQuery): ProductCatalogueDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="c8546935-363f-4814-8e64-c6f8f0d0e890">
+        <typeId>20a4bf2a-f432-449e-b3d3-c0fda4fede1c</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>f15fa935-434e-4983-b283-25cde2cb440e</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="bf763f0f-785a-4f2c-a5cf-c8538d48f6cc" name="GetProductCatalogByFilterQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>12cbb7a4-3a12-4d20-a4b8-531be2850049</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="[action]" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="d8d71395-30bd-4c36-beb9-d8727d304b2b" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>request</name>
+          <display>in : request: SearchQuery</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="ed30e026-dfbc-47f6-acf3-4c324035d0ac">
+            <typeId>9d6cc0e5-32b0-4775-8f0f-8135375a9b16</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>f15fa935-434e-4983-b283-25cde2cb440e</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="ef443d62-3d44-46b7-bde0-22e5636f86ff" name="Request" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>f68780e4-628b-4fb2-aaac-16bee31f41ae</parentFolderId>
           <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
           <packageName>IgnProductCatalogueService.Services</packageName>
           <stereotypes>

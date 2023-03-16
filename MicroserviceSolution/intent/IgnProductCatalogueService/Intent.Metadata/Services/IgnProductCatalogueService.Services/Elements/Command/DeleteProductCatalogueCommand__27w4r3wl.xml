@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="f3bb9b68-1fea-4c8c-b75d-20bf3ae9c690" type="Command" typeId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9">
+<class id="8b459d20-662a-4a6d-aee0-3d3001e89274" type="Command" typeId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9">
   <name>DeleteProductCatalogueCommand</name>
   <display>DeleteProductCatalogueCommand: void</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
   <genericTypes />
-  <typeReference id="9bee7331-1d5d-420a-8281-74bc5fcc45a9">
+  <typeReference id="8283ca57-de9c-490c-92df-3ebd5387fc11">
     <isNavigable>true</isNavigable>
     <isNullable>false</isNullable>
     <isCollection>false</isCollection>
@@ -23,7 +23,7 @@
       <target id="83345e02-ab78-4502-a6d2-3e56ab2b8c27" name="ProductCatalogue" type="element" specialization="Class" />
     </mappedPath>
   </mappedClass>
-  <parentFolderId>19515afa-8b06-4365-9cbd-a72908e30d73</parentFolderId>
+  <parentFolderId>5d0875d7-9f6c-48de-a884-02d0d49e3ddd</parentFolderId>
   <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
   <packageName>IgnProductCatalogueService.Services</packageName>
   <stereotypes />
@@ -31,12 +31,12 @@
     <entry key="baseName" value="ProductCatalogue" />
   </metadata>
   <childElements>
-    <childElement id="b03ff559-1918-47b5-a79f-fb4267546549" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+    <childElement id="cd8f4a3d-7f22-4c70-bcee-fde2753f9122" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
       <name>Id</name>
       <display>Id: string</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
-      <typeReference id="2b4eea43-9bf1-403c-9d75-e0e0e45b3a8f">
+      <typeReference id="ba11f260-2b71-450e-ae9a-a98926d9f770">
         <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
@@ -55,7 +55,7 @@
           <target id="2804d21f-bd2a-4b76-ac26-46584be5809a" name="Id" type="element" specialization="Attribute" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>f3bb9b68-1fea-4c8c-b75d-20bf3ae9c690</parentFolderId>
+      <parentFolderId>8b459d20-662a-4a6d-aee0-3d3001e89274</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>

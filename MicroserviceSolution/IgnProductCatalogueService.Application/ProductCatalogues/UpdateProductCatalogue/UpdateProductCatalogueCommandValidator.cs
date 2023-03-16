@@ -25,16 +25,7 @@ namespace IgnProductCatalogueService.Application.ProductCatalogues.UpdateProduct
             RuleFor(v => v.Sku)
                 .NotNull();
 
-            RuleFor(v => v.Label)
-                .NotNull();
-
             RuleFor(v => v.Status)
-                .NotNull();
-
-            RuleFor(v => v.ParentId)
-                .NotNull();
-
-            RuleFor(v => v.Attributes)
                 .NotNull();
 
         }

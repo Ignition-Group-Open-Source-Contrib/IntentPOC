@@ -2,7 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using DaprSwagger.Extensions;
 using IgnProductCatalogueService.Api.Controllers.ResponseTypes;
+using IgnProductCatalogueService.Application;
+using IgnProductCatalogueService.Application.GetProductCatalogByFilter;
 using IgnProductCatalogueService.Application.ProductCatalogues;
 using IgnProductCatalogueService.Application.ProductCatalogues.CreateProductCatalogue;
 using IgnProductCatalogueService.Application.ProductCatalogues.DeleteProductCatalogue;
@@ -110,6 +113,20 @@ namespace IgnProductCatalogueService.Api.Controllers
 
             await _mediator.Send(command, cancellationToken);
             return Ok();
+        }
+
+        /// <summary>
+        /// </summary>
+        /// <response code="200">Returns the specified List&lt;ProductCatalogueDto&gt;.</response>
+        /// <response code="400">One or more validation errors have occurred.</response>
+        [HttpGet("[action]")]
+        [ProducesResponseType(typeof(List<ProductCatalogueDto>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<List<ProductCatalogueDto>>> GetProductCatalogByFilter([FromQuery] SearchQuery request, CancellationToken cancellationToken)
+        {
+            var result = await _mediator.Send(new GetProductCatalogByFilterQuery { Request = request }, cancellationToken);
+            return Ok(result);
         }
     }
 }
