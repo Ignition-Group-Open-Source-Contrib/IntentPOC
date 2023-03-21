@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2a9d3a58-7b6a-46df-9da0-5a909fd5f084" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetProductsQuery</name>
+  <display>GetProductsQuery: ProductsDto[*]</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="bef10bc9-9a21-4d37-b112-0791ad54f9bc">
+    <typeId>f6e4f163-be03-4292-8bcc-adcc8b687f9f</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+    <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>aad9e528-0f63-4983-8bfb-111dca950525</parentFolderId>
+  <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+  <packageName>IgnProductCatalogueService.Services</packageName>
+  <stereotypes />
+  <metadata>
+    <entry key="baseName" value="Products" />
+  </metadata>
+  <childElements />
+</class>

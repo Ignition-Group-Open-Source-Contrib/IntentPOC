@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="eeea1049-be0c-45dd-8272-b40fbdda715d" type="Class" typeId="04e12b51-ed12-42a3-9667-a6aa81bb6d10">
+  <name>ProductEntity</name>
+  <display>ProductEntity</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</parentFolderId>
+  <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+  <packageName>MongoCRUDSample.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="2946211a-637d-44ad-94a8-9cf0b4428c73" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Id</name>
+      <display>Id: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="4f80216a-3d9d-4514-9e7a-f471df4d8ecd">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>eeea1049-be0c-45dd-8272-b40fbdda715d</parentFolderId>
+      <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+      <packageName>MongoCRUDSample.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b99aac21-9ca4-467f-a3a6-046255a9eed6" name="Primary Key">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="4c1e3f7e-61d4-460d-bd20-c2edbc0c0e2e" display="Identity" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="DEFAULT" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata>
+        <entry key="id" value="true" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="cbdcc49f-7539-44c0-9996-d67ff80c9776" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>ProductName</name>
+      <display>ProductName: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="abe54e06-2d0d-442b-97f4-f3ea5ec47a51">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>eeea1049-be0c-45dd-8272-b40fbdda715d</parentFolderId>
+      <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+      <packageName>MongoCRUDSample.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="DEFAULT" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" value="200" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="df9c1878-64ce-4faf-8c80-60993df45dd2" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Sku</name>
+      <display>Sku: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="c5b18019-92ae-4d0c-b3c7-ac17391f0a6e">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>eeea1049-be0c-45dd-8272-b40fbdda715d</parentFolderId>
+      <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+      <packageName>MongoCRUDSample.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="DEFAULT" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" value="100" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="57907f2b-df6d-44e3-bb24-d6df1fa3b85e" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>ProductPrice</name>
+      <display>ProductPrice: decimal</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="61c869ed-7ca5-44f6-9725-98abd7c21cb7">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>eeea1049-be0c-45dd-8272-b40fbdda715d</parentFolderId>
+      <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+      <packageName>MongoCRUDSample.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="42797f26-7ed0-43c0-86b0-175128e88942" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CreatedDate</name>
+      <display>CreatedDate: datetime</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="1de44c17-3856-4dc2-8767-be3924b13e3d">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>eeea1049-be0c-45dd-8272-b40fbdda715d</parentFolderId>
+      <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+      <packageName>MongoCRUDSample.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c2d196df-c06e-4bb2-9292-1fec64810892" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>UpdatedDate</name>
+      <display>UpdatedDate: datetime</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="eaa9d0bf-4f81-4e65-81a6-67ec9f895b20">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>eeea1049-be0c-45dd-8272-b40fbdda715d</parentFolderId>
+      <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+      <packageName>MongoCRUDSample.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="cb065b3d-ccbc-4703-b42e-2fd23b06377f" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>ProductEntitiesService</name>
+  <display>ProductEntitiesService</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c2d35522-5843-40ea-b6d5-69846130abec</parentFolderId>
+  <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+  <packageName>MongoCRUDSample.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="c29224ec-d473-4b95-ad4a-ec55c676c4fd" name="Http Service Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+      <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+      <properties>
+        <property name="1e223bd0-7a72-435a-8741-a612d88e4a12" display="Route" value="" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="f46545b9-6189-4981-89c3-140ee462d1b7" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Post</name>
+      <display>Post(command: CreateProductEntityCommand): string</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="86343dc3-cf7b-42ba-aa9c-ee13e718a53a">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>d77fe325-eaad-4618-b59c-85985b0227b6</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="96870819-320a-4da5-878f-d90df45a35bb" name="CreateProductEntityCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>cb065b3d-ccbc-4703-b42e-2fd23b06377f</parentFolderId>
+      <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+      <packageName>MongoCRUDSample.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="application/json" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="52fe53f9-6f7e-43f0-8b4c-db5eb17395eb" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: CreateProductEntityCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="473b51d7-c843-484c-a522-437b94e5dfbf">
+            <typeId>96870819-320a-4da5-878f-d90df45a35bb</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>MongoCRUDSample.Services</typePackageName>
+            <typePackageId>c2d35522-5843-40ea-b6d5-69846130abec</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>f46545b9-6189-4981-89c3-140ee462d1b7</parentFolderId>
+          <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+          <packageName>MongoCRUDSample.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="fcc80554-141e-4c4d-aafd-4b05af22ac33" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Get</name>
+      <display>Get(id: string): ProductEntityDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="18b8c7cd-a33d-4835-998d-73b11e6d6cde">
+        <typeId>4b9ec230-f8c2-4bab-8cd6-d57df369194a</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>MongoCRUDSample.Services</typePackageName>
+        <typePackageId>c2d35522-5843-40ea-b6d5-69846130abec</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>d77fe325-eaad-4618-b59c-85985b0227b6</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="e5e9772e-ca7c-4119-ab97-1311fa2e3d65" name="GetProductEntityByIdQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>cb065b3d-ccbc-4703-b42e-2fd23b06377f</parentFolderId>
+      <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+      <packageName>MongoCRUDSample.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="84a783d9-0041-4b94-972e-7edb9e4ad257" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: string</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="0d8e20ba-8211-4272-ba86-6d77c788e150">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="4c5a0191-6ba0-4b68-b840-9b6990aae2f9" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>fcc80554-141e-4c4d-aafd-4b05af22ac33</parentFolderId>
+          <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+          <packageName>MongoCRUDSample.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="af4a686d-da07-4812-8c57-932b60ed2bf6" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetAll</name>
+      <display>GetAll(): ProductEntityDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="983b1904-c73b-43ba-8454-33cbd9b0e8f9">
+        <typeId>4b9ec230-f8c2-4bab-8cd6-d57df369194a</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>MongoCRUDSample.Services</typePackageName>
+        <typePackageId>c2d35522-5843-40ea-b6d5-69846130abec</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>d77fe325-eaad-4618-b59c-85985b0227b6</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="6d55708f-4095-430a-b113-af5e14264376" name="GetProductEntitiesQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>cb065b3d-ccbc-4703-b42e-2fd23b06377f</parentFolderId>
+      <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+      <packageName>MongoCRUDSample.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="0d4ebff9-3a28-4694-8e1f-4d8fd3409ecf" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Put</name>
+      <display>Put(id: string, command: UpdateProductEntityCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="0a92d8a5-2697-4244-a6e6-898a922915c2">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>d77fe325-eaad-4618-b59c-85985b0227b6</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="1706057a-28c6-4314-b0c7-3816e9879ebb" name="UpdateProductEntityCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>cb065b3d-ccbc-4703-b42e-2fd23b06377f</parentFolderId>
+      <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+      <packageName>MongoCRUDSample.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="PUT" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="97b07392-8e33-4f21-a300-9a6ecd7e285d" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: string</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="019b41b2-0c88-4a68-b05a-e85300c79a37">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="c320ad49-8706-455f-9889-374659accbab" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>0d4ebff9-3a28-4694-8e1f-4d8fd3409ecf</parentFolderId>
+          <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+          <packageName>MongoCRUDSample.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="7c78f9bf-d5a9-4197-8a19-0627b672ad25" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: UpdateProductEntityCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="04c8a456-54d2-4343-a367-6207785cc1f1">
+            <typeId>1706057a-28c6-4314-b0c7-3816e9879ebb</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>MongoCRUDSample.Services</typePackageName>
+            <typePackageId>c2d35522-5843-40ea-b6d5-69846130abec</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>0d4ebff9-3a28-4694-8e1f-4d8fd3409ecf</parentFolderId>
+          <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+          <packageName>MongoCRUDSample.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="b771579f-0271-47eb-9b3c-4a779b05fb3e" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Delete</name>
+      <display>Delete(id: string, command: DeleteProductEntityCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="cb60977f-51b3-4ed4-8522-7203936cfd64">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>d77fe325-eaad-4618-b59c-85985b0227b6</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="5a38b3c6-7da0-4c0a-9a35-48abc07a7fba" name="DeleteProductEntityCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>cb065b3d-ccbc-4703-b42e-2fd23b06377f</parentFolderId>
+      <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+      <packageName>MongoCRUDSample.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="DELETE" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="86f7fc8a-6af1-4446-afce-461aea2a87a4" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: string</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="f5503121-00b9-4fcb-9644-6a14564c7e41">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="3f5ff676-3baf-4b66-bebc-de0539d166c5" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>b771579f-0271-47eb-9b3c-4a779b05fb3e</parentFolderId>
+          <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+          <packageName>MongoCRUDSample.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="4427aa44-8f01-4cfd-b99d-96f15a52d7ec" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: DeleteProductEntityCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="a752c05c-4dd3-4650-b47f-9d230ff4a74b">
+            <typeId>5a38b3c6-7da0-4c0a-9a35-48abc07a7fba</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>MongoCRUDSample.Services</typePackageName>
+            <typePackageId>c2d35522-5843-40ea-b6d5-69846130abec</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>b771579f-0271-47eb-9b3c-4a779b05fb3e</parentFolderId>
+          <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+          <packageName>MongoCRUDSample.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

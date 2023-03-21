@@ -17,12 +17,12 @@ namespace IgnProductCatalogueService.Application.Order.CreateOrder
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
     public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, int>
     {
-        private readonly IMongoRepository<OrderEntity> _orderRepo;
+        //private readonly IMongoRepository<OrderEntity> _orderRepo;
         [IntentManaged(Mode.Ignore)]
-        public CreateOrderCommandHandler(IMongoRepository<OrderEntity> orderRepo)
+        public CreateOrderCommandHandler()
         {
-            _orderRepo = orderRepo;
-            
+            //_orderRepo = orderRepo;
+
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
@@ -30,21 +30,21 @@ namespace IgnProductCatalogueService.Application.Order.CreateOrder
         {
             try
             {
-                var orderEntity = new OrderEntity()
-                {
-                    AccountId = request.AccountId,
-                    Seller = request.Seller,
-                    BankingRef = request.BankingRef,
-                    OfferId = request.OfferId,
-                    Channel = request.Channel,
-                    OrderStatus = request.OrderStatus,
-                    CollectionType = request.CollectionType,
-                    OrderData = BsonDocument.Parse(JsonConvert.SerializeObject(new { request.FirstName })),
-                };
+                //var orderEntity = new OrderEntity()
+                //{
+                //    AccountId = request.AccountId,
+                //    Seller = request.Seller,
+                //    BankingRef = request.BankingRef,
+                //    OfferId = request.OfferId,
+                //    Channel = request.Channel,
+                //    OrderStatus = request.OrderStatus,
+                //    CollectionType = request.CollectionType,
+                //    OrderData = BsonDocument.Parse(JsonConvert.SerializeObject(new { request.FirstName })),
+                //};
 
-                // here mongo document is created and id will be int
-                await _orderRepo.InsertOneAsync(orderEntity);
-                return orderEntity.Id;
+                //// here mongo document is created and id will be int
+                //await _orderRepo.InsertOneAsync(orderEntity);
+                return 0; //orderEntity.Id;
             }
             catch (Exception)
             {

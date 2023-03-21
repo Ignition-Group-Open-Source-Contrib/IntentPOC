@@ -238,20 +238,6 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="4a35b7a6-9add-45da-a25d-d3fe97601adf" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
-      <name>Application</name>
-      <display>Application</display>
-      <externalReference>c36afd9f-aed7-4392-9e37-65b0c0229654</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>811ae6a0-44e8-4fbc-9049-a00118ad1104</parentFolderId>
-      <packageId>46e7d538-75f5-452b-861a-1af297b00610</packageId>
-      <packageName>MicroserviceSolution</packageName>
-      <stereotypes />
-      <metadata />
-      <childElements />
-    </childElement>
     <childElement id="d75444ca-8143-4708-8811-4320e76d501f" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
       <name>Intent.Application.Contracts.Clients.EnumContract</name>
       <display>Intent.Application.Contracts.Clients.EnumContract</display>
@@ -260,6 +246,8 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>811ae6a0-44e8-4fbc-9049-a00118ad1104</parentFolderId>
+      <packageId>46e7d538-75f5-452b-861a-1af297b00610</packageId>
+      <packageName>MicroserviceSolution</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
@@ -274,10 +262,26 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>811ae6a0-44e8-4fbc-9049-a00118ad1104</parentFolderId>
+      <packageId>46e7d538-75f5-452b-861a-1af297b00610</packageId>
+      <packageName>MicroserviceSolution</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />
       </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="4a35b7a6-9add-45da-a25d-d3fe97601adf" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Application</name>
+      <display>Application</display>
+      <externalReference>c36afd9f-aed7-4392-9e37-65b0c0229654</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>811ae6a0-44e8-4fbc-9049-a00118ad1104</parentFolderId>
+      <packageId>46e7d538-75f5-452b-861a-1af297b00610</packageId>
+      <packageName>MicroserviceSolution</packageName>
+      <stereotypes />
+      <metadata />
       <childElements />
     </childElement>
   </childElements>

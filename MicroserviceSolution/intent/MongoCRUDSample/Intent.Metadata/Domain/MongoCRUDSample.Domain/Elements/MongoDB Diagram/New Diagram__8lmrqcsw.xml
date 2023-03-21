@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="bdc2737c-0e76-4e4b-8f95-e1b71fc1771c" type="MongoDB Diagram" typeId="67f81f34-af38-4245-9c8e-1816e3012cce">
+  <name>New Diagram</name>
+  <display>New Diagram</display>
+  <externalReference>0b8f70f8-9712-419e-aa38-3089f8633839</externalReference>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</parentFolderId>
+  <packageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</packageId>
+  <packageName>MongoCRUDSample.Domain</packageName>
+  <diagram>
+    <targetPackageId>9eab1bda-e404-449f-9ca8-bc7a06fe3aeb</targetPackageId>
+  </diagram>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

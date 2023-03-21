@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="d600e06c-e43b-4c86-8720-c80ebfa314e6">
+  <sourceEnd id="f7269581-5fcd-4187-a99b-05f90fac1ea8" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>ProductCatalogue</name>
+    <display>ProductCatalogue: Products</display>
+    <order>0</order>
+    <typeReference id="6b5fa7a5-5a93-4437-a212-1d7e2ea12501">
+      <typeId>83345e02-ab78-4502-a6d2-3e56ab2b8c27</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnProductCatalogueService.Domain</typePackageName>
+      <typePackageId>d104184c-f294-4c39-b0fd-daf7d0d0e902</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="d600e06c-e43b-4c86-8720-c80ebfa314e6" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Attributes</name>
+    <display>Attributes: Attributes[*]</display>
+    <order>6</order>
+    <typeReference id="34912d74-55e2-40db-aa38-1ab726a422c1">
+      <typeId>fe557a39-e4ff-4d0d-9d12-1fe49369a06d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnProductCatalogueService.Domain</typePackageName>
+      <typePackageId>d104184c-f294-4c39-b0fd-daf7d0d0e902</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

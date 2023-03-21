@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="709621f6-a482-4d60-a835-e122153388e3">
+  <sourceEnd id="3db10b6f-a9d2-442b-b9d7-ca563a33b033" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Products</name>
+    <display>Products: Products</display>
+    <order>0</order>
+    <typeReference id="75dbae9f-840d-4b91-bb8d-dd5a0b6683c4">
+      <typeId>83345e02-ab78-4502-a6d2-3e56ab2b8c27</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnProductCatalogueService.Domain</typePackageName>
+      <typePackageId>d104184c-f294-4c39-b0fd-daf7d0d0e902</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="709621f6-a482-4d60-a835-e122153388e3" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Relationships</name>
+    <display>Relationships: Relationships[*]</display>
+    <order>7</order>
+    <typeReference id="6b7ba13d-1bd1-4dc7-b9db-b971ab4b3d8b">
+      <typeId>b5c51a73-9fe4-4b36-84dc-1c489da2f060</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IgnProductCatalogueService.Domain</typePackageName>
+      <typePackageId>d104184c-f294-4c39-b0fd-daf7d0d0e902</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

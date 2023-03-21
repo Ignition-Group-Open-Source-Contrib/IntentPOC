@@ -1,15 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using IgnProductCatalogueService.Application.Order.CreateOrder;
-using IgnProductCatalogueService.Application.ProductCatalogues.CreateProductCatalogue;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.AspNetCore.Controllers.Controller", Version = "1.0")]

@@ -40,9 +40,9 @@ namespace IgnProductCatalogueService.Api
             services.AddApplication();
             services.AddInfrastructure(Configuration);
             services.ConfigureSwagger(Configuration);
-            services.AddScoped<IMongoContext>(x =>
-               new MongoDbContext("mongodb://localhost/EmployeeDB", "EmployeeDB"));
-            services.AddScoped(typeof(IMongoRepository<>), typeof(MongoGenericRepository<>));
+            //services.AddScoped<IMongoContext>(x =>
+            //   new MongoDbContext("mongodb://localhost/EmployeeDB", "EmployeeDB"));
+            //services.AddScoped(typeof(IMongoRepository<>), typeof(MongoGenericRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

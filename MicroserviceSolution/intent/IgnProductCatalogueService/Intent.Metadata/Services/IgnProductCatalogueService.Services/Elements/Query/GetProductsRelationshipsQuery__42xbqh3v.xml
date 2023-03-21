@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d5a23c3b-319a-4476-ac65-6c76d320afc6" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetProductsRelationshipsQuery</name>
+  <display>GetProductsRelationshipsQuery: ProductsRelationshipsDto[*]</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <typeReference id="0f4c509c-866f-478a-a4fe-d9a73e43cc2b">
+    <typeId>2eeb85d3-1e05-4639-a4ff-7ebc795c9ee3</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+    <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>aad9e528-0f63-4983-8bfb-111dca950525</parentFolderId>
+  <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+  <packageName>IgnProductCatalogueService.Services</packageName>
+  <stereotypes />
+  <metadata>
+    <entry key="baseName" value="ProductsRelationships" />
+  </metadata>
+  <childElements>
+    <childElement id="533f2434-9ace-4543-bf64-67e523e7971a" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>ProductsId</name>
+      <display>ProductsId: guid</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="8e6a3f4f-4b81-47a1-9ae5-ca2af468edbf">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5a23c3b-319a-4476-ac65-6c76d320afc6</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="4b54a612-2664-4493-a1f7-dc0623aa03da" name="Validations">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Application.FluentValidation</definitionPackageName>
+          <definitionPackageId>55856e5d-8217-4c17-8fbb-082ac75baaf5</definitionPackageId>
+          <properties>
+            <property name="d144e1aa-b506-407a-b60b-716ce38b70bb" display="Not Empty" value="false" isActive="true" />
+            <property name="8d844d65-bf88-4023-85e1-4d3d7f8784cd" display="Equal" isActive="true" />
+            <property name="490e08cd-5fb4-4bfd-80cf-fda3b88f745e" display="Not Equal" isActive="true" />
+            <property name="c94dc001-4ec7-42a0-a1e0-5b75502e7bec" display="Min Length" isActive="false" />
+            <property name="cbd52384-0f1e-4f41-9e98-314231b731e1" display="Max Length" isActive="false" />
+            <property name="f9802e6b-b033-4280-ad83-e4b064943d87" display="Min" isActive="false" />
+            <property name="aca206a8-cb7e-4537-b3f5-c5c301863c14" display="Max" isActive="false" />
+            <property name="9023c463-1cce-4f11-baa5-96561697fc7f" display="Predicate" isActive="true" />
+            <property name="13d364d0-975e-47e9-ae0c-a3137326ee60" display="Predicate Message" isActive="false" />
+            <property name="e441d802-9aea-4d74-b5f9-1cd2527f3719" display="Has Custom Validation" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

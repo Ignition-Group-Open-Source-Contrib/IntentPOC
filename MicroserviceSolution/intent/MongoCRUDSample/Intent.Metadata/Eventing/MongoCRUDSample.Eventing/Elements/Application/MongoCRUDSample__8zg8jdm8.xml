@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="f671f881-6e90-4349-861d-71827eb90dc7" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>MongoCRUDSample</name>
+  <display>MongoCRUDSample</display>
+  <externalReference>627bab41-be2f-4891-a765-f396dd3552d7</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2e43dabf-9b62-449b-863e-1909ac0f71da</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

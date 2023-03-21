@@ -4,26 +4,26 @@
   <FileLogs>
     <FileLog>
       <ProjectId>298065d0-baea-4acd-a1a4-d7c5d6ebabc6</ProjectId>
-      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#../dapr/components/pubsub.yaml</CorrelationId>
+      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#dapr/components/pubsub.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../../dapr/components/pubsub.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>../dapr/components/pubsub.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../dapr/components/pubsub.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>dapr/components/pubsub.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>298065d0-baea-4acd-a1a4-d7c5d6ebabc6</ProjectId>
-      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#../dapr/components/statestore.yaml</CorrelationId>
+      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#dapr/components/statestore.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../../dapr/components/statestore.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>../dapr/components/statestore.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../dapr/components/statestore.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>dapr/components/statestore.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>4c81c001-abec-450b-81a8-014bec4790e0</ProjectId>
-      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprFilesStaticContentTemplateRegistration#../dapr/config.yaml</CorrelationId>
+      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprFilesStaticContentTemplateRegistration#dapr/config.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../../dapr/config.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>../dapr/config.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../dapr/config.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>dapr/config.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -64,15 +64,15 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Api/Controllers/OrderController.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>OrderController.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>c8cd2d17-9198-4fbd-95ff-cc20da94a2bb</ProjectId>
-      <CorrelationId>Intent.AspNetCore.Controllers.Controller#12cbb7a4-3a12-4d20-a4b8-531be2850049</CorrelationId>
+      <CorrelationId>Intent.AspNetCore.Controllers.Controller#95393868-fcbb-461f-b9f6-e4755fb56054</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Api/Controllers/ProductCatalogueController.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogueController.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Api/Controllers/ProductsController.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsController.cs</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>31f43e4f-2dd5-43e4-a03f-6ca8b35ea8f5</ProjectId>
@@ -136,7 +136,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Api/Startup.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Startup.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>7741bb07-770d-407a-915b-4d95f37b9ef8</ProjectId>
@@ -168,14 +168,6 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Common/Behaviours/MongoDbUnitOfWorkBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>MongoDbUnitOfWorkBehaviour.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>7741bb07-770d-407a-915b-4d95f37b9ef8</ProjectId>
-      <CorrelationId>Intent.MongoDb.Integration.UnitOfWorkBehaviour</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Common/Behaviours/MongoUnitOfWorkBehaviour.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>MongoUnitOfWorkBehaviour.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -356,30 +348,6 @@
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryModels#bf763f0f-785a-4f2c-a5cf-c8538d48f6cc</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/GetProductCatalogByFilter/GetProductCatalogByFilterQuery.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>GetProductCatalogByFilter/GetProductCatalogByFilterQuery.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryHandler#bf763f0f-785a-4f2c-a5cf-c8538d48f6cc</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/GetProductCatalogByFilter/GetProductCatalogByFilterQueryHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>GetProductCatalogByFilter/GetProductCatalogByFilterQueryHandler.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#bf763f0f-785a-4f2c-a5cf-c8538d48f6cc</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/GetProductCatalogByFilter/GetProductCatalogByFilterQueryValidator.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>GetProductCatalogByFilter/GetProductCatalogByFilterQueryValidator.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
       <CorrelationId>Intent.VisualStudio.Projects.CSharpProject#811ae6a0-44e8-4fbc-9049-a00118ad1104</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/IgnProductCatalogueService.Application.csproj</ApplicationRelativeFilePath>
@@ -392,7 +360,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/Order/CreateOrder/CreateOrderCommand.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Order/CreateOrder/CreateOrderCommand.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
@@ -412,162 +380,410 @@
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandModels#d724cd02-6dc1-4fcb-9549-1b3330b5116f</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#c7e4e329-05a2-4816-810f-520d8f7f1e8a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/CreateProductCatalogue/CreateProductCatalogueCommand.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/CreateProductCatalogue/CreateProductCatalogueCommand.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProducts/CreateProductsCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProducts/CreateProductsCommand.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandHandler#d724cd02-6dc1-4fcb-9549-1b3330b5116f</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#c7e4e329-05a2-4816-810f-520d8f7f1e8a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/CreateProductCatalogue/CreateProductCatalogueCommandHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/CreateProductCatalogue/CreateProductCatalogueCommandHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProducts/CreateProductsCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProducts/CreateProductsCommandHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#d724cd02-6dc1-4fcb-9549-1b3330b5116f</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#c7e4e329-05a2-4816-810f-520d8f7f1e8a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/CreateProductCatalogue/CreateProductCatalogueCommandValidator.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/CreateProductCatalogue/CreateProductCatalogueCommandValidator.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProducts/CreateProductsCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProducts/CreateProductsCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandModels#8b459d20-662a-4a6d-aee0-3d3001e89274</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#ee02dd78-10d3-4a51-b767-0cb912456a58</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommand.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommand.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsAttributes/CreateProductsAttributesCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProductsAttributes/CreateProductsAttributesCommand.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandHandler#8b459d20-662a-4a6d-aee0-3d3001e89274</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#ee02dd78-10d3-4a51-b767-0cb912456a58</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommandHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommandHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsAttributes/CreateProductsAttributesCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProductsAttributes/CreateProductsAttributesCommandHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#8b459d20-662a-4a6d-aee0-3d3001e89274</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#ee02dd78-10d3-4a51-b767-0cb912456a58</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommandValidator.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/DeleteProductCatalogue/DeleteProductCatalogueCommandValidator.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsAttributes/CreateProductsAttributesCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProductsAttributes/CreateProductsAttributesCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandModels#e77bf2bf-f2d2-4982-83ce-b084798454c7</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#de77c7ad-c293-4e74-940b-af64eceea74d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommand.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommand.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsRelationships/CreateProductsRelationshipsCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProductsRelationships/CreateProductsRelationshipsCommand.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandHandler#e77bf2bf-f2d2-4982-83ce-b084798454c7</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#de77c7ad-c293-4e74-940b-af64eceea74d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsRelationships/CreateProductsRelationshipsCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProductsRelationships/CreateProductsRelationshipsCommandHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#e77bf2bf-f2d2-4982-83ce-b084798454c7</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#de77c7ad-c293-4e74-940b-af64eceea74d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandValidator.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogByFilterData/GetProductCatalogByFilterDataCommandValidator.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsRelationships/CreateProductsRelationshipsCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProductsRelationships/CreateProductsRelationshipsCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryModels#1ffca874-9a61-4b92-8897-c56ee4e8e40a</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#633fd9dc-1dfa-4641-90f4-be5550c3f780</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogueById/GetProductCatalogueByIdQuery.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogueById/GetProductCatalogueByIdQuery.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProducts/DeleteProductsCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProducts/DeleteProductsCommand.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryHandler#1ffca874-9a61-4b92-8897-c56ee4e8e40a</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#633fd9dc-1dfa-4641-90f4-be5550c3f780</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogueById/GetProductCatalogueByIdQueryHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogueById/GetProductCatalogueByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProducts/DeleteProductsCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProducts/DeleteProductsCommandHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#1ffca874-9a61-4b92-8897-c56ee4e8e40a</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#633fd9dc-1dfa-4641-90f4-be5550c3f780</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogueById/GetProductCatalogueByIdQueryValidator.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogueById/GetProductCatalogueByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProducts/DeleteProductsCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProducts/DeleteProductsCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryModels#b6f7e4c2-d8c2-4a86-bc12-a14cf8b35f6b</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#13729602-fbfa-4ddf-8982-5dd1ec5d574e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogues/GetProductCataloguesQuery.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogues/GetProductCataloguesQuery.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProductsAttributes/DeleteProductsAttributesCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProductsAttributes/DeleteProductsAttributesCommand.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.QueryHandler#b6f7e4c2-d8c2-4a86-bc12-a14cf8b35f6b</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#13729602-fbfa-4ddf-8982-5dd1ec5d574e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogues/GetProductCataloguesQueryHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogues/GetProductCataloguesQueryHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProductsAttributes/DeleteProductsAttributesCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProductsAttributes/DeleteProductsAttributesCommandHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#b6f7e4c2-d8c2-4a86-bc12-a14cf8b35f6b</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#13729602-fbfa-4ddf-8982-5dd1ec5d574e</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/GetProductCatalogues/GetProductCataloguesQueryValidator.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/GetProductCatalogues/GetProductCataloguesQueryValidator.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProductsAttributes/DeleteProductsAttributesCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProductsAttributes/DeleteProductsAttributesCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.DtoModel#20a4bf2a-f432-449e-b3d3-c0fda4fede1c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#f10d0423-8c43-4455-bef4-0be53ba183ca</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/ProductCatalogueDto.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/ProductCatalogueDto.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProductsRelationships/DeleteProductsRelationshipsCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProductsRelationships/DeleteProductsRelationshipsCommand.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#20a4bf2a-f432-449e-b3d3-c0fda4fede1c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#f10d0423-8c43-4455-bef4-0be53ba183ca</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/ProductCatalogueDtoMappingExtensions.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/ProductCatalogueDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProductsRelationships/DeleteProductsRelationshipsCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProductsRelationships/DeleteProductsRelationshipsCommandHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandModels#bfb20618-04c1-409f-a08e-95359702fa8c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#f10d0423-8c43-4455-bef4-0be53ba183ca</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/UpdateProductCatalogue/UpdateProductCatalogueCommand.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/UpdateProductCatalogue/UpdateProductCatalogueCommand.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/DeleteProductsRelationships/DeleteProductsRelationshipsCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/DeleteProductsRelationships/DeleteProductsRelationshipsCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.CommandHandler#bfb20618-04c1-409f-a08e-95359702fa8c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#2a9d3a58-7b6a-46df-9da0-5a909fd5f084</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/UpdateProductCatalogue/UpdateProductCatalogueCommandHandler.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/UpdateProductCatalogue/UpdateProductCatalogueCommandHandler.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProducts/GetProductsQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProducts/GetProductsQuery.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
-      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#bfb20618-04c1-409f-a08e-95359702fa8c</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#2a9d3a58-7b6a-46df-9da0-5a909fd5f084</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductCatalogues/UpdateProductCatalogue/UpdateProductCatalogueCommandValidator.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogues/UpdateProductCatalogue/UpdateProductCatalogueCommandValidator.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProducts/GetProductsQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProducts/GetProductsQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#2a9d3a58-7b6a-46df-9da0-5a909fd5f084</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProducts/GetProductsQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProducts/GetProductsQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#617e016d-d44f-4968-b8f9-01c3795bdf8a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsAttributes/GetProductsAttributesQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsAttributes/GetProductsAttributesQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#617e016d-d44f-4968-b8f9-01c3795bdf8a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsAttributes/GetProductsAttributesQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsAttributes/GetProductsAttributesQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#617e016d-d44f-4968-b8f9-01c3795bdf8a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsAttributes/GetProductsAttributesQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsAttributes/GetProductsAttributesQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#eacc2fc2-a32b-49b0-8642-d8f75fa86cd4</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsAttributesById/GetProductsAttributesByIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsAttributesById/GetProductsAttributesByIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#eacc2fc2-a32b-49b0-8642-d8f75fa86cd4</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsAttributesById/GetProductsAttributesByIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsAttributesById/GetProductsAttributesByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#eacc2fc2-a32b-49b0-8642-d8f75fa86cd4</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsAttributesById/GetProductsAttributesByIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsAttributesById/GetProductsAttributesByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#8877b71d-4f15-4c81-8ddc-bd0d3b1552c1</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsById/GetProductsByIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsById/GetProductsByIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#8877b71d-4f15-4c81-8ddc-bd0d3b1552c1</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsById/GetProductsByIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsById/GetProductsByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#8877b71d-4f15-4c81-8ddc-bd0d3b1552c1</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsById/GetProductsByIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsById/GetProductsByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#d5a23c3b-319a-4476-ac65-6c76d320afc6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsRelationships/GetProductsRelationshipsQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsRelationships/GetProductsRelationshipsQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#d5a23c3b-319a-4476-ac65-6c76d320afc6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsRelationships/GetProductsRelationshipsQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsRelationships/GetProductsRelationshipsQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#d5a23c3b-319a-4476-ac65-6c76d320afc6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsRelationships/GetProductsRelationshipsQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsRelationships/GetProductsRelationshipsQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#d94d0640-4735-4f0f-b5a4-f60e855f6498</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsRelationshipsById/GetProductsRelationshipsByIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsRelationshipsById/GetProductsRelationshipsByIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#d94d0640-4735-4f0f-b5a4-f60e855f6498</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsRelationshipsById/GetProductsRelationshipsByIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsRelationshipsById/GetProductsRelationshipsByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#d94d0640-4735-4f0f-b5a4-f60e855f6498</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/GetProductsRelationshipsById/GetProductsRelationshipsByIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/GetProductsRelationshipsById/GetProductsRelationshipsByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#42d521b8-c7d8-4997-81e1-eb3eec854031</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/ProductsAttributesDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/ProductsAttributesDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#42d521b8-c7d8-4997-81e1-eb3eec854031</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/ProductsAttributesDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/ProductsAttributesDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#f6e4f163-be03-4292-8bcc-adcc8b687f9f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/ProductsDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/ProductsDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#f6e4f163-be03-4292-8bcc-adcc8b687f9f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/ProductsDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/ProductsDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#2eeb85d3-1e05-4639-a4ff-7ebc795c9ee3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/ProductsRelationshipsDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/ProductsRelationshipsDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#2eeb85d3-1e05-4639-a4ff-7ebc795c9ee3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/ProductsRelationshipsDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/ProductsRelationshipsDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#c3d297a1-6d8c-45e3-ad48-22525f24e3df</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProducts/UpdateProductsCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProducts/UpdateProductsCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#c3d297a1-6d8c-45e3-ad48-22525f24e3df</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProducts/UpdateProductsCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProducts/UpdateProductsCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#c3d297a1-6d8c-45e3-ad48-22525f24e3df</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProducts/UpdateProductsCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProducts/UpdateProductsCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#0addada4-cb66-41e9-93ed-0fd85b731ad8</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#0addada4-cb66-41e9-93ed-0fd85b731ad8</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#0addada4-cb66-41e9-93ed-0fd85b731ad8</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#13da5d24-18f3-4b8d-af1a-d5fb61c30443</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#13da5d24-18f3-4b8d-af1a-d5fb61c30443</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#13da5d24-18f3-4b8d-af1a-d5fb61c30443</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -636,10 +852,26 @@
     </FileLog>
     <FileLog>
       <ProjectId>b39c4dd1-3c8f-4000-9374-3d2e61eedbc0</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntity#fe557a39-e4ff-4d0d-9d12-1fe49369a06d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Domain/Entities/Attributes.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Attributes.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b39c4dd1-3c8f-4000-9374-3d2e61eedbc0</ProjectId>
       <CorrelationId>Intent.Entities.DomainEntity#83345e02-ab78-4502-a6d2-3e56ab2b8c27</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Domain/Entities/ProductCatalogue.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogue.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Domain/Entities/Products.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Products.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b39c4dd1-3c8f-4000-9374-3d2e61eedbc0</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntity#b5c51a73-9fe4-4b36-84dc-1c489da2f060</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Domain/Entities/Relationships.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Relationships.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -662,8 +894,8 @@
       <ProjectId>1e6de453-3a8d-413d-8de4-1ef9a92eb23a</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#83345e02-ab78-4502-a6d2-3e56ab2b8c27</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Domain/Repositories/IProductCatalogueRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>IProductCatalogueRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Domain/Repositories/IProductsRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IProductsRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -710,8 +942,8 @@
       <ProjectId>6d47b6c7-529b-4094-84a1-8332667ff67b</ProjectId>
       <CorrelationId>Intent.MongoDb.BsonClassMap#83345e02-ab78-4502-a6d2-3e56ab2b8c27</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Infrastructure/Persistence/BsonClassMaps/ProductCatalogueClassMap.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogueClassMap.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Infrastructure/Persistence/BsonClassMaps/ProductsClassMap.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsClassMap.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -734,8 +966,8 @@
       <ProjectId>bd4248ba-b307-4f0c-a789-993ad12f2b80</ProjectId>
       <CorrelationId>Intent.MongoDb.Repositories.Repository#83345e02-ab78-4502-a6d2-3e56ab2b8c27</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Infrastructure/Repositories/ProductCatalogueRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>ProductCatalogueRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Infrastructure/Repositories/ProductsRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

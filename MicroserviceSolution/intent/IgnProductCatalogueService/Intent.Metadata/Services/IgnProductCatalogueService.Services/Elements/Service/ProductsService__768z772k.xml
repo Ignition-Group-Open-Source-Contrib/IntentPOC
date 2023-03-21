@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="95393868-fcbb-461f-b9f6-e4755fb56054" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>ProductsService</name>
+  <display>ProductsService</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</parentFolderId>
+  <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+  <packageName>IgnProductCatalogueService.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="c29224ec-d473-4b95-ad4a-ec55c676c4fd" name="Http Service Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+      <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+      <properties>
+        <property name="1e223bd0-7a72-435a-8741-a612d88e4a12" display="Route" value="" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="48368666-9d53-446c-9db1-0c9a5bf47ad5" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Post</name>
+      <display>Post(command: CreateProductsCommand): guid</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="5acf0f7d-ca0e-45ca-a1c0-a276fb7b75d7">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="c7e4e329-05a2-4816-810f-520d8f7f1e8a" name="CreateProductsCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="application/json" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="1c9afb4e-b7d5-4691-be16-b17bed2273cf" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: CreateProductsCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="0a8e1d99-fc2d-4370-bda0-a9b14908f243">
+            <typeId>c7e4e329-05a2-4816-810f-520d8f7f1e8a</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>48368666-9d53-446c-9db1-0c9a5bf47ad5</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="4c5b53f1-993e-4e44-9ff6-4c3ee938a976" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Get</name>
+      <display>Get(id: guid): ProductsDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="80043c45-df8c-432c-b984-4d0c9e6324a1">
+        <typeId>f6e4f163-be03-4292-8bcc-adcc8b687f9f</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="8877b71d-4f15-4c81-8ddc-bd0d3b1552c1" name="GetProductsByIdQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="0406e24e-d3a3-4afb-9f2c-cf16eaab1196" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="727d95c0-1089-431f-8077-c434827be00e">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="114840b9-0dd1-4e1d-8f23-9a318a967f31" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>4c5b53f1-993e-4e44-9ff6-4c3ee938a976</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="5c4b6753-0b8c-4598-95ab-a12549b0463a" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetAll</name>
+      <display>GetAll(): ProductsDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="54ee9524-3fb5-4b25-b175-4e5ebb4a6beb">
+        <typeId>f6e4f163-be03-4292-8bcc-adcc8b687f9f</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="2a9d3a58-7b6a-46df-9da0-5a909fd5f084" name="GetProductsQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="e7489787-736c-4f84-928b-466f2cace729" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Put</name>
+      <display>Put(id: guid, command: UpdateProductsCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="1f98a2b9-5dc8-4b76-9e43-984558e7b3f6">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="c3d297a1-6d8c-45e3-ad48-22525f24e3df" name="UpdateProductsCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="PUT" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="42cbecdf-3ca6-41ef-b40a-7910f5c7610c" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="ccf7b9c1-583b-463b-9b6e-9a64ec7bacd9">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="b91390d7-f725-4fac-b5fb-90fb7a1c5394" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>e7489787-736c-4f84-928b-466f2cace729</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="8475cde8-820e-48d0-984c-86e95bc573f8" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: UpdateProductsCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="4a6d4ec8-1c29-42bb-aea2-331aef8b5e96">
+            <typeId>c3d297a1-6d8c-45e3-ad48-22525f24e3df</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>e7489787-736c-4f84-928b-466f2cace729</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="706d1a3c-7e59-44db-80cd-41a041050d53" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Delete</name>
+      <display>Delete(id: guid, command: DeleteProductsCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="a42ea9a9-31f7-4a88-91f2-d3daab0cd6c3">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="633fd9dc-1dfa-4641-90f4-be5550c3f780" name="DeleteProductsCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="DELETE" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="2bead530-69ae-423b-9ac2-5e2d7c7b1205" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="6fae7688-458e-44b3-8891-bb744ad06cc2">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="0838d1c0-83e4-452e-8c21-c0eb631278f4" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>706d1a3c-7e59-44db-80cd-41a041050d53</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="34e6ddbd-acf9-42b1-a29b-e1d137556dcb" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: DeleteProductsCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="deb822c9-4acf-4502-8356-e0f4eaef73d1">
+            <typeId>633fd9dc-1dfa-4641-90f4-be5550c3f780</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>706d1a3c-7e59-44db-80cd-41a041050d53</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="af986f51-4f04-4879-8bfe-f5583a9ad05f" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>PostAttributes</name>
+      <display>PostAttributes(productsId: guid, command: CreateProductsAttributesCommand): guid</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="8f4df01f-8ced-4449-97a3-d69b545f922e">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="ee02dd78-10d3-4a51-b767-0cb912456a58" name="CreateProductsAttributesCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Attributes" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="application/json" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="aeeab931-3673-4c5c-86a5-2e22abb60892" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="3cabca77-ac38-49b8-bff4-89b449380835">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="d7488ab4-2eb9-4cb4-b49b-ca7e5886fe49" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>af986f51-4f04-4879-8bfe-f5583a9ad05f</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="560996b9-5bd6-418c-b586-1c1b063e0bdb" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: CreateProductsAttributesCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="8781c39f-8770-4784-a027-9cdd78709bc4">
+            <typeId>ee02dd78-10d3-4a51-b767-0cb912456a58</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>af986f51-4f04-4879-8bfe-f5583a9ad05f</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="6799b817-bc02-4943-8b89-5d04b4819bc2" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetAttributes</name>
+      <display>GetAttributes(productsId: guid, id: guid): ProductsAttributesDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="b2331e82-9d2d-408c-88c6-0117c14e9493">
+        <typeId>42d521b8-c7d8-4997-81e1-eb3eec854031</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="eacc2fc2-a32b-49b0-8642-d8f75fa86cd4" name="GetProductsAttributesByIdQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Attributes/{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="f48625d2-1d1d-43df-bd1a-f779547d2d73" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="3d2f761e-bcd0-4ab3-b945-df8e76984563">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="5551745f-0fe8-4e7b-9eaa-39c36f6acb4d" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>6799b817-bc02-4943-8b89-5d04b4819bc2</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="da17a63c-a608-4b11-b2b1-c1509f6329dd" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="85b70449-f946-407a-a350-e9097b06aa46">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="08bf1d6e-611d-4757-82fb-d014cddacf09" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>6799b817-bc02-4943-8b89-5d04b4819bc2</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="8b9db4d8-3c78-474c-9365-619370ab9daa" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetAllAttributes</name>
+      <display>GetAllAttributes(productsId: guid): ProductsAttributesDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="901ad330-6d55-4841-9b36-bf488e6a4674">
+        <typeId>42d521b8-c7d8-4997-81e1-eb3eec854031</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="617e016d-d44f-4968-b8f9-01c3795bdf8a" name="GetProductsAttributesQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Attributes" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="636c8456-726f-4542-83d9-e44fd40bf618" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="ac973d12-986f-4e26-ab98-d23b75ce149d">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="4a9571e0-9e21-43c0-903c-10cbd7f1e135" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>8b9db4d8-3c78-474c-9365-619370ab9daa</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="c1262e15-455d-4d33-9324-a544eaa7ff32" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>PutAttributes</name>
+      <display>PutAttributes(productsId: guid, id: guid, command: UpdateProductsAttributesCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="14403797-0bb7-449b-a571-330b0be997f6">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="0addada4-cb66-41e9-93ed-0fd85b731ad8" name="UpdateProductsAttributesCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="PUT" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Attributes/{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="dff7a044-d665-4b80-9420-1fd46c610c8d" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="6f927399-9f67-40fb-b206-88c5f394fcf6">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="9517df5e-afb5-488a-8d9d-72efcfccb031" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>c1262e15-455d-4d33-9324-a544eaa7ff32</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="a5fbf27d-3af1-4fc9-82b3-5f27c6404824" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="2ea2211b-83a2-436a-9760-5b2b0826adea">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="693c9ea0-35c0-4f9b-9462-454f34ca7773" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>c1262e15-455d-4d33-9324-a544eaa7ff32</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="9ebef81e-8cb5-42fe-ac1c-a75fbf320863" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: UpdateProductsAttributesCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="ab62914b-3cbb-4930-9e18-1db675646614">
+            <typeId>0addada4-cb66-41e9-93ed-0fd85b731ad8</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c1262e15-455d-4d33-9324-a544eaa7ff32</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="c28fed15-5189-4a52-8aaa-fca8f87cd43e" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>DeleteAttributes</name>
+      <display>DeleteAttributes(productsId: guid, id: guid, command: DeleteProductsAttributesCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="b3a53d28-777c-4663-85ea-25761fc9b9bd">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="13729602-fbfa-4ddf-8982-5dd1ec5d574e" name="DeleteProductsAttributesCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="DELETE" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Attributes/{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="a84f3f95-056c-483a-ad00-6c426a6d1fba" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="01ab189e-0e03-41e0-8ab6-3e6cf50505c5">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="f9f1c751-84cf-4968-9cc5-0c75e2c8da6d" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>c28fed15-5189-4a52-8aaa-fca8f87cd43e</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="937f9194-570c-413e-9eeb-e9df2c48126d" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="66547bfb-c0cf-4c5b-9b6c-abb63e92cb76">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="783dcc4c-c674-429b-869f-8818d846b36f" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>c28fed15-5189-4a52-8aaa-fca8f87cd43e</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="0c4cc921-6f7e-4ee1-8223-711be3a0b8f4" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: DeleteProductsAttributesCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="96e1c1c5-32b4-4e58-9f08-743d513f9f7c">
+            <typeId>13729602-fbfa-4ddf-8982-5dd1ec5d574e</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>c28fed15-5189-4a52-8aaa-fca8f87cd43e</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="1d3d6270-7adc-4078-b2fa-b5ead5bacbdc" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>PostRelationships</name>
+      <display>PostRelationships(productsId: guid, command: CreateProductsRelationshipsCommand): guid</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="5f929b12-e33e-4947-8f62-83d07d53d8ed">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="de77c7ad-c293-4e74-940b-af64eceea74d" name="CreateProductsRelationshipsCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Relationships" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="application/json" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="05c216ba-05e3-49c5-9607-9b40ccd96a24" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="69fb1a37-d3d5-4fc7-9915-da41d134f92d">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="26384c30-98e0-4b8e-b48c-81267878943e" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>1d3d6270-7adc-4078-b2fa-b5ead5bacbdc</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="eb2de89f-5a1f-4c91-a832-db0333f776e9" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: CreateProductsRelationshipsCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="a6c886ca-d05d-4b5d-bced-c3c752a8cae6">
+            <typeId>de77c7ad-c293-4e74-940b-af64eceea74d</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>1d3d6270-7adc-4078-b2fa-b5ead5bacbdc</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="9d540dfc-85b7-4da0-8037-c82443270a42" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetRelationships</name>
+      <display>GetRelationships(productsId: guid, id: guid): ProductsRelationshipsDto</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="c5aff675-285c-4284-b931-38128c814a77">
+        <typeId>2eeb85d3-1e05-4639-a4ff-7ebc795c9ee3</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="d94d0640-4735-4f0f-b5a4-f60e855f6498" name="GetProductsRelationshipsByIdQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Relationships/{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="868b5743-cbaf-4b71-a38f-63954438653d" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="61783267-0aa7-46db-b992-8d89fd6c6ba4">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="937c0a6c-8d5d-494e-8ead-8ab1580d0c87" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>9d540dfc-85b7-4da0-8037-c82443270a42</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="d638df61-2213-4077-9af5-75acd3decbcc" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="35d758d9-10ad-4219-a1ac-8a143001459f">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="3b3ed432-350c-430d-a931-2c17e89692fb" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>9d540dfc-85b7-4da0-8037-c82443270a42</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="3ca00db5-7d62-490c-aecb-3d8f9cd8fba9" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetAllRelationships</name>
+      <display>GetAllRelationships(productsId: guid): ProductsRelationshipsDto[*]</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="374212ef-46bd-4fcc-9840-eae4c08fc4a6">
+        <typeId>2eeb85d3-1e05-4639-a4ff-7ebc795c9ee3</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+        <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="d5a23c3b-319a-4476-ac65-6c76d320afc6" name="GetProductsRelationshipsQuery" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Relationships" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="4b3dcbe3-5b2a-410b-954f-ea50f87f0692" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="2161ccfe-4c62-4104-8d59-243910d4434b">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="533f2434-9ace-4543-bf64-67e523e7971a" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>3ca00db5-7d62-490c-aecb-3d8f9cd8fba9</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="8addb941-e498-4ea8-8797-0f8103ce5a52" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>PutRelationships</name>
+      <display>PutRelationships(productsId: guid, id: guid, command: UpdateProductsRelationshipsCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="9b9d46a0-5efc-49ae-931b-4be5d6186239">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="13da5d24-18f3-4b8d-af1a-d5fb61c30443" name="UpdateProductsRelationshipsCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="PUT" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Relationships/{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="7181d1ba-db59-4063-af0c-6de02aa93e7f" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="319783ba-a2c3-44ae-933b-959354efcd28">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="845087be-d3e3-47ad-a72d-b42ea92f926c" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>8addb941-e498-4ea8-8797-0f8103ce5a52</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="fd291613-4723-4fc7-a20c-9d932910d619" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="a703db50-603b-4269-bf36-993529beece7">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="67b1d822-af82-49c9-ba08-c18d91a5b833" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>8addb941-e498-4ea8-8797-0f8103ce5a52</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="054e32fb-811d-47e1-955c-96aa73405d62" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: UpdateProductsRelationshipsCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="a819ada5-53ab-41ff-9a72-8d8ffef4cf7c">
+            <typeId>13da5d24-18f3-4b8d-af1a-d5fb61c30443</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>8addb941-e498-4ea8-8797-0f8103ce5a52</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="d9ea27d4-e241-4dfb-b922-c40e106969b1" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>DeleteRelationships</name>
+      <display>DeleteRelationships(productsId: guid, id: guid, command: DeleteProductsRelationshipsCommand): void</display>
+      <isAbstract>false</isAbstract>
+      <sort-children>by-type-then-manually</sort-children>
+      <genericTypes />
+      <typeReference id="c552a760-6be7-482e-8052-a131aa853bec">
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="f10d0423-8c43-4455-bef4-0be53ba183ca" name="DeleteProductsRelationshipsCommand" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>95393868-fcbb-461f-b9f6-e4755fb56054</parentFolderId>
+      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+      <packageName>IgnProductCatalogueService.Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="DELETE" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{productsId}/Relationships/{id}" isActive="true" />
+            <property name="4490e212-1e99-43ce-b3dd-048ed2a6bae8" display="Return Type Mediatype" value="Default" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements>
+        <childElement id="db63cba1-1f98-4a83-bbe2-4f4ef580604c" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>productsId</name>
+          <display>in : productsId: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="1576b0f7-837d-4a92-a7b4-86d0dd2406d2">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="0abbb3df-0bdd-480f-80ab-5c81cfc4e60a" name="ProductsId" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>d9ea27d4-e241-4dfb-b922-c40e106969b1</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="54d997ae-d403-442c-90d3-ae976f01ee40" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>id</name>
+          <display>in : id: guid</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="92579287-2850-4a14-a568-bd34b8ac3d53">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>true</isMapped>
+          <mappedClass>
+            <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+            <autoSyncTypeReference>true</autoSyncTypeReference>
+            <mappedPath>
+              <target id="4424c7af-56a0-4f7e-8714-0b85879ed310" name="Id" type="element" specialization="DTO-Field" />
+            </mappedPath>
+          </mappedClass>
+          <parentFolderId>d9ea27d4-e241-4dfb-b922-c40e106969b1</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+        <childElement id="189f284b-5a6f-4efa-b888-352502d4df11" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>command</name>
+          <display>in : command: DeleteProductsRelationshipsCommand</display>
+          <isAbstract>false</isAbstract>
+          <genericTypes />
+          <typeReference id="1698fe2a-f875-4d7b-a379-9ab2e3a0b929">
+            <typeId>f10d0423-8c43-4455-bef4-0be53ba183ca</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>IgnProductCatalogueService.Services</typePackageName>
+            <typePackageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>d9ea27d4-e241-4dfb-b922-c40e106969b1</parentFolderId>
+          <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
+          <packageName>IgnProductCatalogueService.Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+                <property name="7a331e9b-f13c-4b33-9013-bd59b4a4999c" display="Header Name" isActive="false" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <metadata />
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

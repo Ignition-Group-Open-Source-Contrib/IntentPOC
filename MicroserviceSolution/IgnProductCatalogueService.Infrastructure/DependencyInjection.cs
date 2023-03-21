@@ -28,7 +28,7 @@ namespace IgnProductCatalogueService.Infrastructure
                 });
             services.AddTransient<IMongoDbUnitOfWork>(provider => provider.GetService<ApplicationMongoDbContext>());
             services.AddTransient<IMongoDbContext>(provider => provider.GetService<ApplicationMongoDbContext>());
-            services.AddTransient<IProductCatalogueRepository, ProductCatalogueRepository>();
+            services.AddTransient<IProductsRepository, ProductsRepository>();
             services.AddScoped<IDomainEventService, DomainEventService>();
             services.AddScoped<IStateRepository, StateRepository>();
             services.AddMongoDbUnitOfWork();

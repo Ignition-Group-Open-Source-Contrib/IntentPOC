@@ -38,7 +38,7 @@ namespace IgnProductCatalogueService.Infrastructure.Repositories
 
         public virtual object Update(Expression<Func<TPersistence, bool>> predicate, TDomain entity)
         {
-            return base.UpdateOne(predicate, (TPersistence)entity, null);
+            return base.ReplaceOne(predicate, (TPersistence)entity);
         }
 
         public virtual Task<TDomain> FindAsync(Expression<Func<TPersistence, bool>> filterExpression, CancellationToken cancellationToken = default)
@@ -112,11 +112,11 @@ namespace IgnProductCatalogueService.Infrastructure.Repositories
                 cancellationToken);
         }
 
-        private IMongoCollection<TDomain> _Collection => Context.GetCollection<TDomain>();
+        //private IMongoCollection<TDomain> _Collection => Context.GetCollection<TDomain>();
 
-        public IMongoCollection<TDomain> Collection
-        {
-            get { return _Collection; }
-        }
+        //public IMongoCollection<TDomain> Collection
+        //{
+        //    get { return _Collection; }
+        //}
     }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="6d55708f-4095-430a-b113-af5e14264376" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetProductEntitiesQuery</name>
+  <display>GetProductEntitiesQuery: ProductEntityDto[*]</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="d7b2878a-4516-4071-afbc-ecf076cf4428">
+    <typeId>4b9ec230-f8c2-4bab-8cd6-d57df369194a</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>MongoCRUDSample.Services</typePackageName>
+    <typePackageId>c2d35522-5843-40ea-b6d5-69846130abec</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>ce943ee3-10b1-400c-836f-db7b30f2c7b8</parentFolderId>
+  <packageId>c2d35522-5843-40ea-b6d5-69846130abec</packageId>
+  <packageName>MongoCRUDSample.Services</packageName>
+  <stereotypes />
+  <metadata>
+    <entry key="baseName" value="ProductEntities" />
+  </metadata>
+  <childElements />
+</class>
