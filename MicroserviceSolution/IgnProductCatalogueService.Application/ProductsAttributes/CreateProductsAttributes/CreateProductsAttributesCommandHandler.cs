@@ -37,6 +37,9 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.CreateProduc
                 Name = request.Name,
                 Type = request.Type,
                 Value = request.Value,
+                Label = request.Label,
+                Description = request.Description,
+                Options = request.Options,
             };
 
             aggregateRoot.Attributes.Add(newAttributes);

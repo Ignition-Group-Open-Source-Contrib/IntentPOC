@@ -17,7 +17,13 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.CreateProduc
 
         public string Type { get; set; }
 
-        public object Value { get; set; }
+        public string? Value { get; set; }
+
+        public string Label { get; set; }
+
+        public string? Description { get; set; }
+
+        public IEnumerable<string>? Options { get; set; }
 
     }
 }

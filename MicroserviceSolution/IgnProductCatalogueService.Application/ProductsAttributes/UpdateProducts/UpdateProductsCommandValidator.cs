@@ -25,6 +25,12 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.UpdateProduc
             RuleFor(v => v.Status)
                 .NotNull();
 
+            RuleFor(v => v.Attributes)
+                .NotNull();
+
+            RuleFor(v => v.Relationships)
+                .NotNull();
+
         }
     }
 }

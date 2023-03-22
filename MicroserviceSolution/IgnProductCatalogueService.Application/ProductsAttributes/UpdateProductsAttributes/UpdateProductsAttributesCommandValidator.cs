@@ -25,7 +25,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.UpdateProduc
             RuleFor(v => v.Type)
                 .NotNull();
 
-            RuleFor(v => v.Value)
+            RuleFor(v => v.Label)
                 .NotNull();
 
         }

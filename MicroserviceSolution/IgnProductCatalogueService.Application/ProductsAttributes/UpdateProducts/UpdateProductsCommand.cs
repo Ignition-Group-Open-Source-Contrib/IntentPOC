@@ -23,5 +23,9 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.UpdateProduc
 
         public DateTime ModifiedDate { get; set; }
 
+        public List<UpdateProductsAttributesDto> Attributes { get; set; }
+
+        public List<UpdateProductsRelationshipsDto> Relationships { get; set; }
+
     }
 }

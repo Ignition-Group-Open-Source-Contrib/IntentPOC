@@ -22,7 +22,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
             Guid id,
             string name,
             string type,
-            object value)
+            string? value)
         {
             return new ProductsAttributesDto
             {
@@ -42,7 +42,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
 
         public string Type { get; set; }
 
-        public object Value { get; set; }
+        public string? Value { get; set; }
 
         public void Mapping(Profile profile)
         {

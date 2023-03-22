@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="1a157df6-8830-483c-9a94-bdeee66fcc78" type="DTO" typeId="fee0edca-4aa0-4f77-a524-6bbd84e78734">
-  <name>CreateProductsAttributesDto</name>
-  <display>CreateProductsAttributesDto</display>
+<class id="ee156b8e-8023-4a91-b54c-4966800cbc55" type="DTO" typeId="fee0edca-4aa0-4f77-a524-6bbd84e78734">
+  <name>UpdateProductsRelationshipsDto</name>
+  <display>UpdateProductsRelationshipsDto</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
   <genericTypes />
@@ -12,7 +12,7 @@
     <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
     <autoSyncTypeReference>true</autoSyncTypeReference>
     <mappedPath>
-      <target id="fe557a39-e4ff-4d0d-9d12-1fe49369a06d" name="Attributes" type="element" specialization="Class" />
+      <target id="b5c51a73-9fe4-4b36-84dc-1c489da2f060" name="Relationships" type="element" specialization="Class" />
     </mappedPath>
   </mappedClass>
   <parentFolderId>aad9e528-0f63-4983-8bfb-111dca950525</parentFolderId>
@@ -20,16 +20,16 @@
   <packageName>IgnProductCatalogueService.Services</packageName>
   <stereotypes />
   <metadata>
-    <entry key="originalVerb" value="Create" />
-    <entry key="baseName" value="ProductsAttributes" />
+    <entry key="originalVerb" value="Update" />
+    <entry key="baseName" value="ProductsRelationships" />
   </metadata>
   <childElements>
-    <childElement id="45d4757c-0693-4148-a83a-bcb6df9c1e2f" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
-      <name>Name</name>
-      <display>Name: string</display>
+    <childElement id="465d3f7f-7e8a-42cc-bbcd-bfae0c244b2a" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>ProductId</name>
+      <display>ProductId: string</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
-      <typeReference id="fb9d322a-3f56-44d9-8088-7b19c677dd27">
+      <typeReference id="d02621a7-f3be-4796-8185-c448f724af43">
         <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
@@ -45,10 +45,10 @@
         <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="214e0785-0c00-4163-adc5-d22f95f187ae" name="Name" type="element" specialization="Attribute" />
+          <target id="d85d08ca-7c80-4914-b64f-796bf2269be6" name="ProductId" type="element" specialization="Attribute" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>1a157df6-8830-483c-9a94-bdeee66fcc78</parentFolderId>
+      <parentFolderId>ee156b8e-8023-4a91-b54c-4966800cbc55</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>
@@ -73,13 +73,13 @@
       <metadata />
       <childElements />
     </childElement>
-    <childElement id="af7fe819-2803-4234-aeb2-41153ad40d57" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
-      <name>Type</name>
-      <display>Type: string</display>
+    <childElement id="1a4e943a-f699-470d-ad9a-4c776cd5f693" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>Id</name>
+      <display>Id: guid</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
-      <typeReference id="a4fee9f0-a063-4548-a13d-6b801da4ce52">
-        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+      <typeReference id="2044c69b-8030-4464-b2ef-ee098cd21e7d">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>
@@ -94,10 +94,10 @@
         <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
         <autoSyncTypeReference>true</autoSyncTypeReference>
         <mappedPath>
-          <target id="d53c57a6-1342-42c9-8153-57add2cfb6e5" name="Type" type="element" specialization="Attribute" />
+          <target id="8d776d0f-7d3f-4cfc-a21c-024baf2bd9e2" name="Id" type="element" specialization="Attribute" />
         </mappedPath>
       </mappedClass>
-      <parentFolderId>1a157df6-8830-483c-9a94-bdeee66fcc78</parentFolderId>
+      <parentFolderId>ee156b8e-8023-4a91-b54c-4966800cbc55</parentFolderId>
       <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
       <packageName>IgnProductCatalogueService.Services</packageName>
       <stereotypes>
@@ -109,57 +109,8 @@
             <property name="d144e1aa-b506-407a-b60b-716ce38b70bb" display="Not Empty" value="false" isActive="true" />
             <property name="8d844d65-bf88-4023-85e1-4d3d7f8784cd" display="Equal" isActive="true" />
             <property name="490e08cd-5fb4-4bfd-80cf-fda3b88f745e" display="Not Equal" isActive="true" />
-            <property name="c94dc001-4ec7-42a0-a1e0-5b75502e7bec" display="Min Length" isActive="true" />
-            <property name="cbd52384-0f1e-4f41-9e98-314231b731e1" display="Max Length" isActive="true" />
-            <property name="f9802e6b-b033-4280-ad83-e4b064943d87" display="Min" isActive="false" />
-            <property name="aca206a8-cb7e-4537-b3f5-c5c301863c14" display="Max" isActive="false" />
-            <property name="9023c463-1cce-4f11-baa5-96561697fc7f" display="Predicate" isActive="true" />
-            <property name="13d364d0-975e-47e9-ae0c-a3137326ee60" display="Predicate Message" isActive="false" />
-            <property name="e441d802-9aea-4d74-b5f9-1cd2527f3719" display="Has Custom Validation" value="false" isActive="true" />
-          </properties>
-        </stereotype>
-      </stereotypes>
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="34efe40a-4fab-4f54-a849-8a9e8a6ee1d2" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
-      <name>Value</name>
-      <display>Value: string?</display>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="8dade565-3824-42b0-a357-53f0e7a9c67f">
-        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
-        <isNavigable>true</isNavigable>
-        <isNullable>true</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
-        <typePackageName>Intent.Common.Types</typePackageName>
-        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>true</isMapped>
-      <mappedClass>
-        <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
-        <autoSyncTypeReference>true</autoSyncTypeReference>
-        <mappedPath>
-          <target id="ceba291b-946f-453f-8ec0-14678805733d" name="Value" type="element" specialization="Attribute" />
-        </mappedPath>
-      </mappedClass>
-      <parentFolderId>1a157df6-8830-483c-9a94-bdeee66fcc78</parentFolderId>
-      <packageId>2e62c273-d5ab-4c15-b8a2-8e5ec6ee2be0</packageId>
-      <packageName>IgnProductCatalogueService.Services</packageName>
-      <stereotypes>
-        <stereotype stereotypeDefinitionId="4b54a612-2664-4493-a1f7-dc0623aa03da" name="Validations">
-          <addedByDefault>true</addedByDefault>
-          <definitionPackageName>Intent.Application.FluentValidation</definitionPackageName>
-          <definitionPackageId>55856e5d-8217-4c17-8fbb-082ac75baaf5</definitionPackageId>
-          <properties>
-            <property name="d144e1aa-b506-407a-b60b-716ce38b70bb" display="Not Empty" value="false" isActive="true" />
-            <property name="8d844d65-bf88-4023-85e1-4d3d7f8784cd" display="Equal" isActive="true" />
-            <property name="490e08cd-5fb4-4bfd-80cf-fda3b88f745e" display="Not Equal" isActive="true" />
-            <property name="c94dc001-4ec7-42a0-a1e0-5b75502e7bec" display="Min Length" isActive="true" />
-            <property name="cbd52384-0f1e-4f41-9e98-314231b731e1" display="Max Length" isActive="true" />
+            <property name="c94dc001-4ec7-42a0-a1e0-5b75502e7bec" display="Min Length" isActive="false" />
+            <property name="cbd52384-0f1e-4f41-9e98-314231b731e1" display="Max Length" isActive="false" />
             <property name="f9802e6b-b033-4280-ad83-e4b064943d87" display="Min" isActive="false" />
             <property name="aca206a8-cb7e-4537-b3f5-c5c301863c14" display="Max" isActive="false" />
             <property name="9023c463-1cce-4f11-baa5-96561697fc7f" display="Predicate" isActive="true" />

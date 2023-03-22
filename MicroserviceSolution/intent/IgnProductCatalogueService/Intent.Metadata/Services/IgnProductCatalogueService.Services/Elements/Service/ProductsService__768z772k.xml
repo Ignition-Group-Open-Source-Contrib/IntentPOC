@@ -812,7 +812,7 @@
       <genericTypes />
       <typeReference id="14403797-0bb7-449b-a571-330b0be997f6">
         <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
+        <isNullable>true</isNullable>
         <isCollection>false</isCollection>
         <isRequired>true</isRequired>
         <stereotypes />

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
@@ -21,8 +22,14 @@ namespace IgnProductCatalogueService.Domain.Entities
 
         public string Name { get; set; }
 
+        public string Label { get; set; }
+
+        public string? Description { get; set; }
+
         public string Type { get; set; }
 
-        public object Value { get; set; }
+        public string? Value { get; set; }
+
+        public ICollection<string>? Options { get; set; } = new List<string>?();
     }
 }

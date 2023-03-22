@@ -768,7 +768,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandHandler.cs</ProjectRelativeFilePath>
-      <IsIgnored>true</IsIgnored>
+      <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
@@ -776,6 +776,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsAttributes/UpdateProductsAttributesCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#44afb573-67c5-44e1-8147-7d262495f96c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsAttributesDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsAttributesDto.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -792,7 +800,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandHandler.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandHandler.cs</ProjectRelativeFilePath>
-      <IsIgnored>true</IsIgnored>
+      <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
@@ -800,6 +808,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#ee156b8e-8023-4a91-b54c-4966800cbc55</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationshipsDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationshipsDto.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

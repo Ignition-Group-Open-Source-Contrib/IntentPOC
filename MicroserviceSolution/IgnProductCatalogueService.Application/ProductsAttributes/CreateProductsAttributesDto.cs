@@ -17,7 +17,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
         public static CreateProductsAttributesDto Create(
             string name,
             string type,
-            object value)
+            string? value)
         {
             return new CreateProductsAttributesDto
             {
@@ -31,7 +31,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
 
         public string Type { get; set; }
 
-        public object Value { get; set; }
+        public string? Value { get; set; }
 
     }
 }
