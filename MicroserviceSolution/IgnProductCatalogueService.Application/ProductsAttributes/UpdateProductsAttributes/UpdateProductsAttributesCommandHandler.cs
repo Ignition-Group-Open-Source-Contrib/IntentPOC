@@ -40,7 +40,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.UpdateProduc
             element.Name = request.Name;
             element.Type = request.Type;
             element.Value = request.Value;
-            _productsRepository.Update(p => p.Id == request.Id, existingAttributes);
+            //_productsRepository.Update(p => p.Id == request.Id, existingAttributes);
             return Unit.Value;
         }
     }

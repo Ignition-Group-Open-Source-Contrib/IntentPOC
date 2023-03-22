@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -33,11 +34,33 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.CreateProduc
                 Status = request.Status,
                 CreatedDate = request.CreatedDate,
                 ModifiedDate = request.ModifiedDate,
+                Attributes = request.Attributes?.Select(CreateAttributes).ToList() ?? new List<Attributes>(),
+                Relationships = request.Relationships?.Select(CreateRelationships).ToList() ?? new List<Relationships>(),
             };
 
             _productsRepository.Add(newProducts);
             await _productsRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
             return newProducts.Id;
+        }
+
+        [IntentManaged(Mode.Fully)]
+        private static Attributes CreateAttributes(CreateProductsAttributesDto dto)
+        {
+            return new Attributes
+            {
+                Name = dto.Name,
+                Type = dto.Type,
+                Value = dto.Value,
+            };
+        }
+
+        [IntentManaged(Mode.Fully)]
+        private static Relationships CreateRelationships(CreateProductsRelationshipsDto dto)
+        {
+            return new Relationships
+            {
+                ProductId = dto.ProductId,
+            };
         }
     }
 }

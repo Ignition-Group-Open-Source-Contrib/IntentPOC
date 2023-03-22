@@ -21,5 +21,9 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.CreateProduc
 
         public DateTime ModifiedDate { get; set; }
 
+        public List<CreateProductsAttributesDto>? Attributes { get; set; }
+
+        public List<CreateProductsRelationshipsDto>? Relationships { get; set; }
+
     }
 }
