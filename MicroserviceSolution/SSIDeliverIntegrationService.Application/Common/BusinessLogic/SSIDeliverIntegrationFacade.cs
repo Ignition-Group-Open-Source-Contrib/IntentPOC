@@ -25,6 +25,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Transactions;
 using static SSIDeliverIntegrationService.Application.Common.Enum.Enumerator;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using System.Net.Http;
 
 namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
 {
@@ -47,13 +50,13 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
         public SSIDeliverIntegrationFacade(IOrderDeliveryRepository orderDeliveryRepository,
             IIDeliverOrderInfoRepository iDeliverOrderInfoRepository, IOrderItemRepository orderItemRepository,
             IConfigurationSettings configurationSettings, IWorkflowStorageFactory workflowStorageFactory,
-            IDeliveryTypeRepository deliveryTypeRepository,ICustomerAddressRepository customerAddressRepository,
+            IDeliveryTypeRepository deliveryTypeRepository, ICustomerAddressRepository customerAddressRepository,
             IIDeliverProductChannelMappingRepository iDeliverProductChannelMappingRepository,
-            IStockItemRepository stockItemRepository,IVASXProviderSpecificRepository vASXProviderSpecificRepository,
-            IOrderStatusHistoryRepository orderStatusHistoryRepository,IOrderAnnotationRepository orderAnnotationRepository,
+            IStockItemRepository stockItemRepository, IVASXProviderSpecificRepository vASXProviderSpecificRepository,
+            IOrderStatusHistoryRepository orderStatusHistoryRepository, IOrderAnnotationRepository orderAnnotationRepository,
             IEventBus eventBus)
         {
-           _orderDeliveryRepository = orderDeliveryRepository;
+            _orderDeliveryRepository = orderDeliveryRepository;
             _iDeliverOrderInfoRepository = iDeliverOrderInfoRepository;
             _orderItemRepository = orderItemRepository;
             _configurationSettings = configurationSettings;
@@ -67,7 +70,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             _orderAnnotationRepository = orderAnnotationRepository;
             _eventBus = eventBus;
         }
-        public async Task ProcessStockOrder(IDeliverOrderCallBackAPIRequest request,CancellationToken cancellationToken)
+        public async Task ProcessStockOrder(IDeliverOrderCallBackAPIRequest request, CancellationToken cancellationToken)
         {
             // Fetch IDeliver Order info by IDeliverOrderId from SS
             var iDeliverorder =
@@ -175,7 +178,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
                         StatusMessage = request.WayBillNumber
                     };
 
-                    SetOrderStatusHistory(updateOutForDeliveryStatusHistory);
+                   await SetOrderStatusHistory(updateOutForDeliveryStatusHistory);
 
                 }
 
@@ -221,7 +224,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
             try
             {
 
-               // var response = await daprApi.ResumeOrder(resumeOrderRequestModel);
+                // var response = await daprApi.ResumeOrder(resumeOrderRequestModel);
 
             }
             catch (Exception ex)
@@ -232,10 +235,10 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
 
         private void UpdateOrderItemStatus(OrderItem orderItem, int orderStatusToUpdate)
         {
-            
-                orderItem.OrderStatusDetailId = orderStatusToUpdate;
-           
-           
+
+            orderItem.OrderStatusDetailId = orderStatusToUpdate;
+
+
         }
 
         private async Task ProcessComms(int orderItemId)
@@ -259,15 +262,17 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
 
         private async Task UpdateIDeliverOrderInfo(int id, int iDeliverOrderStatus)
         {
-            var iDeliverOrderInfo = await _iDeliverOrderInfoRepository.FindByIdAsync(id);
-            if (iDeliverOrderInfo?.IDeliverOrderInfoId > 0)
-            {
-                iDeliverOrderInfo.IDeliverOrderStatusId = iDeliverOrderStatus;
-                iDeliverOrderInfo.UpdatedByUserId = 1;
-                iDeliverOrderInfo.UpdatedOnDate = DateTime.Now;
-            }
 
-            throw new Exception();
+            var iDeliverOrderInfo = await _iDeliverOrderInfoRepository.FindAsync(i => i.IDeliverOrderId == id);
+            if (iDeliverOrderInfo == null || iDeliverOrderInfo.IDeliverOrderInfoId == 0) throw new Exception();
+
+
+            iDeliverOrderInfo.IDeliverOrderStatusId = iDeliverOrderStatus;
+            iDeliverOrderInfo.UpdatedByUserId = 1;
+            iDeliverOrderInfo.UpdatedOnDate = DateTime.Now;
+
+
+
         }
 
         private async Task InsertUpdateVasXProviderSpecific(OrderDetail item)
@@ -403,47 +408,46 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
 
         private async Task SetOrderStatusHistory(UpdateStatusHistoryRequest updateStatusHistory)
         {
-          
-                OrderStatusHistory lastStatusHistory;
-                lastStatusHistory = await _orderStatusHistoryRepository.FindAsync(i => i.OrderItemId == updateStatusHistory.OrderItemId && i.OrderStatusDetailId == updateStatusHistory.StatusDetailId,i=>i.OrderByDescending(x=>x.Occured));
-                if (lastStatusHistory != null && lastStatusHistory.Annotation == updateStatusHistory.StatusMessage)
-                {
-                    lastStatusHistory.Occured = DateTime.Now;
-                   
-                }
-                else
-                {
-                    var orderStatusHistory = new OrderStatusHistory()
-                    {
-                        OrderItemId = updateStatusHistory.OrderItemId,
-                        Occured = DateTime.Now,
-                        Annotation = updateStatusHistory.StatusMessage,
-                        OrderStatusDetailId = updateStatusHistory.StatusDetailId,
-                        EmailCommSentStatusId = (int)CommSentStatus.Pending,
-                        SmscommSentStatusId = (int)CommSentStatus.Pending
-                    };
-                   _orderStatusHistoryRepository.Add(orderStatusHistory);
-                    var orderAnnotation = new OrderAnnotation()
-                    {
-                        OrderItemId = updateStatusHistory.OrderItemId,
-                        UserId = 1,
-                        AnnotationDate = DateTime.Now,
-                        Details = updateStatusHistory.StatusMessage,
-                        AnnotationTypeId = 1
-                    };
-                   _orderAnnotationRepository.Add(orderAnnotation);
-                 
-                }
 
-             
-             
+            OrderStatusHistory lastStatusHistory;
+            lastStatusHistory = await _orderStatusHistoryRepository.FindAsync(i => i.OrderItemId == updateStatusHistory.OrderItemId && i.OrderStatusDetailId == updateStatusHistory.StatusDetailId, i => i.OrderByDescending(x => x.Occured));
+            if (lastStatusHistory != null && lastStatusHistory.Annotation == updateStatusHistory.StatusMessage)
+            {
+                lastStatusHistory.Occured = DateTime.Now;
+
+            }
+            else
+            {
+                var orderStatusHistory = new OrderStatusHistory()
+                {
+                    OrderItemId = updateStatusHistory.OrderItemId,
+                    Occured = DateTime.Now,
+                    Annotation = updateStatusHistory.StatusMessage,
+                    OrderStatusDetailId = updateStatusHistory.StatusDetailId,
+                    EmailCommSentStatusId = (int)CommSentStatus.Pending,
+                    SmscommSentStatusId = (int)CommSentStatus.Pending
+                };
+                _orderStatusHistoryRepository.Add(orderStatusHistory);
+                var orderAnnotation = new OrderAnnotation()
+                {
+                    OrderItemId = updateStatusHistory.OrderItemId,
+                    UserId = 1,
+                    AnnotationDate = DateTime.Now,
+                    Details = updateStatusHistory.StatusMessage,
+                    AnnotationTypeId = 1
+                };
+                _orderAnnotationRepository.Add(orderAnnotation);
+
+            }
+
+
+
         }
 
         public async Task UploadPdfFile(UploadPdfViewModel uploadPdfViewModel)
         {
             try
             {
-
 
                 string filename = $"{uploadPdfViewModel.FileName}_{uploadPdfViewModel.IDeliverOrderId}_{DateTime.Now.Ticks}";
 
@@ -469,6 +473,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
 
                 //Set the content type as pdf
                 byte[] byteArray = Convert.FromBase64String(uploadPdfViewModel.Base64Encoded);
+              
                 MemoryStream stream = new MemoryStream(byteArray);
 
                 var contentType = uploadPdfViewModel.FileType == Constants.TiffType ? Constants.ImageContentType : Constants.PDFContentType;
@@ -498,7 +503,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
 
         public Task<bool> VerifyInValidOrder(int orderId, List<int> iDeliverProviders)
         {
-          return _orderItemRepository.AnyAsync(x=>x.OrderId== orderId && !iDeliverProviders.Contains(x.OrderTypeId));
+            return _orderItemRepository.AnyAsync(x => x.OrderId == orderId && !iDeliverProviders.Contains(x.OrderTypeId));
         }
 
         public Task<List<int>> GetIDeliverOrderItems(int orderId, List<int> iDeliverProviders, List<int> skipOrderStatus)
@@ -508,10 +513,70 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
 
         public Task<bool> VerifyIDeliverOrder(int orderId, List<int> iDeliverProviders)
         {
-            throw new NotImplementedException();
+           return _orderItemRepository.AnyAsync(x=>x.OrderId == orderId && iDeliverProviders.Contains(x.OrderTypeId));
         }
 
         public Task<bool> VerifyInValidOrderStatus(int orderId, List<int> iDeliverProviders, List<int> skipOrderStatus)
+        {
+            return _orderItemRepository.AnyAsync(x => x.OrderId == orderId && iDeliverProviders.Contains(x.OrderTypeId) && skipOrderStatus.Contains(x.OrderStatusDetailId));
+        }
+
+        public async Task PlaceSaleOnIDeliver(int orderId, IEnumerable<int> orderItemIds, CancellationToken cancellationToken)
+        {
+            
+                var (orderDetails, errorMessage) = await GetSSOrderDetails(orderId, orderItemIds);
+                if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    await SetOrderItemFailedStatus(orderId, orderItemIds, errorMessage);
+                    throw new Exception(errorMessage);
+                }
+                if (orderDetails == null)
+                {
+                    await SetOrderItemFailedStatus(orderId, orderItemIds, "Place Sale On IDeliver order details not found");
+                    throw new Exception($"Place Sale On IDeliver order details not found for orderId {orderId}");
+                }
+                var response = await PlaceSSOrderOnIDeliver(orderDetails);
+                var result = response.Content.ReadAsStringAsync();
+                if (!response.IsSuccessStatusCode)
+                {
+                    var saleOrderErrorMessage = JsonConvert.DeserializeObject<ErrorResponseModel>(result.Result);
+                    var error = saleOrderErrorMessage?.ResponseException?.ExceptionMessage ?? "Error occurred while placing sale order on ideliver";
+                    await SetOrderItemFailedStatus(orderId, orderItemIds, error);
+                    throw new Exception($"Error occurred while placing sale on ideliver for orderId {orderId} error message {saleOrderErrorMessage}");
+                }
+                var saleOrderResult = JsonConvert.DeserializeObject<CreateUpdateSaleOrderResponseModel>(result.Result.ToString());
+                if (saleOrderResult.Id <= 0)
+                {
+                    await SetOrderItemFailedStatus(orderId, orderItemIds, "Place sale on Ideliver error occurred sale order id is less than zero");
+                    throw new Exception($"Error occurred after placing sale on ideliver the sale order id is less than zero for orderId {orderId}");
+                }
+                await AddIDeliverOrderInfo(orderId, saleOrderResult.Id);
+                await SetOrderItemSuccessStatus(orderId, orderItemIds, "Order Created Successfully on IDeliver");
+            
+              
+        }
+
+        private Task SetOrderItemSuccessStatus(int orderId, IEnumerable<int> orderItemIds, string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private Task AddIDeliverOrderInfo(int orderId, int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        private async Task<HttpResponseMessage> PlaceSSOrderOnIDeliver(CreateUpdateSaleOrderRequestModel orderDetails)
+        {
+            throw new NotImplementedException();
+        }
+
+        private Task SetOrderItemFailedStatus(int orderId, IEnumerable<int> orderItemIds, string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        private Task<(CreateUpdateSaleOrderRequestModel, string)> GetSSOrderDetails(int orderId, IEnumerable<int> orderItemIds)
         {
             throw new NotImplementedException();
         }

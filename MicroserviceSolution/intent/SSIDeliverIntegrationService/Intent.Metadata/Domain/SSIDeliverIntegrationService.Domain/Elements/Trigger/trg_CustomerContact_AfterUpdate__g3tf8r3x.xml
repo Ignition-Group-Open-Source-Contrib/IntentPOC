@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="88e359cc-0e20-43c9-bbc9-6ba631caf17b" type="Trigger" typeId="5b7b5e77-e627-464b-a157-6d01f2042641">
+  <name>trg_CustomerContact_AfterUpdate</name>
+  <display>trg_CustomerContact_AfterUpdate</display>
+  <isAbstract>false</isAbstract>
+  <order>11</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>e3624a3c-40df-4e0c-b726-a34ac088c7ea</parentFolderId>
+  <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+  <packageName>SSIDeliverIntegrationService.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

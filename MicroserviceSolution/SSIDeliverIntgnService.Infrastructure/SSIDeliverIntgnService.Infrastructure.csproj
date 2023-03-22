@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SSIDeliverIntgnService.Domain\SSIDeliverIntgnService.Domain.csproj" />
+    <ProjectReference Include="..\SSIDeliverIntgnService.Application\SSIDeliverIntgnService.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapr.Client" Version="1.9.0" />
+    <PackageReference Include="Intent.RoslynWeaver.Attributes" Version="2.0.1" />
+    <PackageReference Include="MongoDB.Data.Generators" Version="1.1.5" />
+    <PackageReference Include="MongoDB.Data.UnitOfWork" Version="1.1.5" />
+  </ItemGroup>
+
+</Project>

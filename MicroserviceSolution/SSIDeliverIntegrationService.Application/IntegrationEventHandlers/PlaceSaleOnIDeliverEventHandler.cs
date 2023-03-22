@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
+using SSIDeliverIntegrationService.Application.Common.BusinessLogic;
 using SSIDeliverIntegrationService.Eventing;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
@@ -10,18 +11,21 @@ using SSIDeliverIntegrationService.Eventing;
 
 namespace SSIDeliverIntegrationService.Application.IntegrationEventHandlers
 {
-    [IntentManaged(Mode.Merge, Body = Mode.Fully)]
+    [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
     public class PlaceSaleOnIDeliverEventHandler : IRequestHandler<PlaceSaleOnIDeliverEvent>
     {
+        private readonly ISSIDeliverIntegrationFacade _iSSIDeliverIntegrationFacade;
+
         [IntentManaged(Mode.Ignore)]
-        public PlaceSaleOnIDeliverEventHandler()
+        public PlaceSaleOnIDeliverEventHandler(ISSIDeliverIntegrationFacade iSSIDeliverIntegrationFacade)
         {
+            _iSSIDeliverIntegrationFacade = iSSIDeliverIntegrationFacade;
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
         public async Task<Unit> Handle(PlaceSaleOnIDeliverEvent @event, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Unit.Value;
         }
     }
 }

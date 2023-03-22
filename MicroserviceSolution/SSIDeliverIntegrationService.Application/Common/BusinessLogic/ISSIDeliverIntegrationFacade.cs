@@ -12,6 +12,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
     public interface ISSIDeliverIntegrationFacade
     {
         public Task<List<int>> GetIDeliverOrderItems(int orderId, List<int> iDeliverProviders, List<int> skipOrderStatus);
+        public Task PlaceSaleOnIDeliver(int orderId, IEnumerable<int> orderItems, CancellationToken cancellationToken);
         public Task ProcessStockOrder(IDeliverOrderCallBackAPIRequest request, CancellationToken cancellationToken);
         public Task UploadPdfFile(UploadPdfViewModel uploadPdfViewModel);
         public Task<bool> VerifyIDeliverOrder(int orderId, List<int> iDeliverProviders);

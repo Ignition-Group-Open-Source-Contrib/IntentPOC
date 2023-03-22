@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<OrderItem> builder)
         {
-            builder.ToTable("OrderItem", "Ord",tb=>tb.HasTrigger("trigger"));
+            builder.ToTable("OrderItem", "Ord", tb => tb.HasTrigger("trg_OrderItem_AfterUpdate"));
 
             builder.HasKey(x => x.OrderItemId);
 

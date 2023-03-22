@@ -11,7 +11,7 @@ using SSIDeliverIntegrationService.Eventing;
 
 namespace SSIDeliverIntegrationService.Application.IntegrationEventHandlers
 {
-    [IntentManaged(Mode.Fully, Body =  Mode.Merge)]
+    [IntentManaged(Mode.Fully, Body = Mode.Merge)]
     public class UploadPdfFileEventHandler : IRequestHandler<UploadPdfFileEvent>
     {
         private readonly ISSIDeliverIntegrationFacade _sSIDeliverIntegrationFacade;
@@ -20,7 +20,7 @@ namespace SSIDeliverIntegrationService.Application.IntegrationEventHandlers
         public UploadPdfFileEventHandler(ISSIDeliverIntegrationFacade sSIDeliverIntegrationFacade)
         {
             _sSIDeliverIntegrationFacade = sSIDeliverIntegrationFacade;
-            
+
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]

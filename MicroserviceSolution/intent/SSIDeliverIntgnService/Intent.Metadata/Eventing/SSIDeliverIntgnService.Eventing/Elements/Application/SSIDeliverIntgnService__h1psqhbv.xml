@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="5105d5d9-f2bd-44f8-a7e9-923b772cba2a" type="Application" typeId="f40a4942-5d2d-4174-8ec1-af66cbd464db">
+  <name>SSIDeliverIntgnService</name>
+  <display>SSIDeliverIntgnService</display>
+  <externalReference>627bab41-be2f-4891-a765-f396dd3552d7</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>dc8392e2-23c2-4be8-8765-ef6c67eaf5ff</parentFolderId>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

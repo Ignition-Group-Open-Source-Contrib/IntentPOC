@@ -13,9 +13,9 @@ using WebhookService.Eventing;
 
 namespace SSIDeliverIntegrationService.Api.Controllers
 {
-    [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
     [Route("api/v1/[controller]/[action]")]
     [ApiController]
+    [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
     public class DaprEventHandlerController : ControllerBase
     {
         private readonly ISender _mediatr;

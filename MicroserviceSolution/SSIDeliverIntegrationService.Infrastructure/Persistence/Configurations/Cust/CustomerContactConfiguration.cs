@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<CustomerContact> builder)
         {
-            builder.ToTable("CustomerContact", "Cust");
+            builder.ToTable("CustomerContact", "Cust", tb => tb.HasTrigger("trg_CustomerContact_AfterUpdate"));
 
             builder.HasKey(x => x.CustomerContactId);
 

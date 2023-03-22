@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="048019bc-8edb-445b-a836-4954e69c0184" type="Class" typeId="04e12b51-ed12-42a3-9667-a6aa81bb6d10">
+  <name>OrderStatusHistory</name>
+  <display>OrderStatusHistory</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</parentFolderId>
+  <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+  <packageName>SSIDeliverIntgnService.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="56efaf7b-2dff-42c2-b4ad-6b7d061f58bc" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Id</name>
+      <display>Id: guid</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9171359e-79ea-469a-8141-ae6131055513">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b99aac21-9ca4-467f-a3a6-046255a9eed6" name="Primary Key">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="4c1e3f7e-61d4-460d-bd20-c2edbc0c0e2e" display="Identity" value="true" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata>
+        <entry key="id" value="true" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="03f39f82-335b-4c69-9292-107e9b78db0b" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Occured</name>
+      <display>Occured: datetime</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="97a711db-17c4-47df-b592-1388fdce14f6">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="55954bde-b78e-463d-b268-98b3bd039f1c" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Annotation</name>
+      <display>Annotation: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="25828808-4a4a-468b-a247-c9faa24c0520">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="DEFAULT" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c9ff1b6e-986c-42e5-81c6-5e512db1176c" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CancelStatusDetailId</name>
+      <display>CancelStatusDetailId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a4500f52-cc56-4fb1-a662-f3a9873e241b">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="efeca37e-1eb6-48a7-bdb4-f760369f73ef" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EMOrderStatusHistoryId</name>
+      <display>EMOrderStatusHistoryId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f7fc057c-aa8e-4742-b4bb-db5707e24b84">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="adb9e783-d2a6-413e-85b4-9496b5de6fed" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>MSOrderStatusHistoryId</name>
+      <display>MSOrderStatusHistoryId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="7df38b95-5868-496c-b798-50bdea5508e0">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="128afca6-dd23-4a3b-be0a-e7649fd05e36" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>OrderStatusDetailId</name>
+      <display>OrderStatusDetailId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="edc9e5cd-0046-4374-a569-1e9f3b38e470">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f4263c8b-2b7d-496a-9d76-f184e77dcc68" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EmailCommSentStatusId</name>
+      <display>EmailCommSentStatusId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="6ba68786-efd9-4c4a-8f7c-df414130c7a7">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="d83487d8-a343-4c77-8144-c2b5ec036407" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>SmscommsSentStatusId</name>
+      <display>SmscommsSentStatusId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="bc998e45-b3e1-4063-965d-d999630c8092">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>048019bc-8edb-445b-a836-4954e69c0184</parentFolderId>
+      <packageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</packageId>
+      <packageName>SSIDeliverIntgnService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

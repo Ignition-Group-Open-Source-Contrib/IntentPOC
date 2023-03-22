@@ -10,7 +10,7 @@ using SSIDeliverIntegrationService.Application.Common.BusinessLogic;
 using SSIDeliverIntegrationService.Application.Common.Configuration;
 using SSIDeliverIntegrationService.Application.Common.Eventing;
 
-[assembly: DefaultIntentManaged(Mode.Ignore)]
+[assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.DependencyInjection.DependencyInjection", Version = "1.0")]
 
 namespace SSIDeliverIntegrationService.Application
@@ -25,9 +25,9 @@ namespace SSIDeliverIntegrationService.Application
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UnhandledExceptionBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PerformanceBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehaviour<,>));
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(EventBusPublishBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UnitOfWorkBehaviour<,>));
-            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(EventBusPublishBehaviour<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(StateRepositoryUnitOfWorkBehaviour<,>));
             services.AddScoped<IEventBus, EventBusImplementation>();
             services.AddScoped<ISSIDeliverIntegrationFacade, SSIDeliverIntegrationFacade>();
