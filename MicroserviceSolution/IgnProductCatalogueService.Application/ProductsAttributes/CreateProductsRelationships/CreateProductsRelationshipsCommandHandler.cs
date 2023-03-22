@@ -39,6 +39,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.CreateProduc
 
             aggregateRoot.Relationships.Add(newRelationships);
             await _productsRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
+            _productsRepository.Update(p => p.Id == request.ProductsId, aggregateRoot);
             return newRelationships.Id;
         }
     }

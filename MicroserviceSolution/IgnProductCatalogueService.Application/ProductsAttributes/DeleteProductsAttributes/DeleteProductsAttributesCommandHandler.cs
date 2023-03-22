@@ -38,6 +38,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.DeleteProduc
                 throw new InvalidOperationException($"{nameof(Attributes)} of Id '{request.Id}' could not be found associated with {nameof(Products)} of Id '{request.ProductsId}'");
             }
             aggregateRoot.Attributes.Remove(element);
+            _productsRepository.Update(p => p.Id == request.ProductsId, aggregateRoot);
             return Unit.Value;
         }
     }

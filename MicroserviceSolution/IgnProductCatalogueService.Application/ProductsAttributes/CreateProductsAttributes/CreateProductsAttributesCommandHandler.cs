@@ -39,11 +39,12 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.CreateProduc
                 Value = request.Value,
                 Label = request.Label,
                 Description = request.Description,
-                //Options = request.Options,
+                Options = request.Options?.ToList(),
             };
 
             aggregateRoot.Attributes.Add(newAttributes);
             await _productsRepository.UnitOfWork.SaveChangesAsync(cancellationToken);
+            _productsRepository.Update(p => p.Id == request.ProductsId, aggregateRoot);
             return newAttributes.Id;
         }
     }

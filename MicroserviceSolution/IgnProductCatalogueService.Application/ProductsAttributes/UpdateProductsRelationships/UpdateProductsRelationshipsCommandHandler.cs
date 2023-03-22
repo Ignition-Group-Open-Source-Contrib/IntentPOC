@@ -38,7 +38,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.UpdateProduc
             }
 #warning No matching field found for ProductsId
             element.ProductId = request.ProductId;
-            //_productsRepository.Update(p => p.Id == request.Id, existingRelationships);
+            _productsRepository.Update(p => p.Id == request.ProductsId, aggregateRoot);
             return Unit.Value;
         }
     }
