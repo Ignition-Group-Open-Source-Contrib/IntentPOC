@@ -436,6 +436,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#1a157df6-8830-483c-9a94-bdeee66fcc78</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsAttributesDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/CreateProductsAttributesDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
       <CorrelationId>Intent.Application.MediatR.CommandModels#de77c7ad-c293-4e74-940b-af64eceea74d</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/CreateProductsRelationships/CreateProductsRelationshipsCommand.cs</ApplicationRelativeFilePath>
@@ -788,6 +796,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#44afb573-67c5-44e1-8147-7d262495f96c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsAttributesDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsAttributesDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
       <CorrelationId>Intent.Application.MediatR.CommandModels#13da5d24-18f3-4b8d-af1a-d5fb61c30443</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationships/UpdateProductsRelationshipsCommand.cs</ApplicationRelativeFilePath>
@@ -816,6 +832,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationshipsDto.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationshipsDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>811ae6a0-44e8-4fbc-9049-a00118ad1104</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#ee156b8e-8023-4a91-b54c-4966800cbc55</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../IgnProductCatalogueService.Application/ProductsAttributes/UpdateProductsRelationshipsDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductsAttributes/UpdateProductsRelationshipsDtoMappingExtensions.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

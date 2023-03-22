@@ -22,7 +22,10 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
             Guid id,
             string name,
             string type,
-            string? value)
+            string? value,
+            string label,
+            string? description,
+            IEnumerable<string>? options)
         {
             return new ProductsAttributesDto
             {
@@ -31,6 +34,9 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
                 Name = name,
                 Type = type,
                 Value = value,
+                Label = label,
+                Description = description,
+                Options = options,
             };
         }
 
@@ -43,6 +49,12 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
         public string Type { get; set; }
 
         public string? Value { get; set; }
+
+        public string Label { get; set; }
+
+        public string? Description { get; set; }
+
+        public IEnumerable<string>? Options { get; set; }
 
         public void Mapping(Profile profile)
         {

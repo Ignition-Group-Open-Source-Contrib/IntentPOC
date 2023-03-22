@@ -30,6 +30,6 @@ namespace IgnProductCatalogueService.Domain.Entities
 
         public string? Value { get; set; }
 
-        public ICollection<string>? Options { get; set; } = new List<string>?();
+        public ICollection<string>? Options { get; set; } //= new List<string>?();
     }
 }

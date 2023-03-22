@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using AutoMapper;
+using IgnProductCatalogueService.Application.Common.Mappings;
+using IgnProductCatalogueService.Domain.Entities;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
@@ -8,7 +11,7 @@ using Intent.RoslynWeaver.Attributes;
 namespace IgnProductCatalogueService.Application.ProductsAttributes
 {
 
-    public class UpdateProductsRelationshipsDto
+    public class UpdateProductsRelationshipsDto : IMapFrom<Relationships>
     {
         public UpdateProductsRelationshipsDto()
         {
@@ -28,6 +31,11 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes
         public string ProductId { get; set; }
 
         public Guid Id { get; set; }
+
+        public void Mapping(Profile profile)
+        {
+            profile.CreateMap<Relationships, UpdateProductsRelationshipsDto>();
+        }
 
     }
 }

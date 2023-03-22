@@ -51,6 +51,9 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.CreateProduc
                 Name = dto.Name,
                 Type = dto.Type,
                 Value = dto.Value,
+                Label = dto.Label,
+                Description = dto.Description,
+                //Options = dto.Options,
             };
         }
 

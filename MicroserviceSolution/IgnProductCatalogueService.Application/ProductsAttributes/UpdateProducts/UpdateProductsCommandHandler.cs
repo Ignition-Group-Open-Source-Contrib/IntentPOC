@@ -47,7 +47,7 @@ namespace IgnProductCatalogueService.Application.ProductsAttributes.UpdateProduc
             entity.Description = dto.Description;
             entity.Type = dto.Type;
             entity.Value = dto.Value;
-            entity.Options = dto.Options;
+            //entity.Options = dto.Options;
         }
 
         [IntentManaged(Mode.Fully)]

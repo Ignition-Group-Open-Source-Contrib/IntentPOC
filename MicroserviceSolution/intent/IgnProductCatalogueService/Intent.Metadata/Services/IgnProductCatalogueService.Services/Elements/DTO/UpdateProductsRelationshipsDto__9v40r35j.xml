@@ -9,7 +9,7 @@
   <mappedClass>
     <applicationId>c5cdd3f0-dc87-45fe-9f95-33547a5aa712</applicationId>
     <metadataId>6ab29b31-27af-4f56-a67c-986d82097d63</metadataId>
-    <mappingSettingsId>942eae46-49f1-450e-9274-a92d40ac35fa</mappingSettingsId>
+    <mappingSettingsId>1f747d14-681c-4a20-8c68-34223f41b825</mappingSettingsId>
     <autoSyncTypeReference>true</autoSyncTypeReference>
     <mappedPath>
       <target id="b5c51a73-9fe4-4b36-84dc-1c489da2f060" name="Relationships" type="element" specialization="Class" />
