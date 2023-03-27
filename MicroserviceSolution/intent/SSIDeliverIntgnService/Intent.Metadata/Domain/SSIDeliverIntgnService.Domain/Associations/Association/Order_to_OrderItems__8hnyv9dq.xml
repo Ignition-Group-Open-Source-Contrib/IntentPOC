@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="5dea117b-7506-43e7-b583-66a12a14d24a">
+  <sourceEnd id="2eb13939-2158-49d3-a13f-7b70b27a67aa" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>30</order>
+    <typeReference id="686cb093-fac4-4f68-9a32-6b47ffd1b9b2">
+      <typeId>07fcfaf3-a836-4e40-bed1-324cd780ed3d</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntgnService.Domain</typePackageName>
+      <typePackageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="5dea117b-7506-43e7-b583-66a12a14d24a" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>OrderItems</name>
+    <display>OrderItems: OrderItem[*]</display>
+    <order>16</order>
+    <typeReference id="e1718d37-0a1e-4e5e-afe6-92428e192e3f">
+      <typeId>c85a07f6-7c1d-4039-8178-ffe8db023929</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntgnService.Domain</typePackageName>
+      <typePackageId>247cd2e6-1aff-4754-a00a-07277c0f9fd7</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

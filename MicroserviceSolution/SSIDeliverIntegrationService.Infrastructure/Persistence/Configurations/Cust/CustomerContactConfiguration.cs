@@ -12,11 +12,11 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<CustomerContact> builder)
         {
-            builder.ToTable("CustomerContacts", "Cust");
+            builder.ToTable("CustomerContact", "Cust", tb => tb.HasTrigger("trg_CustomerContact_AfterUpdate"));
 
             builder.HasKey(x => x.CustomerContactId);
 
-            builder.Property(x => x.CustomerCustomerID)
+            builder.Property(x => x.CustomerID)
                 .IsRequired();
 
             builder.Property(x => x.Contact)
@@ -45,8 +45,8 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
                 .HasDefaultValueSql("((0))");
 
             builder.HasOne(x => x.Customer)
-                .WithMany()
-                .HasForeignKey(x => x.CustomerCustomerID)
+                .WithMany(x => x.CustomerContacts)
+                .HasForeignKey(x => x.CustomerID)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);

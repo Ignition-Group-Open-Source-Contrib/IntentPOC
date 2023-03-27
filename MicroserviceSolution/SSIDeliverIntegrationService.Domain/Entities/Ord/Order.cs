@@ -14,7 +14,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
     [DefaultIntentManaged(Mode.Fully, Targets = Targets.Methods, Body = Mode.Ignore, AccessModifiers = AccessModifiers.Public)]
     public class Order : IHasDomainEvent
     {
-        public int OrderID { get; set; }
+        public int OrderId { get; set; }
 
         public DateTime OrderDate { get; set; }
 
@@ -32,7 +32,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
 
         public int? DebitOrderDay { get; set; }
 
-        public int CustomerCustomerID { get; set; }
+        public int CustomerId { get; set; }
 
         public int? LeadId { get; set; }
 
@@ -51,6 +51,8 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
         public int? OrderOdooId { get; set; }
 
         public virtual Customer Customer { get; set; }
+
+        public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
         public List<DomainEvent> DomainEvents { get; set; } = new List<DomainEvent>();
     }

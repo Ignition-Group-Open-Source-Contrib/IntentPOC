@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Intent.RoslynWeaver.Attributes;
 using SSIDeliverIntegrationService.Domain.Common;
+using SSIDeliverIntegrationService.Domain.Entities.Ord;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Entities.DomainEntity", Version = "1.0")]
@@ -52,6 +53,12 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Cust
         public bool? _ctFlag { get; set; }
 
         public int? CustomerOdooId { get; set; }
+
+        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+
+        public virtual ICollection<CustomerContact> CustomerContacts { get; set; } = new List<CustomerContact>();
+
+        public virtual ICollection<CustomerAddress> CustomerAddresses { get; set; } = new List<CustomerAddress>();
 
         public List<DomainEvent> DomainEvents { get; set; } = new List<DomainEvent>();
     }

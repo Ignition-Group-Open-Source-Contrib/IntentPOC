@@ -12,9 +12,9 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Order> builder)
         {
-            builder.ToTable("Orders", "Ord");
+            builder.ToTable("Order", "Ord");
 
-            builder.HasKey(x => x.OrderID);
+            builder.HasKey(x => x.OrderId);
 
             builder.Property(x => x.OrderDate)
                 .IsRequired()
@@ -41,7 +41,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.DebitOrderDay);
 
-            builder.Property(x => x.CustomerCustomerID)
+            builder.Property(x => x.CustomerId)
                 .IsRequired();
 
             builder.Property(x => x.LeadId);
@@ -64,8 +64,8 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
             builder.Property(x => x.OrderOdooId);
 
             builder.HasOne(x => x.Customer)
-                .WithMany()
-                .HasForeignKey(x => x.CustomerCustomerID)
+                .WithMany(x => x.Orders)
+                .HasForeignKey(x => x.CustomerId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="d0741ff6-3b95-45c7-9fe1-9529693cf3f3">
+  <sourceEnd id="031627fd-d0ca-4da9-aaca-8bdfb6891a65" type="Message Publish Assocation Source End" typeId="282eea12-2b98-4f0f-a28c-50c05b953c8e">
+    <name>SSIDeliverIntegrationService</name>
+    <display>publisher: SSIDeliverIntegrationService</display>
+    <order>0</order>
+    <typeReference id="3dc93edd-bd5f-43b0-b293-81190c0a98df">
+      <typeId>8b295572-ef7f-49ef-bca8-154de4d93f43</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Eventing</typePackageName>
+      <typePackageId>df8bdcf2-4f2d-4843-bab6-d531280914ee</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="d0741ff6-3b95-45c7-9fe1-9529693cf3f3" type="Message Publish Assocation Target End" typeId="6be8d569-70b9-4451-bd1b-7b654499503e">
+    <name>UploadPdfFile</name>
+    <display>publish: UploadPdfFile</display>
+    <order>0</order>
+    <typeReference id="b0a02157-b8c9-4217-a9e8-1cd538f8c699">
+      <typeId>8948f0d2-f419-4a87-8645-60951042fa94</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Eventing</typePackageName>
+      <typePackageId>df8bdcf2-4f2d-4843-bab6-d531280914ee</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Publish Assocation</associationType>
+  <associationTypeId>022d4c90-e1b6-4747-a15f-640c19503a8f</associationTypeId>
+  <stereotypes />
+</association>

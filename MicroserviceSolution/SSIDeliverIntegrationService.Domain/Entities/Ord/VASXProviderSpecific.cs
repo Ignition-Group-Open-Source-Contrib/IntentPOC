@@ -14,11 +14,11 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
     {
         public int VASXProviderSpecificId { get; set; }
 
-        public int OrderItemOrderItemID { get; set; }
+        public int OrderItemId { get; set; }
 
-        public string? ICCID { get; set; }
+        public string? Iccid { get; set; }
 
-        public string? SubscriberUID { get; set; }
+        public string? SubscriberUid { get; set; }
 
         public string? IMSI { get; set; }
 

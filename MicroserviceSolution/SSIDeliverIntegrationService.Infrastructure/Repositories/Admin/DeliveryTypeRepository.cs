@@ -21,14 +21,14 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Admin
         {
         }
 
-        public async Task<DeliveryType> FindByIdAsync(int deliveryTypeID, CancellationToken cancellationToken = default)
+        public async Task<DeliveryType> FindByIdAsync(int deliveryTypeId, CancellationToken cancellationToken = default)
         {
-            return await FindAsync(x => x.DeliveryTypeID == deliveryTypeID, cancellationToken);
+            return await FindAsync(x => x.DeliveryTypeId == deliveryTypeId, cancellationToken);
         }
 
-        public async Task<List<DeliveryType>> FindByIdsAsync(int[] deliveryTypeIDs, CancellationToken cancellationToken = default)
+        public async Task<List<DeliveryType>> FindByIdsAsync(int[] deliveryTypeIds, CancellationToken cancellationToken = default)
         {
-            return await FindAllAsync(x => deliveryTypeIDs.Contains(x.DeliveryTypeID), cancellationToken);
+            return await FindAllAsync(x => deliveryTypeIds.Contains(x.DeliveryTypeId), cancellationToken);
         }
     }
 }

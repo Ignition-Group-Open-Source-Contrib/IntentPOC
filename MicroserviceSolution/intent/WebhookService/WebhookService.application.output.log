@@ -138,7 +138,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>35797146-8aec-4ee5-b8ed-eac009a1ac51</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.EventBusPublishBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../WebhookService.Application/Common/Behaviours/EventBusPublishBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>EventBusPublishBehaviour.cs</ProjectRelativeFilePath>
@@ -202,10 +202,18 @@
     </FileLog>
     <FileLog>
       <ProjectId>b3f15ef2-4214-4ec2-ad21-48fa80f206ae</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusInterface</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.EventBusInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../WebhookService.Application/Common/Eventing/IEventBus.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IEventBus.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b3f15ef2-4214-4ec2-ad21-48fa80f206ae</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandlerInterface</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../WebhookService.Application/Common/Eventing/IIntegrationEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IIntegrationEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -322,18 +330,18 @@
     </FileLog>
     <FileLog>
       <ProjectId>b1f4a17a-7e83-4adb-9b1e-3ddab252b494</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.Event#e3e714a3-eda7-43cc-967f-8573774d031f</CorrelationId>
-      <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../WebhookService.Application/IDeliverCallBack.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>IDeliverCallBack.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
-    </FileLog>
-    <FileLog>
-      <ProjectId>b1f4a17a-7e83-4adb-9b1e-3ddab252b494</ProjectId>
       <CorrelationId>Intent.Application.Dtos.DtoModel#8d5da4f0-ab2d-404c-bd3b-a558e0d3b2c1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../WebhookService.Application/IDeliverOrderCallBackAPIRequest.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverOrderCallBackAPIRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>3aade12c-b3e1-4669-b7af-27a09d3f6c0c</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#e3e714a3-eda7-43cc-967f-8573774d031f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../WebhookService.Application/IntegrationEvents/IDeliverCallBackEvent.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IDeliverCallBackEvent.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

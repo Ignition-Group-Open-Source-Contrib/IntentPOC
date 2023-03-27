@@ -16,8 +16,8 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Cust
     {
 
         [IntentManaged(Mode.Fully)]
-        Task<CustomerAddress> FindByIdAsync(int customerAddressID, CancellationToken cancellationToken = default);
+        Task<CustomerAddress> FindByIdAsync(int customerAddressId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
-        Task<List<CustomerAddress>> FindByIdsAsync(int[] customerAddressIDs, CancellationToken cancellationToken = default);
+        Task<List<CustomerAddress>> FindByIdsAsync(int[] customerAddressIds, CancellationToken cancellationToken = default);
     }
 }

@@ -15,7 +15,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Stock
     {
         public int IDeliverProductChannelMappingId { get; set; }
 
-        public int ProductProductID { get; set; }
+        public int ProductId { get; set; }
 
         public int ChannelId { get; set; }
 

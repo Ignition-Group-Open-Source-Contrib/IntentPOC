@@ -16,7 +16,7 @@
       <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
       <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
       <properties>
-        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" isActive="true" />
+        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" value="CustomerAddress" isActive="true" />
         <property name="13e6101f-0e37-4eda-a6ae-ec48cd9f8f4b" display="Schema" value="Cust" isActive="true" />
       </properties>
     </stereotype>
@@ -24,8 +24,8 @@
   <metadata />
   <childElements>
     <childElement id="e25093d1-40e5-4689-b1b9-00a9a7ee8ddd" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>CustomerAddressID</name>
-      <display>CustomerAddressID: int</display>
+      <name>CustomerAddressId</name>
+      <display>CustomerAddressId: int</display>
       <externalReference>1</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -54,31 +54,6 @@
           </properties>
         </stereotype>
       </stereotypes>
-      <metadata />
-      <childElements />
-    </childElement>
-    <childElement id="33d6f778-9616-419b-8b6c-32db7c291080" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>CustomerId</name>
-      <display>CustomerId: int</display>
-      <externalReference>2</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <typeReference id="e8ca1144-967d-4333-afb4-828c3d22e250">
-        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
-        <isNavigable>true</isNavigable>
-        <isNullable>false</isNullable>
-        <isCollection>false</isCollection>
-        <isRequired>true</isRequired>
-        <typePackageName>Intent.Common.Types</typePackageName>
-        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
-        <stereotypes />
-        <genericTypeParameters />
-      </typeReference>
-      <isMapped>false</isMapped>
-      <parentFolderId>a74b9f6c-e25d-4325-a50c-9e9947c1051e</parentFolderId>
-      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
-      <packageName>SSIDeliverIntegrationService.Domain</packageName>
-      <stereotypes />
       <metadata />
       <childElements />
     </childElement>
@@ -962,6 +937,43 @@
         </stereotype>
       </stereotypes>
       <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="ae831a4d-1202-41af-ad1e-3be72fd42e68" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CustomerId</name>
+      <display>CustomerId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="353f770f-b5da-4e6d-b378-94a0be8148e8">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>a74b9f6c-e25d-4325-a50c-9e9947c1051e</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="793a5128-57a1-440b-a206-af5722b752a6" name="Foreign Key">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="42e4f9b5-f834-4e5f-86aa-d3a35c505076" display="Association" value="c69f63a4-64cd-4f1e-82e9-8cb64dc04bd7" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata>
+        <entry key="fk-original-name" value="CustomerCustomerID" />
+        <entry key="association" value="c69f63a4-64cd-4f1e-82e9-8cb64dc04bd7" />
+        <entry key="is-managed-key" value="true" />
+      </metadata>
       <childElements />
     </childElement>
   </childElements>

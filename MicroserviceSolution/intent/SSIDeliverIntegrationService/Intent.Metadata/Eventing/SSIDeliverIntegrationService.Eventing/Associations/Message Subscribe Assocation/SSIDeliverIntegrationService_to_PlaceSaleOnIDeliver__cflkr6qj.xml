@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ff0782a5-f6ca-4fc5-80f7-db27e1d5f20e">
+  <sourceEnd id="1a969e40-1b44-4768-9519-7c17b9bbe110" type="Message Subscribe Assocation Source End" typeId="18780798-1ea8-462b-b4f9-b8605ad11636">
+    <name>SSIDeliverIntegrationService</name>
+    <display>subscriber: SSIDeliverIntegrationService</display>
+    <order>0</order>
+    <typeReference id="31e61cec-3f76-43a5-a202-fc141d36a9b4">
+      <typeId>8b295572-ef7f-49ef-bca8-154de4d93f43</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Eventing</typePackageName>
+      <typePackageId>df8bdcf2-4f2d-4843-bab6-d531280914ee</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ff0782a5-f6ca-4fc5-80f7-db27e1d5f20e" type="Message Subscribe Assocation Target End" typeId="21c3df1c-5140-4f65-9814-a68e1a577768">
+    <name>PlaceSaleOnIDeliver</name>
+    <display>subscribe: PlaceSaleOnIDeliver</display>
+    <order>4</order>
+    <typeReference id="7fa89b70-78d3-45d6-a8b3-8638c04cc974">
+      <typeId>1c362f7f-d109-4ffa-9a0d-c7fec4499440</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Eventing</typePackageName>
+      <typePackageId>df8bdcf2-4f2d-4843-bab6-d531280914ee</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Message Subscribe Assocation</associationType>
+  <associationTypeId>50e0bed1-1387-4d67-8f66-1194763296b1</associationTypeId>
+  <stereotypes />
+</association>

@@ -12,11 +12,11 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<OrderStatusHistory> builder)
         {
-            builder.ToTable("OrderStatusHistories", "Ord");
+            builder.ToTable("OrderStatusHistory", "Ord");
 
             builder.HasKey(x => x.OrderStatusHistoryId);
 
-            builder.Property(x => x.OrderItemOrderItemID)
+            builder.Property(x => x.OrderItemId)
                 .IsRequired();
 
             builder.Property(x => x.Occured)
@@ -32,9 +32,18 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.MSOrderStatusHistoryId);
 
+            builder.Property(x => x.OrderStatusDetailId)
+                .IsRequired();
+
+            builder.Property(x => x.EmailCommSentStatusId)
+                .IsRequired();
+
+            builder.Property(x => x.SmscommSentStatusId)
+                .IsRequired();
+
             builder.HasOne(x => x.OrderItem)
-                .WithMany()
-                .HasForeignKey(x => x.OrderItemOrderItemID)
+                .WithMany(x => x.OrderStatusHistories)
+                .HasForeignKey(x => x.OrderItemId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);

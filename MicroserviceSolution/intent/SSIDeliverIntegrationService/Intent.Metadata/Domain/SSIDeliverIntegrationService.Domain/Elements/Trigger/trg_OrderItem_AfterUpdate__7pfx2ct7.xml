@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="32894b6f-3b83-4ec5-aa28-d6ebac41bdbb" type="Trigger" typeId="5b7b5e77-e627-464b-a157-6d01f2042641">
+  <name>trg_OrderItem_AfterUpdate</name>
+  <display>trg_OrderItem_AfterUpdate</display>
+  <isAbstract>false</isAbstract>
+  <order>31</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</parentFolderId>
+  <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+  <packageName>SSIDeliverIntegrationService.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

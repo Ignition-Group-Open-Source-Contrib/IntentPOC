@@ -23,17 +23,17 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Stock
 
         public int? StockInvoiceId { get; set; }
 
-        public int ProductProductID { get; set; }
+        public int ProductId { get; set; }
 
         public int? ReturnStatus { get; set; }
 
-        public string? SIM { get; set; }
+        public string? Sim { get; set; }
 
         public int? Received { get; set; }
 
         public int? StockStatusId { get; set; }
 
-        public int? OrderItemOrderItemID { get; set; }
+        public int? OrderItemId { get; set; }
 
         public string? IMSI { get; set; }
 

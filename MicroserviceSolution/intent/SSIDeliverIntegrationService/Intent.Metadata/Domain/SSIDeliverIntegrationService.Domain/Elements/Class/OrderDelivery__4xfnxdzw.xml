@@ -16,7 +16,7 @@
       <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
       <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
       <properties>
-        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" isActive="true" />
+        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" value="OrderDelivery" isActive="true" />
         <property name="13e6101f-0e37-4eda-a6ae-ec48cd9f8f4b" display="Schema" value="Ord" isActive="true" />
       </properties>
     </stereotype>
@@ -68,8 +68,8 @@
       <childElements />
     </childElement>
     <childElement id="04aedbd6-d94b-4972-8a5a-d187e22bbf1e" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>OrderItemOrderItemID</name>
-      <display>OrderItemOrderItemID: int</display>
+      <name>OrderItemId</name>
+      <display>OrderItemId: int</display>
       <externalReference>2</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -106,8 +106,8 @@
       <childElements />
     </childElement>
     <childElement id="6252940d-e5d4-40cd-91d7-33e85e1d7788" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>CustomerAddressCustomerAddressID</name>
-      <display>CustomerAddressCustomerAddressID: int</display>
+      <name>CustomerAddressId</name>
+      <display>CustomerAddressId: int</display>
       <externalReference>3</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -137,15 +137,15 @@
         </stereotype>
       </stereotypes>
       <metadata>
-        <entry key="fk-original-name" value="CustomerAddressCustomerAddressID" />
+        <entry key="fk-original-name" value="CustomerAddressCustomerAddressId" />
         <entry key="association" value="9563399c-438e-4b7d-bc67-3d15d4783365" />
         <entry key="is-managed-key" value="true" />
       </metadata>
       <childElements />
     </childElement>
     <childElement id="894b3a69-8f50-409d-be7c-7f84aa45708f" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>DeliveryTypeDeliveryTypeID</name>
-      <display>DeliveryTypeDeliveryTypeID: int?</display>
+      <name>DeliveryTypeId</name>
+      <display>DeliveryTypeId: int?</display>
       <externalReference>4</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -769,8 +769,8 @@
       <childElements />
     </childElement>
     <childElement id="79690e09-0b87-4187-8f2b-6e20fbe6ddd0" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>ConsignmentID</name>
-      <display>ConsignmentID: string?</display>
+      <name>ConsignmentId</name>
+      <display>ConsignmentId: string?</display>
       <externalReference>23</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -801,6 +801,30 @@
           </properties>
         </stereotype>
       </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="29862546-08ed-4948-862e-1f71054c6923" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>OrderStatusDetailId</name>
+      <display>OrderStatusDetailId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="8fad63c0-05fb-4939-addb-f709facdd6e1">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>97c02647-7b1f-4a1a-bbd9-98f659029791</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
       <metadata />
       <childElements />
     </childElement>

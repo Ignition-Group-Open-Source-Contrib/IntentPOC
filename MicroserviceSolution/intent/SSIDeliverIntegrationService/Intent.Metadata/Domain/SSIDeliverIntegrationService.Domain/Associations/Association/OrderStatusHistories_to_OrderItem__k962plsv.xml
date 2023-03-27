@@ -3,10 +3,10 @@
   <sourceEnd id="fd92fbc3-1fd6-4780-b1f6-04bd96745e53" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
     <name>OrderStatusHistories</name>
     <display>OrderStatusHistories: OrderStatusHistory[*]</display>
-    <order>0</order>
+    <order>36</order>
     <typeReference id="7b081d3e-6b92-44cf-879f-cb37e7ca16a3">
       <typeId>f624ce1b-e8ce-4bba-8f5b-659c5a439955</typeId>
-      <isNavigable>false</isNavigable>
+      <isNavigable>true</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>true</isCollection>
       <isRequired>true</isRequired>
@@ -22,7 +22,7 @@
   <targetEnd id="919044fa-2218-41ce-bd0f-f763be14d67c" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
     <name>OrderItem</name>
     <display>OrderItem: OrderItem</display>
-    <order>7</order>
+    <order>10</order>
     <typeReference id="243306a1-dd1e-4c87-aab9-4edc425a2fd8">
       <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
       <isNavigable>true</isNavigable>

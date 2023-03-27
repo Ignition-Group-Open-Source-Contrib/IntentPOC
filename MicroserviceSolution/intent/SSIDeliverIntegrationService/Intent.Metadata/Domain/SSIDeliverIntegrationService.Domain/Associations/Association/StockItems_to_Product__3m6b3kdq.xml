@@ -3,10 +3,10 @@
   <sourceEnd id="46609466-1936-4632-9057-d52227138095" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
     <name>StockItems</name>
     <display>StockItems: StockItem[*]</display>
-    <order>0</order>
+    <order>14</order>
     <typeReference id="62307be6-a493-409e-8bd5-c38213d2624e">
       <typeId>89acbf40-3564-43f1-8663-37ac40b706a1</typeId>
-      <isNavigable>false</isNavigable>
+      <isNavigable>true</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>true</isCollection>
       <isRequired>true</isRequired>

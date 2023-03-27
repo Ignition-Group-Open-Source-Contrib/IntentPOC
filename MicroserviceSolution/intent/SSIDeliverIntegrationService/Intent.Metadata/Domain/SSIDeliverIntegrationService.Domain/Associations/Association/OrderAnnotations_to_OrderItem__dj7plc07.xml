@@ -22,7 +22,7 @@
   <targetEnd id="44ac36b5-fbd3-45c1-a74a-e15c110a7e74" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
     <name>OrderItem</name>
     <display>OrderItem: OrderItem</display>
-    <order>7</order>
+    <order>8</order>
     <typeReference id="ce8df65b-68d8-41d2-8a4f-02607985556f">
       <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
       <isNavigable>true</isNavigable>

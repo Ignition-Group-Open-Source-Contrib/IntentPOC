@@ -16,7 +16,7 @@
       <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
       <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
       <properties>
-        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" isActive="true" />
+        <property name="2b3a9df7-65e1-4800-b919-bef1a6b8f5a9" display="Name" value="OrderAnnotation" isActive="true" />
         <property name="13e6101f-0e37-4eda-a6ae-ec48cd9f8f4b" display="Schema" value="Ord" isActive="true" />
       </properties>
     </stereotype>
@@ -58,8 +58,8 @@
       <childElements />
     </childElement>
     <childElement id="44325e4c-8f1d-433d-80b9-fdddad1d591a" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>OrderItemOrderItemID</name>
-      <display>OrderItemOrderItemID: int</display>
+      <name>OrderItemId</name>
+      <display>OrderItemId: int</display>
       <externalReference>2</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />
@@ -89,7 +89,7 @@
         </stereotype>
       </stereotypes>
       <metadata>
-        <entry key="fk-original-name" value="OrderItemOrderItemID" />
+        <entry key="fk-original-name" value="OrderItemOrderItemId" />
         <entry key="association" value="44ac36b5-fbd3-45c1-a74a-e15c110a7e74" />
         <entry key="is-managed-key" value="true" />
       </metadata>
@@ -225,6 +225,30 @@
         <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6a8d2a4a-33d0-4e82-b223-91369281105d</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="b7f32b5d-9c94-476d-a856-80e24d53c026" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>UserId</name>
+      <display>UserId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="c89b26dd-b0ca-4daf-9f52-f20bd1510c61">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
         <isCollection>false</isCollection>
         <isRequired>true</isRequired>
         <typePackageName>Intent.Common.Types</typePackageName>

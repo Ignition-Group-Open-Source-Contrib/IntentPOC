@@ -38,7 +38,7 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="2e9ff0a3-3324-481f-b456-1d9eef9e89dd" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+    <childElement id="c7ca85af-25a9-411d-8d00-43dec139c935" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
       <name>Intent.Dapr.AspNetCore.Pubsub.DaprEventHandlerController</name>
       <display>Intent.Dapr.AspNetCore.Pubsub.DaprEventHandlerController</display>
       <externalReference>Intent.Dapr.AspNetCore.Pubsub</externalReference>
@@ -46,8 +46,6 @@
       <genericTypes />
       <isMapped>false</isMapped>
       <parentFolderId>c37ef8df-4c3c-4f60-bf3e-b81432e48a12</parentFolderId>
-      <packageId>e9eeddd3-056c-4bec-8c0b-d73970f9e505</packageId>
-      <packageName>MicroserviceSolution</packageName>
       <stereotypes />
       <metadata>
         <entry key="status" value="assigned" />

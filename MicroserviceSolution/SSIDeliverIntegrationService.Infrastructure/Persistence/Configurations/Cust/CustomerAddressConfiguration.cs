@@ -12,12 +12,9 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<CustomerAddress> builder)
         {
-            builder.ToTable("CustomerAddresses", "Cust");
+            builder.ToTable("CustomerAddress", "Cust");
 
-            builder.HasKey(x => x.CustomerAddressID);
-
-            builder.Property(x => x.CustomerId)
-                .IsRequired();
+            builder.HasKey(x => x.CustomerAddressId);
 
             builder.Property(x => x.AddressTypeId)
                 .IsRequired();
@@ -98,6 +95,14 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.LatLong)
                 .HasColumnType("varchar(50)");
+
+            builder.Property(x => x.CustomerId)
+                .IsRequired();
+
+            builder.HasOne(x => x.Customer)
+                .WithMany(x => x.CustomerAddresses)
+                .HasForeignKey(x => x.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);
         }

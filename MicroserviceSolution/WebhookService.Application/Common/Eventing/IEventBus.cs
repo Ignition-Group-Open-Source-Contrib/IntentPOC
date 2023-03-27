@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Intent.RoslynWeaver.Attributes;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
-[assembly: IntentTemplate("Intent.Dapr.AspNetCore.Pubsub.EventBusInterface", Version = "1.0")]
+[assembly: IntentTemplate("Intent.Eventing.Contracts.EventBusInterface", Version = "1.0")]
 
 namespace WebhookService.Application.Common.Eventing
 {
@@ -11,7 +11,7 @@ namespace WebhookService.Application.Common.Eventing
     {
 
         void Publish<T>(T message)
-            where T : IEvent;
+            where T : class, IEvent;
         Task FlushAllAsync(CancellationToken cancellationToken = default);
     }
 }

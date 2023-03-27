@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<City> builder)
         {
-            builder.ToTable("Cities", "Admin");
+            builder.ToTable("City", "Admin");
 
             builder.HasKey(x => x.CityID);
 
@@ -20,7 +20,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
                 .IsRequired()
                 .HasColumnType("varchar(255)");
 
-            builder.Property(x => x.ProvinceProvinceID)
+            builder.Property(x => x.ProvinceID)
                 .IsRequired();
 
             builder.Property(x => x.Latitude)
@@ -48,7 +48,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasOne(x => x.Province)
                 .WithMany()
-                .HasForeignKey(x => x.ProvinceProvinceID)
+                .HasForeignKey(x => x.ProvinceID)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasIndex(x => x.CityID)

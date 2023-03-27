@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<StockItem> builder)
         {
-            builder.ToTable("StockItems", "Stock");
+            builder.ToTable("StockItem", "Stock");
 
             builder.HasKey(x => x.StockItemId);
 
@@ -28,13 +28,13 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.StockInvoiceId);
 
-            builder.Property(x => x.ProductProductID)
+            builder.Property(x => x.ProductId)
                 .IsRequired();
 
             builder.Property(x => x.ReturnStatus)
                 .HasDefaultValueSql("((0))");
 
-            builder.Property(x => x.SIM)
+            builder.Property(x => x.Sim)
                 .HasColumnType("varchar(50)");
 
             builder.Property(x => x.Received)
@@ -42,7 +42,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.StockStatusId);
 
-            builder.Property(x => x.OrderItemOrderItemID);
+            builder.Property(x => x.OrderItemId);
 
             builder.Property(x => x.IMSI)
                 .HasColumnType("varchar(20)");
@@ -54,13 +54,13 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
             builder.Property(x => x.EMStockItemId);
 
             builder.HasOne(x => x.Product)
-                .WithMany()
-                .HasForeignKey(x => x.ProductProductID)
+                .WithMany(x => x.StockItems)
+                .HasForeignKey(x => x.ProductId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(x => x.OrderItem)
                 .WithMany()
-                .HasForeignKey(x => x.OrderItemOrderItemID)
+                .HasForeignKey(x => x.OrderItemId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);

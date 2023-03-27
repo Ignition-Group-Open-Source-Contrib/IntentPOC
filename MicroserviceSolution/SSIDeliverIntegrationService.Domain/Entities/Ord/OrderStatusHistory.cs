@@ -15,7 +15,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
     {
         public int OrderStatusHistoryId { get; set; }
 
-        public int OrderItemOrderItemID { get; set; }
+        public int OrderItemId { get; set; }
 
         public DateTime Occured { get; set; }
 
@@ -26,6 +26,12 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
         public int? EMOrderStatusHistoryId { get; set; }
 
         public int? MSOrderStatusHistoryId { get; set; }
+
+        public int OrderStatusDetailId { get; set; }
+
+        public int EmailCommSentStatusId { get; set; }
+
+        public int SmscommSentStatusId { get; set; }
 
         public virtual OrderItem OrderItem { get; set; }
 

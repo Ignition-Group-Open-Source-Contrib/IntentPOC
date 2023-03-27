@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<CampaignIDeliverCourierMapping> builder)
         {
-            builder.ToTable("CampaignIDeliverCourierMappings", "Camp");
+            builder.ToTable("CampaignIDeliverCourierMapping", "Camp");
 
             builder.HasKey(x => x.CampaignIDeliverCourierMappingID);
 

@@ -12,9 +12,9 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<DeliveryType> builder)
         {
-            builder.ToTable("DeliveryTypes", "Admin");
+            builder.ToTable("DeliveryType", "Admin");
 
-            builder.HasKey(x => x.DeliveryTypeID);
+            builder.HasKey(x => x.DeliveryTypeId);
 
             builder.Property(x => x.DeliveryTypeValue)
                 .IsRequired()
@@ -38,7 +38,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.Property(x => x.UpdatedOnDate);
 
-            builder.HasIndex(x => x.DeliveryTypeID)
+            builder.HasIndex(x => x.DeliveryTypeId)
                 .IsUnique()
                 .HasDatabaseName("IX_DeliveryTypeID");
 

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using SSIDeliverIntegrationService.Application;
 using SSIDeliverIntegrationService.Application.GetSaleChannels;
+using SSIDeliverIntegrationService.Application.ViewModels;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.AspNetCore.Controllers.Controller", Version = "1.0")]

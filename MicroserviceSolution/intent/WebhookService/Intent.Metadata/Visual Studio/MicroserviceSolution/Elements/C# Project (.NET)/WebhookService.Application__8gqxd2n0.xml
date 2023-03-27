@@ -222,22 +222,6 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="5e11b5e5-14f7-468d-bf6f-bc91d67107ef" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
-      <name>Intent.Dapr.AspNetCore.Pubsub.Event</name>
-      <display>Intent.Dapr.AspNetCore.Pubsub.Event</display>
-      <externalReference>Intent.Dapr.AspNetCore.Pubsub</externalReference>
-      <isAbstract>false</isAbstract>
-      <genericTypes />
-      <isMapped>false</isMapped>
-      <parentFolderId>b1f4a17a-7e83-4adb-9b1e-3ddab252b494</parentFolderId>
-      <packageId>7e8d8b3d-d8b0-4989-b88e-cf02e0d92673</packageId>
-      <packageName>MicroserviceSolution</packageName>
-      <stereotypes />
-      <metadata>
-        <entry key="status" value="assigned" />
-      </metadata>
-      <childElements />
-    </childElement>
     <childElement id="bcd82a2d-2ca8-491e-9e11-8c9cd2f6bae5" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
       <name>Intent.Dapr.AspNetCore.Pubsub.EventHandler</name>
       <display>Intent.Dapr.AspNetCore.Pubsub.EventHandler</display>
@@ -266,6 +250,34 @@
       <packageName>MicroserviceSolution</packageName>
       <stereotypes />
       <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="e42986d3-0cec-4fad-a92e-22cb3bce6713" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.Contracts.Clients.EnumContract</name>
+      <display>Intent.Application.Contracts.Clients.EnumContract</display>
+      <externalReference>Intent.Application.Contracts.Clients</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>b1f4a17a-7e83-4adb-9b1e-3ddab252b494</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="7c162e8a-e1d6-4172-8ff4-5f9f5b934324" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>Intent.Application.Dtos.ContractEnumModel</name>
+      <display>Intent.Application.Dtos.ContractEnumModel</display>
+      <externalReference>Intent.Application.Dtos</externalReference>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>b1f4a17a-7e83-4adb-9b1e-3ddab252b494</parentFolderId>
+      <stereotypes />
+      <metadata>
+        <entry key="status" value="assigned" />
+      </metadata>
       <childElements />
     </childElement>
   </childElements>

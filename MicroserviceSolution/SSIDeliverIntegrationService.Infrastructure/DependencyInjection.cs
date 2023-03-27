@@ -10,7 +10,7 @@ using SSIDeliverIntegrationService.Domain.Repositories;
 using SSIDeliverIntegrationService.Domain.Repositories.Admin;
 using SSIDeliverIntegrationService.Domain.Repositories.Camp;
 using SSIDeliverIntegrationService.Domain.Repositories.Cust;
-using SSIDeliverIntegrationService.Domain.Repositories.Deal;
+using SSIDeliverIntegrationService.Domain.Repositories.Deals;
 using SSIDeliverIntegrationService.Domain.Repositories.Ord;
 using SSIDeliverIntegrationService.Domain.Repositories.Stock;
 using SSIDeliverIntegrationService.Infrastructure.Persistence;
@@ -18,12 +18,12 @@ using SSIDeliverIntegrationService.Infrastructure.Repositories;
 using SSIDeliverIntegrationService.Infrastructure.Repositories.Admin;
 using SSIDeliverIntegrationService.Infrastructure.Repositories.Camp;
 using SSIDeliverIntegrationService.Infrastructure.Repositories.Cust;
-using SSIDeliverIntegrationService.Infrastructure.Repositories.Deal;
+using SSIDeliverIntegrationService.Infrastructure.Repositories.Deals;
 using SSIDeliverIntegrationService.Infrastructure.Repositories.Ord;
 using SSIDeliverIntegrationService.Infrastructure.Repositories.Stock;
 using SSIDeliverIntegrationService.Infrastructure.Services;
 
-[assembly: DefaultIntentManaged(Mode.Fully)]
+[assembly: DefaultIntentManaged(Mode.Ignore)]
 [assembly: IntentTemplate("Intent.Infrastructure.DependencyInjection.DependencyInjection", Version = "1.0")]
 
 namespace SSIDeliverIntegrationService.Infrastructure
@@ -35,7 +35,7 @@ namespace SSIDeliverIntegrationService.Infrastructure
             services.AddDbContext<ApplicationDbContext>((sp, options) =>
             {
                 options.UseSqlServer(
-                    configuration.GetConnectionString("DefaultConnection"),
+                    configuration.GetValue<string>("SilverSurfer:connectionstrings:database"),
                     b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
                 options.UseLazyLoadingProxies();
             });

@@ -4,26 +4,26 @@
   <FileLogs>
     <FileLog>
       <ProjectId>ad03edc6-ea57-42e9-918d-f165e907c28b</ProjectId>
-      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#../dapr/components/pubsub.yaml</CorrelationId>
+      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#dapr/components/pubsub.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../../dapr/components/pubsub.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>../dapr/components/pubsub.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../dapr/components/pubsub.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>dapr/components/pubsub.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>ad03edc6-ea57-42e9-918d-f165e907c28b</ProjectId>
-      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#../dapr/components/statestore.yaml</CorrelationId>
+      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprComponentFilesStaticContentTemplateRegistration#dapr/components/statestore.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../../dapr/components/statestore.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>../dapr/components/statestore.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../dapr/components/statestore.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>dapr/components/statestore.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>077f8bd2-94da-4502-8d42-6461988a64f4</ProjectId>
-      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprFilesStaticContentTemplateRegistration#../dapr/config.yaml</CorrelationId>
+      <CorrelationId>Intent.Modules.Dapr.AspNetCore.Templates.StaticContentTemplateRegistrations.DaprFilesStaticContentTemplateRegistration#dapr/config.yaml</CorrelationId>
       <OverwriteBehaviour>once-off</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../../dapr/config.yaml</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>../dapr/config.yaml</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../dapr/config.yaml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>dapr/config.yaml</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -62,6 +62,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Api/Configuration/SwashbuckleConfiguration.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>SwashbuckleConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>c37ef8df-4c3c-4f60-bf3e-b81432e48a12</ProjectId>
+      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.DaprEventHandlerController</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Api/Controllers/DaprEventHandlerController.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>DaprEventHandlerController.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -121,6 +129,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.ContractEnumModel#b9a5c8f4-178e-4635-b05d-9820b9aa28e5</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ActionTypeEnum.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ActionTypeEnum.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</ProjectId>
       <CorrelationId>Intent.Application.MediatR.Behaviours.AuthorizationBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -130,7 +146,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusPublishBehaviour</CorrelationId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.EventBusPublishBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/Common/Behaviours/EventBusPublishBehaviour.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>EventBusPublishBehaviour.cs</ProjectRelativeFilePath>
@@ -170,6 +186,14 @@
     </FileLog>
     <FileLog>
       <ProjectId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.Behaviours.UnitOfWorkBehaviour</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/Common/Behaviours/UnitOfWorkBehaviour.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UnitOfWorkBehaviour.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>73b8c3ce-d61b-4139-b9db-e41cac0905d1</ProjectId>
       <CorrelationId>Intent.Application.MediatR.FluentValidation.ValidationBehaviour</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/Common/Behaviours/ValidationBehaviour.cs</ApplicationRelativeFilePath>
@@ -194,10 +218,18 @@
     </FileLog>
     <FileLog>
       <ProjectId>12af26ad-b257-4195-ab3a-4fe1138a5e32</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventBusInterface</CorrelationId>
+      <CorrelationId>Intent.Eventing.Contracts.EventBusInterface</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/Common/Eventing/IEventBus.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IEventBus.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>12af26ad-b257-4195-ab3a-4fe1138a5e32</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventHandlerInterface</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/Common/Eventing/IIntegrationEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IIntegrationEventHandler.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -310,7 +342,7 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/DependencyInjection.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>DependencyInjection.cs</ProjectRelativeFilePath>
-      <IsIgnored>false</IsIgnored>
+      <IsIgnored>true</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
@@ -353,11 +385,59 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
-      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
-      <CorrelationId>Intent.Application.Dtos.DtoModel#1cd2b83d-9483-4371-8eb2-cb565185cbdb</CorrelationId>
+      <ProjectId>d1f1a6ee-d897-4208-929d-a1970f81e8d7</ProjectId>
+      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventHandler#e3e714a3-eda7-43cc-967f-8573774d031f</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/SaleChannelsResponseModel.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>SaleChannelsResponseModel.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEventHandlers/IDeliverCallBackEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IDeliverCallBackEventHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d1f1a6ee-d897-4208-929d-a1970f81e8d7</ProjectId>
+      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventHandler#1c362f7f-d109-4ffa-9a0d-c7fec4499440</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEventHandlers/PlaceSaleOnIDeliverEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PlaceSaleOnIDeliverEventHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d1f1a6ee-d897-4208-929d-a1970f81e8d7</ProjectId>
+      <CorrelationId>Intent.Dapr.AspNetCore.Pubsub.EventHandler#8948f0d2-f419-4a87-8645-60951042fa94</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEventHandlers/UploadPdfFileEventHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UploadPdfFileEventHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#e3e714a3-eda7-43cc-967f-8573774d031f</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/IDeliverCallBackEvent.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IDeliverCallBackEvent.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#1c362f7f-d109-4ffa-9a0d-c7fec4499440</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/PlaceSaleOnIDeliverEvent.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PlaceSaleOnIDeliverEvent.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventMessage#8948f0d2-f419-4a87-8645-60951042fa94</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/UploadPdfFileEvent.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UploadPdfFileEvent.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e2c3d046-ed9d-47ae-bf94-167d99d4bb26</ProjectId>
+      <CorrelationId>Intent.Eventing.Contracts.IntegrationEventDto#a29490e0-32f1-451a-920b-51720003d0ab</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IntegrationEvents/UploadPdfViewModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UploadPdfViewModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -366,6 +446,110 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/SSIDeliverIntegrationService.Application.csproj</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>SSIDeliverIntegrationService.Application.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#1b4bd37a-806a-4727-83cf-a3aa23397683</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/CommsState.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/CommsState.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#dc7117dc-77b1-479a-a817-c5d821f8266a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/CreateUpdateSaleOrderRequestModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/CreateUpdateSaleOrderRequestModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#65355d4b-f518-441d-805e-448143e941c6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/CreateUpdateSaleOrderResponseModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/CreateUpdateSaleOrderResponseModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#1c32f330-ef3a-4e0d-92fb-86431129f397</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ErrorResponseModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/ErrorResponseModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#e406cb8c-0ff3-4a17-84a4-ed5893aabef7</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ExceptionErrorMessage.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/ExceptionErrorMessage.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#d4c87989-8e62-4b35-bb01-6b841970d33d</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/IDeliverOrderCallBackAPIRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/IDeliverOrderCallBackAPIRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#659217eb-3a78-41da-b9e6-753e2819220c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/OrderDetail.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/OrderDetail.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#a1570ab0-6c28-46bb-ab28-78eccdf14d64</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ProductDetails.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/ProductDetails.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#7284a4d9-b927-4d5b-9d98-3c3df7710a7e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ResumeOrderRequestModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/ResumeOrderRequestModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#1cd2b83d-9483-4371-8eb2-cb565185cbdb</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/SaleChannelsResponseModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/SaleChannelsResponseModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#6b466214-c6de-41c5-a770-981071842768</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/SaleOrderItemsRequestModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/SaleOrderItemsRequestModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#efada4d9-0482-402f-862e-981f25b15b02</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/SaleOrderItemsResponseModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/SaleOrderItemsResponseModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#02a53c3c-23b5-47fa-b6b9-484aada0d8ce</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/UpdateStatusHistoryRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/UpdateStatusHistoryRequest.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -476,24 +660,24 @@
       <ProjectId>e2df61ec-c017-45e1-9547-6c3fc1da9207</ProjectId>
       <CorrelationId>Intent.Entities.DomainEntity#08aa350a-577e-4f60-acd9-e290a31595c6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Entities/Deal/Deal.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/Deal.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Entities/Deals/Deal.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/Deal.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>e2df61ec-c017-45e1-9547-6c3fc1da9207</ProjectId>
       <CorrelationId>Intent.Entities.DomainEntity#cf3d9a78-1260-4dd7-8232-2569b45374f7</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Entities/Deal/DealProductMapping.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/DealProductMapping.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Entities/Deals/DealProductMapping.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/DealProductMapping.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>e2df61ec-c017-45e1-9547-6c3fc1da9207</ProjectId>
       <CorrelationId>Intent.Entities.DomainEntity#eddee6c7-7e9a-446d-8580-1f4afd2f99b1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Entities/Deal/Tariff.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/Tariff.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Entities/Deals/Tariff.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/Tariff.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -660,24 +844,24 @@
       <ProjectId>0607a66a-705d-4959-b9ff-ca95fdfb2ec6</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#cf3d9a78-1260-4dd7-8232-2569b45374f7</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/Deal/IDealProductMappingRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/IDealProductMappingRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/Deals/IDealProductMappingRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/IDealProductMappingRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>0607a66a-705d-4959-b9ff-ca95fdfb2ec6</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#08aa350a-577e-4f60-acd9-e290a31595c6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/Deal/IDealRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/IDealRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/Deals/IDealRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/IDealRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>0607a66a-705d-4959-b9ff-ca95fdfb2ec6</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#eddee6c7-7e9a-446d-8580-1f4afd2f99b1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/Deal/ITariffRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/ITariffRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/Deals/ITariffRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/ITariffRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -900,24 +1084,24 @@
       <ProjectId>6002a69d-ec7d-4105-a56a-8ae09f82f767</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#08aa350a-577e-4f60-acd9-e290a31595c6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Persistence/Configurations/Deal/DealConfiguration.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/DealConfiguration.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Persistence/Configurations/Deals/DealConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/DealConfiguration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>6002a69d-ec7d-4105-a56a-8ae09f82f767</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#cf3d9a78-1260-4dd7-8232-2569b45374f7</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Persistence/Configurations/Deal/DealProductMappingConfiguration.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/DealProductMappingConfiguration.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Persistence/Configurations/Deals/DealProductMappingConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/DealProductMappingConfiguration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>6002a69d-ec7d-4105-a56a-8ae09f82f767</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#eddee6c7-7e9a-446d-8580-1f4afd2f99b1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Persistence/Configurations/Deal/TariffConfiguration.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/TariffConfiguration.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Persistence/Configurations/Deals/TariffConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/TariffConfiguration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -1092,24 +1276,24 @@
       <ProjectId>9f04c0af-1875-47da-b758-c76cf2a8f006</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.Repositories.Repository#cf3d9a78-1260-4dd7-8232-2569b45374f7</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/Deal/DealProductMappingRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/DealProductMappingRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/Deals/DealProductMappingRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/DealProductMappingRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>9f04c0af-1875-47da-b758-c76cf2a8f006</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.Repositories.Repository#08aa350a-577e-4f60-acd9-e290a31595c6</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/Deal/DealRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/DealRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/Deals/DealRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/DealRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
       <ProjectId>9f04c0af-1875-47da-b758-c76cf2a8f006</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.Repositories.Repository#eddee6c7-7e9a-446d-8580-1f4afd2f99b1</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/Deal/TariffRepository.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>Deal/TariffRepository.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/Deals/TariffRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Deals/TariffRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

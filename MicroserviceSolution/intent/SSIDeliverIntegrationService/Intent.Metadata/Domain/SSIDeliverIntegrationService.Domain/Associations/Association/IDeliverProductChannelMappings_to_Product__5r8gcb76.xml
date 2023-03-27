@@ -3,10 +3,10 @@
   <sourceEnd id="0356e9d2-ecdb-4f8a-8744-23295c384110" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
     <name>IDeliverProductChannelMappings</name>
     <display>IDeliverProductChannelMappings: IDeliverProductChannelMapping[*]</display>
-    <order>0</order>
+    <order>13</order>
     <typeReference id="d71423e1-1a22-4bbf-8587-4e19cea123a0">
       <typeId>bc9160ab-2833-40e5-8fcf-8c7faba2e4f8</typeId>
-      <isNavigable>false</isNavigable>
+      <isNavigable>true</isNavigable>
       <isNullable>false</isNullable>
       <isCollection>true</isCollection>
       <isRequired>true</isRequired>

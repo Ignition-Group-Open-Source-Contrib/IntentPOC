@@ -12,17 +12,17 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<OrderDelivery> builder)
         {
-            builder.ToTable("OrderDeliveries", "Ord");
+            builder.ToTable("OrderDelivery", "Ord");
 
             builder.HasKey(x => x.OrderDeliveryId);
 
-            builder.Property(x => x.OrderItemOrderItemID)
+            builder.Property(x => x.OrderItemId)
                 .IsRequired();
 
-            builder.Property(x => x.CustomerAddressCustomerAddressID)
+            builder.Property(x => x.CustomerAddressId)
                 .IsRequired();
 
-            builder.Property(x => x.DeliveryTypeDeliveryTypeID);
+            builder.Property(x => x.DeliveryTypeId);
 
             builder.Property(x => x.DispatchWayBillNumber);
 
@@ -73,22 +73,25 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
             builder.Property(x => x.RTSNote)
                 .HasColumnType("varchar(500)");
 
-            builder.Property(x => x.ConsignmentID)
+            builder.Property(x => x.ConsignmentId)
                 .HasColumnType("varchar(50)");
+
+            builder.Property(x => x.OrderStatusDetailId)
+                .IsRequired();
 
             builder.HasOne(x => x.CustomerAddress)
                 .WithMany()
-                .HasForeignKey(x => x.CustomerAddressCustomerAddressID)
+                .HasForeignKey(x => x.CustomerAddressId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(x => x.OrderItem)
-                .WithMany()
-                .HasForeignKey(x => x.OrderItemOrderItemID)
+                .WithMany(x => x.OrderDeliveries)
+                .HasForeignKey(x => x.OrderItemId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasOne(x => x.DeliveryType)
                 .WithMany()
-                .HasForeignKey(x => x.DeliveryTypeDeliveryTypeID)
+                .HasForeignKey(x => x.DeliveryTypeId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasIndex(x => x.OrderDeliveryId)

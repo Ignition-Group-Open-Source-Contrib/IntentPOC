@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="220ecb54-f964-4dd0-84d0-3e20bde122c9" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetOrdersQuery</name>
+  <display>GetOrdersQuery: OrderDto[*]</display>
+  <isAbstract>false</isAbstract>
+  <genericTypes />
+  <typeReference id="19105ab9-d21c-4ad2-84b7-a60681173eed">
+    <typeId>ac3f3262-1ea3-46de-b0be-f074ef6c43a9</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>SSIDeliverIntgnService.Services</typePackageName>
+    <typePackageId>3c36f07d-f514-4bf7-8844-e0996fc7a446</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>808ba8b9-22a3-417d-9eba-6124a2baecf9</parentFolderId>
+  <packageId>3c36f07d-f514-4bf7-8844-e0996fc7a446</packageId>
+  <packageName>SSIDeliverIntgnService.Services</packageName>
+  <stereotypes />
+  <metadata>
+    <entry key="baseName" value="Orders" />
+  </metadata>
+  <childElements />
+</class>

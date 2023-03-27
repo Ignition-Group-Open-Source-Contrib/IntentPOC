@@ -12,7 +12,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<BulkIDeliverOrderFileUpload> builder)
         {
-            builder.ToTable("BulkIDeliverOrderFileUploads", "Ord");
+            builder.ToTable("BulkIDeliverOrderFileUpload", "Ord");
 
             builder.HasKey(x => x.BulkIDeliverOrderFileUploadId);
 

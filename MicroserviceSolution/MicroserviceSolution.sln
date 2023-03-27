@@ -7,12 +7,15 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{E66A2CE1-BD2F-4415-B7C6-71D6C0396F5C}"
 	ProjectSection(SolutionItems) = preProject
 		..\dapr\config.yaml = ..\dapr\config.yaml
+		dapr\config.yaml = dapr\config.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{1BE9BC9F-A04A-4397-AA9A-03F61AC1D71A}"
 	ProjectSection(SolutionItems) = preProject
 		..\dapr\components\pubsub.yaml = ..\dapr\components\pubsub.yaml
 		..\dapr\components\statestore.yaml = ..\dapr\components\statestore.yaml
+		dapr\components\pubsub.yaml = dapr\components\pubsub.yaml
+		dapr\components\statestore.yaml = dapr\components\statestore.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IDeliverService", "IDeliverService", "{1B78C140-9188-47F1-AC1A-D5B4699FA438}"
@@ -87,6 +90,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - I
 EndProject
 Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "WebhookService.Infrastructure", "WebhookService.Infrastructure\WebhookService.Infrastructure.csproj", "{EC7D6BB1-6649-4B92-8196-93D26E33B0B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSIDeliverIntgnService", "SSIDeliverIntgnService", "{44FCBEB5-7AF2-404E-96AE-C8CE69C35F19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{040A93EB-D414-4012-8C44-6C1E18239A48}"
+EndProject
+Project("{FFD54A85-9362-48AC-B646-C93AB9AC63D2}") = "SSIDeliverIntgnService.Api", "SSIDeliverIntgnService.Api\SSIDeliverIntgnService.Api.csproj", "{0B6996C2-F787-4CFD-B4BB-36A6E24FB6FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{3ED1083D-2B50-4D3E-BB35-01B3C53D9E72}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "SSIDeliverIntgnService.Application", "SSIDeliverIntgnService.Application\SSIDeliverIntgnService.Application.csproj", "{D6925522-3E67-4F33-9AC8-EB4FBB9555AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{791E5536-5D0D-4F90-A51F-F0AE91AA529B}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "SSIDeliverIntgnService.Domain", "SSIDeliverIntgnService.Domain\SSIDeliverIntgnService.Domain.csproj", "{0DFFC4BC-A88D-4BB8-A090-97D3236A2BC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{32CB399A-3F98-45F8-9FC5-FC8AB7C493FA}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "SSIDeliverIntgnService.Infrastructure", "SSIDeliverIntgnService.Infrastructure\SSIDeliverIntgnService.Infrastructure.csproj", "{E3D2385F-DC63-428A-9602-C13E0234F9D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +178,22 @@ Global
 		{EC7D6BB1-6649-4B92-8196-93D26E33B0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC7D6BB1-6649-4B92-8196-93D26E33B0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC7D6BB1-6649-4B92-8196-93D26E33B0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B6996C2-F787-4CFD-B4BB-36A6E24FB6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B6996C2-F787-4CFD-B4BB-36A6E24FB6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B6996C2-F787-4CFD-B4BB-36A6E24FB6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B6996C2-F787-4CFD-B4BB-36A6E24FB6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6925522-3E67-4F33-9AC8-EB4FBB9555AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6925522-3E67-4F33-9AC8-EB4FBB9555AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6925522-3E67-4F33-9AC8-EB4FBB9555AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6925522-3E67-4F33-9AC8-EB4FBB9555AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFFC4BC-A88D-4BB8-A090-97D3236A2BC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFFC4BC-A88D-4BB8-A090-97D3236A2BC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFFC4BC-A88D-4BB8-A090-97D3236A2BC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFFC4BC-A88D-4BB8-A090-97D3236A2BC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D2385F-DC63-428A-9602-C13E0234F9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D2385F-DC63-428A-9602-C13E0234F9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D2385F-DC63-428A-9602-C13E0234F9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D2385F-DC63-428A-9602-C13E0234F9D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -196,5 +233,13 @@ Global
 		{4A86EE80-025A-464D-8E30-7B786B7D40E9} = {BFD2973B-A143-4194-A2A0-469F50D3C8BB}
 		{99F914E8-31E8-42B2-977F-2333FC502DB8} = {DFCDB6D8-53EE-4B79-B341-F58AA6832D3A}
 		{EC7D6BB1-6649-4B92-8196-93D26E33B0B2} = {99F914E8-31E8-42B2-977F-2333FC502DB8}
+		{040A93EB-D414-4012-8C44-6C1E18239A48} = {44FCBEB5-7AF2-404E-96AE-C8CE69C35F19}
+		{0B6996C2-F787-4CFD-B4BB-36A6E24FB6FD} = {040A93EB-D414-4012-8C44-6C1E18239A48}
+		{3ED1083D-2B50-4D3E-BB35-01B3C53D9E72} = {44FCBEB5-7AF2-404E-96AE-C8CE69C35F19}
+		{D6925522-3E67-4F33-9AC8-EB4FBB9555AC} = {3ED1083D-2B50-4D3E-BB35-01B3C53D9E72}
+		{791E5536-5D0D-4F90-A51F-F0AE91AA529B} = {44FCBEB5-7AF2-404E-96AE-C8CE69C35F19}
+		{0DFFC4BC-A88D-4BB8-A090-97D3236A2BC6} = {791E5536-5D0D-4F90-A51F-F0AE91AA529B}
+		{32CB399A-3F98-45F8-9FC5-FC8AB7C493FA} = {44FCBEB5-7AF2-404E-96AE-C8CE69C35F19}
+		{E3D2385F-DC63-428A-9602-C13E0234F9D9} = {32CB399A-3F98-45F8-9FC5-FC8AB7C493FA}
 	EndGlobalSection
 EndGlobal

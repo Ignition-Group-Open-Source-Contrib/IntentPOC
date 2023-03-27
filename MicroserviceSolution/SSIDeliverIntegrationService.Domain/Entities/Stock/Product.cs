@@ -13,7 +13,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Stock
     [DefaultIntentManaged(Mode.Fully, Targets = Targets.Methods, Body = Mode.Ignore, AccessModifiers = AccessModifiers.Public)]
     public class Product : IHasDomainEvent
     {
-        public int ProductID { get; set; }
+        public int ProductId { get; set; }
 
         public string Title { get; set; }
 
@@ -38,6 +38,10 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Stock
         public DateTime SysStartTime { get; set; }
 
         public DateTime SysEndTime { get; set; }
+
+        public virtual ICollection<IDeliverProductChannelMapping> IDeliverProductChannelMappings { get; set; } = new List<IDeliverProductChannelMapping>();
+
+        public virtual ICollection<StockItem> StockItems { get; set; } = new List<StockItem>();
 
         public List<DomainEvent> DomainEvents { get; set; } = new List<DomainEvent>();
     }

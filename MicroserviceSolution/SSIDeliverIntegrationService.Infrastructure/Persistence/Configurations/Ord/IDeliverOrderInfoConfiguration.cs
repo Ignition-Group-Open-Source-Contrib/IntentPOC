@@ -12,11 +12,11 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<IDeliverOrderInfo> builder)
         {
-            builder.ToTable("IDeliverOrderInfos", "Ord");
+            builder.ToTable("IDeliverOrderInfo", "Ord");
 
             builder.HasKey(x => x.IDeliverOrderInfoId);
 
-            builder.Property(x => x.OrderOrderID)
+            builder.Property(x => x.OrderId)
                 .IsRequired();
 
             builder.Property(x => x.IDeliverOrderId);
@@ -38,7 +38,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasOne(x => x.Order)
                 .WithMany()
-                .HasForeignKey(x => x.OrderOrderID)
+                .HasForeignKey(x => x.OrderId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);

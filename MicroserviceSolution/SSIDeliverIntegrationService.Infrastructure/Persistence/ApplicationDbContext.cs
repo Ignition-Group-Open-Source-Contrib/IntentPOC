@@ -10,14 +10,14 @@ using SSIDeliverIntegrationService.Domain.Entities;
 using SSIDeliverIntegrationService.Domain.Entities.Admin;
 using SSIDeliverIntegrationService.Domain.Entities.Camp;
 using SSIDeliverIntegrationService.Domain.Entities.Cust;
-using SSIDeliverIntegrationService.Domain.Entities.Deal;
+using SSIDeliverIntegrationService.Domain.Entities.Deals;
 using SSIDeliverIntegrationService.Domain.Entities.Ord;
 using SSIDeliverIntegrationService.Domain.Entities.Stock;
 using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations;
 using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations.Admin;
 using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations.Camp;
 using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations.Cust;
-using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations.Deal;
+using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations.Deals;
 using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations.Ord;
 using SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations.Stock;
 

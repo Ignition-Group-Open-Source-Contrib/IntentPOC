@@ -16,8 +16,8 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Stock
     {
 
         [IntentManaged(Mode.Fully)]
-        Task<Product> FindByIdAsync(int productID, CancellationToken cancellationToken = default);
+        Task<Product> FindByIdAsync(int productId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
-        Task<List<Product>> FindByIdsAsync(int[] productIDs, CancellationToken cancellationToken = default);
+        Task<List<Product>> FindByIdsAsync(int[] productIds, CancellationToken cancellationToken = default);
     }
 }

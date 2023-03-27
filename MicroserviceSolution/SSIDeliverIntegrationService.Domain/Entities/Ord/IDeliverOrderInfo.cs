@@ -15,7 +15,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
     {
         public int IDeliverOrderInfoId { get; set; }
 
-        public int OrderOrderID { get; set; }
+        public int OrderId { get; set; }
 
         public int? IDeliverOrderId { get; set; }
 
