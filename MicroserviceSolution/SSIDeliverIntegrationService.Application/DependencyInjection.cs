@@ -5,12 +5,14 @@ using IgnitionGroup.AzureStorageQueueHelper;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using SSIDeliverIntegrationService.Application.BackgroundWorker;
 using SSIDeliverIntegrationService.Application.Common.Behaviours;
 using SSIDeliverIntegrationService.Application.Common.BusinessLogic;
 using SSIDeliverIntegrationService.Application.Common.Configuration;
 using SSIDeliverIntegrationService.Application.Common.Eventing;
 
-[assembly: DefaultIntentManaged(Mode.Fully)]
+[assembly: DefaultIntentManaged(Mode.Ignore)]
 [assembly: IntentTemplate("Intent.Application.DependencyInjection.DependencyInjection", Version = "1.0")]
 
 namespace SSIDeliverIntegrationService.Application
@@ -33,6 +35,7 @@ namespace SSIDeliverIntegrationService.Application
             services.AddScoped<ISSIDeliverIntegrationFacade, SSIDeliverIntegrationFacade>();
             services.AddSingleton<IWorkflowStorageFactory, WorkflowStorageFactory>();
             services.AddSingleton<IConfigurationSettings, ConfigurationSettings>();
+            services.AddHostedService< ProcessSSIDeliverQueue>();
             return services;
         }
     }

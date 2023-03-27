@@ -43,15 +43,21 @@ namespace SSIDeliverIntgnService.Application.Orders.UpdateOrder
             existingOrder.Affordability = request.Affordability;
             existingOrder.Ctflag = request.Ctflag;
             existingOrder.OrderOdooId = request.OrderOdooId;
-            existingOrder.OrderItems.UpdateCollection(request.OrderItems, (e, d) => e.Id == d.Id, UpdateOrderItem);
-            existingOrder.IDeliverOrderInfo.UpdateObject(request.IDeliverOrderInfo, UpdateIDeliverOrderInfo);
+            existingOrder.OrderItems = UpdateHelper.CreateOrUpdateCollection(existingOrder.OrderItems, request.OrderItems, (e, d) => e.Id == d.Id, CreateOrUpdateOrderItem);
+            existingOrder.IDeliverOrderInfo = CreateOrUpdateIDeliverOrderInfo(existingOrder.IDeliverOrderInfo, request.IDeliverOrderInfo);
             _orderRepository.Update(p => p.Id == request.Id, existingOrder);
             return Unit.Value;
         }
 
         [IntentManaged(Mode.Fully)]
-        private static void UpdateOrderItem(OrderItem entity, UpdateOrderOrderItemDto dto)
+        private static OrderItem CreateOrUpdateOrderItem(OrderItem entity, UpdateOrderOrderItemDto dto)
         {
+            if (dto == null)
+            {
+                return null;
+            }
+
+            entity ??= new OrderItem();
             entity.DealId = dto.DealId;
             entity.SMSSent = dto.SMSSent;
             entity.FAXSent = dto.FAXSent;
@@ -80,17 +86,27 @@ namespace SSIDeliverIntgnService.Application.Orders.UpdateOrder
             entity.TinyUrl = dto.TinyUrl;
             entity.IsMarketic = dto.IsMarketic;
             entity.FreemiumOrderItemId = dto.FreemiumOrderItemId;
+
+            return entity;
         }
 
         [IntentManaged(Mode.Fully)]
-        private static void UpdateIDeliverOrderInfo(IDeliverOrderInfo entity, UpdateOrderIDeliverOrderInfoDto dto)
+        private static IDeliverOrderInfo CreateOrUpdateIDeliverOrderInfo(IDeliverOrderInfo entity, UpdateOrderIDeliverOrderInfoDto dto)
         {
+            if (dto == null)
+            {
+                return null;
+            }
+
+            entity ??= new IDeliverOrderInfo();
             entity.IDeliverOrderStatusDetailId = dto.IDeliverOrderStatusDetailId;
             entity.CreatedByUSerId = dto.CreatedByUSerId;
             entity.UpdatedByUserId = dto.UpdatedByUserId;
             entity.CreatedOnDate = dto.CreatedOnDate;
             entity.UpdatedOnDate = dto.UpdatedOnDate;
             entity.CourierId = dto.CourierId;
+
+            return entity;
         }
     }
 }

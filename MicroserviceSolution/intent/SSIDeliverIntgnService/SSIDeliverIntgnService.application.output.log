@@ -362,6 +362,30 @@
     </FileLog>
     <FileLog>
       <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#9aff3dad-776f-4616-b16d-62fe19c5c85c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/CreateOrderOrderItem/CreateOrderOrderItemCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/CreateOrderOrderItem/CreateOrderOrderItemCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#9aff3dad-776f-4616-b16d-62fe19c5c85c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/CreateOrderOrderItem/CreateOrderOrderItemCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/CreateOrderOrderItem/CreateOrderOrderItemCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#9aff3dad-776f-4616-b16d-62fe19c5c85c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/CreateOrderOrderItem/CreateOrderOrderItemCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/CreateOrderOrderItem/CreateOrderOrderItemCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
       <CorrelationId>Intent.Application.Dtos.DtoModel#276965d8-8965-44ec-85cb-a69e42e6afce</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/CreateOrderOrderItemDto.cs</ApplicationRelativeFilePath>
@@ -402,6 +426,30 @@
     </FileLog>
     <FileLog>
       <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#54881cd5-d70f-42d8-a04c-39ad6cdf0550</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/DeleteOrderOrderItem/DeleteOrderOrderItemCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/DeleteOrderOrderItem/DeleteOrderOrderItemCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#54881cd5-d70f-42d8-a04c-39ad6cdf0550</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/DeleteOrderOrderItem/DeleteOrderOrderItemCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/DeleteOrderOrderItem/DeleteOrderOrderItemCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#54881cd5-d70f-42d8-a04c-39ad6cdf0550</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/DeleteOrderOrderItem/DeleteOrderOrderItemCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/DeleteOrderOrderItem/DeleteOrderOrderItemCommandValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
       <CorrelationId>Intent.Application.MediatR.QueryModels#b0697783-d500-475e-907f-e7190c970edf</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderById/GetOrderByIdQuery.cs</ApplicationRelativeFilePath>
@@ -422,6 +470,54 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderById/GetOrderByIdQueryValidator.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Orders/GetOrderById/GetOrderByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#74b74ca1-d66b-4e07-b7e7-d19f48a2454c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderOrderItemById/GetOrderOrderItemByIdQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/GetOrderOrderItemById/GetOrderOrderItemByIdQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#74b74ca1-d66b-4e07-b7e7-d19f48a2454c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderOrderItemById/GetOrderOrderItemByIdQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/GetOrderOrderItemById/GetOrderOrderItemByIdQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#74b74ca1-d66b-4e07-b7e7-d19f48a2454c</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderOrderItemById/GetOrderOrderItemByIdQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/GetOrderOrderItemById/GetOrderOrderItemByIdQueryValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryModels#11685b23-0ff6-4e82-92bd-a2ffaa5d7e58</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderOrderItems/GetOrderOrderItemsQuery.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/GetOrderOrderItems/GetOrderOrderItemsQuery.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.QueryHandler#11685b23-0ff6-4e82-92bd-a2ffaa5d7e58</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderOrderItems/GetOrderOrderItemsQueryHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/GetOrderOrderItems/GetOrderOrderItemsQueryHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.QueryValidator#11685b23-0ff6-4e82-92bd-a2ffaa5d7e58</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/GetOrderOrderItems/GetOrderOrderItemsQueryValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/GetOrderOrderItems/GetOrderOrderItemsQueryValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -466,6 +562,22 @@
     </FileLog>
     <FileLog>
       <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#d24e5450-a5e1-4f90-9ad5-1f5656688a4e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/OrderOrderItemDto.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/OrderOrderItemDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.AutoMapper.MappingExtensions#d24e5450-a5e1-4f90-9ad5-1f5656688a4e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/OrderOrderItemDtoMappingExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/OrderOrderItemDtoMappingExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
       <CorrelationId>Intent.Application.MediatR.CommandModels#077b710d-cf30-4787-a820-4873158ea27c</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/UpdateOrder/UpdateOrderCommand.cs</ApplicationRelativeFilePath>
@@ -494,6 +606,30 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/UpdateOrderIDeliverOrderInfoDto.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Orders/UpdateOrderIDeliverOrderInfoDto.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#78aece51-1b91-46a7-a529-fe5ee13a3f30</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/UpdateOrderOrderItem/UpdateOrderOrderItemCommand.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/UpdateOrderOrderItem/UpdateOrderOrderItemCommand.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#78aece51-1b91-46a7-a529-fe5ee13a3f30</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/UpdateOrderOrderItem/UpdateOrderOrderItemCommandHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/UpdateOrderOrderItem/UpdateOrderOrderItemCommandHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d6925522-3e67-4f33-9ac8-eb4fbb9555ac</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#78aece51-1b91-46a7-a529-fe5ee13a3f30</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntgnService.Application/Orders/UpdateOrderOrderItem/UpdateOrderOrderItemCommandValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Orders/UpdateOrderOrderItem/UpdateOrderOrderItemCommandValidator.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
