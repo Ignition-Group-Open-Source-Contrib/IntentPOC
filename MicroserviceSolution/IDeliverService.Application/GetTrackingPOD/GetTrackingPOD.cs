@@ -7,10 +7,12 @@ using MediatR;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.MediatR.QueryModels", Version = "1.0")]
 
-namespace IDeliverService.Application.GetSalesChannel
+namespace IDeliverService.Application.GetTrackingPOD
 {
-    public class GetSalesChannel : IRequest<List<SaleChannelsResponseModel>>, IQuery
+    public class GetTrackingPOD : IRequest<TrackingPODResponseModel>, IQuery
     {
+        public int Id { get; set; }
+
         public string Token { get; set; }
 
     }

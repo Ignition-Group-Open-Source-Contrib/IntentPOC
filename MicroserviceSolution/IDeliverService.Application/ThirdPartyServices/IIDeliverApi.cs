@@ -11,33 +11,87 @@ namespace IDeliverService.Application.ThirdPartyServices
     {
         [Get("/warehouses")]
         Task<string> Warehouses(string token);
+
         [Get("/products/{sku}")]
         Task<string> GetProduct(string token, string sku);
+
         [Post("/products")]
-    
+        Task<HttpResponseMessage> CreateProduct(string token, CreateProductRequestModel requestModel);
+
+        [Patch("/products/{sku}")]
+        Task<HttpResponseMessage> UpdateProduct(string token, string sku, UpdateProductRequestModel requestModel);
+
+        [Get("/sale-orders/{id}")]
         Task<string> GetSaleOrder(string token, int id);
+
         [Post("/sale-orders")]
-     
+        Task<HttpResponseMessage> CreateSaleOrder(string token, CreateUpdateSaleOrderRequestModel requestModel);
+
+        [Patch("/sale-orders/{id}")]
+        Task<string> UpdateSaleOrder(string token, int id, CreateUpdateSaleOrderRequestModel requestModel);
+
         [Get("/sale-orders/{id}/tracking-events")]
         Task<string> GetTrackingEvents(string token, int id);
-        
+
+        [Patch("/sale-orders/{id}/status")]
+        Task<string> UpdateSaleOrderStatus(string token, int id, UpdateOrderStatusRequestModel request);
+
         [Get("/channels")]
         Task<string> SaleChannels(string token);
+
         [Get("/sale-orders/{id}/tracking-pod")]
         Task<string> GetTrackingPOD(string token, int id);
     }
+
     public class IDeliverApi : IIDeliverApi
     {
         private IIDeliverApi client;
+        private readonly IConfiguration _configuration;
 
-        readonly IConfiguration configuration;
-
-       
         public IDeliverApi(IConfiguration configuration)
         {
-            this.configuration = configuration;
+            _configuration = configuration;
         }
 
+        /// <summary>
+        /// Create Product
+        /// </summary>
+        /// <param name="token">API access token</param>
+        /// <param name="requestModel">CreateProductRequestModel requestModel</param>
+        /// <returns>HttpResponseMessage</returns>
+        public Task<HttpResponseMessage> CreateProduct(string token, CreateProductRequestModel requestModel)
+        {
+            client = RestService.For<IIDeliverApi>(new HttpClient
+            {
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                DefaultRequestHeaders =
+                {
+                    { "Authorization", token },
+                    { "Accept","application/json"}
+                }
+            });
+            return client.CreateProduct(token, requestModel);
+        }
+
+        /// <summary>
+        /// Create Sale Order
+        /// </summary>
+        /// <param name="token">API access token</param>
+        /// <param name="requestModel">CreateUpdateSaleOrderRequestModel requestModel</param>
+        /// <returns>HttpResponseMessage</returns>
+        public Task<HttpResponseMessage> CreateSaleOrder(string token, CreateUpdateSaleOrderRequestModel requestModel)
+        {
+            client = RestService.For<IIDeliverApi>(new HttpClient
+            {
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                DefaultRequestHeaders =
+                {
+                    { "Authorization", token },
+                    { "Accept","application/json"}
+                }
+            });
+            return client.CreateSaleOrder(token, requestModel);
+        }
 
         /// <summary>
         /// Get Sale Order
@@ -49,7 +103,7 @@ namespace IDeliverService.Application.ThirdPartyServices
         {
             client = RestService.For<IIDeliverApi>(new HttpClient
             {
-                BaseAddress = new Uri(configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
                 DefaultRequestHeaders =
                 {
                     { "Authorization", token },
@@ -69,7 +123,7 @@ namespace IDeliverService.Application.ThirdPartyServices
         {
             client = RestService.For<IIDeliverApi>(new HttpClient
             {
-                BaseAddress = new Uri(configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
                 DefaultRequestHeaders =
                 {
                     { "Authorization", token },
@@ -79,7 +133,47 @@ namespace IDeliverService.Application.ThirdPartyServices
             return client.GetTrackingEvents(token, id);
         }
 
-       
+        /// <summary>
+        /// Update Product
+        /// </summary>
+        /// <param name="token">API access token</param>
+        /// <param name="sku">Sku</param>
+        /// <param name="requestModel">UpdateProductRequestModel requestModel</param>
+        /// <returns>HttpResponseMessage</returns>
+        public Task<HttpResponseMessage> UpdateProduct(string token, string sku, UpdateProductRequestModel requestModel)
+        {
+            client = RestService.For<IIDeliverApi>(new HttpClient
+            {
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                DefaultRequestHeaders =
+                {
+                    { "Authorization", token },
+                    { "Accept","application/json"}
+                }
+            });
+            return client.UpdateProduct(token, sku, requestModel);
+        }
+
+        /// <summary>
+        /// Update Sale Order
+        /// </summary>
+        /// <param name="token">API access token</param>
+        /// <param name="id">Sale Order Id</param>
+        /// <param name="requestModel">CreateUpdateSaleOrderRequestModel requestModel</param>
+        /// <returns>string</returns>
+        public Task<string> UpdateSaleOrder(string token, int id, CreateUpdateSaleOrderRequestModel requestModel)
+        {
+            client = RestService.For<IIDeliverApi>(new HttpClient
+            {
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                DefaultRequestHeaders =
+                {
+                    { "Authorization", token },
+                    { "Accept","application/json"}
+                }
+            });
+            return client.UpdateSaleOrder(token, id, requestModel);
+        }
 
         /// <summary>
         /// Warehouses
@@ -90,7 +184,7 @@ namespace IDeliverService.Application.ThirdPartyServices
         {
             client = RestService.For<IIDeliverApi>(new HttpClient
             {
-                BaseAddress = new Uri(configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
                 DefaultRequestHeaders =
                 {
                     { "Authorization", token },
@@ -107,18 +201,40 @@ namespace IDeliverService.Application.ThirdPartyServices
         /// <param name="sku">Sku</param>
         /// <returns>string</returns>
         public Task<string> GetProduct(string token, string sku)
-        {            
+        {
             client = RestService.For<IIDeliverApi>(new HttpClient
             {
-                BaseAddress = new Uri(configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
                 DefaultRequestHeaders =
                 {
                     { "Authorization", token },
                     { "Accept","application/json"}
-                },                
+                },
             });
             return client.GetProduct(token, sku);
         }
+
+        /// <summary>
+        /// Update Sale Order Status
+        /// </summary>
+        /// <param name="token">API access token</param>
+        /// <param name="id">Sale Order Id</param>
+        /// <param name="request">UpdateOrderStatusRequestModel request</param>
+        /// <returns>string</returns>
+        public Task<string> UpdateSaleOrderStatus(string token, int id, UpdateOrderStatusRequestModel request)
+        {
+            client = RestService.For<IIDeliverApi>(new HttpClient
+            {
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                DefaultRequestHeaders =
+                {
+                    { "Authorization", token },
+                    { "Accept","application/json"}
+                }
+            });
+            return client.UpdateSaleOrderStatus(token, id, request);
+        }
+
         /// <summary>
         /// Sale Channels
         /// </summary>
@@ -126,10 +242,10 @@ namespace IDeliverService.Application.ThirdPartyServices
         /// <returns>string</returns>
         public Task<string> SaleChannels(string token)
         {
-            
+
             client = RestService.For<IIDeliverApi>(new HttpClient
             {
-                BaseAddress = new Uri(configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
                 DefaultRequestHeaders =
                 {
                     { "Authorization", token },
@@ -149,7 +265,7 @@ namespace IDeliverService.Application.ThirdPartyServices
         {
             client = RestService.For<IIDeliverApi>(new HttpClient
             {
-                BaseAddress = new Uri(configuration.GetValue<string>("marketic:ideliver:baseurl")),
+                BaseAddress = new Uri(_configuration.GetValue<string>("marketic:ideliver:baseurl")),
                 DefaultRequestHeaders =
                 {
                     { "Authorization", token },
