@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="af90861c-efbd-40bf-b718-17f2c211e042">
+  <sourceEnd id="6b4e54f6-61da-4ee9-8446-940ed3c7dcee" type="Generalization Source End" typeId="5ce8666c-89d2-4c9c-b30c-6e5fe42e1766">
+    <name>CreateProductResponseModel</name>
+    <display>CreateProductResponseModel: CreateProductResponseModel</display>
+    <order>0</order>
+    <typeReference id="a02af5dd-bc98-4313-bbcb-398bfc360ccd">
+      <typeId>c391b840-963c-4196-9a1f-be4d6aebc829</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IDeliverService.Services</typePackageName>
+      <typePackageId>4489f415-77b8-40f6-ac87-62f84d5c0631</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="af90861c-efbd-40bf-b718-17f2c211e042" type="Generalization Target End" typeId="e1b3d4e4-0ad0-4aec-97fb-780ab9e476db">
+    <name>CreateProductRequestModel</name>
+    <display>CreateProductRequestModel: CreateProductRequestModel</display>
+    <order>4</order>
+    <typeReference id="be2d42fc-8203-4a0c-8da6-4b7c49f9c66e">
+      <typeId>5d9247fc-76e5-4460-be98-30495c35c570</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>IDeliverService.Services</typePackageName>
+      <typePackageId>4489f415-77b8-40f6-ac87-62f84d5c0631</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Generalization</associationType>
+  <associationTypeId>5ba12bbf-122f-4c3e-af3c-4a88dc554597</associationTypeId>
+  <stereotypes />
+</association>

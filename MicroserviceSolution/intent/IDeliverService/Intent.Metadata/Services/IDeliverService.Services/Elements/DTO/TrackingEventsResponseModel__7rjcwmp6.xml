@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="51d8abc2-182d-4e6f-9001-d19cf1d985e2" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
-  <name>GetSalesChannel</name>
-  <display>GetSalesChannel: SaleChannelsResponseModel[*]</display>
+<class id="a00f4470-2f04-4a54-9fa3-304cd80e6fb6" type="DTO" typeId="fee0edca-4aa0-4f77-a524-6bbd84e78734">
+  <name>TrackingEventsResponseModel</name>
+  <display>TrackingEventsResponseModel</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
   <genericTypes />
-  <typeReference id="7f0da690-2554-4559-a837-4e456f152996">
-    <typeId>59029ab9-f7cd-415f-b1f2-a87cf9dfc32d</typeId>
-    <isNavigable>true</isNavigable>
-    <isNullable>false</isNullable>
-    <isCollection>true</isCollection>
-    <isRequired>true</isRequired>
-    <typePackageName>IDeliverService.Services</typePackageName>
-    <typePackageId>4489f415-77b8-40f6-ac87-62f84d5c0631</typePackageId>
-    <stereotypes />
-    <genericTypeParameters />
-  </typeReference>
   <isMapped>false</isMapped>
   <parentFolderId>4489f415-77b8-40f6-ac87-62f84d5c0631</parentFolderId>
   <packageId>4489f415-77b8-40f6-ac87-62f84d5c0631</packageId>
@@ -23,24 +12,24 @@
   <stereotypes />
   <metadata />
   <childElements>
-    <childElement id="a7d73143-36f5-43c7-b6c9-28d9924abd78" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
-      <name>token</name>
-      <display>token: string</display>
+    <childElement id="1485de7e-3bd9-402a-9644-cbac9e0de502" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>data</name>
+      <display>data: GetTrackingEventsResponseModel[*]</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
-      <typeReference id="cc0c1cbd-e541-4ea8-be69-3f9dbb98212c">
-        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+      <typeReference id="17615987-5a6d-48e2-9ad4-dfda3c1a8687">
+        <typeId>649cba24-6051-4834-b9dd-91bd849745d1</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
-        <isCollection>false</isCollection>
+        <isCollection>true</isCollection>
         <isRequired>true</isRequired>
-        <typePackageName>Intent.Common.Types</typePackageName>
-        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <typePackageName>IDeliverService.Services</typePackageName>
+        <typePackageId>4489f415-77b8-40f6-ac87-62f84d5c0631</typePackageId>
         <stereotypes />
         <genericTypeParameters />
       </typeReference>
       <isMapped>false</isMapped>
-      <parentFolderId>51d8abc2-182d-4e6f-9001-d19cf1d985e2</parentFolderId>
+      <parentFolderId>a00f4470-2f04-4a54-9fa3-304cd80e6fb6</parentFolderId>
       <packageId>4489f415-77b8-40f6-ac87-62f84d5c0631</packageId>
       <packageName>IDeliverService.Services</packageName>
       <stereotypes>
@@ -52,8 +41,8 @@
             <property name="d144e1aa-b506-407a-b60b-716ce38b70bb" display="Not Empty" value="false" isActive="true" />
             <property name="8d844d65-bf88-4023-85e1-4d3d7f8784cd" display="Equal" isActive="true" />
             <property name="490e08cd-5fb4-4bfd-80cf-fda3b88f745e" display="Not Equal" isActive="true" />
-            <property name="c94dc001-4ec7-42a0-a1e0-5b75502e7bec" display="Min Length" isActive="true" />
-            <property name="cbd52384-0f1e-4f41-9e98-314231b731e1" display="Max Length" isActive="true" />
+            <property name="c94dc001-4ec7-42a0-a1e0-5b75502e7bec" display="Min Length" isActive="false" />
+            <property name="cbd52384-0f1e-4f41-9e98-314231b731e1" display="Max Length" isActive="false" />
             <property name="f9802e6b-b033-4280-ad83-e4b064943d87" display="Min" isActive="false" />
             <property name="aca206a8-cb7e-4537-b3f5-c5c301863c14" display="Max" isActive="false" />
             <property name="9023c463-1cce-4f11-baa5-96561697fc7f" display="Predicate" isActive="true" />

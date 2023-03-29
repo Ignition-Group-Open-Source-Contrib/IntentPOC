@@ -1,3 +1,4 @@
+using IDeliverService.Application.Common.Interfaces;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 
@@ -6,7 +7,7 @@ using MediatR;
 
 namespace IDeliverService.Application.Common.Eventing
 {
-    public interface IEvent : IRequest
+    public interface IEvent : IRequest, ICommand
     {
 
         string PubsubName { get; }
