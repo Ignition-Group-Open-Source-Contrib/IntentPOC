@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="68327648-2051-4a19-8e35-a01a6c89b70d" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>ProcessIDeliverService</name>
+  <display>ProcessIDeliverService</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>df6e3006-01d7-4379-a4f0-144f1bce0b5f</parentFolderId>
+  <packageId>df6e3006-01d7-4379-a4f0-144f1bce0b5f</packageId>
+  <packageName>MicroserviceSolution</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements />
+</class>

@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="6575aad7-d36a-4dda-8d1e-1c093866632c" type="Class" typeId="04e12b51-ed12-42a3-9667-a6aa81bb6d10">
+  <name>Order</name>
+  <display>Order</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</parentFolderId>
+  <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+  <packageName>ProcessIDeliverOrder.Domain</packageName>
+  <stereotypes />
+  <metadata />
+  <childElements>
+    <childElement id="9bc1701f-7a30-4b16-a1e7-16f292b30890" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>OrderId</name>
+      <display>OrderId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="d325ddd2-a112-40ab-9284-d74e673238ab">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b99aac21-9ca4-467f-a3a6-046255a9eed6" name="Primary Key">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="4c1e3f7e-61d4-460d-bd20-c2edbc0c0e2e" display="Identity" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata>
+        <entry key="is-managed-key" value="true" />
+      </metadata>
+      <childElements />
+    </childElement>
+    <childElement id="a900b1e7-ad94-40c6-ab38-35b18a83fd13" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>OrderDate</name>
+      <display>OrderDate: datetime</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="4806e61c-7d01-4195-bedf-a1c977e45de6">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="ee82af83-4d2c-48ab-9f15-7dbe9ba38331" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>UserId</name>
+      <display>UserId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="bd3a9a7f-c507-4ca8-a176-9e1e4a5211da">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c114a744-de0b-4772-9edd-a10e51667a19" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>BrandId</name>
+      <display>BrandId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="44c49f1d-1b7d-4a01-a81a-47ad9a6fa1fe">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="54d55d9b-37bc-4d53-9403-eb433e143301" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CampaignId</name>
+      <display>CampaignId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="6de52b59-1dce-42b5-8af9-c548bc2e312c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="95dfb0d0-2d72-4395-91ef-8bc422c943eb" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>DialerAgentId</name>
+      <display>DialerAgentId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="402777bd-27a6-4ac5-870e-a69a4ba684c3">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="6722092c-a103-4967-a874-3f988e42e1b3" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Period</name>
+      <display>Period: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="ff362153-ccb3-46eb-bd71-c2d342603b5e">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="58ccd82e-5ad2-4889-9bb0-7fb0e8d86591" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Comments</name>
+      <display>Comments: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="37394fbd-414b-4d06-8c84-401bf4592dc5">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="DEFAULT" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="87eaebe1-0dde-49e9-821a-884122156b29" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CallFlag</name>
+      <display>CallFlag: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="883baaa4-4c22-467e-96b5-4132ff63d8f5">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="DEFAULT" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="fbd9519c-d41a-4997-801c-0a6da2bbfe75" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>BasketReference</name>
+      <display>BasketReference: string</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="f7b824e4-762d-416e-a80a-5c9dfbff23ec">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="6347286E-A637-44D6-A5D7-D9BE5789CA7A" name="Text Constraints">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.RDBMS</definitionPackageName>
+          <definitionPackageId>AF8F3810-745C-42A2-93C8-798860DC45B1</definitionPackageId>
+          <properties>
+            <property name="1288cfcd-ee51-437e-9713-73b80118f026" display="SQL Data Type" value="DEFAULT" isActive="true" />
+            <property name="A04CC24D-81FB-4EA2-A34A-B3C58E04DCFD" display="MaxLength" isActive="true" />
+            <property name="67EC4CF4-7706-4B39-BC7C-DF539EE2B0AF" display="IsUnicode" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="04b6446b-e421-4f38-9429-b2349b6a10ad" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EscalationIndex</name>
+      <display>EscalationIndex: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="4c23a2e3-ce86-431c-9a29-aacf6199f79b">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="49f1b168-eb52-4196-897c-1d368d85bf64" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>DebitOrderDay</name>
+      <display>DebitOrderDay: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="55e6eb63-e9e1-4a61-9cca-82561a0b1fe6">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="01a8bfea-8440-4afe-bd0f-e1f33aa72195" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CustomerId</name>
+      <display>CustomerId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="1622f89d-439f-44ed-ab6c-11cae9c9e2be">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="dd15752d-08ba-490a-b583-113c62df1637" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>LeadId</name>
+      <display>LeadId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="665598c1-b701-40d8-922d-2828ee1a9fd0">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="ed08fbaf-ba3b-4bda-877d-9b6cd997e361" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>VerifierId</name>
+      <display>VerifierId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="db96171c-ea61-46cc-b755-0072a3fab8e7">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="60e25368-689e-4410-b4a4-7439e36852f2" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EmailCommSentStatusId</name>
+      <display>EmailCommSentStatusId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="a429b4f2-0136-41df-a6c1-ad6809533b81">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="2711c7d8-7e68-4c42-94d7-6bd8cbe5f9a1" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>SmscommSentStatusId</name>
+      <display>SmscommSentStatusId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="9735a4ef-09e7-495a-b50f-9793ae7e055c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="a9c3081c-b58f-43d2-8ade-6f650cfc3730" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>BillingIsPaid</name>
+      <display>BillingIsPaid: bool</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="424bbee0-5e3c-4858-86b1-9f0febe2df61">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c76112d1-0f14-4d26-ab72-1dfbf251f6f3" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>BillingDate</name>
+      <display>BillingDate: datetime?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="670ac183-a474-469d-9276-689874b2073c">
+        <typeId>a4107c29-7851-4121-9416-cf1236908f1e</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="a3d25b5a-299e-4a2e-92a4-293e466e384f" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>OverrideVettingUserId</name>
+      <display>OverrideVettingUserId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="b797edd4-47d9-4781-83d8-94bde3b13e90">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="79650358-0033-4c40-a4e0-7244c533a2aa" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>VettingHistoryId</name>
+      <display>VettingHistoryId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="7fb07170-716e-49d1-a9c3-33d2bfd4aaaa">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="cf659e06-fc08-4006-a3ab-29310564241d" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>MsordermasterId</name>
+      <display>MsordermasterId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="ba1ff085-4460-4168-a31f-55610bc28dfa">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="f39c83ca-80f1-4bda-94a6-dc679942acfc" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>EmordermasterId</name>
+      <display>EmordermasterId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="90541532-a5df-4e69-9918-586240fad08b">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="081119c4-00fc-46fb-9dc6-05cc9c753394" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Affordability</name>
+      <display>Affordability: decimal?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="3c88a633-037b-407e-894d-48f995bc83a3">
+        <typeId>675c7b84-997a-44e0-82b9-cd724c07c9e6</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="4682d804-5f1d-4f0c-a4ae-6caf4d86cfca" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CtFlag</name>
+      <display>CtFlag: bool?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="412577e2-78fc-4ca7-8c49-856adc7daf9a">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="2bbfacde-d54e-4f08-890d-2b9870faea03" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>OrderOdooId</name>
+      <display>OrderOdooId: int?</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="c3a2c32a-c9de-4f95-a39d-abb2ad167299">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>true</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>6575aad7-d36a-4dda-8d1e-1c093866632c</parentFolderId>
+      <packageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</packageId>
+      <packageName>ProcessIDeliverOrder.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="02b7a4cc-1ef4-48ec-b466-59b5538373ce" type="Folder" typeId="4d95d53a-8855-4f35-aa82-e312643f5c5f">
+  <name>ViewModels</name>
+  <display>ViewModels</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-by-name</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>c2c846b9-306a-4694-938f-e2b1960b0a9e</parentFolderId>
+  <packageId>c2c846b9-306a-4694-938f-e2b1960b0a9e</packageId>
+  <packageName>ProcessIDeliverOrderService.Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="66fd9e66-42c7-4ef9-a778-b68e009272b9" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Common.CSharp</definitionPackageName>
+      <definitionPackageId>730e1275-0c32-44f7-991a-9619d07ca68d</definitionPackageId>
+      <properties>
+        <property name="96df2fa6-7361-4e43-9acf-dbcea23b650a" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements />
+</class>

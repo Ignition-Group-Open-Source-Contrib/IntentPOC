@@ -1,0 +1,77 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Solution Items", "0 - Solution Items", "{EB001498-A45D-4220-A290-7B3FA65B97B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{671AFB61-9A82-4D50-8B9E-FD1B31E60EC0}"
+	ProjectSection(SolutionItems) = preProject
+		..\dapr\config.yaml = ..\dapr\config.yaml
+		dapr\config.yaml = dapr\config.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{BDADDD9A-085D-4618-AE90-2CA0DB9E02C5}"
+	ProjectSection(SolutionItems) = preProject
+		..\dapr\components\pubsub.yaml = ..\dapr\components\pubsub.yaml
+		..\dapr\components\statestore.yaml = ..\dapr\components\statestore.yaml
+		dapr\components\pubsub.yaml = dapr\components\pubsub.yaml
+		dapr\components\statestore.yaml = dapr\components\statestore.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProcessIDeliverOrderService", "ProcessIDeliverOrderService", "{6E2B97C2-D228-4260-9012-2F8FA008A368}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{6FD1A41F-6979-4680-9DBA-602391C13B28}"
+EndProject
+Project("{FFD54A85-9362-48AC-B646-C93AB9AC63D2}") = "ProcessIDeliverOrderService.Api", "ProcessIDeliverOrderService.Api\ProcessIDeliverOrderService.Api.csproj", "{C9B0E699-25A6-409A-B74B-9FD870849F2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{120F3B74-67F5-4E43-ABD7-969BD601B324}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "ProcessIDeliverOrderService.Application", "ProcessIDeliverOrderService.Application\ProcessIDeliverOrderService.Application.csproj", "{2312D39F-9E6B-4B4F-B090-C936F0C69F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{D2A68E67-ED8F-4B77-9032-6F2E8C987084}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "ProcessIDeliverOrderService.Domain", "ProcessIDeliverOrderService.Domain\ProcessIDeliverOrderService.Domain.csproj", "{CF85DB91-0545-4580-8E3B-E32A77EF818C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{357E3104-F683-4278-9E90-0BE3A081B23E}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "ProcessIDeliverOrderService.Infrastructure", "ProcessIDeliverOrderService.Infrastructure\ProcessIDeliverOrderService.Infrastructure.csproj", "{EE62037F-3A14-44AA-A4BB-33D6A71E58D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9B0E699-25A6-409A-B74B-9FD870849F2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B0E699-25A6-409A-B74B-9FD870849F2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B0E699-25A6-409A-B74B-9FD870849F2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B0E699-25A6-409A-B74B-9FD870849F2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2312D39F-9E6B-4B4F-B090-C936F0C69F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2312D39F-9E6B-4B4F-B090-C936F0C69F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2312D39F-9E6B-4B4F-B090-C936F0C69F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2312D39F-9E6B-4B4F-B090-C936F0C69F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF85DB91-0545-4580-8E3B-E32A77EF818C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF85DB91-0545-4580-8E3B-E32A77EF818C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF85DB91-0545-4580-8E3B-E32A77EF818C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF85DB91-0545-4580-8E3B-E32A77EF818C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE62037F-3A14-44AA-A4BB-33D6A71E58D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE62037F-3A14-44AA-A4BB-33D6A71E58D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE62037F-3A14-44AA-A4BB-33D6A71E58D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE62037F-3A14-44AA-A4BB-33D6A71E58D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{671AFB61-9A82-4D50-8B9E-FD1B31E60EC0} = {EB001498-A45D-4220-A290-7B3FA65B97B5}
+		{BDADDD9A-085D-4618-AE90-2CA0DB9E02C5} = {671AFB61-9A82-4D50-8B9E-FD1B31E60EC0}
+		{6FD1A41F-6979-4680-9DBA-602391C13B28} = {6E2B97C2-D228-4260-9012-2F8FA008A368}
+		{C9B0E699-25A6-409A-B74B-9FD870849F2D} = {6FD1A41F-6979-4680-9DBA-602391C13B28}
+		{120F3B74-67F5-4E43-ABD7-969BD601B324} = {6E2B97C2-D228-4260-9012-2F8FA008A368}
+		{2312D39F-9E6B-4B4F-B090-C936F0C69F69} = {120F3B74-67F5-4E43-ABD7-969BD601B324}
+		{D2A68E67-ED8F-4B77-9032-6F2E8C987084} = {6E2B97C2-D228-4260-9012-2F8FA008A368}
+		{CF85DB91-0545-4580-8E3B-E32A77EF818C} = {D2A68E67-ED8F-4B77-9032-6F2E8C987084}
+		{357E3104-F683-4278-9E90-0BE3A081B23E} = {6E2B97C2-D228-4260-9012-2F8FA008A368}
+		{EE62037F-3A14-44AA-A4BB-33D6A71E58D8} = {357E3104-F683-4278-9E90-0BE3A081B23E}
+	EndGlobalSection
+EndGlobal
