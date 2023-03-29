@@ -3,15 +3,15 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:65053/",
-      "sslPort": 44348
+      "applicationUrl": "http://localhost:65056/",
+      "sslPort": 44450
     }
   },
   "profiles": {
     "IDeliverService.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:65053/;https://localhost:44348/",
+      "applicationUrl": "http://localhost:65053/;https://localhost:44450/",
       "launchUrl": "http://localhost:65053/swagger",
       "publishAllPorts": false,
       "useSSL": false,

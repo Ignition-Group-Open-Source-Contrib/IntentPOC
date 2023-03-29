@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoWrapper;
 using IDeliverService.Api.Configuration;
 using IDeliverService.Application;
 using IDeliverService.Infrastructure;
@@ -48,6 +49,7 @@ namespace IDeliverService.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseApiResponseAndExceptionWrapper();
             app.UseCloudEvents();
             app.UseSerilogRequestLogging();
             app.UseRouting();
