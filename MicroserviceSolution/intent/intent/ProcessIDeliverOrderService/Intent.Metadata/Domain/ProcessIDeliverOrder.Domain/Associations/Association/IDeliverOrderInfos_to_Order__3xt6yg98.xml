@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="f22adb38-7098-4061-b933-4b7e63754d4e">
+  <sourceEnd id="e7df1ac6-f8f9-4bb0-a69a-0017f08c0801" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
+    <name>IDeliverOrderInfos</name>
+    <display>IDeliverOrderInfos: IDeliverOrderInfo[*]</display>
+    <order>26</order>
+    <typeReference id="d0247deb-6da8-46b5-8041-255b42ef6414">
+      <typeId>fe6e111e-1e85-4d86-9fbf-891e86d4e074</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>true</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>ProcessIDeliverOrder.Domain</typePackageName>
+      <typePackageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="f22adb38-7098-4061-b933-4b7e63754d4e" type="Association Target End" typeId="0a66489f-30aa-417b-a75d-b945863366fd">
+    <name>Order</name>
+    <display>Order: Order</display>
+    <order>9</order>
+    <typeReference id="5bf5c7c4-696e-4089-bfdb-2a970b7b27e6">
+      <typeId>6575aad7-d36a-4dda-8d1e-1c093866632c</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>ProcessIDeliverOrder.Domain</typePackageName>
+      <typePackageId>3eecb21d-994a-4a1d-9895-78ffa990a6d2</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Association</associationType>
+  <associationTypeId>eaf9ed4e-0b61-4ac1-ba88-09f912c12087</associationTypeId>
+  <stereotypes />
+</association>

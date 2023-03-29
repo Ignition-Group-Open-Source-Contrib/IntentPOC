@@ -1,0 +1,74 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Solution Items", "0 - Solution Items", "{8437C905-2DD3-403A-8611-E551A1CA7974}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dapr", "dapr", "{AF79C7BA-AECA-41F2-AADE-3BF3A5DAC2E0}"
+	ProjectSection(SolutionItems) = preProject
+		dapr\config.yaml = dapr\config.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{89D00DED-302D-4388-9A8F-E039D13C5A14}"
+	ProjectSection(SolutionItems) = preProject
+		dapr\components\pubsub.yaml = dapr\components\pubsub.yaml
+		dapr\components\statestore.yaml = dapr\components\statestore.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProcessIDeliverService", "ProcessIDeliverService", "{68327648-2051-4A19-8E35-A01A6C89B70D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{E92FA532-F956-4CF8-84F8-49820BD39F4A}"
+EndProject
+Project("{FFD54A85-9362-48AC-B646-C93AB9AC63D2}") = "ProcessIDeliverOrderService.Api", "ProcessIDeliverOrderService.Api\ProcessIDeliverOrderService.Api.csproj", "{4A47A97B-745A-477A-B3DF-167A0A533F7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{DD53AB06-CFF2-4BFC-966F-C69D589F1B75}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "ProcessIDeliverOrderService.Application", "ProcessIDeliverOrderService.Application\ProcessIDeliverOrderService.Application.csproj", "{1B824BA1-8182-4BAC-A3B1-C97536200157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{FF58D8F6-99C8-4106-9F9B-C5430857863C}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "ProcessIDeliverOrderService.Domain", "ProcessIDeliverOrderService.Domain\ProcessIDeliverOrderService.Domain.csproj", "{7DF6E74D-1482-4B61-89C0-72DFA443AEDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{B3F5734C-7E4E-4B32-B0CB-3AA979A79B2D}"
+EndProject
+Project("{52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE}") = "ProcessIDeliverOrderService.Infrastructure", "ProcessIDeliverOrderService.Infrastructure\ProcessIDeliverOrderService.Infrastructure.csproj", "{1631A27B-E5A7-4C89-AA1C-A11CD335C0DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A47A97B-745A-477A-B3DF-167A0A533F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A47A97B-745A-477A-B3DF-167A0A533F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A47A97B-745A-477A-B3DF-167A0A533F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A47A97B-745A-477A-B3DF-167A0A533F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B824BA1-8182-4BAC-A3B1-C97536200157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B824BA1-8182-4BAC-A3B1-C97536200157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B824BA1-8182-4BAC-A3B1-C97536200157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B824BA1-8182-4BAC-A3B1-C97536200157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DF6E74D-1482-4B61-89C0-72DFA443AEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DF6E74D-1482-4B61-89C0-72DFA443AEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DF6E74D-1482-4B61-89C0-72DFA443AEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DF6E74D-1482-4B61-89C0-72DFA443AEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1631A27B-E5A7-4C89-AA1C-A11CD335C0DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1631A27B-E5A7-4C89-AA1C-A11CD335C0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1631A27B-E5A7-4C89-AA1C-A11CD335C0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1631A27B-E5A7-4C89-AA1C-A11CD335C0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF79C7BA-AECA-41F2-AADE-3BF3A5DAC2E0} = {8437C905-2DD3-403A-8611-E551A1CA7974}
+		{89D00DED-302D-4388-9A8F-E039D13C5A14} = {AF79C7BA-AECA-41F2-AADE-3BF3A5DAC2E0}
+		{E92FA532-F956-4CF8-84F8-49820BD39F4A} = {68327648-2051-4A19-8E35-A01A6C89B70D}
+		{4A47A97B-745A-477A-B3DF-167A0A533F7F} = {E92FA532-F956-4CF8-84F8-49820BD39F4A}
+		{DD53AB06-CFF2-4BFC-966F-C69D589F1B75} = {68327648-2051-4A19-8E35-A01A6C89B70D}
+		{1B824BA1-8182-4BAC-A3B1-C97536200157} = {DD53AB06-CFF2-4BFC-966F-C69D589F1B75}
+		{FF58D8F6-99C8-4106-9F9B-C5430857863C} = {68327648-2051-4A19-8E35-A01A6C89B70D}
+		{7DF6E74D-1482-4B61-89C0-72DFA443AEDB} = {FF58D8F6-99C8-4106-9F9B-C5430857863C}
+		{B3F5734C-7E4E-4B32-B0CB-3AA979A79B2D} = {68327648-2051-4A19-8E35-A01A6C89B70D}
+		{1631A27B-E5A7-4C89-AA1C-A11CD335C0DC} = {B3F5734C-7E4E-4B32-B0CB-3AA979A79B2D}
+	EndGlobalSection
+EndGlobal
