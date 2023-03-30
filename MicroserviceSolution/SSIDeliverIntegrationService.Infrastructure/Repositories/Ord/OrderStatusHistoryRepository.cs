@@ -30,5 +30,11 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Ord
         {
             return await FindAllAsync(x => orderStatusHistoryIds.Contains(x.OrderStatusHistoryId), cancellationToken);
         }
+
+        public async Task<OrderStatusHistory> FindLastStatusHistoryAsync(int orderItemId, int statusDetailId)
+        {
+            var orderStatusHistories = await FindAllAsync(x => x.OrderItemId == orderItemId && x.OrderStatusDetailId == statusDetailId);
+            return orderStatusHistories?.OrderByDescending(x => x.Occured).FirstOrDefault();
+        }
     }
 }

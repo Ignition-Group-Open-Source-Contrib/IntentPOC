@@ -19,7 +19,7 @@ namespace SSIDeliverIntegrationService.Application.IDeliverService
         Task<CreateProductResponseModel> CreateProductAsync(string token, CreateProductRequestModel requestModel, CancellationToken cancellationToken = default);
         Task<CreateProductResponseModel> UpdateProductAsync(string token, string sku, UpdateProductRequestModel requestModel, CancellationToken cancellationToken = default);
         Task<GetSaleOrderResponseModel> GetSaleOrderAsync(string token, int id, CancellationToken cancellationToken = default);
-        Task<CreateUpdateSaleOrderRequestModel> CreateSaleOrderAsync(string token, CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken = default);
+        Task<CreateUpdateSaleOrderResponseModel> CreateSaleOrderAsync(string token, CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken = default);
         Task<CreateUpdateSaleOrderResponseModel> UpdateSaleOrderAsync(string token, int id, CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken = default);
         Task<List<SaleChannelsResponseModel>> SalesChannelsAsync(string token, CancellationToken cancellationToken = default);
     }

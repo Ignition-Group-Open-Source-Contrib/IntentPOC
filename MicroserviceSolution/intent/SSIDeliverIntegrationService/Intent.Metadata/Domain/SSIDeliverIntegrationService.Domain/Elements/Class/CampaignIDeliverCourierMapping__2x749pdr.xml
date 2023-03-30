@@ -57,6 +57,54 @@
       <metadata />
       <childElements />
     </childElement>
+    <childElement id="14a862de-d871-4f56-b68b-82aa207ff899" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CampaignId</name>
+      <display>CampaignId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="3bd298c7-1fe4-4570-aa89-6697a4ef1ff3">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>ec5b1d2a-1934-4e3d-9a4e-951e97937a56</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+    <childElement id="c5c39c91-c687-46af-a855-dde46e49199f" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>IdeliverCourierId</name>
+      <display>IdeliverCourierId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="66a1baad-37f0-4fce-bba8-4061ab3b446c">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>ec5b1d2a-1934-4e3d-9a4e-951e97937a56</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
     <childElement id="8d741bba-6793-4b58-b1a1-767e21cd1488" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
       <name>CreatedByUserId</name>
       <display>CreatedByUserId: int?</display>

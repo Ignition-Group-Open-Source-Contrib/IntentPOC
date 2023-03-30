@@ -92,6 +92,30 @@
       <metadata />
       <childElements />
     </childElement>
+    <childElement id="be1f4a99-456c-4442-81de-3c39bda1dcc6" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CampaignId</name>
+      <display>CampaignId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="1910dca1-2fb4-49df-be70-3e0f859eb952">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>0a7d60c3-2116-4bf8-a2bd-f94712e8f166</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
     <childElement id="4698b34a-6f09-493d-9d46-be7ae4553c5c" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
       <name>DialerAgentId</name>
       <display>DialerAgentId: int</display>

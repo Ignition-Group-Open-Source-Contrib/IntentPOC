@@ -19,5 +19,7 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Camp
         Task<IDeliverCampaignChannelMapping> FindByIdAsync(int iDeliverCampaignChannelMappingId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
         Task<List<IDeliverCampaignChannelMapping>> FindByIdsAsync(int[] iDeliverCampaignChannelMappingIds, CancellationToken cancellationToken = default);
+
+        Task<int> FindChannelIdByCampaignId(int campaignId, CancellationToken cancellationToken = default);
     }
 }

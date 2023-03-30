@@ -63,6 +63,7 @@ namespace SSIDeliverIntegrationService.Infrastructure
             services.AddTransient<IStockItemRepository, StockItemRepository>();
             services.AddTransient<ITariffRepository, TariffRepository>();
             services.AddTransient<IVASXProviderSpecificRepository, VASXProviderSpecificRepository>();
+            services.AddTransient<IVwGetCustomerAddressRepository, VwGetCustomerAddressRepository>();
             services.AddScoped<IDomainEventService, DomainEventService>();
             services.AddScoped<IStateRepository, StateRepository>();
             return services;

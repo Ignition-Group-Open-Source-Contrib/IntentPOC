@@ -19,5 +19,7 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Deals
         Task<DealProductMapping> FindByIdAsync(int dealProductMappingId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
         Task<List<DealProductMapping>> FindByIdsAsync(int[] dealProductMappingIds, CancellationToken cancellationToken = default);
+
+        Task<List<int?>> FindProductIdsByDealId(int dealId, CancellationToken cancellationToken = default);
     }
 }

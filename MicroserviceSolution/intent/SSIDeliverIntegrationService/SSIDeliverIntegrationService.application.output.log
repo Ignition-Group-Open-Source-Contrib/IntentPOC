@@ -586,10 +586,26 @@
     </FileLog>
     <FileLog>
       <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#d37e9864-8b6d-4ded-ad60-7db10b6684f0</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ActorRaiseEventModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/ActorRaiseEventModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
       <CorrelationId>Intent.Application.Dtos.DtoModel#1b4bd37a-806a-4727-83cf-a3aa23397683</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/CommsState.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ViewModels/CommsState.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#09eca140-7e98-4f1b-a585-61601cadd6d4</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ConvertToPlaceSaleOrderRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/ConvertToPlaceSaleOrderRequest.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -682,10 +698,26 @@
     </FileLog>
     <FileLog>
       <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#ab6687c4-d10f-46e2-a946-db22419fa1a6</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/SaleOrderItemViewModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/SaleOrderItemViewModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
       <CorrelationId>Intent.Application.Dtos.DtoModel#f2c76ddb-38e2-403d-8c85-2b52db27071a</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/SSIDeliverOrderViewModel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ViewModels/SSIDeliverOrderViewModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#847bd7ca-a51b-4585-b729-db9de5b01941</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/UpdateOrderItemStatusRequestModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/UpdateOrderItemStatusRequestModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -921,6 +953,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>e2df61ec-c017-45e1-9547-6c3fc1da9207</ProjectId>
+      <CorrelationId>Intent.Entities.DomainEntity#21c16853-4fe1-4b88-aedd-516803a634fc</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Entities/VwGetCustomerAddress.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>VwGetCustomerAddress.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>0607a66a-705d-4959-b9ff-ca95fdfb2ec6</ProjectId>
       <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#491707dd-d1c1-4e3f-8702-dd6ddc92bfe2</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -1030,6 +1070,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/IStateRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IStateRepository.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>0607a66a-705d-4959-b9ff-ca95fdfb2ec6</ProjectId>
+      <CorrelationId>Intent.Entities.Repositories.Api.EntityRepositoryInterface#21c16853-4fe1-4b88-aedd-516803a634fc</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Domain/Repositories/IVwGetCustomerAddressRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IVwGetCustomerAddressRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -1345,6 +1393,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>6002a69d-ec7d-4105-a56a-8ae09f82f767</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.EntityTypeConfiguration#21c16853-4fe1-4b88-aedd-516803a634fc</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Persistence/Configurations/VwGetCustomerAddressConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>VwGetCustomerAddressConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>18907418-6279-46f8-b96c-01151bb61889</ProjectId>
       <CorrelationId>Intent.EntityFrameworkCore.DbMigrationsReadMe</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -1558,6 +1614,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/Stock/StockItemRepository.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>Stock/StockItemRepository.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9f04c0af-1875-47da-b758-c76cf2a8f006</ProjectId>
+      <CorrelationId>Intent.EntityFrameworkCore.Repositories.Repository#21c16853-4fe1-4b88-aedd-516803a634fc</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/Repositories/VwGetCustomerAddressRepository.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>VwGetCustomerAddressRepository.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>

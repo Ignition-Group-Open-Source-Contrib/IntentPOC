@@ -59,6 +59,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence
         public DbSet<StockItem> StockItems { get; set; }
         public DbSet<Tariff> Tariffs { get; set; }
         public DbSet<VASXProviderSpecific> VASXProviderSpecifics { get; set; }
+        public DbSet<VwGetCustomerAddress> VwGetCustomerAddresses { get; set; }
 
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
@@ -94,6 +95,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence
             modelBuilder.ApplyConfiguration(new StockItemConfiguration());
             modelBuilder.ApplyConfiguration(new TariffConfiguration());
             modelBuilder.ApplyConfiguration(new VASXProviderSpecificConfiguration());
+            modelBuilder.ApplyConfiguration(new VwGetCustomerAddressConfiguration());
         }
 
         [IntentManaged(Mode.Ignore)]

@@ -38,6 +38,11 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories
             GetSet().Add((TPersistence)entity);
         }
 
+        public virtual void Update(TDomain entity)
+        {
+            GetSet().Update((TPersistence)entity);
+        }
+
         public virtual async Task<TDomain> FindAsync(Expression<Func<TPersistence, bool>> filterExpression, CancellationToken cancellationToken = default)
         {
             return await QueryInternal(filterExpression).SingleOrDefaultAsync<TDomain>(cancellationToken);

@@ -19,5 +19,7 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Cust
         Task<CustomerContact> FindByIdAsync(int customerContactId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
         Task<List<CustomerContact>> FindByIdsAsync(int[] customerContactIds, CancellationToken cancellationToken = default);
+
+        Task<List<CustomerContact>> FindByCustomerIdAsync(int customerId, CancellationToken cancellationToken = default);
     }
 }

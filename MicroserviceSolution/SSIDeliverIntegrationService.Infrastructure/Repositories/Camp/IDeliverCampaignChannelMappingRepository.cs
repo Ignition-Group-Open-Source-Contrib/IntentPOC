@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Intent.RoslynWeaver.Attributes;
 using Microsoft.EntityFrameworkCore;
 using SSIDeliverIntegrationService.Domain.Entities.Camp;
+using SSIDeliverIntegrationService.Domain.Entities.Deals;
 using SSIDeliverIntegrationService.Domain.Repositories.Camp;
 using SSIDeliverIntegrationService.Infrastructure.Persistence;
 
@@ -29,6 +30,12 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Camp
         public async Task<List<IDeliverCampaignChannelMapping>> FindByIdsAsync(int[] iDeliverCampaignChannelMappingIds, CancellationToken cancellationToken = default)
         {
             return await FindAllAsync(x => iDeliverCampaignChannelMappingIds.Contains(x.IDeliverCampaignChannelMappingId), cancellationToken);
+        }
+
+        public async Task<int> FindChannelIdByCampaignId(int campaignId, CancellationToken cancellationToken = default)
+        {
+            var iDeliverCampaignChannels = await FindAllAsync(x => x.CampaignId == campaignId, cancellationToken);
+            return iDeliverCampaignChannels.Select(x => x.ChannelId).FirstOrDefault();
         }
     }
 }

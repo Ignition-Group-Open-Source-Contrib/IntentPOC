@@ -33,7 +33,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
                 .IsRequired()
                 .HasDefaultValueSql("((1))");
 
-            builder.Property(x => x.TariffTariffID);
+            builder.Property(x => x.TariffID);
 
             builder.Property(x => x.MsId);
 
@@ -120,7 +120,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasOne(x => x.Tariff)
                 .WithMany()
-                .HasForeignKey(x => x.TariffTariffID)
+                .HasForeignKey(x => x.TariffID)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Ignore(e => e.DomainEvents);
