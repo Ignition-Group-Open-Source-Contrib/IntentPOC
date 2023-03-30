@@ -13,8 +13,7 @@ namespace SSIDeliverIntegrationService.Application.PlaceSaleOnIDeliver
 {
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
     public class PlaceSaleOnIDeliverHandler : IRequestHandler<PlaceSaleOnIDeliver>
-    {
-        private 
+    { 
         [IntentManaged(Mode.Ignore)]
         public PlaceSaleOnIDeliverHandler()
         {
@@ -26,9 +25,9 @@ namespace SSIDeliverIntegrationService.Application.PlaceSaleOnIDeliver
             throw new NotImplementedException("Your implementation here...");
         }
 
-        private async Task<(CreateUpdateSaleOrderRequestModel, string)> GetSSOrderDetails(int orderId, List<int> orderItemIds)
-        {
+        //private async Task<(CreateUpdateSaleOrderRequestModel, string)> GetSSOrderDetails(int orderId, List<int> orderItemIds)
+        //{
 
-        }
+        //}
     }
 }
