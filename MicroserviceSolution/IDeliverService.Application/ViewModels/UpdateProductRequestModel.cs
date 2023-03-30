@@ -5,29 +5,26 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.Dtos.DtoModel", Version = "1.0")]
 
-namespace IDeliverService.Application
+namespace IDeliverService.Application.ViewModels
 {
 
-    public class CreateProductRequestModel
+    public class UpdateProductRequestModel
     {
-        public CreateProductRequestModel()
+        public UpdateProductRequestModel()
         {
         }
 
-        public static CreateProductRequestModel Create(
-            string sku,
+        public static UpdateProductRequestModel Create(
             string name,
             decimal price,
             decimal width,
             decimal length,
             decimal height,
             decimal weight,
-            bool has_serial_numbers,
-            int channel_id)
+            bool has_serial_numbers)
         {
-            return new CreateProductRequestModel
+            return new UpdateProductRequestModel
             {
-                Sku = sku,
                 Name = name,
                 Price = price,
                 Width = width,
@@ -35,11 +32,8 @@ namespace IDeliverService.Application
                 Height = height,
                 Weight = weight,
                 Has_serial_numbers = has_serial_numbers,
-                Channel_id = channel_id,
             };
         }
-
-        public string Sku { get; set; }
 
         public string Name { get; set; }
 
@@ -54,8 +48,6 @@ namespace IDeliverService.Application
         public decimal Weight { get; set; }
 
         public bool Has_serial_numbers { get; set; }
-
-        public int Channel_id { get; set; }
 
     }
 }

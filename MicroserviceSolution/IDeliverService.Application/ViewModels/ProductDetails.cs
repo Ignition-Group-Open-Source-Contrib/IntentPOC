@@ -5,25 +5,29 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.Dtos.DtoModel", Version = "1.0")]
 
-namespace IDeliverService.Application
+namespace IDeliverService.Application.ViewModels
 {
 
-    public class CreateProductResponseModel : CreateProductRequestModel
+    public class ProductDetails
     {
-        public CreateProductResponseModel()
+        public ProductDetails()
         {
         }
 
-        public static CreateProductResponseModel Create(
+        public static ProductDetails Create(
             int id,
-            string channel_name,
+            string name,
+            string sku,
+            string notes,
             string created_at,
             string updated_at)
         {
-            return new CreateProductResponseModel
+            return new ProductDetails
             {
                 Id = id,
-                Channel_name = channel_name,
+                Name = name,
+                Sku = sku,
+                Notes = notes,
                 Created_at = created_at,
                 Updated_at = updated_at,
             };
@@ -31,7 +35,11 @@ namespace IDeliverService.Application
 
         public int Id { get; set; }
 
-        public string Channel_name { get; set; }
+        public string Name { get; set; }
+
+        public string Sku { get; set; }
+
+        public string Notes { get; set; }
 
         public string Created_at { get; set; }
 

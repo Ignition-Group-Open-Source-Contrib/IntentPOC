@@ -5,17 +5,16 @@ using Intent.RoslynWeaver.Attributes;
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.Application.Dtos.DtoModel", Version = "1.0")]
 
-namespace IDeliverService.Application
+namespace IDeliverService.Application.ViewModels
 {
 
-    public class GetSaleOrderResponseModel
+    public class CreateUpdateSaleOrderRequestModel
     {
-        public GetSaleOrderResponseModel()
+        public CreateUpdateSaleOrderRequestModel()
         {
         }
 
-        public static GetSaleOrderResponseModel Create(
-            int id,
+        public static CreateUpdateSaleOrderRequestModel Create(
             string reference,
             string recipient_name,
             string recipient_id,
@@ -40,16 +39,12 @@ namespace IDeliverService.Application
             string extra_info_1,
             string extra_info_2,
             string delivery_notes,
-            string status,
-            string status_text,
-            string warehouse_id,
-            Courier courier,
-            string created_at,
-            string updated_at)
+            int channel_id,
+            int warehouse_id,
+            List<SaleOrderItemsRequestModel> sale_order_items)
         {
-            return new GetSaleOrderResponseModel
+            return new CreateUpdateSaleOrderRequestModel
             {
-                Id = id,
                 Reference = reference,
                 Recipient_name = recipient_name,
                 Recipient_id = recipient_id,
@@ -74,16 +69,11 @@ namespace IDeliverService.Application
                 Extra_info_1 = extra_info_1,
                 Extra_info_2 = extra_info_2,
                 Delivery_notes = delivery_notes,
-                Status = status,
-                Status_text = status_text,
+                Channel_id = channel_id,
                 Warehouse_id = warehouse_id,
-                Courier = courier,
-                Created_at = created_at,
-                Updated_at = updated_at,
+                Sale_order_items = sale_order_items,
             };
         }
-
-        public int Id { get; set; }
 
         public string Reference { get; set; }
 
@@ -133,17 +123,11 @@ namespace IDeliverService.Application
 
         public string Delivery_notes { get; set; }
 
-        public string Status { get; set; }
+        public int Channel_id { get; set; }
 
-        public string Status_text { get; set; }
+        public int Warehouse_id { get; set; }
 
-        public string Warehouse_id { get; set; }
-
-        public Courier Courier { get; set; }
-
-        public string Created_at { get; set; }
-
-        public string Updated_at { get; set; }
+        public List<SaleOrderItemsRequestModel> Sale_order_items { get; set; }
 
     }
 }

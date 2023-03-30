@@ -22,7 +22,7 @@ namespace IDeliverService.Application.CreateSaleOrder
             RuleFor(v => v.Token)
                 .NotNull();
 
-            RuleFor(v => v.Request)
+            RuleFor(v => v.RequestModel)
                 .NotNull();
 
         }

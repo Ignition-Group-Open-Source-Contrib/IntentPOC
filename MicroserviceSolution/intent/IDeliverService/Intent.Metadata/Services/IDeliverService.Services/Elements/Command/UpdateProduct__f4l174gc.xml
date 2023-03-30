@@ -108,8 +108,8 @@
       <childElements />
     </childElement>
     <childElement id="1c4cecf0-bf45-484c-9475-2f50861e41e4" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
-      <name>request</name>
-      <display>request: UpdateProductRequestModel</display>
+      <name>requestModel</name>
+      <display>requestModel: UpdateProductRequestModel</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <typeReference id="76bb481e-a168-47a3-bd74-9a05930951ed">

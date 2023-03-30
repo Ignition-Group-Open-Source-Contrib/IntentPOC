@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using IDeliverService.Application.Common.Interfaces;
+using IDeliverService.Application.ViewModels;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 
@@ -15,7 +16,7 @@ namespace IDeliverService.Application.UpdateSaleOrderStatus
 
         public int Id { get; set; }
 
-        public UpdateOrderStatusRequestModel Request { get; set; }
+        public UpdateOrderStatusRequestModel RequestModel { get; set; }
 
     }
 }
