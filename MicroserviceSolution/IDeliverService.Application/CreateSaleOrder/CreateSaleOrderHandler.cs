@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoWrapper.Wrappers;
 using IDeliverService.Application.ThirdPartyServices;
+using IDeliverService.Application.ViewModels;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 using Newtonsoft.Json;
@@ -34,7 +35,7 @@ namespace IDeliverService.Application.CreateSaleOrder
                     throw new ApiException("IDeliver Service Create Sale Order invalid token", 400);
                 }
 
-                var response = await _iDeliverApi.CreateSaleOrder(request.Token, request.Request);
+                var response = await _iDeliverApi.CreateSaleOrder(request.Token, request.RequestModel);
                 var result = response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)

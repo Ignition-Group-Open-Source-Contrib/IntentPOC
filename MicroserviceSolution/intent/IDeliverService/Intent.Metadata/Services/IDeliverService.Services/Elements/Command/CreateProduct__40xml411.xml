@@ -66,8 +66,8 @@
       <childElements />
     </childElement>
     <childElement id="8604c4a5-d0e0-434f-bf3f-b329e3879618" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
-      <name>request</name>
-      <display>request: CreateProductRequestModel</display>
+      <name>requestModel</name>
+      <display>requestModel: CreateProductRequestModel</display>
       <isAbstract>false</isAbstract>
       <genericTypes />
       <typeReference id="a9b8a83c-7c6f-42f4-b4dd-efa751947261">

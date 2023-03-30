@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-using IDeliverService.Application;
 using IDeliverService.Application.CreateProduct;
 using IDeliverService.Application.CreateSaleOrder;
 using IDeliverService.Application.GetProduct;
@@ -13,13 +8,16 @@ using IDeliverService.Application.SalesChannels;
 using IDeliverService.Application.UpdateProduct;
 using IDeliverService.Application.UpdateSaleOrder;
 using IDeliverService.Application.UpdateSaleOrderStatus;
+using IDeliverService.Application.ViewModels;
 using IDeliverService.Application.Warehouses;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.AspNetCore.Controllers.Controller", Version = "1.0")]
@@ -93,7 +91,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new UpdateSaleOrderStatus { Token = token, Id = id, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new UpdateSaleOrderStatus { Token = token, Id = id, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -181,7 +179,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new CreateProduct { Token = token, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new CreateProduct { Token = token, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -202,7 +200,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new UpdateProduct { Token = token, Sku = sku, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new UpdateProduct { Token = token, Sku = sku, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -246,7 +244,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new CreateSaleOrder { Token = token, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new CreateSaleOrder { Token = token, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -267,7 +265,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new UpdateSaleOrder { Token = token, Id = id, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new UpdateSaleOrder { Token = token, Id = id, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
