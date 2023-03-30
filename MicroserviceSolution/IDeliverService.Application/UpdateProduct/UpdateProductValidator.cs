@@ -25,7 +25,7 @@ namespace IDeliverService.Application.UpdateProduct
             RuleFor(v => v.Sku)
                 .NotNull();
 
-            RuleFor(v => v.Request)
+            RuleFor(v => v.RequestModel)
                 .NotNull();
 
         }

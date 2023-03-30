@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using IDeliverService.Application.Common.Interfaces;
+using IDeliverService.Application.ViewModels;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 
@@ -13,7 +14,7 @@ namespace IDeliverService.Application.CreateProduct
     {
         public string Token { get; set; }
 
-        public CreateProductRequestModel Request { get; set; }
+        public CreateProductRequestModel RequestModel { get; set; }
 
     }
 }

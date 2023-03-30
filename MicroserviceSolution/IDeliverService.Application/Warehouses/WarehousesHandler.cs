@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoWrapper.Wrappers;
 using IDeliverService.Application.ThirdPartyServices;
+using IDeliverService.Application.ViewModels;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
 using Newtonsoft.Json;
