@@ -36,10 +36,10 @@
     </FileLog>
     <FileLog>
       <ProjectId>9a739362-e7c4-4c11-84cb-1121e15665a8</ProjectId>
-      <CorrelationId>Intent.Security.JWT.ConfigurationJWTAuthentication</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.ApplicationSecurityConfiguration</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
-      <ApplicationRelativeFilePath>../../IDeliverService.Api/Configuration/JWTAuthenticationConfiguration.cs</ApplicationRelativeFilePath>
-      <ProjectRelativeFilePath>JWTAuthenticationConfiguration.cs</ProjectRelativeFilePath>
+      <ApplicationRelativeFilePath>../../IDeliverService.Api/Configuration/ApplicationSecurityConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ApplicationSecurityConfiguration.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -92,7 +92,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>0b78f6f9-503e-4ad8-a301-b3e089614f0b</ProjectId>
-      <CorrelationId>Intent.Security.JWT.CurrentUserService</CorrelationId>
+      <CorrelationId>Intent.Application.Identity.CurrentUserService</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../IDeliverService.Api/Services/CurrentUserService.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>CurrentUserService.cs</ProjectRelativeFilePath>

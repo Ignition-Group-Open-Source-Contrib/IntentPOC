@@ -34,15 +34,25 @@ namespace SSIDeliverIntegrationService.Application.IDeliverService
                 Address_postcode = address_postcode,
             };
         }
+
         public int Id { get; set; }
+
         public string Name { get; set; }
+
         public string Tel { get; set; }
+
         public string Email { get; set; }
+
         public string Website { get; set; }
+
         public string Address_line_1 { get; set; }
+
         public string Address_line_2 { get; set; }
+
         public string Address_suburb { get; set; }
+
         public string Address_city { get; set; }
+
         public string Address_postcode { get; set; }
     }
 }

@@ -151,7 +151,7 @@
     </childElement>
     <childElement id="460f8a1b-2591-49e6-9688-4478711aa352" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>UpdateSaleOrderStatus</name>
-      <display>UpdateSaleOrderStatus(token: string, id: int, request: UpdateOrderStatusRequestModel): GetSaleOrderResponseModel</display>
+      <display>UpdateSaleOrderStatus(token: string, id: int, requestModel: UpdateOrderStatusRequestModel): GetSaleOrderResponseModel</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
@@ -276,8 +276,8 @@
           <childElements />
         </childElement>
         <childElement id="dc6b7135-03c9-4c20-a5cb-64ef3f03b4d7" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
-          <name>request</name>
-          <display>in : request: UpdateOrderStatusRequestModel</display>
+          <name>requestModel</name>
+          <display>in : requestModel: UpdateOrderStatusRequestModel</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
           <typeReference id="4f6f09e7-fd28-4ad0-be62-303bf9124b82">
@@ -663,7 +663,7 @@
     </childElement>
     <childElement id="f2e0362e-0d66-4cec-9528-8fcea5457685" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>CreateProduct</name>
-      <display>CreateProduct(token: string, request: CreateProductRequestModel): CreateProductResponseModel</display>
+      <display>CreateProduct(token: string, requestModel: CreateProductRequestModel): CreateProductResponseModel</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
@@ -747,8 +747,8 @@
           <childElements />
         </childElement>
         <childElement id="ca51268b-a6eb-471e-bfb7-3cc9727fccc7" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
-          <name>request</name>
-          <display>in : request: CreateProductRequestModel</display>
+          <name>requestModel</name>
+          <display>in : requestModel: CreateProductRequestModel</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
           <typeReference id="8ec8e336-7299-41a2-886a-84861e512e7a">
@@ -791,7 +791,7 @@
     </childElement>
     <childElement id="1d39ed29-1c75-4ddf-9755-3a90a329ded0" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>UpdateProduct</name>
-      <display>UpdateProduct(token: string, sku: string, request: UpdateProductRequestModel): CreateProductResponseModel</display>
+      <display>UpdateProduct(token: string, sku: string, requestModel: UpdateProductRequestModel): CreateProductResponseModel</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
@@ -916,8 +916,8 @@
           <childElements />
         </childElement>
         <childElement id="fe372d19-0d5e-4843-931b-8eccb6818880" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
-          <name>request</name>
-          <display>in : request: UpdateProductRequestModel</display>
+          <name>requestModel</name>
+          <display>in : requestModel: UpdateProductRequestModel</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
           <typeReference id="f40d392f-bd56-4725-b621-e01e2e12efb7">
@@ -1088,7 +1088,7 @@
     </childElement>
     <childElement id="a62a20ae-2e92-455c-89cc-decb9c874fb2" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>CreateSaleOrder</name>
-      <display>CreateSaleOrder(token: string, request: CreateUpdateSaleOrderRequestModel): CreateUpdateSaleOrderRequestModel</display>
+      <display>CreateSaleOrder(token: string, requestModel: CreateUpdateSaleOrderRequestModel): CreateUpdateSaleOrderRequestModel</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
@@ -1172,8 +1172,8 @@
           <childElements />
         </childElement>
         <childElement id="a674d3d6-0a2a-43ee-8a00-b5098932c5ce" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
-          <name>request</name>
-          <display>in : request: CreateUpdateSaleOrderRequestModel</display>
+          <name>requestModel</name>
+          <display>in : requestModel: CreateUpdateSaleOrderRequestModel</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
           <typeReference id="4c1be064-0f22-4101-a961-bb660858c569">
@@ -1216,7 +1216,7 @@
     </childElement>
     <childElement id="ab61ff8e-5d3d-48d9-a3ae-14ddee5e1ae3" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>UpdateSaleOrder</name>
-      <display>UpdateSaleOrder(token: string, id: int, request: CreateUpdateSaleOrderRequestModel): CreateUpdateSaleOrderResponseModel</display>
+      <display>UpdateSaleOrder(token: string, id: int, requestModel: CreateUpdateSaleOrderRequestModel): CreateUpdateSaleOrderResponseModel</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
@@ -1341,8 +1341,8 @@
           <childElements />
         </childElement>
         <childElement id="94f92b8f-6192-4c18-b881-abc6fed004ab" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
-          <name>request</name>
-          <display>in : request: CreateUpdateSaleOrderRequestModel</display>
+          <name>requestModel</name>
+          <display>in : requestModel: CreateUpdateSaleOrderRequestModel</display>
           <isAbstract>false</isAbstract>
           <genericTypes />
           <typeReference id="f34cd1bc-4808-48c3-a5e8-f5de69e823c9">

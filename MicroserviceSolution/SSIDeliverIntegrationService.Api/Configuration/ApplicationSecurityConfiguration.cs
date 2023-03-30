@@ -10,35 +10,37 @@ using SSIDeliverIntegrationService.Api.Services;
 using SSIDeliverIntegrationService.Application.Common.Interfaces;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
-[assembly: IntentTemplate("Intent.Security.JWT.ConfigurationJWTAuthentication", Version = "1.0")]
+[assembly: IntentTemplate("Intent.Application.Identity.ApplicationSecurityConfiguration", Version = "1.0")]
 
 namespace SSIDeliverIntegrationService.Api.Configuration
 {
-    public static class JWTAuthenticationConfiguration
+    public static class ApplicationSecurityConfiguration
     {
-        // Use '[IntentManaged(Mode.Ignore)]' on this method should you want to deviate from the standard JWT token approach
-        public static IServiceCollection ConfigureJWTSecurity(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection ConfigureApplicationSecurity(this IServiceCollection services, IConfiguration configuration)
         {
+            services.AddTransient<ICurrentUserService, CurrentUserService>();
             JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
-            services.AddScoped<ICurrentUserService, CurrentUserService>();
             services.AddHttpContextAccessor();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
-                {
-                    options.Authority = configuration.GetSection("Security.Bearer:Authority").Get<string>();
-                    options.Audience = configuration.GetSection("Security.Bearer:Audience").Get<string>();
+                .AddJwtBearer(
+                    JwtBearerDefaults.AuthenticationScheme,
+                    options =>
+                    {
+                        options.Authority = configuration.GetSection("Security.Bearer:Authority").Get<string>();
+                        options.Audience = configuration.GetSection("Security.Bearer:Audience").Get<string>();
 
-                    options.TokenValidationParameters.RoleClaimType = "role";
-                    options.SaveToken = true;
-                });
+                        options.TokenValidationParameters.RoleClaimType = "role";
+                        options.SaveToken = true;
+                    });
+
             services.AddAuthorization(ConfigureAuthorization);
 
             return services;
         }
 
         [IntentManaged(Mode.Ignore)]
-        public static void ConfigureAuthorization(AuthorizationOptions options)
+        private static void ConfigureAuthorization(AuthorizationOptions options)
         {
             //Configure policies and other authorization options here. For example:
             //options.AddPolicy("EmployeeOnly", policy => policy.RequireClaim("role", "employee"));

@@ -34,7 +34,7 @@ namespace SSIDeliverIntegrationService.Api
         {
             services.AddControllers().AddDapr();
             services.AddDaprSidekick(Configuration);
-            services.ConfigureJWTSecurity(Configuration);
+            services.ConfigureApplicationSecurity(Configuration);
             services.AddDaprServices();
             services.AddApplication();
             services.AddInfrastructure(Configuration);
