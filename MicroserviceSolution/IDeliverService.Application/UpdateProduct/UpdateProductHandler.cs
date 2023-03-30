@@ -35,7 +35,7 @@ namespace IDeliverService.Application.UpdateProduct
                     throw new ApiException("IDeliver service update product invalid token", 400);
                 }
 
-                var response = await _iDeliverApi.UpdateProduct(request.Token, request.Sku, request.Request);
+                var response = await _iDeliverApi.UpdateProduct(request.Token, request.Sku, request.RequestModel);
                 var result = response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                 {

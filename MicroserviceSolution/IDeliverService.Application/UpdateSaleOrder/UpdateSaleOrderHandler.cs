@@ -35,7 +35,7 @@ namespace IDeliverService.Application.UpdateSaleOrder
                     throw new ApiException("IDeliver service update sales order invalid token", 400);
                 }
 
-                var response = await _iDeliverApi.UpdateSaleOrder(request.Token, request.Id, request.Request);
+                var response = await _iDeliverApi.UpdateSaleOrder(request.Token, request.Id, request.RequestModel);
                 var result = JsonConvert.DeserializeObject<CreateUpdateSaleOrderResponseModel>(response);
                 if (result == null)
                 {

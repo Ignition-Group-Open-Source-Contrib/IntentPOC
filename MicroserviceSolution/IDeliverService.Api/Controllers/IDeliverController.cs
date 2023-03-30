@@ -91,7 +91,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new UpdateSaleOrderStatus { Token = token, Id = id, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new UpdateSaleOrderStatus { Token = token, Id = id, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -179,7 +179,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new CreateProduct { Token = token, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new CreateProduct { Token = token, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -200,7 +200,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new UpdateProduct { Token = token, Sku = sku, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new UpdateProduct { Token = token, Sku = sku, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -244,7 +244,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new CreateSaleOrder { Token = token, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new CreateSaleOrder { Token = token, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)
@@ -265,7 +265,7 @@ namespace IDeliverService.Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new UpdateSaleOrder { Token = token, Id = id, Request = request }, cancellationToken);
+                var result = await _mediator.Send(new UpdateSaleOrder { Token = token, Id = id, RequestModel = request }, cancellationToken);
                 return Created(string.Empty, result);
             }
             catch (Exception ex)

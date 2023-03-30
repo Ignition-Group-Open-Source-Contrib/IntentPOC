@@ -35,7 +35,7 @@ namespace IDeliverService.Application.CreateProduct
                     throw new ApiException("IDeliver service create product invalid token", 400);
                 }
 
-                var response = await _iDeliverApi.CreateProduct(request.Token, request.Request);
+                var response = await _iDeliverApi.CreateProduct(request.Token, request.RequestModel);
                 var result = response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                 {
