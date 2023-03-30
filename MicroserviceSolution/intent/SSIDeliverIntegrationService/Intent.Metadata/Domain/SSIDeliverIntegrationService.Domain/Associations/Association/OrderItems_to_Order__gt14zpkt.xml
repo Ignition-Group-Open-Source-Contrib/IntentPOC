@@ -3,7 +3,7 @@
   <sourceEnd id="7de6f82b-2b35-42e5-a3d7-2667fcf314fd" type="Association Source End" typeId="8d9d2e5b-bd55-4f36-9ae4-2b9e84fd4e58">
     <name>OrderItems</name>
     <display>OrderItems: OrderItem[*]</display>
-    <order>19</order>
+    <order>20</order>
     <typeReference id="e5f7a043-550e-4e1d-bd6a-d08ee1e6481a">
       <typeId>2f5fc300-5137-4127-a43a-74e93e7e7b0b</typeId>
       <isNavigable>true</isNavigable>

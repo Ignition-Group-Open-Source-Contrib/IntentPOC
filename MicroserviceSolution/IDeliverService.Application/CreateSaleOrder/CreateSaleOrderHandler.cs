@@ -15,7 +15,7 @@ using Newtonsoft.Json.Linq;
 namespace IDeliverService.Application.CreateSaleOrder
 {
     [IntentManaged(Mode.Merge, Signature = Mode.Fully)]
-    public class CreateSaleOrderHandler : IRequestHandler<CreateSaleOrder, CreateUpdateSaleOrderRequestModel>
+    public class CreateSaleOrderHandler : IRequestHandler<CreateSaleOrder, CreateUpdateSaleOrderResponseModel>
     {
         private readonly IIDeliverApi _iDeliverApi;
 
@@ -26,7 +26,7 @@ namespace IDeliverService.Application.CreateSaleOrder
         }
 
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
-        public async Task<CreateUpdateSaleOrderRequestModel> Handle(CreateSaleOrder request, CancellationToken cancellationToken)
+        public async Task<CreateUpdateSaleOrderResponseModel> Handle(CreateSaleOrder request, CancellationToken cancellationToken)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace IDeliverService.Application.CreateSaleOrder
                     throw new ApiException(errorResponse?.Message, 400);
                 }
 
-                var saleOrderResult = JsonConvert.DeserializeObject<CreateUpdateSaleOrderRequestModel>(result.Result);
+                var saleOrderResult = JsonConvert.DeserializeObject<CreateUpdateSaleOrderResponseModel>(result.Result);
                 if (saleOrderResult == null)
                 {
                     throw new ApiException("Data not found after creating sale order", 400);

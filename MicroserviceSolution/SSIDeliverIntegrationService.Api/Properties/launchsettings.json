@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:63326/",
+      "applicationUrl": "http://localhost:63447/",
       "sslPort": 44388
     }
   },
@@ -11,8 +11,8 @@
     "SSIDeliverIntegrationService.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:63326/;https://localhost:44388/",
-      "launchUrl": "http://localhost:63326/swagger",
+      "applicationUrl": "http://localhost:63447/;https://localhost:44388/",
+      "launchUrl": "http://localhost:63447/swagger",
       "publishAllPorts": false,
       "useSSL": false,
       "environmentVariables": {
@@ -22,7 +22,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:63326/swagger",
+      "launchUrl": "http://localhost:63447/swagger",
       "publishAllPorts": false,
       "useSSL": false,
       "environmentVariables": {

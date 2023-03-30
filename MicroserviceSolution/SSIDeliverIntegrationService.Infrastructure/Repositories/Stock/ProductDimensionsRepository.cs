@@ -30,5 +30,10 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Stock
         {
             return await FindAllAsync(x => productDimensionsIds.Contains(x.ProductDimensionsId), cancellationToken);
         }
+
+        public async Task<ProductDimensions> FindByProductIdAsync(int productId, CancellationToken cancellationToken = default)
+        {
+            return await FindAsync(x => x.ProductID == productId, cancellationToken);
+        }
     }
 }

@@ -176,10 +176,10 @@ namespace IDeliverService.Api.Controllers
         /// <response code="201">Successfully created.</response>
         /// <response code="400">One or more validation errors have occurred.</response>
         [HttpPost("[action]")]
-        [ProducesResponseType(typeof(CreateUpdateSaleOrderRequestModel), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(CreateUpdateSaleOrderResponseModel), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<CreateUpdateSaleOrderRequestModel>> CreateSaleOrder(string token, [FromBody] CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken)
+        public async Task<ActionResult<CreateUpdateSaleOrderResponseModel>> CreateSaleOrder(string token, [FromBody] CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken)
         {
             var result = await _mediator.Send(new CreateSaleOrder { Token = token, RequestModel = requestModel }, cancellationToken);
             return Created(string.Empty, result);

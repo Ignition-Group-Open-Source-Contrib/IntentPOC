@@ -30,5 +30,10 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Cust
         {
             return await FindAllAsync(x => customerContactIds.Contains(x.CustomerContactId), cancellationToken);
         }
+
+        public async Task<List<CustomerContact>> FindByCustomerIdAsync(int customerId, CancellationToken cancellationToken = default)
+        {
+            return await FindAllAsync(x => x.CustomerID == customerId, cancellationToken);
+        }
     }
 }

@@ -18,6 +18,8 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Ord
 
         public DateTime OrderDate { get; set; }
 
+        public int CampaignId { get; set; }
+
         public int DialerAgentId { get; set; }
 
         public int? Period { get; set; }

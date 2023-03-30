@@ -18,6 +18,7 @@ namespace SSIDeliverIntegrationService.Domain.Repositories
 
         IUnitOfWork UnitOfWork { get; }
         void Add(TDomain entity);
+        void Update(TDomain entity);
         void Remove(TDomain entity);
         Task<TDomain> FindAsync(Expression<Func<TPersistence, bool>> filterExpression, CancellationToken cancellationToken = default);
         Task<TDomain> FindAsync(Expression<Func<TPersistence, bool>> filterExpression, Func<IQueryable<TPersistence>, IQueryable<TPersistence>> linq, CancellationToken cancellationToken = default);
