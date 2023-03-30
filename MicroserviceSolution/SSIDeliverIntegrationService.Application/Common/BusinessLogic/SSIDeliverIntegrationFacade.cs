@@ -580,5 +580,12 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
         {
             throw new NotImplementedException();
         }
+
+        public async Task<string> ProcessSSIDeliverOrders(SSIDeliverOrderViewModel ssIDeliverOrderViewModel)
+        {
+            _eventBus.Publish(new PlaceSaleOnIDeliverEvent { OrderId = ssIDeliverOrderViewModel.OrderId, OrderItems = ssIDeliverOrderViewModel.OrderItemIds });
+            return await Task.FromResult($"PlaceSaleOnIDeliverEvent published successfully for {ssIDeliverOrderViewModel.OrderId}");
+
+        }
     }
 }

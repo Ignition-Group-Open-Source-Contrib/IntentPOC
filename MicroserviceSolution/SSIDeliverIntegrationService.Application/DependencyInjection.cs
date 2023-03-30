@@ -35,7 +35,7 @@ namespace SSIDeliverIntegrationService.Application
             services.AddScoped<ISSIDeliverIntegrationFacade, SSIDeliverIntegrationFacade>();
             services.AddSingleton<IWorkflowStorageFactory, WorkflowStorageFactory>();
             services.AddSingleton<IConfigurationSettings, ConfigurationSettings>();
-            services.AddHostedService< ProcessSSIDeliverQueue>();
+            services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
             return services;
         }
     }
