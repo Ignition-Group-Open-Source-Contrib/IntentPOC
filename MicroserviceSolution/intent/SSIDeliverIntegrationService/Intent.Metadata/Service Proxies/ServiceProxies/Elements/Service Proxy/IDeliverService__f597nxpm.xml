@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<class id="070967e7-ec19-4ff5-94c6-7fedc96c5c91" type="Service Proxy" typeId="07d8d1a9-6b9f-4676-b7d3-8db06299e35c">
+<class id="de6492be-b668-47aa-91da-7fb52ebf1669" type="Service Proxy" typeId="07d8d1a9-6b9f-4676-b7d3-8db06299e35c">
   <name>IDeliverService</name>
   <display>IDeliverService</display>
   <isAbstract>false</isAbstract>

@@ -1,0 +1,16 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: processssideliverorderevent
+spec:
+  type: bindings.azure.storagequeues
+  version: v1
+  metadata:
+  - name: storageAccessKey
+    value: 9oKPv7DVbZLrpaQ4X+R0EcU5QkgLXdZzj0WqaycGp1HXVRyX1KaJdArEX9NQc918JD86EZZImrDg4M7qsBUM4w==
+  - name: queue
+    value: ssideliverqueue
+  - name: storageAccount
+    value: 3cterxecmlnwc3
+scopes:
+  - ssi-deliver-integration-service

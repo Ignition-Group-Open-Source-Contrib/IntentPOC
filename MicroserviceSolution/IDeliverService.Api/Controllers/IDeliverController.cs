@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using IDeliverService.Application.CreateProduct;
 using IDeliverService.Application.CreateSaleOrder;
 using IDeliverService.Application.GetProduct;
@@ -12,12 +16,10 @@ using IDeliverService.Application.ViewModels;
 using IDeliverService.Application.Warehouses;
 using Intent.RoslynWeaver.Attributes;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 
 [assembly: DefaultIntentManaged(Mode.Fully)]
 [assembly: IntentTemplate("Intent.AspNetCore.Controllers.Controller", Version = "1.0")]
@@ -45,15 +47,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<List<SaleChannelsResponseModel>>> SalesChannels(string token, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new SalesChannels { Token = token }, cancellationToken);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new SalesChannels { Token = token }, cancellationToken);
+            return Ok(result);
         }
 
         /// <summary>
@@ -68,15 +63,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<TrackingPODResponseModel>> GetTrackingPOD(int id, string token, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new GetTrackingPOD { Id = id, Token = token }, cancellationToken);
-                return result != null ? Ok(result) : NotFound();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new GetTrackingPOD { Id = id, Token = token }, cancellationToken);
+            return result != null ? Ok(result) : NotFound();
         }
 
         /// <summary>
@@ -89,15 +77,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<GetSaleOrderResponseModel>> UpdateSaleOrderStatus(string token, int id, [FromBody] UpdateOrderStatusRequestModel requestModel, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new UpdateSaleOrderStatus { Token = token, Id = id, RequestModel = requestModel }, cancellationToken);
-                return Created(string.Empty, result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new UpdateSaleOrderStatus { Token = token, Id = id, RequestModel = requestModel }, cancellationToken);
+            return Created(string.Empty, result);
         }
 
         /// <summary>
@@ -112,15 +93,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<TrackingEventsResponseModel>> GetTrackingEvents(string token, int id, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new GetTrackingEvents { Token = token, Id = id }, cancellationToken);
-                return result != null ? Ok(result) : NotFound();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new GetTrackingEvents { Token = token, Id = id }, cancellationToken);
+            return result != null ? Ok(result) : NotFound();
         }
 
         /// <summary>
@@ -133,15 +107,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<List<WarehouseResponseModel>>> Warehouses(string token, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new Warehouses { Token = token }, cancellationToken);
-                return Ok(result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new Warehouses { Token = token }, cancellationToken);
+            return Ok(result);
         }
 
         /// <summary>
@@ -156,15 +123,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CreateProductResponseModel>> GetProduct(string token, string sku, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new GetProduct { Token = token, Sku = sku }, cancellationToken);
-                return result != null ? Ok(result) : NotFound();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new GetProduct { Token = token, Sku = sku }, cancellationToken);
+            return result != null ? Ok(result) : NotFound();
         }
 
         /// <summary>
@@ -177,15 +137,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CreateProductResponseModel>> CreateProduct(string token, [FromBody] CreateProductRequestModel requestModel, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new CreateProduct { Token = token, RequestModel = requestModel }, cancellationToken);
-                return Created(string.Empty, result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new CreateProduct { Token = token, RequestModel = requestModel }, cancellationToken);
+            return Created(string.Empty, result);
         }
 
         /// <summary>
@@ -198,15 +151,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CreateProductResponseModel>> UpdateProduct(string token, string sku, [FromBody] UpdateProductRequestModel requestModel, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new UpdateProduct { Token = token, Sku = sku, RequestModel = requestModel }, cancellationToken);
-                return Created(string.Empty, result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new UpdateProduct { Token = token, Sku = sku, RequestModel = requestModel }, cancellationToken);
+            return Created(string.Empty, result);
         }
 
         /// <summary>
@@ -221,15 +167,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<GetSaleOrderResponseModel>> GetSaleOrder(string token, int id, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new GetSaleOrder { Token = token, Id = id }, cancellationToken);
-                return result != null ? Ok(result) : NotFound();
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new GetSaleOrder { Token = token, Id = id }, cancellationToken);
+            return result != null ? Ok(result) : NotFound();
         }
 
         /// <summary>
@@ -242,15 +181,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CreateUpdateSaleOrderRequestModel>> CreateSaleOrder(string token, [FromBody] CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new CreateSaleOrder { Token = token, RequestModel = requestModel }, cancellationToken);
-                return Created(string.Empty, result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new CreateSaleOrder { Token = token, RequestModel = requestModel }, cancellationToken);
+            return Created(string.Empty, result);
         }
 
         /// <summary>
@@ -263,15 +195,8 @@ namespace IDeliverService.Api.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CreateUpdateSaleOrderResponseModel>> UpdateSaleOrder(string token, int id, [FromBody] CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken)
         {
-            try
-            {
-                var result = await _mediator.Send(new UpdateSaleOrder { Token = token, Id = id, RequestModel = requestModel }, cancellationToken);
-                return Created(string.Empty, result);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(ex.GetBaseException().Message);
-            }
+            var result = await _mediator.Send(new UpdateSaleOrder { Token = token, Id = id, RequestModel = requestModel }, cancellationToken);
+            return Created(string.Empty, result);
         }
     }
 }

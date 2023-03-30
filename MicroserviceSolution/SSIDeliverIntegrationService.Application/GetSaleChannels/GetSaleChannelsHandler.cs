@@ -31,7 +31,7 @@ namespace SSIDeliverIntegrationService.Application.GetSaleChannels
         [IntentManaged(Mode.Fully, Body = Mode.Ignore)]
         public async Task<List<ViewModels.SaleChannelsResponseModel>> Handle(GetSaleChannels request, CancellationToken cancellationToken)
         {
-            var response = await _iDeliverClient.SalesChannelsAsync(_configuration.GetValue<string>("marketic:ideliver:accesstoken"), cancellationToken);
+            var response = await iDeliverClient.SalesChannelsAsync(configuration.GetValue<string>("marketic:ideliver:accesstoken"), cancellationToken);
             var result = JsonConvert.DeserializeObject<List<ViewModels.SaleChannelsResponseModel>>(response.ToString());
             return result;
         }

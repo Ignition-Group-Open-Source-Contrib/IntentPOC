@@ -38,7 +38,7 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="beebb960-f15d-4f94-946d-58f3131adca6" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+    <childElement id="abb9e5cb-b922-43a2-836e-7c7b5457a59a" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
       <name>Intent.Application.Identity.CurrentUserService</name>
       <display>Intent.Application.Identity.CurrentUserService</display>
       <externalReference>Intent.Application.Identity</externalReference>

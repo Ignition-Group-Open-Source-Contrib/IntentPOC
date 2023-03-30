@@ -81,6 +81,14 @@
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
+      <ProjectId>c37ef8df-4c3c-4f60-bf3e-b81432e48a12</ProjectId>
+      <CorrelationId>Intent.AspNetCore.Controllers.Controller#9737ce4b-9e57-4727-9379-5991e95268e3</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Api/Controllers/ProcessSSIDeliverQueueController.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProcessSSIDeliverQueueController.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
       <ProjectId>f5066a98-a8ce-485c-9475-77f3a0cc799d</ProjectId>
       <CorrelationId>Intent.AspNetCore.Swashbuckle.AuthorizeCheckOperationFilter</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
@@ -426,7 +434,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
-      <CorrelationId>Intent.Application.Contracts.Clients.ServiceContract#070967e7-ec19-4ff5-94c6-7fedc96c5c91</CorrelationId>
+      <CorrelationId>Intent.Application.Contracts.Clients.ServiceContract#de6492be-b668-47aa-91da-7fb52ebf1669</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/IDeliverService/IIDeliverClient.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverService/IIDeliverClient.cs</ProjectRelativeFilePath>
@@ -670,6 +678,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/SaleOrderItemsResponseModel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ViewModels/SaleOrderItemsResponseModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#f2c76ddb-38e2-403d-8c85-2b52db27071a</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/SSIDeliverOrderViewModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/SSIDeliverOrderViewModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -1130,7 +1146,7 @@
     </FileLog>
     <FileLog>
       <ProjectId>77e07aee-45b4-4c63-bd92-66b41f0cf82b</ProjectId>
-      <CorrelationId>Intent.Dapr.AspNetCore.ServiceInvocation.HttpClient#070967e7-ec19-4ff5-94c6-7fedc96c5c91</CorrelationId>
+      <CorrelationId>Intent.Dapr.AspNetCore.ServiceInvocation.HttpClient#de6492be-b668-47aa-91da-7fb52ebf1669</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Infrastructure/HttpClients/IDeliverServiceHttpClient.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>IDeliverServiceHttpClient.cs</ProjectRelativeFilePath>

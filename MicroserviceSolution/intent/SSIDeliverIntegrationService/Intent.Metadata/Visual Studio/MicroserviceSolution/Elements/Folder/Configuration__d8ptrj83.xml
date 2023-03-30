@@ -70,7 +70,7 @@
       </metadata>
       <childElements />
     </childElement>
-    <childElement id="a202c930-9702-4df0-a010-1ec12d65cac5" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+    <childElement id="0a9172b0-54e0-4a19-92d4-300cbc827621" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
       <name>Intent.Application.Identity.ApplicationSecurityConfiguration</name>
       <display>Intent.Application.Identity.ApplicationSecurityConfiguration</display>
       <externalReference>Intent.Application.Identity</externalReference>
