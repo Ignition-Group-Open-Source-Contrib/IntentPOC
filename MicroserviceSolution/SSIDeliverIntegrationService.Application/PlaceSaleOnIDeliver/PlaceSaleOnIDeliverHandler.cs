@@ -488,7 +488,7 @@ namespace SSIDeliverIntegrationService.Application.PlaceSaleOnIDeliver
             }
             catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
 

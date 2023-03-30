@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SSIDeliverIntegrationService.Domain.Entities.Stock;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -38,6 +39,50 @@ namespace SSIDeliverIntegrationService.Application.ViewModels
                 Delivery_notes = deliveryAdddress?.Notes
             };
             return createUpdateSaleOrderRequestModel;
+        }
+
+        public static CreateProductRequestModel ConvertIntoProductRequest(this Product product, ProductDimensions productDimensions)
+        {
+            if (product == null)
+            {
+                return null;
+            }
+
+            bool hasDimension = false;
+            if (productDimensions != null)
+            {
+                hasDimension = true;
+            }
+            return new CreateProductRequestModel
+            {
+                Sku = product.ProductId.ToString(),
+                Name = product.Title,
+                Price = product.Price,
+                Width = hasDimension ? productDimensions.Breadth.GetValueOrDefault(0) : 0,
+                Length = hasDimension ? productDimensions.Length.GetValueOrDefault(0) : 0,
+                Height = hasDimension ? productDimensions.Height.GetValueOrDefault(0) : 0,
+                Weight = hasDimension ? productDimensions.Weight.GetValueOrDefault(0) : 0,
+                Has_serial_numbers = true
+            };
+        }
+
+        public static UpdateProductRequestModel ConvertIntoUpdateProductRequest(this CreateProductRequestModel product)
+        {
+            if (product == null)
+            {
+                return null;
+            }
+
+            return new UpdateProductRequestModel
+            {
+                Name = product.Name,
+                Price = product.Price,
+                Width = product.Width,
+                Length = product.Length,
+                Height = product.Height,
+                Weight = product.Weight,
+                Has_serial_numbers = product.Has_serial_numbers
+            };
         }
     }
 }

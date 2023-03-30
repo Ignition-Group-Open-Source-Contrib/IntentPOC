@@ -346,6 +346,30 @@
     </FileLog>
     <FileLog>
       <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#d6ee1874-74fd-47f0-8bb0-87ff3676ae6b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/CreateProductOnIDeliver/CreateProductOnIDeliver.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>CreateProductOnIDeliver/CreateProductOnIDeliver.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#d6ee1874-74fd-47f0-8bb0-87ff3676ae6b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/CreateProductOnIDeliver/CreateProductOnIDeliverHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>CreateProductOnIDeliver/CreateProductOnIDeliverHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#d6ee1874-74fd-47f0-8bb0-87ff3676ae6b</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/CreateProductOnIDeliver/CreateProductOnIDeliverValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>CreateProductOnIDeliver/CreateProductOnIDeliverValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
       <CorrelationId>Intent.Application.DependencyInjection.DependencyInjection</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/DependencyInjection.cs</ApplicationRelativeFilePath>
@@ -586,6 +610,30 @@
     </FileLog>
     <FileLog>
       <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandModels#aaa16c2c-b70c-4cfc-af83-99734957062e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/UpdateProductOnIDeliver/UpdateProductOnIDeliver.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UpdateProductOnIDeliver/UpdateProductOnIDeliver.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.CommandHandler#aaa16c2c-b70c-4cfc-af83-99734957062e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/UpdateProductOnIDeliver/UpdateProductOnIDeliverHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UpdateProductOnIDeliver/UpdateProductOnIDeliverHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.MediatR.FluentValidation.CommandValidator#aaa16c2c-b70c-4cfc-af83-99734957062e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/UpdateProductOnIDeliver/UpdateProductOnIDeliverValidator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>UpdateProductOnIDeliver/UpdateProductOnIDeliverValidator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
       <CorrelationId>Intent.Application.Dtos.DtoModel#d37e9864-8b6d-4ded-ad60-7db10b6684f0</CorrelationId>
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ActorRaiseEventModel.cs</ApplicationRelativeFilePath>
@@ -606,6 +654,22 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/ConvertToPlaceSaleOrderRequest.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ViewModels/ConvertToPlaceSaleOrderRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#1b8ecb8a-06ac-4932-b031-606f1865c1ae</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/CreateProductRequestModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/CreateProductRequestModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#0d58d68d-338d-447b-aaf3-01551602594e</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/CreateProductResponseModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/CreateProductResponseModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
@@ -718,6 +782,14 @@
       <OverwriteBehaviour>always</OverwriteBehaviour>
       <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/UpdateOrderItemStatusRequestModel.cs</ApplicationRelativeFilePath>
       <ProjectRelativeFilePath>ViewModels/UpdateOrderItemStatusRequestModel.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4bd88c89-2508-4c50-8eb9-c468796ae435</ProjectId>
+      <CorrelationId>Intent.Application.Dtos.DtoModel#ffe0b00d-c258-451f-b883-52d2bbe30e54</CorrelationId>
+      <OverwriteBehaviour>always</OverwriteBehaviour>
+      <ApplicationRelativeFilePath>../../SSIDeliverIntegrationService.Application/ViewModels/UpdateProductRequestModel.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ViewModels/UpdateProductRequestModel.cs</ProjectRelativeFilePath>
       <IsIgnored>false</IsIgnored>
     </FileLog>
     <FileLog>
