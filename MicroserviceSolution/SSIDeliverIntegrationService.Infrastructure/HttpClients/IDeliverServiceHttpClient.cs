@@ -60,7 +60,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.HttpClients
             }
         }
 
-        public async Task<GetSaleOrderResponseModel> UpdateSaleOrderStatusAsync(string token, int id, UpdateOrderStatusRequestModel request, CancellationToken cancellationToken = default)
+        public async Task<GetSaleOrderResponseModel> UpdateSaleOrderStatusAsync(string token, int id, UpdateOrderStatusRequestModel requestModel, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/ideliver/updatesaleorderstatus";
             var request = new HttpRequestMessage(HttpMethod.Post, relativeUri);
@@ -168,7 +168,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.HttpClients
             }
         }
 
-        public async Task<CreateProductResponseModel> CreateProductAsync(string token, CreateProductRequestModel request, CancellationToken cancellationToken = default)
+        public async Task<CreateProductResponseModel> CreateProductAsync(string token, CreateProductRequestModel requestModel, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/ideliver/createproduct";
             var request = new HttpRequestMessage(HttpMethod.Post, relativeUri);
@@ -195,7 +195,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.HttpClients
             }
         }
 
-        public async Task<CreateProductResponseModel> UpdateProductAsync(string token, string sku, UpdateProductRequestModel request, CancellationToken cancellationToken = default)
+        public async Task<CreateProductResponseModel> UpdateProductAsync(string token, string sku, UpdateProductRequestModel requestModel, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/ideliver/updateproduct";
             var request = new HttpRequestMessage(HttpMethod.Post, relativeUri);
@@ -249,7 +249,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.HttpClients
             }
         }
 
-        public async Task<CreateUpdateSaleOrderRequestModel> CreateSaleOrderAsync(string token, CreateUpdateSaleOrderRequestModel request, CancellationToken cancellationToken = default)
+        public async Task<CreateUpdateSaleOrderRequestModel> CreateSaleOrderAsync(string token, CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/ideliver/createsaleorder";
             var request = new HttpRequestMessage(HttpMethod.Post, relativeUri);
@@ -276,7 +276,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.HttpClients
             }
         }
 
-        public async Task<CreateUpdateSaleOrderResponseModel> UpdateSaleOrderAsync(string token, int id, CreateUpdateSaleOrderRequestModel request, CancellationToken cancellationToken = default)
+        public async Task<CreateUpdateSaleOrderResponseModel> UpdateSaleOrderAsync(string token, int id, CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/ideliver/updatesaleorder";
             var request = new HttpRequestMessage(HttpMethod.Post, relativeUri);

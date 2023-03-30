@@ -35,7 +35,7 @@ namespace IDeliverService.Api
         {
             services.AddControllers().AddDapr();
             services.AddDaprSidekick(Configuration);
-            services.ConfigureJWTSecurity(Configuration);
+            services.ConfigureApplicationSecurity(Configuration);
             services.AddApplication();
             services.AddInfrastructure(Configuration);
             services.ConfigureSwagger(Configuration);
@@ -49,7 +49,6 @@ namespace IDeliverService.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseApiResponseAndExceptionWrapper();
             app.UseCloudEvents();
             app.UseSerilogRequestLogging();
             app.UseRouting();

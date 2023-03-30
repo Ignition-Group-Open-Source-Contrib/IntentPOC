@@ -34,30 +34,30 @@ namespace SSIDeliverIntegrationService.Api.Controllers
         /// <summary>
         /// </summary>
         /// <response code="201">Successfully created.</response>
-        [HttpPost("/processssideliverorderevent")]     
+        [HttpPost("/processssideliverorderevent")]
         public async Task<ActionResult> ProcessSSIDeliverOrders([FromServices] IServiceScopeFactory serviceScopeFactory)
         {
             string encodedqueueMsg = string.Empty;
             string decodedQueueMsg = string.Empty;
-          
-                using (var reader = new StreamReader(Request.Body))
-                {
-                    encodedqueueMsg = await reader.ReadToEndAsync();
 
-                    decodedQueueMsg = Base64Decode.Decode(encodedqueueMsg);
-                }
+            using (var reader = new StreamReader(Request.Body))
+            {
+                encodedqueueMsg = await reader.ReadToEndAsync();
 
-                SSIDeliverOrderViewModel ssIDeliverOrderViewModel = JsonConvert.DeserializeObject<SSIDeliverOrderViewModel>(decodedQueueMsg);
+                decodedQueueMsg = Base64Decode.Decode(encodedqueueMsg);
+            }
 
-                taskQueue.QueueBackgroundWorkItem(async token =>
-                {
-                    using var scope = serviceScopeFactory.CreateScope();
-                    var sSIDeliverIntegrationFacade = scope.ServiceProvider.GetRequiredService<ISSIDeliverIntegrationFacade>();
-                     await sSIDeliverIntegrationFacade.ProcessSSIDeliverOrders(ssIDeliverOrderViewModel);
-                });
+            SSIDeliverOrderViewModel ssIDeliverOrderViewModel = JsonConvert.DeserializeObject<SSIDeliverOrderViewModel>(decodedQueueMsg);
 
-                return Ok("Success");
-           
+            taskQueue.QueueBackgroundWorkItem(async token =>
+            {
+                using var scope = serviceScopeFactory.CreateScope();
+                var sSIDeliverIntegrationFacade = scope.ServiceProvider.GetRequiredService<ISSIDeliverIntegrationFacade>();
+                await sSIDeliverIntegrationFacade.ProcessSSIDeliverOrders(ssIDeliverOrderViewModel);
+            });
+
+            return Ok("Success");
+
         }
     }
 }

@@ -12,6 +12,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{1BE9BC9F-A04A-4397-AA9A-03F61AC1D71A}"
 	ProjectSection(SolutionItems) = preProject
 		..\dapr\components\pubsub.yaml = ..\dapr\components\pubsub.yaml
+		dapr\components\pubsub.yaml = dapr\components\pubsub.yaml
 		SSIDeliverQueueBinding.yaml = SSIDeliverQueueBinding.yaml
 		dapr\components\statestore.yaml = dapr\components\statestore.yaml
 	EndProjectSection
