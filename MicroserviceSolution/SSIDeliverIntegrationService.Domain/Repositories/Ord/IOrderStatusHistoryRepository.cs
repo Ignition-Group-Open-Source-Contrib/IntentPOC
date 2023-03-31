@@ -19,5 +19,7 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Ord
         Task<OrderStatusHistory> FindByIdAsync(int orderStatusHistoryId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
         Task<List<OrderStatusHistory>> FindByIdsAsync(int[] orderStatusHistoryIds, CancellationToken cancellationToken = default);
+
+        Task<OrderStatusHistory> FindLastStatusHistoryAsync(int orderItemId, int statusDetailId);
     }
 }

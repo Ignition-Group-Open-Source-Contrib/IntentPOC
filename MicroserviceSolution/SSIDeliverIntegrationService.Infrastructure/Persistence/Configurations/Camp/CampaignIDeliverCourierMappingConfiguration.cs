@@ -16,6 +16,12 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasKey(x => x.CampaignIDeliverCourierMappingID);
 
+            builder.Property(x => x.CampaignId)
+                .IsRequired();
+
+            builder.Property(x => x.IdeliverCourierId)
+                .IsRequired();
+
             builder.Property(x => x.CreatedByUserId);
 
             builder.Property(x => x.CreatedOnDate)

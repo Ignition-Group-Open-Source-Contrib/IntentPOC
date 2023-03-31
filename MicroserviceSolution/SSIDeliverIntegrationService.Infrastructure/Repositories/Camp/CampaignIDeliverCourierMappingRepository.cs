@@ -30,5 +30,10 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Camp
         {
             return await FindAllAsync(x => campaignIDeliverCourierMappingIDs.Contains(x.CampaignIDeliverCourierMappingID), cancellationToken);
         }
+
+        public async Task<List<CampaignIDeliverCourierMapping>> FindByCampaignIdAsync(int campaignId, CancellationToken cancellationToken = default)
+        {
+            return await FindAllAsync(x => x.CampaignId == campaignId);
+        }
     }
 }

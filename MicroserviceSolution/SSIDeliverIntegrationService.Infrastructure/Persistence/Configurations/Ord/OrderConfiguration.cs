@@ -20,6 +20,9 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
                 .IsRequired()
                 .HasColumnType("datetime");
 
+            builder.Property(x => x.CampaignId)
+                .IsRequired();
+
             builder.Property(x => x.DialerAgentId)
                 .IsRequired();
 

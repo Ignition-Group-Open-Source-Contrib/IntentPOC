@@ -25,7 +25,7 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Deals
 
         public int Available { get; set; }
 
-        public int? TariffTariffID { get; set; }
+        public int? TariffID { get; set; }
 
         public int? MsId { get; set; }
 

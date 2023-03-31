@@ -19,5 +19,7 @@ namespace SSIDeliverIntegrationService.Domain.Repositories.Stock
         Task<IDeliverProductChannelMapping> FindByIdAsync(int iDeliverProductChannelMappingId, CancellationToken cancellationToken = default);
         [IntentManaged(Mode.Fully)]
         Task<List<IDeliverProductChannelMapping>> FindByIdsAsync(int[] iDeliverProductChannelMappingIds, CancellationToken cancellationToken = default);
+
+        Task<int> FindChannelIdByProductId(int productId, CancellationToken cancellationToken = default);
     }
 }

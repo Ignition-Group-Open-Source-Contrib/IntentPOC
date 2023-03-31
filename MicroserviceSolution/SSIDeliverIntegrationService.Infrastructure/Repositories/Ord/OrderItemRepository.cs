@@ -31,7 +31,5 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Ord
         {
             return await FindAllAsync(x => orderItemIds.Contains(x.OrderItemId), cancellationToken);
         }
-
-
     }
 }

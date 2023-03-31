@@ -249,7 +249,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.HttpClients
             }
         }
 
-        public async Task<CreateUpdateSaleOrderRequestModel> CreateSaleOrderAsync(string token, CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken = default)
+        public async Task<CreateUpdateSaleOrderResponseModel> CreateSaleOrderAsync(string token, CreateUpdateSaleOrderRequestModel requestModel, CancellationToken cancellationToken = default)
         {
             var relativeUri = $"api/ideliver/createsaleorder";
             var request = new HttpRequestMessage(HttpMethod.Post, relativeUri);
@@ -271,7 +271,7 @@ namespace SSIDeliverIntegrationService.Infrastructure.HttpClients
 
                 using (var contentStream = await response.Content.ReadAsStreamAsync(cancellationToken).ConfigureAwait(false))
                 {
-                    return await JsonSerializer.DeserializeAsync<CreateUpdateSaleOrderRequestModel>(contentStream, _serializerOptions, cancellationToken).ConfigureAwait(false);
+                    return await JsonSerializer.DeserializeAsync<CreateUpdateSaleOrderResponseModel>(contentStream, _serializerOptions, cancellationToken).ConfigureAwait(false);
                 }
             }
         }

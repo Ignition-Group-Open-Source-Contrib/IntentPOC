@@ -57,6 +57,30 @@
       <metadata />
       <childElements />
     </childElement>
+    <childElement id="0f816a42-ffc8-4aba-bf20-256959f1cc83" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>CampaignId</name>
+      <display>CampaignId: int</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="3d423bad-8fb9-45e4-8100-afcb72eaa30e">
+        <typeId>fb0a362d-e9e2-40de-b6ff-5ce8167cbe74</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d435b92d-32b3-4775-ac4b-255177103902</parentFolderId>
+      <packageId>5d251db1-0199-4984-a6ff-cfe667abec2a</packageId>
+      <packageName>SSIDeliverIntegrationService.Domain</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
     <childElement id="94cd2f7e-0965-4ddf-b6fe-67d0bf4abfc2" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
       <name>ChannelId</name>
       <display>ChannelId: int</display>

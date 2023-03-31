@@ -16,6 +16,9 @@ namespace SSIDeliverIntegrationService.Infrastructure.Persistence.Configurations
 
             builder.HasKey(x => x.IDeliverCampaignChannelMappingId);
 
+            builder.Property(x => x.CampaignId)
+                .IsRequired();
+
             builder.Property(x => x.ChannelId)
                 .IsRequired();
 

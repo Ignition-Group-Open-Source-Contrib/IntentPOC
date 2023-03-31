@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <class id="9367bb04-ed23-4db4-a363-2aabf8dc5f40" type="Command" typeId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9">
   <name>CreateSaleOrder</name>
-  <display>CreateSaleOrder: CreateUpdateSaleOrderRequestModel</display>
+  <display>CreateSaleOrder: CreateUpdateSaleOrderResponseModel</display>
   <isAbstract>false</isAbstract>
   <sort-children>by-type-then-manually</sort-children>
   <genericTypes />
   <typeReference id="6d559802-41e0-4001-baac-2f4d58ae422b">
-    <typeId>73790d29-b849-47bf-91ac-503780be0d55</typeId>
+    <typeId>df56aff5-d99a-4748-8cf3-8494856f01b9</typeId>
     <isNavigable>true</isNavigable>
     <isNullable>false</isNullable>
     <isCollection>false</isCollection>

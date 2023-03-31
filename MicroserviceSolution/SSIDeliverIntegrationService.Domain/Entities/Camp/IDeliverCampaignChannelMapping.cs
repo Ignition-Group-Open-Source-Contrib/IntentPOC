@@ -15,6 +15,8 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Camp
     {
         public int IDeliverCampaignChannelMappingId { get; set; }
 
+        public int CampaignId { get; set; }
+
         public int ChannelId { get; set; }
 
         public bool IsActive { get; set; }

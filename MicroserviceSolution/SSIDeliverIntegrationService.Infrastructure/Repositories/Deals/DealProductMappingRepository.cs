@@ -30,5 +30,11 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Deals
         {
             return await FindAllAsync(x => dealProductMappingIds.Contains(x.DealProductMappingId), cancellationToken);
         }
+
+        public async Task<List<int?>> FindProductIdsByDealId(int dealId, CancellationToken cancellationToken = default)
+        {
+            var dealProductMappings = await FindAllAsync(i => i.DealID == dealId && i.Active == true);
+            return dealProductMappings.Select(x => x.ProductId).ToList();
+        }
     }
 }

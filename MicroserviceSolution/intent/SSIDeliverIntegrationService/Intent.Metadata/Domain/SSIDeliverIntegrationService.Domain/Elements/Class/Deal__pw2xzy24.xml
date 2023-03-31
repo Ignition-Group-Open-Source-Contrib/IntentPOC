@@ -225,8 +225,8 @@
       <childElements />
     </childElement>
     <childElement id="c8f0914b-5db2-4daf-8c64-d15ad5ac003e" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
-      <name>TariffTariffID</name>
-      <display>TariffTariffID: int?</display>
+      <name>TariffID</name>
+      <display>TariffID: int?</display>
       <externalReference>8</externalReference>
       <isAbstract>false</isAbstract>
       <genericTypes />

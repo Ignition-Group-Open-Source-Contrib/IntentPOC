@@ -19,5 +19,7 @@ namespace SSIDeliverIntegrationService.Application.Common.BusinessLogic
         public Task<bool> VerifyIDeliverOrder(int orderId, List<int> iDeliverProviders);
         public Task<bool> VerifyInValidOrder(int orderId, List<int> iDeliverProviders);
         public Task<bool> VerifyInValidOrderStatus(int orderId, List<int> iDeliverProviders, List<int> skipOrderStatus);
+        Task<(CreateProductRequestModel, string)> GetProductDetails(int productId);
+        Task<UpdateProductRequestModel> ConvertToUpdateProductRequest(CreateProductRequestModel productDetails);
     }
 }

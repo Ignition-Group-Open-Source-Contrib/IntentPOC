@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<association id="ec279081-e6f0-4919-84a1-bade3ae2a5f9">
+  <sourceEnd id="e39ca7de-ebde-4427-8061-87b8d2c222bf" type="Generalization Source End" typeId="5ce8666c-89d2-4c9c-b30c-6e5fe42e1766">
+    <name>CreateProductResponseModel</name>
+    <display>CreateProductResponseModel: CreateProductResponseModel</display>
+    <order>0</order>
+    <typeReference id="7e0819a6-a94a-48e6-b812-af4c41e9ccb6">
+      <typeId>0d58d68d-338d-447b-aaf3-01551602594e</typeId>
+      <isNavigable>false</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Services</typePackageName>
+      <typePackageId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </sourceEnd>
+  <targetEnd id="ec279081-e6f0-4919-84a1-bade3ae2a5f9" type="Generalization Target End" typeId="e1b3d4e4-0ad0-4aec-97fb-780ab9e476db">
+    <name>CreateProductRequestModel</name>
+    <display>CreateProductRequestModel: CreateProductRequestModel</display>
+    <order>4</order>
+    <typeReference id="cce791a1-bdb2-45ae-ac1b-5cdb02af1c0d">
+      <typeId>1b8ecb8a-06ac-4932-b031-606f1865c1ae</typeId>
+      <isNavigable>true</isNavigable>
+      <isNullable>false</isNullable>
+      <isCollection>false</isCollection>
+      <isRequired>true</isRequired>
+      <typePackageName>SSIDeliverIntegrationService.Services</typePackageName>
+      <typePackageId>3cdd2a00-2d91-47cf-b1e5-688d3bca5ecf</typePackageId>
+      <stereotypes />
+      <genericTypeParameters />
+    </typeReference>
+    <stereotypes />
+    <metadata />
+    <childElements />
+  </targetEnd>
+  <associationType>Generalization</associationType>
+  <associationTypeId>5ba12bbf-122f-4c3e-af3c-4a88dc554597</associationTypeId>
+  <stereotypes />
+</association>

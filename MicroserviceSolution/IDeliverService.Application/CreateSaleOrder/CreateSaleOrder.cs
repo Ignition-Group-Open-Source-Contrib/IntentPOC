@@ -10,7 +10,7 @@ using MediatR;
 
 namespace IDeliverService.Application.CreateSaleOrder
 {
-    public class CreateSaleOrder : IRequest<CreateUpdateSaleOrderRequestModel>, ICommand
+    public class CreateSaleOrder : IRequest<CreateUpdateSaleOrderResponseModel>, ICommand
     {
         public string Token { get; set; }
 

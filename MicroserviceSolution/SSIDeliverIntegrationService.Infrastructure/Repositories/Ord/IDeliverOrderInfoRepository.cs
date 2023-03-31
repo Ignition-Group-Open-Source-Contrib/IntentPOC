@@ -30,5 +30,10 @@ namespace SSIDeliverIntegrationService.Infrastructure.Repositories.Ord
         {
             return await FindAllAsync(x => iDeliverOrderInfoIds.Contains(x.IDeliverOrderInfoId), cancellationToken);
         }
+
+        public async Task<IDeliverOrderInfo> FindByOrderIdAsync(int orderId, int iDeliverOrderStatusId, CancellationToken cancellationToken = default)
+        {
+            return await FindAsync(x => x.OrderId == orderId && x.IDeliverOrderStatusId == iDeliverOrderStatusId, cancellationToken);
+        }
     }
 }

@@ -15,6 +15,10 @@ namespace SSIDeliverIntegrationService.Domain.Entities.Camp
     {
         public int CampaignIDeliverCourierMappingID { get; set; }
 
+        public int CampaignId { get; set; }
+
+        public int IdeliverCourierId { get; set; }
+
         public int? CreatedByUserId { get; set; }
 
         public DateTime? CreatedOnDate { get; set; }

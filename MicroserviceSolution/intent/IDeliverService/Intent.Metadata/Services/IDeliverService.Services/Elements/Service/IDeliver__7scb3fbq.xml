@@ -1088,12 +1088,12 @@
     </childElement>
     <childElement id="a62a20ae-2e92-455c-89cc-decb9c874fb2" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
       <name>CreateSaleOrder</name>
-      <display>CreateSaleOrder(token: string, requestModel: CreateUpdateSaleOrderRequestModel): CreateUpdateSaleOrderRequestModel</display>
+      <display>CreateSaleOrder(token: string, requestModel: CreateUpdateSaleOrderRequestModel): CreateUpdateSaleOrderResponseModel</display>
       <isAbstract>false</isAbstract>
       <sort-children>by-type-then-manually</sort-children>
       <genericTypes />
       <typeReference id="6a04cb8e-5c6c-40d4-9cec-379c441be08f">
-        <typeId>73790d29-b849-47bf-91ac-503780be0d55</typeId>
+        <typeId>df56aff5-d99a-4748-8cf3-8494856f01b9</typeId>
         <isNavigable>true</isNavigable>
         <isNullable>false</isNullable>
         <isCollection>false</isCollection>
@@ -1108,7 +1108,7 @@
         <applicationId>3da8ac76-2cf8-463f-98f6-ab2496874aae</applicationId>
         <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
         <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
-        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <autoSyncTypeReference>false</autoSyncTypeReference>
         <mappedPath>
           <target id="9367bb04-ed23-4db4-a363-2aabf8dc5f40" name="CreateSaleOrder" type="element" specialization="Command" />
         </mappedPath>
