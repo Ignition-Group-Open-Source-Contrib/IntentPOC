@@ -50,6 +50,8 @@ namespace ProcessIDeliverOrderService.Application.Common.BusinessLogic
             {
                 while (orders.Any())
                 {
+                    var orderitms = new List<int> { 50251912 };
+                    await PopulateSSQueue(60089159, orderitms);
                     foreach (var ideliverOrders in orders)
                     {
                         var ideliverOrderItems = await orderItemRepository.FindAllAsync(i => i.OrderId == ideliverOrders.OrderId && iDeliverProviders.Contains(i.OrderTypeId) && !skipOrderStatus.Contains(i.OrderStatusDetailId));

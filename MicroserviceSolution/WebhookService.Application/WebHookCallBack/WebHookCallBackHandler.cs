@@ -53,6 +53,22 @@ namespace WebhookService.Application.WebHookCallBack
                         // _ = daprClient.ProcessStockOrder(callBackRequest);
                         return "Stock order is in process!";
 
+                    case "ideliverrtscallback":
+
+                        var (rtsCallBackRequest, rtsErrorMessage) = _webhookFacade.ValidateDeliveryRTSRequest(request.Request);
+                        if (!string.IsNullOrEmpty(rtsErrorMessage))
+                        {
+                            return rtsErrorMessage;
+                        }
+
+                        if (rtsCallBackRequest == null)
+                        {
+                            return ($"IDeliver RTS call back api request is invalid {request}");
+                        }
+
+                        //_ = daprClient.ProcessIDeliverRTSOrder(rtsCallBackRequest);
+                        _eventBus.Publish(new IDeliverRTSCallBackEvent { Request = rtsCallBackRequest });
+                        return "Order Delivery RTS is in process!";
 
                     default:
                         break;

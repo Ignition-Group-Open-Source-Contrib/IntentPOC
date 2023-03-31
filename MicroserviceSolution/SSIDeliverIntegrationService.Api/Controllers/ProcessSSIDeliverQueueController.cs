@@ -49,12 +49,11 @@ namespace SSIDeliverIntegrationService.Api.Controllers
 
             SSIDeliverOrderViewModel ssIDeliverOrderViewModel = JsonConvert.DeserializeObject<SSIDeliverOrderViewModel>(decodedQueueMsg);
 
-            taskQueue.QueueBackgroundWorkItem(async token =>
-            {
-                using var scope = serviceScopeFactory.CreateScope();
-                var sSIDeliverIntegrationFacade = scope.ServiceProvider.GetRequiredService<ISSIDeliverIntegrationFacade>();
-                await sSIDeliverIntegrationFacade.ProcessSSIDeliverOrders(ssIDeliverOrderViewModel);
-            });
+
+            using var scope = serviceScopeFactory.CreateScope();
+            var sSIDeliverIntegrationFacade = scope.ServiceProvider.GetRequiredService<ISSIDeliverIntegrationFacade>();
+            await sSIDeliverIntegrationFacade.ProcessSSIDeliverOrders(ssIDeliverOrderViewModel);
+
 
             return Ok("Success");
 

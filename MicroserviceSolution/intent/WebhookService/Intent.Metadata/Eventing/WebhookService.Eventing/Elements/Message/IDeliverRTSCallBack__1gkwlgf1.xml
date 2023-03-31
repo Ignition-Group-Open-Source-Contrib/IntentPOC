@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="95e04515-17fa-46f3-95bd-6c12e337dea7" type="Message" typeId="cbe970af-5bad-4d92-a3ed-a24b9fdaa23e">
+  <name>IDeliverRTSCallBack</name>
+  <display>IDeliverRTSCallBack</display>
+  <isAbstract>false</isAbstract>
+  <sort-children>by-type-then-manually</sort-children>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>dd4ddab6-d10f-423e-9162-462ef44e6394</parentFolderId>
+  <packageId>dd4ddab6-d10f-423e-9162-462ef44e6394</packageId>
+  <packageName>WebhookService.Eventing</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="ec96e452-9084-49bb-a883-aa42eb327fe7" name="Dapr Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Dapr.AspNetCore.Pubsub</definitionPackageName>
+      <definitionPackageId>ed7d7f87-babb-4f57-83bf-d35b9f826bf6</definitionPackageId>
+      <properties>
+        <property name="059416d7-133b-4053-ab32-35412a06f670" display="Pubsub Name" isActive="true" />
+        <property name="a15b6899-7366-4fd7-b018-47a482e05432" display="Topic Name" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <metadata />
+  <childElements>
+    <childElement id="fd635bd7-f3ee-44d9-a040-70bc1db531f1" type="Property" typeId="bde29850-5fb9-4f47-9941-b9e182fd9bdc">
+      <name>Request</name>
+      <display>Request: object</display>
+      <isAbstract>false</isAbstract>
+      <genericTypes />
+      <typeReference id="feeabc76-3eac-4513-9d98-28b7d366808a">
+        <typeId>341DD965-D06C-4A40-9437-9516ADA77FF5</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>95e04515-17fa-46f3-95bd-6c12e337dea7</parentFolderId>
+      <packageId>dd4ddab6-d10f-423e-9162-462ef44e6394</packageId>
+      <packageName>WebhookService.Eventing</packageName>
+      <stereotypes />
+      <metadata />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

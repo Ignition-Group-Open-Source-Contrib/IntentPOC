@@ -34,7 +34,7 @@ namespace WebhookService.Api
         {
             services.AddControllers().AddDapr();
             services.AddDaprSidekick(Configuration);
-            services.ConfigureJWTSecurity(Configuration);
+            services.ConfigureApplicationSecurity(Configuration);
             services.AddApplication();
             services.AddInfrastructure(Configuration);
             services.ConfigureSwagger(Configuration);
